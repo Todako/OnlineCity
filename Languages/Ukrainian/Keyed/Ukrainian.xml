@@ -1,33 +1,33 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-	<TransportPodsContentsWillBeLost>В Торговый склад на сервер</TransportPodsContentsWillBeLost>
+	<TransportPodsContentsWillBeLost>В Торговий склад на сервер</TransportPodsContentsWillBeLost>
 
 	<!-- MainMenu.cs -->
 	<OCity_LAN_btn>Мережева гра</OCity_LAN_btn>
 	<OCity_MainMenu_Online>Онлайн</OCity_MainMenu_Online>
-	<OCity_MainMenu_Withdraw>Отступить</OCity_MainMenu_Withdraw>
-	<OCity_MainMenu_Surrender>Сдаться</OCity_MainMenu_Surrender>
-	<OCity_MainMenu_Saved>Сохранено</OCity_MainMenu_Saved>
+	<OCity_MainMenu_Withdraw>Відступити</OCity_MainMenu_Withdraw>
+	<OCity_MainMenu_Surrender>Здатись</OCity_MainMenu_Surrender>
+	<OCity_MainMenu_Saved>Збережено</OCity_MainMenu_Saved>
 
 	<!-- CaravanArrivalAction_VisitOnline.cs -->
-	<OCity_Caravan_GoTrade>Йдемо обмінюватися товарами з {0}</OCity_Caravan_GoTrade>
+	<OCity_Caravan_GoTrade>Обмінятися товарами з {0}</OCity_Caravan_GoTrade>
 	<OCity_Caravan_GoTrade2>{0}</OCity_Caravan_GoTrade2>
-	<OCity_Caravan_LOGNoData>Нема данних сервера про об'єкт торгівлі</OCity_Caravan_LOGNoData>
-	<OCity_Caravan_LOGSwap>Караван обмін: selectAllCaravan</OCity_Caravan_LOGSwap>
+	<OCity_Caravan_LOGNoData>Немає серверних даних про об'єкт торгівлі</OCity_Caravan_LOGNoData>
+	<OCity_Caravan_LOGSwap>Караван обмін: вибрати весь караван</OCity_Caravan_LOGSwap>
 	<OCity_Caravan_Go_Attack_Target>Атака</OCity_Caravan_Go_Attack_Target>
-	<OCity_Caravan_Confirm_Attack_TestBattle_Possible>Вы действительно хотите напасть на это поселение? Можно провести тренировочный бой, не имеющий последствий</OCity_Caravan_Confirm_Attack_TestBattle_Possible>
-	<OCity_Caravan_Practive>Нет, только тренировка.</OCity_Caravan_Practive>
+	<OCity_Caravan_Confirm_Attack_TestBattle_Possible>Ви дійсно хочете напасти на це поселення? Можна провести тренувальний бій без наслідків</OCity_Caravan_Confirm_Attack_TestBattle_Possible>
+	<OCity_Caravan_Practive>Ні, лише тренування.</OCity_Caravan_Practive>
 
 	<!-- OnlineCity_CaravanOnline.cs -->
 	<OCity_Caravan_Player>{0} гравця {1}</OCity_Caravan_Player>
 	<OCity_Caravan_Other>Цінність речей: {2}
 Цінність людей та тварин: {3}
-Ценность от биржи: {4}</OCity_Caravan_Other>
-	<OCity_Caravan_PlayerAttackCost>Максимальная ценность атакующих: {0}</OCity_Caravan_PlayerAttackCost>
-	<OCity_Caravan_FreeWeight>Решта вантажопідйомності: </OCity_Caravan_FreeWeight>
+Цінність біржі: {4}</OCity_Caravan_Other>
+	<OCity_Caravan_PlayerAttackCost>Максимальна цінність атакуючих: {0}</OCity_Caravan_PlayerAttackCost>
+	<OCity_Caravan_FreeWeight>Залишкова вантажопідйомність: </OCity_Caravan_FreeWeight>
 	<OCity_Caravan_Trade>Обмін товарами з {0}</OCity_Caravan_Trade>
-	<OCity_Caravan_Abort>Вам нет года или стоимость меньше</OCity_Caravan_Abort>
-	<OCity_Caravan_Attack>Атаковать {0}</OCity_Caravan_Attack>
+	<OCity_Caravan_Abort>Вам менше року або ваша вартість менша</OCity_Caravan_Abort>
+	<OCity_Caravan_Attack>Атакувати {0}</OCity_Caravan_Attack>
 
 	<!-- DevelopTest.cs -->
 	<OCity_DevTest_Test>Тест</OCity_DevTest_Test>
@@ -37,7 +37,7 @@
 	<OCity_Starter_CityNotBuild>Місце вже зайнято іншим гравцем</OCity_Starter_CityNotBuild>
 
 	<!-- StorageTest.cs -->
-	<OCity_StorageTest_CreateGrass>Садити траву весною (фикс)</OCity_StorageTest_CreateGrass>
+	<OCity_StorageTest_CreateGrass>Садити траву весною (фікс)</OCity_StorageTest_CreateGrass>
 	<OCity_StorageTest_CreateGrassDescrip>Один раз на рік на кожній карті, коли температура піднімається більше 5 градусів, на кожній не зайнятій та придатної для зростання клітини на відстані 10 від трави буде висаджена нова.</OCity_StorageTest_CreateGrassDescrip>
 	<OCity_StorageTest_LastIP>Пропонований IP</OCity_StorageTest_LastIP>
 
@@ -46,64 +46,64 @@
 	<OCity_ClientData_Chat>Чат </OCity_ClientData_Chat>
 	<OC_OK>Ок</OC_OK>
 	<OC_Loading>Загрузка</OC_Loading>
-	<OC_DataNotAvailable>Данные не доступны</OC_DataNotAvailable>
+	<OC_DataNotAvailable>Дані не доступні</OC_DataNotAvailable>
 	<OC_Seconds>секунд</OC_Seconds>
-	<OC_ImageBase1>Откройте изображение базы игрока</OC_ImageBase1>
-	<OC_ImageBase2>Нажмите для загрузки изображения базы игрока</OC_ImageBase2>
-	<OC_ImageBase4>И проверить наличие обновлений</OC_ImageBase4>
-	<OC_ImageBase6>Проверка обновлений доступна через</OC_ImageBase6>
+	<OC_ImageBase1>Відкрити зображення бази гравця</OC_ImageBase1>
+	<OC_ImageBase2>Натисніть, щоб завантажити зображення бази гравця</OC_ImageBase2>
+	<OC_ImageBase4>І перевірити наявність оновлень</OC_ImageBase4>
+	<OC_ImageBase6>Перевірка оновлень доступна через</OC_ImageBase6>
 
 	<!-- OnlineCity_Hash_Checker -->
-	<OC_Hash_CalculateLocalFiles>Вычисление хэша локальных данных</OC_Hash_CalculateLocalFiles>
-	<OC_Hash_CalculateFor>Вычисление хэша для: </OC_Hash_CalculateFor>
-	<OC_Hash_CalculateComplete>Вычисление хэша завершено</OC_Hash_CalculateComplete>
-	<OC_Hash_CalculateConfFile>Файлы Mods Config: </OC_Hash_CalculateConfFile>
+	<OC_Hash_CalculateLocalFiles>Обчислення хешу локальних файлів</OC_Hash_CalculateLocalFiles>
+	<OC_Hash_CalculateFor>Обчислення хешу для: </OC_Hash_CalculateFor>
+	<OC_Hash_CalculateComplete>Обчислення хешу завершено</OC_Hash_CalculateComplete>
+	<OC_Hash_CalculateConfFile>Файли Mods Config: </OC_Hash_CalculateConfFile>
 	<OC_Hash_Complete>Завершено:</OC_Hash_Complete>
-	<OC_Hash_Downloading>Загрузка модов...</OC_Hash_Downloading>
-	<OC_Hash_Downloading_Finish>Загружено </OC_Hash_Downloading_Finish>
-	<OC_Mods_Wait>Подождите перед игрой онлайн...</OC_Mods_Wait>
+	<OC_Hash_Downloading>Завантаження модів...</OC_Hash_Downloading>
+	<OC_Hash_Downloading_Finish>Завантажено </OC_Hash_Downloading_Finish>
+	<OC_Mods_Wait>Зачекайте перед грою онлайн...</OC_Mods_Wait>
 	<OC_Mods_Complete>Завершено:</OC_Mods_Complete>
-	<OC_HashCheckerResult_VersionErr>Отличается версия игры. У вас {0}, а требуется {1}</OC_HashCheckerResult_VersionErr>
-	<OC_HashCheckerResult_NeedMods>Не включены необходимые моды:</OC_HashCheckerResult_NeedMods>
-	<OC_HashCheckerResult_ExcessMods>Включены лишние моды:</OC_HashCheckerResult_ExcessMods>
-	<OC_HashCheckerResult_UnexpectedDiff>Неожиданное отличие ModsConfig.xml</OC_HashCheckerResult_UnexpectedDiff>
-	<OC_HashCheckerResult_DiffFiles>Отличаются файлы игры, попробуйте переустановить игру и DLC нужной версии</OC_HashCheckerResult_DiffFiles>
-	<OC_HashCheckerResult_ChangedFiles>Изменены следующие файлы:</OC_HashCheckerResult_ChangedFiles>
-	<OC_HashCheckerResult_ChangedDir>Изменены файлы в этих папках модов:</OC_HashCheckerResult_ChangedDir>
-	<OC_HashCheckerResult_CriticalDiff>Отличаются следующие необновляемые файлы:</OC_HashCheckerResult_CriticalDiff>
+	<OC_HashCheckerResult_VersionErr>Відрізняється версія гри. У вас {0}, а потрібно {1}</OC_HashCheckerResult_VersionErr>
+	<OC_HashCheckerResult_NeedMods>Не ввімкнено необхідні моди:</OC_HashCheckerResult_NeedMods>
+	<OC_HashCheckerResult_ExcessMods>Увімкнено зайві моди:</OC_HashCheckerResult_ExcessMods>
+	<OC_HashCheckerResult_UnexpectedDiff>Несподівана відмінність ModsConfig.xml</OC_HashCheckerResult_UnexpectedDiff>
+	<OC_HashCheckerResult_DiffFiles>Відрізняються файли гри, спробуйте перевстановити гру і DLC потрібної версії</OC_HashCheckerResult_DiffFiles>
+	<OC_HashCheckerResult_ChangedFiles>Змінено наступні файли:</OC_HashCheckerResult_ChangedFiles>
+	<OC_HashCheckerResult_ChangedDir>Змінено файли в цих папках модів:</OC_HashCheckerResult_ChangedDir>
+	<OC_HashCheckerResult_CriticalDiff>Відрізняються наступні неоновлювані файли:</OC_HashCheckerResult_CriticalDiff>
 
 	<!-- Dialog_MainOnlineCity.cs -->
 	<OCity_Dialog_HelloLAN></OCity_Dialog_HelloLAN>
 	<OCity_Dialog_ListChat>Чат</OCity_Dialog_ListChat>
 	<OCity_Dialog_ListInfo>Інформація</OCity_Dialog_ListInfo>
 	<OCity_Dialog_ListAbout>Про мод</OCity_Dialog_ListAbout>
-	<OCity_Dialog_Settings>Settings</OCity_Dialog_Settings>
+	<OCity_Dialog_Settings>Налаштування</OCity_Dialog_Settings>
 	<OCity_Dialog_Connecting>З'єднання...</OCity_Dialog_Connecting>
 	<OCity_Dialog_Login>Логін: </OCity_Dialog_Login>
 	<OCity_Dialog_Players>Гравці: </OCity_Dialog_Players>
 	<OCity_Dialog_ChennelOwn> Творець каналу</OCity_Dialog_ChennelOwn>
 	<OCity_Dialog_ChennelUser> Учасник</OCity_Dialog_ChennelUser>
 	<OCity_Dialog_ChennelCreate>Створити канал</OCity_Dialog_ChennelCreate>
-	<OCity_Dialog_ChennelClose>Зачинити канал</OCity_Dialog_ChennelClose>
+	<OCity_Dialog_ChennelClose>Закрити канал</OCity_Dialog_ChennelClose>
 	<OCity_Dialog_OthersFunctions>Інші функциї</OCity_Dialog_OthersFunctions>
 	<OCity_Dialog_ChennelCreate2>Створити канал</OCity_Dialog_ChennelCreate2>
 	<OCity_Dialog_ChennelLeave>Вийти з каналу</OCity_Dialog_ChennelLeave>
 	<OCity_Dialog_ChennelRen>Перейменувать</OCity_Dialog_ChennelRen>
 	<OCity_Dialog_ChennelCreating>Створення каналу</OCity_Dialog_ChennelCreating>
-	<OCity_Dialog_ChennelCreateName>Введить назву канала</OCity_Dialog_ChennelCreateName>
+	<OCity_Dialog_ChennelCreateName>Введить назву каналу</OCity_Dialog_ChennelCreateName>
 	<OCity_Dialog_ChennelQuit>Вихід з каналу</OCity_Dialog_ChennelQuit>
-	<OCity_Dialog_ChennelQuitCheck>Ви дійсно бажаете полишити канал?</OCity_Dialog_ChennelQuitCheck>
-	<OCity_Dialog_ChennelRenLabel>Перейменування канала</OCity_Dialog_ChennelRenLabel>
-	<OCity_Dialog_ChennelNewName>Введить нову назву каналу </OCity_Dialog_ChennelNewName>
+	<OCity_Dialog_ChennelQuitCheck>Ви дійсно бажаете залишити канал?</OCity_Dialog_ChennelQuitCheck>
+	<OCity_Dialog_ChennelRenLabel>Перейменування каналу</OCity_Dialog_ChennelRenLabel>
+	<OCity_Dialog_ChennelNewName>Введіть нову назву каналу </OCity_Dialog_ChennelNewName>
 	<OCity_Dialog_PrivateMessage>Приватне повідомлення</OCity_Dialog_PrivateMessage>
 	<OCity_Dialog_ChennelAddUser>Додати учасника</OCity_Dialog_ChennelAddUser>
 	<OCity_Dialog_ChennelPlayerInfo>Інформація</OCity_Dialog_ChennelPlayerInfo>
 	<OCity_Dialog_ChennelPlayerInfoTitle>Інформація про </OCity_Dialog_ChennelPlayerInfoTitle>
-	<OCity_Dialog_AboutMode>Про моде OnlineCity</OCity_Dialog_AboutMode>
+	<OCity_Dialog_AboutMode>Про мод OnlineCity</OCity_Dialog_AboutMode>
 	<OCity_Dialog_AutorPage>Сторінка автора</OCity_Dialog_AutorPage>
-	<OCity_Dialog_Regame>Почати знову</OCity_Dialog_Regame>
+	<OCity_Dialog_Regame>Почати заново</OCity_Dialog_Regame>
 	<OCity_Dialog_DeleteData>Видалення усіх ігрових даних</OCity_Dialog_DeleteData>
-	<OCity_Dialog_DeleteDataCheck>Ви дійсно бажаете повністю видалити гру и почати знову?</OCity_Dialog_DeleteDataCheck>
+	<OCity_Dialog_DeleteDataCheck>Ви дійсно бажаете повністю видалити гру й почати заново?</OCity_Dialog_DeleteDataCheck>
 	<OCity_Dialog_DeletedData>Гра видалена. Зайдіть знову, якщо бажаете створити нову.</OCity_Dialog_DeletedData>
 
 	<!-- OnlineCity_Dialog_CreateWorld.cs -->
@@ -113,16 +113,16 @@
 	<OCity_Dialog_CreateWorld_Err2>Невірно заповнені параметри</OCity_Dialog_CreateWorld_Err2>
 	<OCity_Dialog_CreateWorld_BtnCancel>Відміна</OCity_Dialog_CreateWorld_BtnCancel>
 	<OCity_Dialog_CreateWorld_Seed>Зерно</OCity_Dialog_CreateWorld_Seed>
-	<OCity_Dialog_CreateWorld_Scenario>Сценарий</OCity_Dialog_CreateWorld_Scenario>
-	<OCity_Dialog_CreateWorld_Storyteller>Рассказчик</OCity_Dialog_CreateWorld_Storyteller>
-	<OCity_Dialog_CreateWorld_Difficulty>Сложность</OCity_Dialog_CreateWorld_Difficulty>
+	<OCity_Dialog_CreateWorld_Scenario>Сценарій</OCity_Dialog_CreateWorld_Scenario>
+	<OCity_Dialog_CreateWorld_Storyteller>ШІ-оповідач</OCity_Dialog_CreateWorld_Storyteller>
+	<OCity_Dialog_CreateWorld_Difficulty>Складність</OCity_Dialog_CreateWorld_Difficulty>
 	<OCity_Dialog_CreateWorld_MapSize>Розмір карти місцевості (200 - мала, 400 - величезна)</OCity_Dialog_CreateWorld_MapSize>
 	<OCity_Dialog_CreateWorld_PercentWorld>Відсоток генерації поверхні планети (від 5 до 100): {0}</OCity_Dialog_CreateWorld_PercentWorld>
 
 	<!-- OnlineCity_Dialog_Scenario.cs -->
-	<OCity_Dialog_Choose_Scenario>Выберите сценарий</OCity_Dialog_Choose_Scenario>
-	<OCity_Dialog_CreateScen_Err>Ошибка</OCity_Dialog_CreateScen_Err>
-	<OCity_Dialog_CreateScen_Err2>Сценарий не указан</OCity_Dialog_CreateScen_Err2>
+	<OCity_Dialog_Choose_Scenario>Виберіть сценарій</OCity_Dialog_Choose_Scenario>
+	<OCity_Dialog_CreateScen_Err>Помилка</OCity_Dialog_CreateScen_Err>
+	<OCity_Dialog_CreateScen_Err2>Сценарій не обрано</OCity_Dialog_CreateScen_Err2>
 	
 	<!-- Dialog_LoginForm.cs -->
 	<OCity_LoginForm_BtnEnter>Вхід</OCity_LoginForm_BtnEnter>
@@ -130,165 +130,165 @@
 	<OCity_LoginForm_Close>Закрити</OCity_LoginForm_Close>
 	<OCity_LoginForm_LabelEnter>Вхід</OCity_LoginForm_LabelEnter>
 	<OCity_LoginForm_Server>Сервер:</OCity_LoginForm_Server>
-	<OCity_Dialog_Choose_server>Выберите сервер</OCity_Dialog_Choose_server>
+	<OCity_Dialog_Choose_server>Виберіть сервер</OCity_Dialog_Choose_server>
 	<OCity_LoginForm_Login>Логін:</OCity_LoginForm_Login>
 	<OCity_LoginForm_Pass>Пароль:</OCity_LoginForm_Pass>
-	<OCity_LoginForm_Err1>Пароль и подтверждение отличаются</OCity_LoginForm_Err1>
-	<OCity_LoginForm_Err2>Адрес, логин и пароль должны быть длинной не менее двух символов</OCity_LoginForm_Err2>
-	<OCity_LoginForm_Mail>Почта (не обязательно)</OCity_LoginForm_Mail>
-	<OCity_LoginForm_NeedApproveText0>На данном сервере необходимо подтверждение в дискорде. Подтвердите регистрацию в дискорде в ответе на запрос от бота.</OCity_LoginForm_NeedApproveText0>
-	<OC_LoginForm_NeedApproveText1>На данном сервере необходимо подтверждение в дискорде. Укажите своё имя в дискорде, зарегистрируйтесь здесь, а затем подтвердите регистрацию в дискорде в ответе на запрос от бота.</OC_LoginForm_NeedApproveText1>
-	<OCity_LoginForm_Discord>Discord логин</OCity_LoginForm_Discord>
+	<OCity_LoginForm_Err1>Пароль і підтвердження відрізняються</OCity_LoginForm_Err1>
+	<OCity_LoginForm_Err2>Адреса, логін і пароль повинні бути не менше двох символів</OCity_LoginForm_Err2>
+	<OCity_LoginForm_Mail>Email (необов'язково)</OCity_LoginForm_Mail>
+	<OCity_LoginForm_NeedApproveText0>На цьому сервері підтвердження в discord є обов'язковим. Підтвердіть реєстрацію в discord у відповідь на запит бота.</OCity_LoginForm_NeedApproveText0>
+	<OC_LoginForm_NeedApproveText1>На цьому сервері потрібне підтвердження в discord. Введіть свій нікнейм з discord, зареєструйтеся тут, а потім підтвердіть реєстрацію в discord у відповідь на запит бота.</OC_LoginForm_NeedApproveText1>
+	<OCity_LoginForm_Discord>Discord логін</OCity_LoginForm_Discord>
 
 	<!-- SessionClientController.cs -->
 	<OCity_SessionCC_ConnectionFailTitle>З'еднання не встановлено</OCity_SessionCC_ConnectionFailTitle>
-	<OCity_SessionCC_LoginFailTitle>Помилка входа</OCity_SessionCC_LoginFailTitle>
+	<OCity_SessionCC_LoginFailTitle>Помилка входу</OCity_SessionCC_LoginFailTitle>
 	<OCity_SessionCC_RegFailTitle>Помилка реєстрації</OCity_SessionCC_RegFailTitle>
 	<OCity_SessionCC_MsgCanceledCreateW>Скасовано</OCity_SessionCC_MsgCanceledCreateW>
 	<OCity_SessionCC_MsgCreateWorlErr>Выдбулась помилка, спробуйте ще раз.</OCity_SessionCC_MsgCreateWorlErr>
 	<OCity_SessionCC_MsgCreateWorlGood>Ура! Світ на сервері створено!</OCity_SessionCC_MsgCreateWorlGood>
 	<OCity_SessionCC_MsgCreatingServer>Створення серверу</OCity_SessionCC_MsgCreatingServer>
-	<OCity_SessionCC_Disconnected>Помилка з'еднання.</OCity_SessionCC_Disconnected>
+	<OCity_SessionCC_Disconnected>Помилка з'єднання.</OCity_SessionCC_Disconnected>
 	<OCity_SessionCC_Disconnect>Гра перервана</OCity_SessionCC_Disconnect>
 	<OCity_SessionCC_Synchronization>Пауза</OCity_SessionCC_Synchronization>
-	<OCity_SessionCC_SynchronizationText>Режим игровой паузы, идет синхронизация...</OCity_SessionCC_SynchronizationText>
-	<OCity_SessionCC_Shutdown_Command_ProgressSaved>От сервера получена команда на отключение. Прогресс был сохранен.</OCity_SessionCC_Shutdown_Command_ProgressSaved>
-	<OCity_SessionCC_Shutdown_Command>От сервера получена команда на отключение.</OCity_SessionCC_Shutdown_Command>
-	<OCity_SessionCC_Scenario_Classic>Классика</OCity_SessionCC_Scenario_Classic>
-	<OCity_SessionCC_Client_UpdateNeeded>Обновите клиент! Версия для данного сервера: </OCity_SessionCC_Client_UpdateNeeded>
-	<OCity_SessionCC_InitConnectedIntro_Title>Внимание!</OCity_SessionCC_InitConnectedIntro_Title>
-	<OCity_SessionCC_InitConnectedIntro_Text>Если сервер требует точное соответствие модов, сейчас будут скачаны недостающие у вас. Подпапка игры Mods будет обновлена. При необходимости нажмите "Отмена" и сделайте резервную копию! Процесс синхронизации модов может занять несколько минут, после чего игра будет перезапущена.</OCity_SessionCC_InitConnectedIntro_Text>
-	<OCity_SessionCC_FilesUpdated>Файлы непрошедшие проверку на хеш были обновлены. Перезапустите игру, если этого не произошло автоматически.</OCity_SessionCC_FilesUpdated>
+	<OCity_SessionCC_SynchronizationText>Режим ігрової паузи, синхронізація...</OCity_SessionCC_SynchronizationText>
+	<OCity_SessionCC_Shutdown_Command_ProgressSaved>Ми отримали команду відключення від сервера. Прогрес було збережено.</OCity_SessionCC_Shutdown_Command_ProgressSaved>
+	<OCity_SessionCC_Shutdown_Command>Від сервера отримано команду на відключення.</OCity_SessionCC_Shutdown_Command>
+	<OCity_SessionCC_Scenario_Classic>Класика</OCity_SessionCC_Scenario_Classic>
+	<OCity_SessionCC_Client_UpdateNeeded>Оновіть клієнт! Версія для цього сервера: </OCity_SessionCC_Client_UpdateNeeded>
+	<OCity_SessionCC_InitConnectedIntro_Title>Увага!</OCity_SessionCC_InitConnectedIntro_Title>
+	<OCity_SessionCC_InitConnectedIntro_Text>Якщо сервер вимагає точної відповідності модів, зараз будуть завантажені відсутні у вас. Підпапка гри Mods буде оновлена. За необхідності натисніть "Скасувати" і зробіть резервну копію! Процес синхронізації модів може зайняти кілька хвилин, після чого гру буде перезапущено.</OCity_SessionCC_InitConnectedIntro_Text>
+	<OCity_SessionCC_FilesUpdated>Файли, які не пройшли перевірку на хеш, було оновлено. Перезапустіть гру, якщо цього не сталося автоматично.</OCity_SessionCC_FilesUpdated>
 
 	<!-- Dialog_Exchenge.cs -->
-	<OCity_Dialog_Exchenge_Close>Закрыть</OCity_Dialog_Exchenge_Close>
-	<OCity_Dialog_Exchenge_Edit>Редактировать</OCity_Dialog_Exchenge_Edit>
-	<OCity_Dialog_Exchenge_Trade_Orders>Торговые ордера</OCity_Dialog_Exchenge_Trade_Orders>
-	<OCity_Dialog_Exchenge_Trade_OrdersLoad>Загрузка торговых ордеров</OCity_Dialog_Exchenge_Trade_OrdersLoad>
-	<OCity_Dialog_Exchenge_Trade_FilterDistance>Фильтры: Расстояние</OCity_Dialog_Exchenge_Trade_FilterDistance>
-	<OCity_Dialog_Exchenge_Trade_FilterSell>Продажа</OCity_Dialog_Exchenge_Trade_FilterSell>
+	<OCity_Dialog_Exchenge_Close>Закрити</OCity_Dialog_Exchenge_Close>
+	<OCity_Dialog_Exchenge_Edit>Редагувати</OCity_Dialog_Exchenge_Edit>
+	<OCity_Dialog_Exchenge_Trade_Orders>Торгові ордери</OCity_Dialog_Exchenge_Trade_Orders>
+	<OCity_Dialog_Exchenge_Trade_OrdersLoad>Завантаження торгових ордерів</OCity_Dialog_Exchenge_Trade_OrdersLoad>
+	<OCity_Dialog_Exchenge_Trade_FilterDistance>Фільтри: Відстань</OCity_Dialog_Exchenge_Trade_FilterDistance>
+	<OCity_Dialog_Exchenge_Trade_FilterSell>Продаж</OCity_Dialog_Exchenge_Trade_FilterSell>
 	<OCity_Dialog_Exchenge_Trade_FilterBuy>Покупка</OCity_Dialog_Exchenge_Trade_FilterBuy>
-	<OCity_Dialog_Exchenge_TradeCount>Сколько</OCity_Dialog_Exchenge_TradeCount>
+	<OCity_Dialog_Exchenge_TradeCount>Скільки</OCity_Dialog_Exchenge_TradeCount>
 	<OCity_Dialog_Exchenge_Max>максимум</OCity_Dialog_Exchenge_Max>
-	<OCity_Dialog_Exchenge_No_Available_ExchangenInfo>Этот параметр отражает количество доступных сделок на указанных условиях в данный момент. 
-Чтобы узнать, сколько наших вещей хранится на складе, умножьте этот параметр на поле "мы отдаем". 
-Уменьшая параметр - возвращаем ресурсы, увеличивая - резервируем дополнительные.</OCity_Dialog_Exchenge_No_Available_ExchangenInfo>
-	<OCity_Dialog_Exchenge_You>Вы</OCity_Dialog_Exchenge_You>
-	<OCity_Dialog_Exchenge_Tile>клеток</OCity_Dialog_Exchenge_Tile>
-	<OCity_Dialog_Exchenge_Viewing_Orders>Просмотр ордера</OCity_Dialog_Exchenge_Viewing_Orders>
-	<OCity_Dialog_Exchenge_Deal_Open_Everyone>Сделка доступна всем.</OCity_Dialog_Exchenge_Deal_Open_Everyone>
-	<OCity_Dialog_Exchenge_Deal_Open_Specific>Сделка доступна только: {0}</OCity_Dialog_Exchenge_Deal_Open_Specific>
-	<OCity_Dialog_Exchenge_Seller>Продавец</OCity_Dialog_Exchenge_Seller>
-	<OCity_Dialog_Exchenge_BeenOnline>был в сети </OCity_Dialog_Exchenge_BeenOnline>
-	<OCity_Dialog_Exchenge_Location>Место</OCity_Dialog_Exchenge_Location>
-	<OCity_Dialog_Exchenge_Days> дней </OCity_Dialog_Exchenge_Days>
+	<OCity_Dialog_Exchenge_No_Available_ExchangenInfo>Цей параметр відображає кількість доступних угод на зазначених умовах в даний момент. 
+Щоб дізнатися, скільки наших речей зберігається на складі, помножте цей параметр на поле "ми віддаємо". 
+Зменшуючи параметр - повертаємо ресурси, збільшуючи - резервуємо додаткові.</OCity_Dialog_Exchenge_No_Available_ExchangenInfo>
+	<OCity_Dialog_Exchenge_You>Ви</OCity_Dialog_Exchenge_You>
+	<OCity_Dialog_Exchenge_Tile>клітин</OCity_Dialog_Exchenge_Tile>
+	<OCity_Dialog_Exchenge_Viewing_Orders>Перегляд ордеру</OCity_Dialog_Exchenge_Viewing_Orders>
+	<OCity_Dialog_Exchenge_Deal_Open_Everyone>Угода доступна всім.</OCity_Dialog_Exchenge_Deal_Open_Everyone>
+	<OCity_Dialog_Exchenge_Deal_Open_Specific>Угода доступна лише: {0}</OCity_Dialog_Exchenge_Deal_Open_Specific>
+	<OCity_Dialog_Exchenge_Seller>Продавець</OCity_Dialog_Exchenge_Seller>
+	<OCity_Dialog_Exchenge_BeenOnline>був у мережі </OCity_Dialog_Exchenge_BeenOnline>
+	<OCity_Dialog_Exchenge_Location>Місце</OCity_Dialog_Exchenge_Location>
+	<OCity_Dialog_Exchenge_Days> днів </OCity_Dialog_Exchenge_Days>
 	<OCity_Dialog_Exchenge_To>до</OCity_Dialog_Exchenge_To>
-	<OCity_Dialog_Exchenge_Location_Goods>Месторасположение товара:</OCity_Dialog_Exchenge_Location_Goods>
-	<OCity_Dialog_Exchenge_Number>Кол-во</OCity_Dialog_Exchenge_Number>
-	<OCity_Dialog_Exchenge_Max_Repetition_Transaction>Максимум повторов реализации сделки:</OCity_Dialog_Exchenge_Max_Repetition_Transaction>
-	<OCity_Dialog_Exchenge_Acquire>Приобрести</OCity_Dialog_Exchenge_Acquire>
-	<OCity_Dialog_Exchenge_GiveTo>Отдать</OCity_Dialog_Exchenge_GiveTo>
-	<OCity_Dialog_Exchenge_No_Warrants>Ордеров нет</OCity_Dialog_Exchenge_No_Warrants>
-	<OCity_Dialog_Exchenge_Active_Orders>Активных ордеров {0}</OCity_Dialog_Exchenge_Active_Orders>
-	<OCity_Dialog_Exchenge_Update>Обновить</OCity_Dialog_Exchenge_Update>
-	<OCity_Dialog_Exchenge_Select_For_Sale>Выбор на продажу из {0} </OCity_Dialog_Exchenge_Select_For_Sale>
-	<OCity_Dialog_Exchenge_Choose>Выбрать</OCity_Dialog_Exchenge_Choose>
-	<OCity_Dialog_Exchenge_Move>Переместить</OCity_Dialog_Exchenge_Move>
-	<OCity_Dialog_Exchenge_Order_Create>Создать новый ордер</OCity_Dialog_Exchenge_Order_Create>
-	<OCity_Dialog_Exchenge_Save>Сохранить</OCity_Dialog_Exchenge_Save>
-	<OCity_Dialog_Exchenge_Create>Создать</OCity_Dialog_Exchenge_Create>
-	<OCity_Dialog_Exchenge_Trade>Торговать</OCity_Dialog_Exchenge_Trade>
-	<OCity_Dialog_Exchenge_Counterproposal>Встречное предложение</OCity_Dialog_Exchenge_Counterproposal>
-	<OCity_Dialog_Exchenge_Action_Not_CarriedOut>Не выполнено</OCity_Dialog_Exchenge_Action_Not_CarriedOut>
-	<OCity_Dialog_Exchenge_Action_CarriedOut>Выполнено</OCity_Dialog_Exchenge_Action_CarriedOut>
-	<OCity_Dialog_Exchenge_Delete>Удалить</OCity_Dialog_Exchenge_Delete>
-	<OCity_Dialog_Exchenge_Order_New>Новый ордер</OCity_Dialog_Exchenge_Order_New>
-	<OCity_Dialog_Exchenge_No_Exchanges>Задать в ордере кол-во повторов:</OCity_Dialog_Exchenge_No_Exchanges>
-	<OCity_Dialog_Exchenge_No_Available_Exchange>Сейчас доступно повторов:</OCity_Dialog_Exchenge_No_Available_Exchange>
-	<OCity_Dialog_Exchenge_Done_Once>Совершено раз:</OCity_Dialog_Exchenge_Done_Once>
-	<OCity_Dialog_Exchenge_We_Give>Мы отдаем</OCity_Dialog_Exchenge_We_Give>
-	<OCity_Dialog_Exchenge_We_Give2>Мы отдаем {0} :</OCity_Dialog_Exchenge_We_Give2>
-	<OCity_Dialog_Exchenge_We_Get>Мы получаем</OCity_Dialog_Exchenge_We_Get>
-	<OCity_Dialog_Exchenge_No_User_Restrictions>Ограничений по пользователям нет.</OCity_Dialog_Exchenge_No_User_Restrictions>
-	<OCity_Dialog_Exchenge_User_Restrictions>Сделка доступна только пользователям:</OCity_Dialog_Exchenge_User_Restrictions>
-	<OCity_Dialog_Exchenge_Add_User>+ добавить пользователя</OCity_Dialog_Exchenge_Add_User>
-	<OCity_Dialog_Exchenge_Specific_Facility_Assigned>Задан конкретный объект</OCity_Dialog_Exchenge_Specific_Facility_Assigned>
-	<OCity_Dialog_Exchenge_Add>+ добавить</OCity_Dialog_Exchenge_Add>
-	<OCity_Dialog_Exchenge_Whole_On>Прочность {0} из {1} ({2}%).</OCity_Dialog_Exchenge_Whole_On>
-	<OCity_Dialog_Exchenge_Quality>Качество </OCity_Dialog_Exchenge_Quality>
-	<OCity_Dialog_Exchenge_Whole_Less_Than>Прочность не меньше чем </OCity_Dialog_Exchenge_Whole_Less_Than>
-	<OCity_Dialog_Exchenge_QualityNo_Less_Than>Качество не меньше чем</OCity_Dialog_Exchenge_QualityNo_Less_Than>
+	<OCity_Dialog_Exchenge_Location_Goods>Місцезнаходження товару:</OCity_Dialog_Exchenge_Location_Goods>
+	<OCity_Dialog_Exchenge_Number>Кількість</OCity_Dialog_Exchenge_Number>
+	<OCity_Dialog_Exchenge_Max_Repetition_Transaction>Максимум повторів реалізації угоди:</OCity_Dialog_Exchenge_Max_Repetition_Transaction>
+	<OCity_Dialog_Exchenge_Acquire>Придбати</OCity_Dialog_Exchenge_Acquire>
+	<OCity_Dialog_Exchenge_GiveTo>Віддати</OCity_Dialog_Exchenge_GiveTo>
+	<OCity_Dialog_Exchenge_No_Warrants>Ордерів немає</OCity_Dialog_Exchenge_No_Warrants>
+	<OCity_Dialog_Exchenge_Active_Orders>Активних ордерів {0}</OCity_Dialog_Exchenge_Active_Orders>
+	<OCity_Dialog_Exchenge_Update>Оновити</OCity_Dialog_Exchenge_Update>
+	<OCity_Dialog_Exchenge_Select_For_Sale>Вибір на продаж з {0} </OCity_Dialog_Exchenge_Select_For_Sale>
+	<OCity_Dialog_Exchenge_Choose>Вибрати</OCity_Dialog_Exchenge_Choose>
+	<OCity_Dialog_Exchenge_Move>Перемістити</OCity_Dialog_Exchenge_Move>
+	<OCity_Dialog_Exchenge_Order_Create>Створити новий ордер</OCity_Dialog_Exchenge_Order_Create>
+	<OCity_Dialog_Exchenge_Save>Зберегти</OCity_Dialog_Exchenge_Save>
+	<OCity_Dialog_Exchenge_Create>Створити</OCity_Dialog_Exchenge_Create>
+	<OCity_Dialog_Exchenge_Trade>Торгувати</OCity_Dialog_Exchenge_Trade>
+	<OCity_Dialog_Exchenge_Counterproposal>Зустрічна пропозиція</OCity_Dialog_Exchenge_Counterproposal>
+	<OCity_Dialog_Exchenge_Action_Not_CarriedOut>Не виконано</OCity_Dialog_Exchenge_Action_Not_CarriedOut>
+	<OCity_Dialog_Exchenge_Action_CarriedOut>Виконано</OCity_Dialog_Exchenge_Action_CarriedOut>
+	<OCity_Dialog_Exchenge_Delete>Видалити</OCity_Dialog_Exchenge_Delete>
+	<OCity_Dialog_Exchenge_Order_New>Новий ордер</OCity_Dialog_Exchenge_Order_New>
+	<OCity_Dialog_Exchenge_No_Exchanges>Задати в ордері кількість повторів:</OCity_Dialog_Exchenge_No_Exchanges>
+	<OCity_Dialog_Exchenge_No_Available_Exchange>Наразі доступно повторів:</OCity_Dialog_Exchenge_No_Available_Exchange>
+	<OCity_Dialog_Exchenge_Done_Once>Здійснено раз:</OCity_Dialog_Exchenge_Done_Once>
+	<OCity_Dialog_Exchenge_We_Give>Ми віддаємо</OCity_Dialog_Exchenge_We_Give>
+	<OCity_Dialog_Exchenge_We_Give2>Ми віддаємо {0} :</OCity_Dialog_Exchenge_We_Give2>
+	<OCity_Dialog_Exchenge_We_Get>Ми отримуємо</OCity_Dialog_Exchenge_We_Get>
+	<OCity_Dialog_Exchenge_No_User_Restrictions>Обмежень щодо користувачів немає.</OCity_Dialog_Exchenge_No_User_Restrictions>
+	<OCity_Dialog_Exchenge_User_Restrictions>Угода доступна лише користувачам:</OCity_Dialog_Exchenge_User_Restrictions>
+	<OCity_Dialog_Exchenge_Add_User>+ додати користувача</OCity_Dialog_Exchenge_Add_User>
+	<OCity_Dialog_Exchenge_Specific_Facility_Assigned>Задано конкретний об'єкт</OCity_Dialog_Exchenge_Specific_Facility_Assigned>
+	<OCity_Dialog_Exchenge_Add>+ додати</OCity_Dialog_Exchenge_Add>
+	<OCity_Dialog_Exchenge_Whole_On>Міцність {0} з {1} ({2}%).</OCity_Dialog_Exchenge_Whole_On>
+	<OCity_Dialog_Exchenge_Quality>Якість </OCity_Dialog_Exchenge_Quality>
+	<OCity_Dialog_Exchenge_Whole_Less_Than>Міцність не менша за </OCity_Dialog_Exchenge_Whole_Less_Than>
+	<OCity_Dialog_Exchenge_QualityNo_Less_Than>Якість не менша за</OCity_Dialog_Exchenge_QualityNo_Less_Than>
 	<OCity_Dialog_Exchenge_All>все</OCity_Dialog_Exchenge_All>
-	<OCity_Dialog_Exchenge_FromCorpse>Снято с трупа</OCity_Dialog_Exchenge_FromCorpse>
-	<OCity_Dialog_Exchenge_FromCorpseD>Для одежды допустимо быть снятой с трупа</OCity_Dialog_Exchenge_FromCorpseD>
-	<OCity_Dialog_Exchenge_FromNotCorpse>НЕ с трупа</OCity_Dialog_Exchenge_FromNotCorpse>
-	<OCity_Dialog_Exchenge_FromNotCorpseD>Для одежды НЕ допустимо быть снятой с трупа</OCity_Dialog_Exchenge_FromNotCorpseD>
-	<OC_ExchengeOperator_tradeSold0>Ваша сделка сработала</OC_ExchengeOperator_tradeSold0>
+	<OCity_Dialog_Exchenge_FromCorpse>Знято з трупа</OCity_Dialog_Exchenge_FromCorpse>
+	<OCity_Dialog_Exchenge_FromCorpseD>Для одягу допустимо бути знятим з трупа</OCity_Dialog_Exchenge_FromCorpseD>
+	<OCity_Dialog_Exchenge_FromNotCorpse>НЕ з трупа</OCity_Dialog_Exchenge_FromNotCorpse>
+	<OCity_Dialog_Exchenge_FromNotCorpseD>Для одягу НЕ припустимо бути знятою з трупа</OCity_Dialog_Exchenge_FromNotCorpseD>
+	<OC_ExchengeOperator_tradeSold0>Ваша угода спрацювала</OC_ExchengeOperator_tradeSold0>
 	<OC_ExchengeOperator_tradeSold1>раз,</OC_ExchengeOperator_tradeSold1>
-	<OC_ExchengeOperator_tradeSold2>Вы получаете:</OC_ExchengeOperator_tradeSold2>
-	<OC_ExchengeOperator_tradeBought0>Вы приобрели по сделке</OC_ExchengeOperator_tradeBought0>
-	<OC_ExchengeOperator_tradeBought1>раз. Вы получаете:</OC_ExchengeOperator_tradeBought1>
-	<OC_ExchengeOperator_Closed>она закрылась</OC_ExchengeOperator_Closed>
-	<OC_ExchengeOperator_left>осталось </OC_ExchengeOperator_left>
-	<OC_ExchengeOperator_OrderClosedBetter>Сделка реализована более выгодно, чем была задана. Ваши вещи возвращены:</OC_ExchengeOperator_OrderClosedBetter>
-	<OC_ExchengeOperator_OrderDone>Ваша сделка сработала</OC_ExchengeOperator_OrderDone>
-	<OC_ExchengeOperator_YouBought>Вы купили по сделке</OC_ExchengeOperator_YouBought>
-	<OC_ExchangeEdit_err1>Ошибка. Ордер другого игрока</OC_ExchangeEdit_err1>
-	<OC_ExchangeEdit_err2>Ошибка. Указан несуществующий игрок</OC_ExchangeEdit_err2>
-	<OC_ExchangeEdit_err4>Невозможно создать ордер: недостаточно вещей</OC_ExchangeEdit_err4>
-	<OC_ExchangeEdit_err3>Ошибка. Ордер не найден</OC_ExchangeEdit_err3>
-	<OC_ExchangeEdit_OrderPlaced>Ордер выставлен</OC_ExchangeEdit_OrderPlaced>
-	<OC_ExchangeEdit_YouSell>Вы отдадите:</OC_ExchangeEdit_YouSell>
-	<OC_ExchangeEdit_YouBuy>Вы получите:</OC_ExchangeEdit_YouBuy>
-	<OC_ExchangeEdit_Laps>Повторов</OC_ExchangeEdit_Laps>
-	<OC_ExchangeEdit_ForAll>Этот ордер общий</OC_ExchangeEdit_ForAll>
-	<OC_ExchangeEdit_PrivateOrder>Только для игроков: </OC_ExchangeEdit_PrivateOrder>
-	<OC_ExchangeEdit_OrderRedacted>Ордер отредактирован</OC_ExchangeEdit_OrderRedacted>
-	<OC_ExchangeEdit_OrderDeleted>Ордер отменен</OC_ExchangeEdit_OrderDeleted>
-	<OC_SessionCC_Info>Вы подключены к серверу {0}. Логин {1}</OC_SessionCC_Info>
-	<OC_SessionCC_Balance>Сумма на безналичном счету: </OC_SessionCC_Balance>
-	<OC_SessionCC_MinSave>Минут с сохранения</OC_SessionCC_MinSave>
-	<OCity_Coordinates>Координаты</OCity_Coordinates>
-	<OCity_SetAvatar>Поменять аватар</OCity_SetAvatar>
-	<OCity_Successfully>Успешно</OCity_Successfully>
-	<OCity_Error>Ошибка</OCity_Error>
-	<OC_TradeThingsOnline_Storage>Торговый склад</OC_TradeThingsOnline_Storage>
-	<OC_TradeThingsOnline_ThingTypes>Здесь видов вещей: {0}</OC_TradeThingsOnline_ThingTypes>
-	<OC_TradeThingsOnline_Info>Это ваши вещи. Вы можете их забрать, переместив в поселение или караван на этой же клетке через окно торговли</OC_TradeThingsOnline_Info>
-	<OC_TradeOrdersOnline_Orders>Торговые предложения</OC_TradeOrdersOnline_Orders>
-	<OC_TradeOrdersOnline_OpenForInfo>Откройте торговые предложения для подробностей</OC_TradeOrdersOnline_OpenForInfo>
-	<OCity_DialogExchenge_Things>Вещи</OCity_DialogExchenge_Things>
-	<OCity_DialogExchenge_Deal>Сделка</OCity_DialogExchenge_Deal>
-	<OCity_DialogExchenge_Sell>Продать</OCity_DialogExchenge_Sell>
-	<OCity_DialogExchenge_OnExchange>На бирже</OCity_DialogExchenge_OnExchange>
-	<OCity_DialogExchenge_Move>Переместить</OCity_DialogExchenge_Move>
-	<OCity_DialogExchenge_InThisPosition>На месте</OCity_DialogExchenge_InThisPosition>
+	<OC_ExchengeOperator_tradeSold2>Ви отримуєте:</OC_ExchengeOperator_tradeSold2>
+	<OC_ExchengeOperator_tradeBought0>Ви придбали за угодою</OC_ExchengeOperator_tradeBought0>
+	<OC_ExchengeOperator_tradeBought1>раз. Ви отримуєте:</OC_ExchengeOperator_tradeBought1>
+	<OC_ExchengeOperator_Closed>вона закрилася</OC_ExchengeOperator_Closed>
+	<OC_ExchengeOperator_left>залишилось </OC_ExchengeOperator_left>
+	<OC_ExchengeOperator_OrderClosedBetter>Угода реалізована вигідніше, ніж була задана. Ваші речі повернуто:</OC_ExchengeOperator_OrderClosedBetter>
+	<OC_ExchengeOperator_OrderDone>Ваша угода спрацювала</OC_ExchengeOperator_OrderDone>
+	<OC_ExchengeOperator_YouBought>Ви купили за угодою</OC_ExchengeOperator_YouBought>
+	<OC_ExchangeEdit_err1>Помилка. Ордер іншого гравця</OC_ExchangeEdit_err1>
+	<OC_ExchangeEdit_err2>Помилка. Зазначено неіснуючого гравця</OC_ExchangeEdit_err2>
+	<OC_ExchangeEdit_err4>Неможливо створити ордер: недостатньо речей</OC_ExchangeEdit_err4>
+	<OC_ExchangeEdit_err3>Помилка. Ордер не знайдено</OC_ExchangeEdit_err3>
+	<OC_ExchangeEdit_OrderPlaced>Ордер виставлено</OC_ExchangeEdit_OrderPlaced>
+	<OC_ExchangeEdit_YouSell>Ви віддасте:</OC_ExchangeEdit_YouSell>
+	<OC_ExchangeEdit_YouBuy>Ви отримаєте:</OC_ExchangeEdit_YouBuy>
+	<OC_ExchangeEdit_Laps>Повторів</OC_ExchangeEdit_Laps>
+	<OC_ExchangeEdit_ForAll>Цей ордер загальний</OC_ExchangeEdit_ForAll>
+	<OC_ExchangeEdit_PrivateOrder>Лише для гравців: </OC_ExchangeEdit_PrivateOrder>
+	<OC_ExchangeEdit_OrderRedacted>Ордер відредаговано</OC_ExchangeEdit_OrderRedacted>
+	<OC_ExchangeEdit_OrderDeleted>Ордер скасовано</OC_ExchangeEdit_OrderDeleted>
+	<OC_SessionCC_Info>Ви підключені до сервера {0}. Логін {1}</OC_SessionCC_Info>
+	<OC_SessionCC_Balance>Сума на безготівковому рахунку: </OC_SessionCC_Balance>
+	<OC_SessionCC_MinSave>Хвилин зі збереження</OC_SessionCC_MinSave>
+	<OCity_Coordinates>Координати</OCity_Coordinates>
+	<OCity_SetAvatar>Змінити аватар</OCity_SetAvatar>
+	<OCity_Successfully>Успішно</OCity_Successfully>
+	<OCity_Error>Помилка</OCity_Error>
+	<OC_TradeThingsOnline_Storage>Торговий склад</OC_TradeThingsOnline_Storage>
+	<OC_TradeThingsOnline_ThingTypes>Тут видів речей: {0}</OC_TradeThingsOnline_ThingTypes>
+	<OC_TradeThingsOnline_Info>Це ваші речі. Ви можете їх забрати, перемістивши в поселення або караван на цій самій клітині через вікно торгівлі</OC_TradeThingsOnline_Info>
+	<OC_TradeOrdersOnline_Orders>Торгові пропозиції</OC_TradeOrdersOnline_Orders>
+	<OC_TradeOrdersOnline_OpenForInfo>Відкрийте торгові пропозиції для подробиць</OC_TradeOrdersOnline_OpenForInfo>
+	<OCity_DialogExchenge_Things>Речі</OCity_DialogExchenge_Things>
+	<OCity_DialogExchenge_Deal>Угода</OCity_DialogExchenge_Deal>
+	<OCity_DialogExchenge_Sell>Продати</OCity_DialogExchenge_Sell>
+	<OCity_DialogExchenge_OnExchange>На біржі</OCity_DialogExchenge_OnExchange>
+	<OCity_DialogExchenge_Move>Перемістити</OCity_DialogExchenge_Move>
+	<OCity_DialogExchenge_InThisPosition>На місці</OCity_DialogExchenge_InThisPosition>
 	<OCity_DialogExchenge_Delivery>Доставка</OCity_DialogExchenge_Delivery>
-	<OCity_DialogExchenge_ToARemotePoint>В удалённую точку</OCity_DialogExchenge_ToARemotePoint>
-	<OCity_DialogExchenge_Destroy>Уничтожить</OCity_DialogExchenge_Destroy>
-	<OCity_DialogExchenge_ForTenPercentThePrice>(за 10% от цены)</OCity_DialogExchenge_ForTenPercentThePrice>
-	<OCity_DialogExchenge_NegativeBalance>Невозможно с отрицательным балансом</OCity_DialogExchenge_NegativeBalance>
-	<OCity_DialogExchenge_ToStorage>Вещи переданы в Торговый склад</OCity_DialogExchenge_ToStorage>
+	<OCity_DialogExchenge_ToARemotePoint>У віддалену точку</OCity_DialogExchenge_ToARemotePoint>
+	<OCity_DialogExchenge_Destroy>Знищити</OCity_DialogExchenge_Destroy>
+	<OCity_DialogExchenge_ForTenPercentThePrice>(за 10% від ціни)</OCity_DialogExchenge_ForTenPercentThePrice>
+	<OCity_DialogExchenge_NegativeBalance>Неможливо з від'ємним балансом</OCity_DialogExchenge_NegativeBalance>
+	<OCity_DialogExchenge_ToStorage>Речі передано до Торгового складу</OCity_DialogExchenge_ToStorage>
 	
 	<!--ExchengeUtils-->
-	<OCity_ExchengeUtils_Distance>Расстояние</OCity_ExchengeUtils_Distance>
-	<OCity_ExchengeUtils_Cost>Цена</OCity_ExchengeUtils_Cost>
+	<OCity_ExchengeUtils_Distance>Відстань</OCity_ExchengeUtils_Distance>
+	<OCity_ExchengeUtils_Cost>Ціна</OCity_ExchengeUtils_Cost>
 	
 	<!--GameInterface-->
-	<OCity_GameInterface_InsertIntoChat>Вставить в чат</OCity_GameInterface_InsertIntoChat>
+	<OCity_GameInterface_InsertIntoChat>Вставити у чат</OCity_GameInterface_InsertIntoChat>
 	
 	<!--GamePatch-->
-	<OCity_GamePatch_DisableModOptions>Редактирпование отключено после нажатия Сетевая игра. Для редактирования перезапустите игру</OCity_GamePatch_DisableModOptions>
+	<OCity_GamePatch_DisableModOptions>Редагування вимкнено після натискання Мережева гра. Для редагування перезапустіть гру</OCity_GamePatch_DisableModOptions>
 	
 	<!--GamePresetFiles-->
-	<OCity_GamePresetFiles_IdeologyNotCreatedDuringANetworkGame>Идеология была создана не во время игры на данном сервере</OCity_GamePresetFiles_IdeologyNotCreatedDuringANetworkGame>
-	<OCity_GamePresetFiles_XenotypeNotCreatedDuringANetworkGame>Ксенотип был создан не во время игры на данном сервере</OCity_GamePresetFiles_XenotypeNotCreatedDuringANetworkGame>
+	<OCity_GamePresetFiles_IdeologyNotCreatedDuringANetworkGame>Ідеологія була створена не під час гри на цьому сервері</OCity_GamePresetFiles_IdeologyNotCreatedDuringANetworkGame>
+	<OCity_GamePresetFiles_XenotypeNotCreatedDuringANetworkGame>Ксенотип був створений не під час гри на цьому сервері</OCity_GamePresetFiles_XenotypeNotCreatedDuringANetworkGame>
 
 	<!-- ThingTrade.cs -->
-	<OCity_ThingTrade_Quality_Strength>Качество {0}. Прочность {1} из {2}</OCity_ThingTrade_Quality_Strength>
-	<OCity_ThingTrade_Cut_Body_Off>Снято с трупа.</OCity_ThingTrade_Cut_Body_Off>
-	<OCity_ThingTrade_QualityBetter_StrengthMore>Качество {0} и лучше. Прочность {1}% и больше</OCity_ThingTrade_QualityBetter_StrengthMore>
-	<OCity_ThingTrade_CouldTake_OffCorpse>Может быть снято с трупа.</OCity_ThingTrade_CouldTake_OffCorpse>
+	<OCity_ThingTrade_Quality_Strength>Якість {0}. Міцність {1} з {2}</OCity_ThingTrade_Quality_Strength>
+	<OCity_ThingTrade_Cut_Body_Off>Знято з трупа.</OCity_ThingTrade_Cut_Body_Off>
+	<OCity_ThingTrade_QualityBetter_StrengthMore>Якість {0} і краще. Міцність {1}% і більше</OCity_ThingTrade_QualityBetter_StrengthMore>
+	<OCity_ThingTrade_CouldTake_OffCorpse>Може бути знято з трупа.</OCity_ThingTrade_CouldTake_OffCorpse>
 
 	<!-- UpdateWorldController.cs -->
 	<OCity_UpdateWorld_Trade>Передача</OCity_UpdateWorld_Trade>
@@ -315,354 +315,352 @@
 	<OCity_GrassFix_Grass> трави</OCity_GrassFix_Grass>
 
 	<!-- PlayerClient.cs -->
-	<OCity_PlayerClient_LastTick>Грае років: {0}, днів: {1}.</OCity_PlayerClient_LastTick>
+	<OCity_PlayerClient_LastTick>Грає років: {0}, днів: {1}.</OCity_PlayerClient_LastTick>
 	<OCity_PlayerClient_LastSaveTime>Був у грі: {2}</OCity_PlayerClient_LastSaveTime>
 	<OCity_PlayerClient_baseCount>Поселень: {3}</OCity_PlayerClient_baseCount>
 	<OCity_PlayerClient_caravanCount>Караванів: {4}</OCity_PlayerClient_caravanCount>
 	<OCity_PlayerClient_marketValue>Цінність речей: {5}</OCity_PlayerClient_marketValue>
 	<OCity_PlayerClient_marketValuePawn>Цінність людей та тварин: {6}</OCity_PlayerClient_marketValuePawn>
-	<OCity_PlayerClient_marketValueTrading>Ценность от биржи: {7}</OCity_PlayerClient_marketValueTrading>
-	<OCity_PlayerClient_LastSaveTimeNon>не участвовал</OCity_PlayerClient_LastSaveTimeNon>
-	<OCity_PlayerClient_InvolvedInPVP>Involved in PVP</OCity_PlayerClient_InvolvedInPVP>
-	<OCity_PlayerClient_NotInvolvedInPVP>Не участвует в PVP</OCity_PlayerClient_NotInvolvedInPVP>
+	<OCity_PlayerClient_marketValueTrading>Цінність біржі: {7}</OCity_PlayerClient_marketValueTrading>
+	<OCity_PlayerClient_LastSaveTimeNon>не брав участі</OCity_PlayerClient_LastSaveTimeNon>
+	<OCity_PlayerClient_InvolvedInPVP>Участь у PVP</OCity_PlayerClient_InvolvedInPVP>
+	<OCity_PlayerClient_NotInvolvedInPVP>Не бере участі в PVP</OCity_PlayerClient_NotInvolvedInPVP>
 	<OCity_PlayerClient_Discord>Discord: </OCity_PlayerClient_Discord>
 	<OCity_PlayerClient_Email>Email: </OCity_PlayerClient_Email>
-	<OCity_PlayerClient_AboutMyself>О себе: </OCity_PlayerClient_AboutMyself>
-	<OCity_PlayerClient_Settings>Настройки</OCity_PlayerClient_Settings>
-	<OCity_PlayerClient_Save>Сохранить</OCity_PlayerClient_Save>
-	<OCity_PlayerClient_CanChange>(можно изменить {0})</OCity_PlayerClient_CanChange>
-	<OCity_PlayerClient_CanChangeNow>(можно изменить сейчас)</OCity_PlayerClient_CanChangeNow>
-	<OCity_PlayerClient_SaveInterval>Интервал сохранений в минутах (не меньше 5, по умолчанию 15):</OCity_PlayerClient_SaveInterval>
+	<OCity_PlayerClient_AboutMyself>Про себе: </OCity_PlayerClient_AboutMyself>
+	<OCity_PlayerClient_Settings>Налаштування</OCity_PlayerClient_Settings>
+	<OCity_PlayerClient_Save>Зберегти</OCity_PlayerClient_Save>
+	<OCity_PlayerClient_CanChange>(можна змінити {0})</OCity_PlayerClient_CanChange>
+	<OCity_PlayerClient_CanChangeNow>(можна змінити зараз)</OCity_PlayerClient_CanChangeNow>
+	<OCity_PlayerClient_SaveInterval>Інтервал збережень у хвилинах (не менше 5, за замовчуванням 15):</OCity_PlayerClient_SaveInterval>
 	
-	<OC_PlayerClient_In>Состоит в</OC_PlayerClient_In>
-	<OC_PlayerClient_Position>на должности</OC_PlayerClient_Position>
-	<OC_PlayerClient_EnemiesOnMap>Игровые вещи не доступны, пока на карте враги!</OC_PlayerClient_EnemiesOnMap>
-	<OC_PlayerClient_RememberPassword>Запомнить пароль</OC_PlayerClient_RememberPassword>
+	<OC_PlayerClient_In>Перебуває в</OC_PlayerClient_In>
+	<OC_PlayerClient_Position>на посаді</OC_PlayerClient_Position>
+	<OC_PlayerClient_EnemiesOnMap>Ігрові речі не доступні, поки на карті вороги!</OC_PlayerClient_EnemiesOnMap>
+	<OC_PlayerClient_RememberPassword>Запам'ятати пароль</OC_PlayerClient_RememberPassword>
 	<OC_PlayerClient_Rating>Рейтинг</OC_PlayerClient_Rating>
-	<OC_PlayerClient_NoRating>Нет рейтинга</OC_PlayerClient_NoRating>
-	<OC_PlayerClient_PastRating>Прошлое место</OC_PlayerClient_PastRating>
-	<OC_PlayerClient_BetterPlayers>Лучше {0}% игроков</OC_PlayerClient_BetterPlayers>
-	<OC_PlayerClient_TotalCost>Общая стоимость</OC_PlayerClient_TotalCost>
-	<OC_PlayerClient_Maximum>Максимальная</OC_PlayerClient_Maximum>
-	<OC_PlayerClient_TotalColonists>Всего колонистов</OC_PlayerClient_TotalColonists>
-	<OC_PlayerClient_ColonistsRequiringTreatment>Колонистов требующих лечения</OC_PlayerClient_ColonistsRequiringTreatment>
-	<OC_PlayerClient_ColonistsUnconscious>Колонистов без сознания</OC_PlayerClient_ColonistsUnconscious>
-	<OC_PlayerClient_TotalTrainedAnimals>Всего обучаемых животных</OC_PlayerClient_TotalTrainedAnimals>
-	<OC_PlayerClient_EnemieOnMap>На карте враги</OC_PlayerClient_EnemieOnMap>
+	<OC_PlayerClient_NoRating>Немає рейтингу</OC_PlayerClient_NoRating>
+	<OC_PlayerClient_PastRating>Минуле місце</OC_PlayerClient_PastRating>
+	<OC_PlayerClient_BetterPlayers>Краще {0}% гравців</OC_PlayerClient_BetterPlayers>
+	<OC_PlayerClient_TotalCost>Загальна вартість</OC_PlayerClient_TotalCost>
+	<OC_PlayerClient_Maximum>Максимальна</OC_PlayerClient_Maximum>
+	<OC_PlayerClient_TotalColonists>Всього колоністів</OC_PlayerClient_TotalColonists>
+	<OC_PlayerClient_ColonistsRequiringTreatment>Колоністів, що потребують лікування</OC_PlayerClient_ColonistsRequiringTreatment>
+	<OC_PlayerClient_ColonistsUnconscious>Колоністів без свідомості</OC_PlayerClient_ColonistsUnconscious>
+	<OC_PlayerClient_TotalTrainedAnimals>Всього тренованих тварин</OC_PlayerClient_TotalTrainedAnimals>
+	<OC_PlayerClient_EnemieOnMap>На карті вороги</OC_PlayerClient_EnemieOnMap>
 
-	<OC_Shooting>Дальний бой</OC_Shooting>
-	<OC_Melee>Ближний бой</OC_Melee>
-	<OC_Construction>Строительство</OC_Construction>
-	<OC_Mining>Горное дело</OC_Mining>
-	<OC_Cooking>Кулинария</OC_Cooking>
-	<OC_Plants>Растениеводство</OC_Plants>
-	<OC_Animals>Животноводство</OC_Animals>
+	<OC_Shooting>Стрільба</OC_Shooting>
+	<OC_Melee>Ближній бій</OC_Melee>
+	<OC_Construction>Будівництво</OC_Construction>
+	<OC_Mining>Видобуток</OC_Mining>
+	<OC_Cooking>Кулінарія</OC_Cooking>
+	<OC_Plants>Рослинництво</OC_Plants>
+	<OC_Animals>Тваринництво</OC_Animals>
 	<OC_Crafting>Ремесло</OC_Crafting>
-	<OC_Artistic>Искусство</OC_Artistic>
+	<OC_Artistic>Мистецтво</OC_Artistic>
 	<OC_Medical>Медицина</OC_Medical>
-	<OC_Social>Общение</OC_Social>
-	<OC_Intellectual>Умственный труд</OC_Intellectual>
+	<OC_Social>Соціальність</OC_Social>
+	<OC_Intellectual>Інтелект</OC_Intellectual>
 	
 	<!-- GameUtils.cs -->
-	<OCity_GameUtils_From> из </OCity_GameUtils_From>
+	<OCity_GameUtils_From> з </OCity_GameUtils_From>
 	<OCity_GameUtils_Ok>OK</OCity_GameUtils_Ok>
 
 	<!-- GameAttacker.cs -->
-	<OCity_GameAttacker_Dialog_ErrorMessage>Ошибка нападения</OCity_GameAttacker_Dialog_ErrorMessage>
-	<OCity_GameAttacker_Dialog_Settlement_Attack>Вы атакуете поселение</OCity_GameAttacker_Dialog_Settlement_Attack>
-	<OCity_GameAttacker_Withdraw>Отступить</OCity_GameAttacker_Withdraw>
-	<OCity_GameAttacker_Main_Dialog>В этом режиме игра должна быть на паузе. Несмотря на это бой будет идти и ситуация меняться. Если вы хотите завершить нападение, отведите всех, кого сможете, к любому краю карты и в главном меню нажмите </OCity_GameAttacker_Main_Dialog>
-	<OCity_GameAttacker_Main_Preparation_Dialog>Подготовка завершена. Вы можете осмотреть на карте в течение минуты, после чего начнется бой.</OCity_GameAttacker_Main_Preparation_Dialog>
-	<Ocity_GameAttacker_TrainingFight_Won>Вы выиграли этот тренировочный бой! :)</Ocity_GameAttacker_TrainingFight_Won>
-	<Ocity_GameAttacker_TrainingFight_Caravan_Restore>Сейчас караван будет восстановлен, вам нужно будет выполнить вход.</Ocity_GameAttacker_TrainingFight_Caravan_Restore>
-	<Ocity_GameAttacker_TrainingFight_Lost>Вы потерпели поражение в этой тренировочной атаке. :(</Ocity_GameAttacker_TrainingFight_Lost>
+	<OCity_GameAttacker_Dialog_ErrorMessage>Помилка нападу</OCity_GameAttacker_Dialog_ErrorMessage>
+	<OCity_GameAttacker_Dialog_Settlement_Attack>Ви атакуєте поселення</OCity_GameAttacker_Dialog_Settlement_Attack>
+	<OCity_GameAttacker_Withdraw>Відступити</OCity_GameAttacker_Withdraw>
+	<OCity_GameAttacker_Main_Dialog>У цьому режимі гра має бути на паузі. Попри це бій триватиме і ситуація змінюватиметься. Якщо ви хочете завершити напад, відведіть усіх, кого зможете, до будь-якого краю карти і в головному меню натисніть відступити.</OCity_GameAttacker_Main_Dialog>
+	<OCity_GameAttacker_Main_Preparation_Dialog>Підготовка завершена. У вас є одна хвилина, щоб оглянути мапу перед початком атаки.</OCity_GameAttacker_Main_Preparation_Dialog>
+	<Ocity_GameAttacker_TrainingFight_Won>Ви виграли цей тренувальний бій! :)</Ocity_GameAttacker_TrainingFight_Won>
+	<Ocity_GameAttacker_TrainingFight_Caravan_Restore>Зараз караван буде відновлено, вам потрібно буде виконати вхід.</Ocity_GameAttacker_TrainingFight_Caravan_Restore>
+	<Ocity_GameAttacker_TrainingFight_Lost>Ви зазнали поразки у цій тренувальній атаці. :(</Ocity_GameAttacker_TrainingFight_Lost>
 	<OCity_GameAttacker_Done>Готово</OCity_GameAttacker_Done>
-	<OCity_GameAttacker_Settlement_TakenOver>Вы захватили это поселение! :) </OCity_GameAttacker_Settlement_TakenOver>
-	<OCity_GameAttacker_Defeated>Вы потерпели поражение :(</OCity_GameAttacker_Defeated>
-	<OCity_GameAttacker_Colonist_Return>Способные передвигаться колонисты, отступившие к краям карты, возвращаются.</OCity_GameAttacker_Colonist_Return>
+	<OCity_GameAttacker_Settlement_TakenOver>Ви захопили це поселення! :) </OCity_GameAttacker_Settlement_TakenOver>
+	<OCity_GameAttacker_Defeated>Ви зазнали поразки :(</OCity_GameAttacker_Defeated>
+	<OCity_GameAttacker_Colonist_Return>Здатні до пересування колоністи, які відступили до країв карти, повертаються.</OCity_GameAttacker_Colonist_Return>
 
 	<!-- GameAttackHost.cs -->
-	<OCity_GameAttack_Host_Test_Attack>{0} проводит тестовую атаку на Ваше поселение</OCity_GameAttack_Host_Test_Attack>
-	<OCity_GameAttack_Host_Settlement_Attacking>Ваше поселение атакует {0}</OCity_GameAttack_Host_Settlement_Attacking>
-	<OCity_GameAttack_Host_GameSpeed_Lock_Dialog>Дождитесь когда атакующий будет готов. После этого скорость автоматически включиться на х1 и её нельзя будет менять.</OCity_GameAttack_Host_GameSpeed_Lock_Dialog>
-	<OCity_GameAttack_Host_GameSpeed_Lock_Dialog2>Если вы хотите сдаться и потерять поселение, то нажмите в главном меню</OCity_GameAttack_Host_GameSpeed_Lock_Dialog2>
-	<OCity_GameAttack_Host_Cancel_Action> Если вы хотите закончить и отменить тренировку, то нажмите в главном меню </OCity_GameAttack_Host_Cancel_Action>
-	<OCity_GameAttack_Host_Surrender>Сдаться</OCity_GameAttack_Host_Surrender>
-	<OCity_GameAttack_Host_Error_Message_Attack>Ошибка нападения</OCity_GameAttack_Host_Error_Message_Attack>
-	<OCity_GameAttack_Host_Card_Restored>Сейчас карта будет восстановлена, вам нужно будет выполнить вход.</OCity_GameAttack_Host_Card_Restored>
-	<OCity_GameAttack_Host_Training_Attack_Repulsed>Вы отбили эту тренировочную атаку! :)</OCity_GameAttack_Host_Training_Attack_Repulsed>
-	<OCity_GameAttack_Host_Caravan_TransferToNewOwner>Вы потерпели поражение и поселение переходит к новому владельцу :(</OCity_GameAttack_Host_Caravan_TransferToNewOwner>
-	<OCity_GameAttack_Host_Atack_Repulsed>Вы отбили эту атаку! :) </OCity_GameAttack_Host_Atack_Repulsed>
-	<OCity_GameAttack_Host_Stranded_EnemiesLostCommander_Touch>Враги, которые не сумели уйти, останутся на карте, но потеряют связь со своим командиром.</OCity_GameAttack_Host_Stranded_EnemiesLostCommander_Touch>
+	<OCity_GameAttack_Host_Test_Attack>{0} проводить тестову атаку на Ваше поселення</OCity_GameAttack_Host_Test_Attack>
+	<OCity_GameAttack_Host_Settlement_Attacking>Ваше поселення атакує {0}</OCity_GameAttack_Host_Settlement_Attacking>
+	<OCity_GameAttack_Host_GameSpeed_Lock_Dialog>Дочекайтеся, коли агресор буде готовий. Після цього швидкість автоматично увімкнеться на х1 і її не можна буде змінювати.</OCity_GameAttack_Host_GameSpeed_Lock_Dialog>
+	<OCity_GameAttack_Host_GameSpeed_Lock_Dialog2>Якщо ви хочете здатися і втратити поселення, то натисніть у головному меню</OCity_GameAttack_Host_GameSpeed_Lock_Dialog2>
+	<OCity_GameAttack_Host_Cancel_Action> Якщо ви хочете закінчити і скасувати тренування, то натисніть у головному меню </OCity_GameAttack_Host_Cancel_Action>
+	<OCity_GameAttack_Host_Surrender>Здатися</OCity_GameAttack_Host_Surrender>
+	<OCity_GameAttack_Host_Error_Message_Attack>Помилка нападу</OCity_GameAttack_Host_Error_Message_Attack>
+	<OCity_GameAttack_Host_Card_Restored>Зараз карту буде відновлено, вам потрібно буде виконати вхід.</OCity_GameAttack_Host_Card_Restored>
+	<OCity_GameAttack_Host_Training_Attack_Repulsed>Ви відбили цю тренувальну атаку! :)</OCity_GameAttack_Host_Training_Attack_Repulsed>
+	<OCity_GameAttack_Host_Caravan_TransferToNewOwner>Ви зазнали поразки і поселення переходить до нового власника :(</OCity_GameAttack_Host_Caravan_TransferToNewOwner>
+	<OCity_GameAttack_Host_Atack_Repulsed>Ви відбили цю атаку! :) </OCity_GameAttack_Host_Atack_Repulsed>
+	<OCity_GameAttack_Host_Stranded_EnemiesLostCommander_Touch>Вороги, які не зуміли піти, залишаться на карті, але втратять зв'язок зі своїм командиром.</OCity_GameAttack_Host_Stranded_EnemiesLostCommander_Touch>
 
 	<!-- OCMessadge -->
-	<OC_IncdidentMessadge_ArgErr>Необходимы 3 аргументы: имя, заголовок, текст</OC_IncdidentMessadge_ArgErr>
-	<OC_IncdidentMessadge_targetErr>Вы не можете указать себя</OC_IncdidentMessadge_targetErr>
-	<OC_IncdidentMessadge_typeErr>Ошибка типа сообщения</OC_IncdidentMessadge_typeErr>
+	<OC_IncdidentMessadge_ArgErr>Необхідні 3 аргументи: ім'я, заголовок, текст</OC_IncdidentMessadge_ArgErr>
+	<OC_IncdidentMessadge_targetErr>Ви не можете вказати себе</OC_IncdidentMessadge_targetErr>
+	<OC_IncdidentMessadge_typeErr>Помилка типу повідомлення</OC_IncdidentMessadge_typeErr>
 	
 	<!-- OCIncidents -->
-	<OC_Incidents_CallIncidents_Err1>Укажите тип инцидента и игрока, для некоторых действий возможны дополнительные параметры</OC_Incidents_CallIncidents_Err1>
-	<OC_Incidents_CallIncidents_TypeErr>Укажите допустимый тип инцидента</OC_Incidents_CallIncidents_TypeErr>
-	<OC_Incidents_CallIncidents_MaxIncidentsInHour>Достигнуто максимальное количество инцидентов для этого игрока за час</OC_Incidents_CallIncidents_MaxIncidentsInHour>
-	<OC_Incidents_CallIncidents_MaxIncidentsCnt>Достигнуто максимальное количество инцидентов для этого игрока</OC_Incidents_CallIncidents_MaxIncidentsCnt>
-	<OC_Incidents_CallIncidents_NotShooted>Ваш предыдущий инцидент для этого игрока ещё не завершился</OC_Incidents_CallIncidents_NotShooted>
-	<OC_Incidents_IncidentsTurnedOFF>Инциденты отключены на этом сервере</OC_Incidents_IncidentsTurnedOFF>
-	<OC_Incidents_CallIncidebts_selfErr>Нельзя указывать самого себя</OC_Incidents_CallIncidebts_selfErr>
-	<OC_Incidents_CallIncidebts_YearErr1>Нападать можно спустя два года своего развития</OC_Incidents_CallIncidebts_YearErr1>
-	<OC_Incidents_CallIncidebts_YearErr2>Нападать можно спустя два года развития целевого игрока</OC_Incidents_CallIncidebts_YearErr2>
-	<OC_Incidents_CallIncidebts_CostErr1>У вас слишком маленькая стоимость поселения</OC_Incidents_CallIncidebts_CostErr1>
-	<OC_Incidents_CallIncidebts_CostErr2>У цели нападения слишком маленькая стоимость поселения</OC_Incidents_CallIncidebts_CostErr2>
-	<OC_Incidents_OCIncident_WrongArg>Неверно заданы аргументы</OC_Incidents_OCIncident_WrongArg>
-	<OC_Incidents_OCIncident_WealthErr>Ошибка определения стоимости</OC_Incidents_OCIncident_WealthErr>
-	<OC_Incidents_OCIncident_GoldErr>Недостаточно золота {0} из {1}, нехватает {2}</OC_Incidents_OCIncident_GoldErr>
-	<OC_Incidents_OCIncident_NotEnoughGold>Необходимого золота {0} достаточно</OC_Incidents_OCIncident_NotEnoughGold>
-	<OC_Incidents_OCIncident_GoldPay>Заказ принят. {0} золота отправлено наёмникам</OC_Incidents_OCIncident_GoldPay>
-	<OC_Incident_Atacker>За этим стоит:</OC_Incident_Atacker>
-	<OCity_OCIncident_NotEnoughThingsOnMap>Не хватает вещей на карте. В наличии</OCity_OCIncident_NotEnoughThingsOnMap>
-	<OCity_OCIncident_Required>Требуется</OCity_OCIncident_Required>
+	<OC_Incidents_CallIncidents_Err1>Вкажіть тип інциденту та гравця, для деяких дій можливі додаткові параметри</OC_Incidents_CallIncidents_Err1>
+	<OC_Incidents_CallIncidents_TypeErr>Вкажіть допустимий тип інциденту</OC_Incidents_CallIncidents_TypeErr>
+	<OC_Incidents_CallIncidents_MaxIncidentsInHour>Досягнуто максимальної кількості інцидентів для цього гравця за годину</OC_Incidents_CallIncidents_MaxIncidentsInHour>
+	<OC_Incidents_CallIncidents_MaxIncidentsCnt>Досягнуто максимальної кількості інцидентів для цього гравця</OC_Incidents_CallIncidents_MaxIncidentsCnt>
+	<OC_Incidents_CallIncidents_NotShooted>Ваш попередній інцидент для цього гравця ще не завершився</OC_Incidents_CallIncidents_NotShooted>
+	<OC_Incidents_IncidentsTurnedOFF>Інциденти відключені на цьому сервері</OC_Incidents_IncidentsTurnedOFF>
+	<OC_Incidents_CallIncidebts_selfErr>Не можна вказувати себе</OC_Incidents_CallIncidebts_selfErr>
+	<OC_Incidents_CallIncidebts_YearErr1>Нападати можна після двох років розвитку</OC_Incidents_CallIncidebts_YearErr1>
+	<OC_Incidents_CallIncidebts_YearErr2>Нападати можна через два роки розвитку цільового гравця</OC_Incidents_CallIncidebts_YearErr2>
+	<OC_Incidents_CallIncidebts_CostErr1>У вас занадто мала вартість поселення</OC_Incidents_CallIncidebts_CostErr1>
+	<OC_Incidents_CallIncidebts_CostErr2>У цілі нападу занадто мала вартість поселення</OC_Incidents_CallIncidebts_CostErr2>
+	<OC_Incidents_OCIncident_WrongArg>Неправильно задані аргументи</OC_Incidents_OCIncident_WrongArg>
+	<OC_Incidents_OCIncident_WealthErr>Помилка визначення вартості</OC_Incidents_OCIncident_WealthErr>
+	<OC_Incidents_OCIncident_GoldErr>Недостатньо золота {0} з {1}, бракує {2}</OC_Incidents_OCIncident_GoldErr>
+	<OC_Incidents_OCIncident_NotEnoughGold>Необхідного золота {0} достатньо</OC_Incidents_OCIncident_NotEnoughGold>
+	<OC_Incidents_OCIncident_GoldPay>Замовлення прийнято. {0} золота відправлено найманцям</OC_Incidents_OCIncident_GoldPay>
+	<OC_Incident_Atacker>За цим стоїть:</OC_Incident_Atacker>
+	<OCity_OCIncident_NotEnoughThingsOnMap>Не вистачає речей на карті. У наявності</OCity_OCIncident_NotEnoughThingsOnMap>
+	<OCity_OCIncident_Required>Потрібно</OCity_OCIncident_Required>
 
-	<OC_Incidents_Raid_Warning_label>Серьёзная угроза!</OC_Incidents_Raid_Warning_label>
-	<OC_Incidents_Raid_Warning_Text_human>Ваши колонисты взволнованы! Замечено приближение огромного количества вооруженных людей, направленных другим игроком! Они прибудут через несколько часов. Возможно, следует обратиться за помощью к союзникам или готовиться к эвакуации</OC_Incidents_Raid_Warning_Text_human>
-	<OC_Incidents_Raid_Warning_Text_mech>Ваши колонисты в ужасе! Замечено приближение большой группы мехов от другого игрока! Они прибудут через несколько часов. Шансы на выживание крайне низкие, необходима поддержка союзников. Эвакуация поселения тоже выход</OC_Incidents_Raid_Warning_Text_mech>
-	<OC_Incidents_Inf_Warning_Text_inf>Земля дрожит под ногами! Ваши специалисты утверждают что это не землятресение, а что-то в гигантских объёмах целенаправленно движущееся к вам из-под земли! Ожидаемое время прибытия - через 10-14 часов</OC_Incidents_Inf_Warning_Text_inf>
-	<OC_Incidents_Raid_Label>Охотники за головами!</OC_Incidents_Raid_Label>
-	<OC_Incidents_Raid_Text>К вашему поселению подходят наёмники</OC_Incidents_Raid_Text>
-	<OC_Incidents_Acid_Label>Хим атака!</OC_Incidents_Acid_Label>
-	<OC_Incidents_Acid_Text>Над вашим поселением распылили токсичный газ</OC_Incidents_Acid_Text>
+	<OC_Incidents_Raid_Warning_label>Серйозна загроза!</OC_Incidents_Raid_Warning_label>
+	<OC_Incidents_Raid_Warning_Text_human>Ваші колоністи схвильовані! Помічено наближення величезної кількості озброєних людей, направлених іншим гравцем! Вони прибудуть за кілька годин. Можливо, слід звернутися за допомогою до союзників або готуватися до евакуації</OC_Incidents_Raid_Warning_Text_human>
+	<OC_Incidents_Raid_Warning_Text_mech>Ваші колоністи перелякані! Помічено наближення великої групи мехів від іншого гравця! Вони прибудуть за кілька годин. Шанси на виживання вкрай низькі, необхідна підтримка союзників. Евакуація поселення теж вихід</OC_Incidents_Raid_Warning_Text_mech>
+	<OC_Incidents_Inf_Warning_Text_inf>Земля тремтить під ногами! Ваші фахівці стверджують, що це не землетрус, а щось у гігантських об'ємах цілеспрямовано рухається до вас з-під землі! Очікуваний час прибуття через 10-14 годин</OC_Incidents_Inf_Warning_Text_inf>
+	<OC_Incidents_Raid_Label>Мисливці за головами!</OC_Incidents_Raid_Label>
+	<OC_Incidents_Raid_Text>До вашого поселення підходять найманці</OC_Incidents_Raid_Text>
+	<OC_Incidents_Acid_Label>Хімічна атака!</OC_Incidents_Acid_Label>
+	<OC_Incidents_Acid_Text>Над вашим поселенням розпилили токсичний газ</OC_Incidents_Acid_Text>
 	<OC_Incidents_Inf_Label>Жуки!</OC_Incidents_Inf_Label>
-	<OC_Incidents_Inf_Text>Кто-то приманил жуков на поверхность с помощью высокочастотных вибраций</OC_Incidents_Inf_Text>
-	<OC_Incidents_EMP_Label>Э.М.И.</OC_Incidents_EMP_Label>
-	<OC_Incidents_EMP_Text>Ваше поселение облучили электро-магнитным импульсом, отключившим всю электронику</OC_Incidents_EMP_Text>
-	<OC_Incidents_Eclipse_Label>Солнечный поглотитель!</OC_Incidents_Eclipse_Label>
-	<OC_Incidents_Eclipse_Text>Над вашим поселением вывели специальный спутник, поглощающий солнечный свет</OC_Incidents_Eclipse_Text>
-	<OC_Incidents_Pack_Label>Боевые звери!</OC_Incidents_Pack_Label>
-	<OC_Incidents_Pack_Text>На ваше поселение спустили стаю животных, доведённых до безумия</OC_Incidents_Pack_Text>
-	<OC_Incidents_Plague_Label>Эпидемия!</OC_Incidents_Plague_Label>
-	<OC_Incidents_Plague_text>Неподалёку от вашего поселения был выпущен опасный вирус, часть колонистов заражены</OC_Incidents_Plague_text>
+	<OC_Incidents_Inf_Text>Хтось приманив жуків на поверхню за допомогою високочастотних вібрацій</OC_Incidents_Inf_Text>
+	<OC_Incidents_EMP_Label>Е.М.І.</OC_Incidents_EMP_Label>
+	<OC_Incidents_EMP_Text>Ваше поселення опромінили електро-магнітним імпульсом, який відключив всю електроніку</OC_Incidents_EMP_Text>
+	<OC_Incidents_Eclipse_Label>Сонячний поглинач!</OC_Incidents_Eclipse_Label>
+	<OC_Incidents_Eclipse_Text>Над вашим поселенням вивели спеціальний супутник, що поглинає сонячне світло</OC_Incidents_Eclipse_Text>
+	<OC_Incidents_Pack_Label>Бойові звірі!</OC_Incidents_Pack_Label>
+	<OC_Incidents_Pack_Text>На ваше поселення спустили зграю тварин, доведених до божевілля</OC_Incidents_Pack_Text>
+	<OC_Incidents_Plague_Label>Епідемія!</OC_Incidents_Plague_Label>
+	<OC_Incidents_Plague_text>Неподалік від вашого поселення було випущено небезпечний вірус, частина колоністів заражена</OC_Incidents_Plague_text>
 
 	<!-- OCIncidents UI-->
-	<OC_Incidents_Hire_label>Нанять рейд</OC_Incidents_Hire_label>
-	<OC_Incidents_Impact_label>Воздействие на область</OC_Incidents_Impact_label>
-	<OC_Incidents_Impact_text>Вы нашли учёных, которые могут изменять погодные условия и оказывать различные воздействия на область. За разумную плату</OC_Incidents_Impact_text>
-	<OC_Incidents_Hire_text>Пираты и воинственные аборигены с радостью согласятся поработать за награду. Возможно, даже связаться c умельцами из продвинутых поселений, которые могут с помощью особых радиосигналов привлечь рой жуков или механоидов. Чем богаче атакуемое поселение, тем больше денег потребуют наёмники.</OC_Incidents_Hire_text>
-	<OC_Incidents_Execute>Сделать!</OC_Incidents_Execute>
-	<OC_Acid_Rain>Кислотный дождь</OC_Acid_Rain>
+	<OC_Incidents_Hire_label>Найняти рейд</OC_Incidents_Hire_label>
+	<OC_Incidents_Impact_label>Вплив на область</OC_Incidents_Impact_label>
+	<OC_Incidents_Impact_text>Ви знайшли вчених, які можуть змінювати погодні умови і чинити різні впливи на область. За розумну плату</OC_Incidents_Impact_text>
+	<OC_Incidents_Hire_text>Пірати і войовничі аборигени з радістю погодяться попрацювати за нагороду. Можливо, навіть зв'язатися з умільцями з передових поселень, які можуть за допомогою особливих радіосигналів залучити рій жуків або механоїдів. Що багатше атаковане поселення, то більше грошей вимагатимуть найманці.</OC_Incidents_Hire_text>
+	<OC_Incidents_Execute>Зробити!</OC_Incidents_Execute>
+	<OC_Acid_Rain>Кислотний дощ</OC_Acid_Rain>
 	<OC_Storm>Шторм</OC_Storm>
-	<OC_Eclipse>Поглотитель света</OC_Eclipse>
-	<OC_EMP>Э.М.И.</OC_EMP>
-	<OC_Plague>Эпидемия</OC_Plague> 
-	<OC_duration>Длительность: {0}</OC_duration>
-	<OC_What_To_DO>Что делать</OC_What_To_DO>
+	<OC_Eclipse>Поглинач світла</OC_Eclipse>
+	<OC_EMP>Е.М.І.</OC_EMP>
+	<OC_Plague>Епідемія</OC_Plague> 
+	<OC_duration>Тривалість: {0}</OC_duration>
+	<OC_What_To_DO>Що робити</OC_What_To_DO>
 	<OC_Raid>Рейд</OC_Raid>
-	<OC_Bugs>Гигантские жуки</OC_Bugs>
-	<OC_Who_Hire>Кого нанять</OC_Who_Hire>
-	<OC_Tribe>Племя</OC_Tribe>
-	<OC_Pirate>Пираты</OC_Pirate>
-	<OC_Mech>Механоиды</OC_Mech>
-	<OC_TrustRandy>Доверюсь Рэнди</OC_TrustRandy>
-	<OC_Arrive>Способ прибытия</OC_Arrive>
-	<OC_Arrive_EdgeWalk>Пешком</OC_Arrive_EdgeWalk>
-	<OC_Arrive_DropCenter>Десант в центр</OC_Arrive_DropCenter>
-	<OC_Arrive_RandomDrop>Равномерный десант</OC_Arrive_RandomDrop>
-	<OC_Raid_Power>Мощность нападения: x{0}</OC_Raid_Power>
-	<OC_Choose_what_to_do>Выберите что сделать</OC_Choose_what_to_do>
-	<OC_Choose_who_hire>Выберите кого нанять</OC_Choose_who_hire>
-	<OC_Choose_arrive>Выберите способ прибытия</OC_Choose_arrive>
+	<OC_Bugs>Гігантські жуки</OC_Bugs>
+	<OC_Who_Hire>Кого найняти</OC_Who_Hire>
+	<OC_Tribe>Плем'я</OC_Tribe>
+	<OC_Pirate>Пірати</OC_Pirate>
+	<OC_Mech>Механоїди</OC_Mech>
+	<OC_TrustRandy>Довірюсь Ренді</OC_TrustRandy>
+	<OC_Arrive>Спосіб прибуття</OC_Arrive>
+	<OC_Arrive_EdgeWalk>Пішки</OC_Arrive_EdgeWalk>
+	<OC_Arrive_DropCenter>Десант у центр</OC_Arrive_DropCenter>
+	<OC_Arrive_RandomDrop>Рівномірний десант</OC_Arrive_RandomDrop>
+	<OC_Raid_Power>Потужність нападу: x{0}</OC_Raid_Power>
+	<OC_Choose_what_to_do>Виберіть що зробити</OC_Choose_what_to_do>
+	<OC_Choose_who_hire>Виберіть кого найняти</OC_Choose_who_hire>
+	<OC_Choose_arrive>Виберіть спосіб прибуття</OC_Choose_arrive>
 
 	<!-- OC_World_Map-->
-	<OC_Base_Interact>Взаимодействие с {0}</OC_Base_Interact>
-	<OC_Base_InteractWith>Взаимодействие с поселением {0} игрока {1}</OC_Base_InteractWith>
+	<OC_Base_Interact>Взаємодія з {0}</OC_Base_Interact>
+	<OC_Base_InteractWith>Взаємодія з поселенням {0} гравця {1}</OC_Base_InteractWith>
 
 	<!-- SCC.cs -->
 	<!-- <OCity_SCC_Disconnected>Помилка з'еднання.</OCity_SCC_Disconnected>
 	<OCity_SCC_DisconnectedShow>З'еднання перервано</OCity_SCC_DisconnectedShow> -->
 
 	<!-- Dialog_MainOnlineCity.cs -->
-	<OCity_Dialog_Exchenge_Chat>в чате</OCity_Dialog_Exchenge_Chat>
-	<OCity_Dialog_Exchenge_Gamers>игроки</OCity_Dialog_Exchenge_Gamers>
-	<OCity_Dialog_Exchenge_What_Point>Что к чему</OCity_Dialog_Exchenge_What_Point>
+	<OCity_Dialog_Exchenge_Chat>в чаті</OCity_Dialog_Exchenge_Chat>
+	<OCity_Dialog_Exchenge_Gamers>гравці</OCity_Dialog_Exchenge_Gamers>
+	<OCity_Dialog_Exchenge_What_Point>Що до чого</OCity_Dialog_Exchenge_What_Point>
 
 	<OCity_InfoTabText></OCity_InfoTabText>
-	<OCity_AboutTabText>Автор Василий Иванов aka Aant.</OCity_AboutTabText>
-	<OCity_AboutGeneralText>Приветствую тебя, Колонизатор!
+	<OCity_AboutTabText>Автор Василь Іванов aka Aant.</OCity_AboutTabText>
+	<OCity_AboutGeneralText>Вітаю тебе, Колонізатор!
 
-OnlineCity - представляет из себя модуль сетевой игры для симулятора выживания RimWorld. Он позволяет нескольким игрокам играть на одной планете в режиме онлайн.
+OnlineCity - являє собою модуль мережевої гри для симулятора виживання RimWorld. Він дає змогу кільком гравцям грати на одній планеті в режимі онлайн.
 
-После регистрации, вы сможете создать свое поселение и начать развиваться бок о бок с другими участниками. Вам дается возможность наблюдать за прогрессом соседей, их поселениями и караванами, но самое главное вы сможете оказывать друг другу вполне материальную помощь, передавая еду, медикаменты, оружие или любые другие вещи, включая поселенцев. Например, можно прислать своего врача, чтобы помочь в трудную минуту, и договориться, чтобы после лечения всех, врача вернули назад. Для передачи необходимо лишь по всем правилам игры собрать караван и добраться до цели! Также теперь вы можете отбивать атаки на своё поселение и захватывать поселения других игроков, отдавая команды своим колонистам!
+Після реєстрації, ви зможете створити своє поселення і почати розвиватися пліч-о-пліч з іншими учасниками. Вам дається можливість спостерігати за прогресом сусідів, їхніми поселеннями і караванами, але найголовніше - ви зможете надавати одне одному цілком матеріальну допомогу, передаючи їжу, медикаменти, зброю або будь-які інші речі, включно з поселенцями. Наприклад, можна надіслати свого лікаря, щоб допомогти в скрутну хвилину, і домовитися, щоб після лікування всіх, лікаря повернули назад. Для передачі необхідно лише за всіма правилами гри зібрати караван і дістатися до мети! Також тепер ви можете відбивати атаки на своє поселення і захоплювати поселення інших гравців, віддаючи команди своїм колоністам!
 
-1. Общее описание
-2. Обмен между игроками
-3. Другое взаимодействие
-4. Нападение на поселения игроков (PVP)
-5. Установка мода и как начать играть
-6. Дополнительные модификации
+1. Загальний опис
+2. Обмін між гравцями
+3. Інша взаємодія
+4. Напад на поселення гравців (PVP)
+5. Встановлення мода і як почати грати
+6. Додаткові модифікації
 7. Сервер
-8. Функции мода в игре
-9. Возможные проблемы
-10. Другие часто задаваемые вопросы
+8. Функції мода в грі
+9. Можливі проблеми
+10. Інші поширені запитання
 
-# 1. Общее описание
+# 1. Загальний опис
 
-Данный мод почти не меняет геймплей. Все события, поселения НПЦ и игровые механики у каждого игрока свои и не связаны друг с другом. Благодаря этому не нарушается баланс игры, который был задуман разработчиками. Что именно меняется? 
+Цей мод майже не змінює геймплей. Усі події, поселення НПЦ та ігрові механіки в кожного гравця свої й не пов'язані одна з одною. Завдяки цьому не порушується баланс гри, який був задуманий розробниками. Що саме змінюється? 
 
-Сохранение вашей игры происходит исключительно на сервер и попасть в сетевую игру можно только нажав на кнопку Сетевая игра и введя логин и пароль. Автосохранения происходят каждые 15 минут (можно поменять в настройках) и при выходе из игры. Важно! Не закрывайте игру по Alt-F4 или средствами операционной системы, в этом случае сохранение при выходе не сработает и прогресс откатится на момент последнего успешного сохранения. Для выхода пользуйтесь меню. Если по тем или иным причинам вы захотите поиграть в эту партию офлайн, то это можно сделать загрузив файл onlineCityTempLoad, но ваш прогресс нельзя будет перенести на сервер, можно лишь доиграть в офлайн. Если вы начинаете игру любым способом кроме как по кнопке Сетевая игра, то мод полностью отключается и не работает.
+Збереження вашої гри відбувається виключно на сервер і потрапити в мережеву гру можна тільки натиснувши на кнопку Мережева гра і ввівши логін та пароль. Автозбереження відбуваються кожні 15 хвилин (можна поміняти в налаштуваннях) і при виході з гри. Важливо! Не закривайте гру по Alt-F4 або засобами операційної системи, у цьому разі збереження під час виходу не спрацює і прогрес відкотиться на момент останнього успішного збереження. Для виходу користуйтеся меню. Якщо з тих чи інших причин ви захочете пограти в цю партію офлайн, то це можна зробити завантаживши файл onlineCityTempLoad, але ваш прогрес не можна буде перенести на сервер, можна лише дограти в офлайн. Якщо ви починаєте гру будь-яким способом окрім як за кнопкою Мережева гра, то мод повністю вимикається і не працює.
 
-При игре онлайн на планете появляются поселения других игроков. Вид иконок примерно показывает богатство поселения, и, если они в сети, в домике будет гореть свет. Нажав на них можно увидеть, что это за игрок, в сети ли он, какая общая стоимость людей и вещей в поселении. Также отображаются и караваны других игроков.
+При мережевій грі на планеті з'являються поселення інших гравців. Вигляд іконок приблизно показує багатство поселення, і, якщо вони в мережі, у будиночку горітиме світло. Натиснувши на них можна побачити, що це за гравець, чи в мережі він, яка загальна вартість людей і речей у поселенні. Також відображаються і каравани інших гравців.
 
-Снарядив свой караван и дойдя до поселения или каравана игрока можно передать любые товары и пешки. К тому же у караванов отображается вес, который они ещё могут взять. Передача осуществляется в одну сторону. То есть, если нужно обменяться товарами нужно сначала договориться об этом в чате и сначала должен один игрок передать, то что нужно, потом другой игрок передаст в ответ. Если игрока нет в сети, то товар будет передан ему тогда, когда он войдет в игру.
+Спорядивши свій караван і дійшовши до поселення або каравану гравця можна передати будь-які товари та пішаків. До того ж у караванів відображається вага, яку вони ще можуть взяти. Передача здійснюється в один бік. Тобто, якщо потрібно обмінятися товарами, потрібно спочатку домовитися про це в чаті, і спочатку повинен один гравець передати те, що потрібно, потім інший гравець передасть у відповідь. Якщо гравця немає в мережі, то товар буде передано йому тоді, коли він увійде в гру.
 
-В игре по кнопке Онлайн можно открыть чат, настройки и прочее. На первой вкладке в чате можно увидеть список всех игроков и тех, кто в сети. В чате можно создавать новые каналы и добавлять туда любых игроков. Нажав правкой кнопкой по любому игроку можно выбрать пункт Информация, и увидеть, что игрок написал о себе, сколько он уже играет, когда был в последний раз, список всех его колоний и караванов, их стоимость и общее богатство.
+У грі кнопкою Онлайн можна відкрити чат, налаштування та інше. На першій вкладці в чаті можна побачити список усіх гравців і тих, хто в мережі. У чаті можна створювати нові канали та додавати туди будь-яких гравців. Натиснувши правою кнопкою на будь-якого гравця, можна вибрати пункт Інформація, і побачити, що гравець написав про себе, скільки він уже грає, коли був востаннє, список усіх його колоній і караванів, їхню вартість і загальне багатство.
 
-Для тех кто хочет большего можно на вкладке Настройки установить пункт Участвую в PVP. После этого можно будет нападать на поселения игроков, у которых также включена эта опция, и, конечно, если они также в сети.
-
-
-# 2. Обмен между игроками
-
-Передача между игроками возможна только с каравана. Для передачи чего-либо вам нужно выделить свой обычный караван, нажать правой кнопкой мыши на поселении или караване другого игрока и выбрать пункт Обмен товарами. Откроется интуитивно понятное окно выбора товара для передачи. Передать можно игроку любое количество товара, животных и поселенцев. Передавать можно сколько угодно раз, даже если игрок не в сети. 
-
-При приёме передачи будет выдано сообщение, где будет кратко перечислено то, что передается и возможность отказаться от этого (в этом случае вещи будут уничтожены). Если игрок согласится, то переданные вещи появятся на самом большом складе, в названии которого есть символы "торг" или "trad", если такого нет, то на самом большом складе с любым названием.
-
-При передаче заключенных есть нюанс. Они появляются не сразу в тюрьме, а на складе в виде пассивной враждебной пешки, без оружия, которую нужно захватить и поместить в нужную тюрьму самостоятельно.
-
-При передаче последней пешки караван будет расформирован, а оставшиеся вещи автоматически добавлены к передаче. Но можно оставить какое-нибудь животное, чтобы потом в этот караван из одного животного союзник мог вернуть ваших колонистов.
-
-При передаче поселенца все его связи с другими поселенцами теряются. Так, что не удивляйтесь лёгкой амнезии, когда ваши боевики вернутся после помощи соседу :)
-
-Есть не решенная проблема передачи пешек при использовании HardcoreSK. Может быть, подобная проблема будет с ещё какими-нибудь модами, пока не известно.
+Для тих хто хоче більшого можна на вкладці Налаштування встановити пункт Беру участь у PVP. Після цього можна буде нападати на поселення гравців, у яких також увімкнена ця опція, і, звісно, якщо вони також у мережі.
 
 
-# 3. Другое взаимодействие
+# 2. Обмін між гравцями
 
-Пираты и воинственные аборигены с радостью согласятся поработать за награду. Помимо этого, заплатив нужное количество золота можно вызвать кислотные осадки, натравить жуков, механоидов и прочее. Чтобы вызвать разные события найдите поселение другого игрока на планете, выделите его, и нажмите на кнопку Взаимодействие.
+Передача між гравцями можлива тільки з каравану. Для передачі чого-небудь вам потрібно виділити свій звичайний караван, натиснути правою кнопкою миші на поселенні або каравані іншого гравця і вибрати пункт Обмін товарами. Відкриється інтуїтивно зрозуміле вікно вибору товару для передачі. Передати можна гравцеві будь-яку кількість товару, тварин і поселенців. Передавати можна скільки завгодно разів, навіть якщо гравець не в мережі. 
 
-Некоторые события могут иметь силу воздействия, например такие как рейды и жуки. Можно удвоить, утроить и т.д. их количество, относительно того, что игра сама генерирует для поселения. Как правило *10 очень сложно пережить даже игрокам со стажем. Цена вызова с увеличением уровня растет нелинейно. Вот общая формула цены за вызов:
+Під час прийому передачі буде видано повідомлення, де буде коротко перераховано те, що передається, і можливість відмовитися від цього (у цьому разі речі буде знищено). Якщо гравець погодиться, то передані речі з'являться на найбільшому складі, у назві якого є символи "торг" або "trad", якщо такого немає, то на найбільшому складі з будь-якою назвою.
 
-(ценность_атакуемого_поселения/100 000)^(2/3) * 100 * сила_воздействия ^(3/2)
+Під час передачі ув'язнених є нюанс. Вони з'являються не одразу у в'язниці, а на складі у вигляді пасивного ворожого пішака, без зброї, якого потрібно захопити і помістити в потрібну в'язницю самостійно.
 
-Дополнительно множитель *3, если это вызов жуков. Множитель *2 за вызов пиратов индустриального уровня. Множитель *5 за вызов механоидов.
+Під час передачі останнього пішака караван буде розформовано, а речі, що залишилися, автоматично додано до передачі. Але можна залишити якусь тварину, щоб потім у цей караван з однієї тварини союзник міг повернути ваших колоністів.
 
-Также рейд можно вызвать не только пешком с краю карты, но и десантом в центр (цена *1.4), или рассеянным десантом (цена *1.5), при этом стоимость капсул игра также вычтет из общей стоимости рейда.
+Під час передачі поселенця всі його зв'язки з іншими поселенцями втрачаються. Тож не дивуйтеся легкій амнезії, коли ваші бойовики повернуться після допомоги сусідові :)
 
-Данные расчеты могут со временем поменяться, в ходе настройки баланса. Помимо этого на сервере можно задавать общий коэффициент цены и конечной стоимости атакующего рейда. Также можно изменить максимальный коэффициент силы воздействия (по умолчанию *10).
-
-Вызванный рейд придет к цели тогда, когда игрок войдет в игру. Если рейд очень большой (сила больше 50% из возможного выбора), то поселенцы заметят его приближение за полдня. После атаки следующая придет не раньше чем через игровые сутки, а через сколько именно будет рассчитано по следующей формуле:
-
-1 + сила_воздействия * 0.16666 + 0.03333 * (ценность_атакуемого_поселения/100 000) = дней задержки перед следующем событием
-
-Существует защита новичка: и атакующий игрок и его цель должны иметь игровое время больше двух лет и стоимость поселения больше 100 000.
-
-События с разных вкладок можно вызывать одновременно. Каждый игрок может вызвать только по 1 событию с каждой вкладке на одного игрока. Но другой игрок также может добавить своё событие на эту же цель: в этом случае они будут вызваны по очереди сохраняя задержки. Общее количество событий в очереди не может превышать 2.
+Є невирішена проблема передачі пішаків під час використання HardcoreSK. Можливо, подібна проблема буде з ще якимись модами, поки не відомо.
 
 
-# 4. Нападение на поселения игроков (PVP)
+# 3. Інша взаємодія
 
-Теперь, если вы хотите, то можете напасть на чужую колонию своим караваном. Вы появитесь с краю карты в случайном месте. Далее вы можете посмотреть на базу противника, ужаснуться и отступить (все пешки рядом с краем карты в этом случае перейдут в караван). Пограбить, если что-то можно унести с собой. Или же захватить поселение, убив или повалив все пешки противника.
+Пірати і войовничі аборигени з радістю погодяться попрацювати за нагороду. Крім цього, заплативши потрібну кількість золота можна викликати кислотні опади, нацькувати жуків, механоїдів та інше. Щоб викликати різні події знайдіть поселення іншого гравця на планеті, виділіть його і натисніть на кнопку Взаємодія.
 
-Ваши колонисты нападут на колонию противника в таком виде, в котором он играет на данный момент (конечно, он должен быть онлайн). Правда, внутренности помещений будут закрыты, пока не разбиты двери или стены. Атакующие пешки находятся всегда в боевом режиме и принимают команды идти на позицию, стрелять в цель и атаковать цель вплотную. Также они могут бросить и подобрать оружие, одежду и взять или выбросить что-то из инвентаря, ещё могут что-то съесть или выпить. Собственно на этом возможности управления заканчиваются: получается, доступны только основные команды для ведения боя. Например, такие пункты как Активировать артефакты не работают. Также не работают настройки поведения пешки, например, автоатака всегда включена. Мирные навыки не доступны в бою, то есть, если вам нужно разобрать стену и у вас есть замечательный шахтёр, то всё равно придется её подрывать гранатой или стрелять из того что есть. Всё это, включая захват пешек можно делать после того, как поселение будет захвачено.
+Деякі події можуть мати силу впливу, наприклад такі як рейди і жуки. Можна подвоїти, потроїти тощо їхню кількість, відносно того, що гра сама генерує для поселення. Як правило *10 дуже складно пережити навіть гравцям зі стажем. Ціна виклику зі збільшенням рівня зростає нелінійно. Ось загальна формула ціни за виклик:
 
-Отдельно стоит сказать про то, что атакующий управляет ситуацией удаленно. Из-за чего его приказы выполняются, но он не видит процесс прицеливания и стрельбы. Передвижения также происходят рывками. Печально, что не получилось сделать всё гладко. На данный момент я не вижу технической возможности сделать этот механизм лучше. Чтобы немного скомпенсировать потерю управления, скорость передвижения пешек атакуемого уменьшается в два раза (уменьшение начинает действовать через минуту после начала сражения, чтобы успеть занять позицию).
+(цінність_атакованого_поселення/100 000)^(2/3) * 100 * сила_впливу ^(3/2)
 
-Для нападения у вас и у противника во вкладке Настройки должна стоять галочка "Участвую в PVP". Сменить её можно раз в сутки. Также для нападения ценность людей, животных и вещей вашего каравана не должна превышать определенной стоимости, которая зависит от цены поселения. Если вы столкнулись с такой проблемой, можете разделить караван, убрав из него животных или уменьшив количество атакующих. Точно узнать стоимость своего каравана можно, нажав в чате на свой ник и выбрав пункт Информация, откроется общая информация и информация по каждому поселению и каравану отдельно. На сервере есть настройка, сколько минут на игрока нельзя нападать после последней атаки. Например, на официальном сервере это 20 минут.
+Додатково множник *3, якщо це виклик жуків. Множник *2 за виклик піратів індустріального рівня. Множник *5 за виклик механоїдів.
 
-Если какая-либо сторона в процессе сражения выйдет из игры это будет равносильно поражению и игрок потеряет колонию, или караван которым атакует. Для другой стороны изменится только то, что враждебные пешки будут пассивно отстреливаться под управлением ИИ игры. Если атакующий хочет отступить, то он может в меню выбрать пункт Отступить, тогда те, кто находиться ближе 10 клеток к любому краю карты переместятся в караван. 
+Також рейд можна викликати не тільки пішки з краю карти, а й десантом у центр (ціна *1.4), або розсіяним десантом (ціна *1.5), при цьому вартість капсул гра також вирахує із загальної вартості рейду.
 
-Пока идет PVP принудительно устанавливается половина первой скорости. Нельзя ни поставить паузу, ни ускорить.
+Ці розрахунки можуть з часом змінитися, під час налаштування балансу. Крім цього на сервері можна задавати загальний коефіцієнт ціни і кінцевої вартості атакуючого рейду. Також можна змінити максимальний коефіцієнт сили впливу (за замовчуванням *10).
 
-Время суток и климатические условия не синхронизируются. Действуют текущие на хосте (тот, кого атакуют).
+Викликаний рейд прийде до цілі тоді, коли гравець увійде в гру. Якщо рейд дуже великий (сила більша за 50% з можливого вибору), то поселенці помітять його наближення за півдня. Після атаки наступна прийде не раніше ніж через ігрову добу, а через скільки саме буде розраховано за такою формулою:
 
-Прирученные животные из каравана не участвуют в атаке: они появятся у края карты и будут вас ждать, чтобы остаться или отступить с вами.
+1 + сила_впливу * 0.16666 + 0.03333 * (цінність_атакованого_поселення/100 000) = днів затримки перед наступною подією
+
+Існує захист новачка: і гравець, що атакує, і його ціль повинні мати ігровий час більше двох років і вартість поселення більше 100 000.
+
+Події з різних вкладок можна викликати одночасно. Кожен гравець може викликати тільки по 1 події з кожної вкладки на одного гравця. Але інший гравець також може додати свою подію на цю саму мету: у цьому разі вони будуть викликані по черзі, зберігаючи затримки. Загальна кількість подій у черзі не може перевищувати 2.
 
 
-Если интересно вот точная формула максимальной цены атакующего каравана:
-4 / (25/1000000 + 10/богатство колонии)
-Выходит, например, так: стоимость колонии -> максимум для каравана
+# 4. Напад на поселення гравців (PVP)
+
+Тепер, якщо ви хочете, то можете напасти на чужу колонію своїм караваном. Ви з'явитеся з краю карти у випадковому місці. Далі ви можете подивитися на базу противника, жахнутися і відступити (всі пішаки поруч із краєм карти в цьому випадку перейдуть у караван). Пограбувати, якщо щось можна забрати з собою. Або ж захопити поселення, убивши або поваливши всіх пішаків противника.
+
+Ваші колоністи нападуть на колонію супротивника в такому вигляді, в якому він грає на цей момент (звісно, він має бути онлайн). Щоправда, нутрощі приміщень будуть закриті, поки не розбиті двері або стіни. Атакуючі пішаки перебувають завжди в бойовому режимі і приймають команди йти на позицію, стріляти в ціль і атакувати ціль впритул. Також вони можуть кинути і підібрати зброю, одяг і взяти або викинути щось з інвентарю, ще можуть щось з'їсти або випити. Власне на цьому можливості управління закінчуються: виходить, доступні тільки основні команди для ведення бою. Наприклад, такі пункти як Активувати артефакти не працюють. Також не працюють налаштування поведінки пішака, наприклад, автоатака завжди ввімкнена. Мирні навички не доступні в бою, тобто, якщо вам потрібно розібрати стіну і у вас є чудовий будівельник, то все одно доведеться її підривати гранатою або стріляти з того що є. Усе це, включно із захопленням пішаків, можна робити після того, як поселення буде захоплено.
+
+Окремо варто сказати про те, що атакуючий керує ситуацією віддалено. Через що його накази виконуються, але він не бачить процес прицілювання і стрільби. Пересування також відбуваються ривками. Сумно, що не вийшло зробити все гладко. Наразі я не бачу технічної можливості зробити цей механізм кращим. Щоб трохи компенсувати втрату управління, швидкість пересування пішаків того, кого атакують, зменшується вдвічі (зменшення починає діяти через хвилину після початку бою, щоб встигнути зайняти позицію).
+
+Для нападу у вас і в супротивника у вкладці Налаштування має стояти галочка "Беру участь у PVP". Змінити її можна раз на добу. Також для нападу цінність людей, тварин і речей вашого каравану не повинна перевищувати певної вартості, яка залежить від ціни поселення. Якщо ви зіткнулися з такою проблемою, можете розділити караван, прибравши з нього тварин або зменшивши кількість нападників. Точно дізнатися вартість свого каравану можна, натиснувши в чаті на свій нік і вибравши пункт Інформація, відкриється загальна інформація та інформація по кожному поселенню і каравану окремо. На сервері є налаштування, скільки хвилин на гравця не можна нападати після останньої атаки. Наприклад, на офіційному сервері це 20 хвилин.
+
+Якщо будь-яка сторона в процесі бою вийде з гри, це буде рівносильно поразці, і гравець втратить колонію, або караван, яким атакує. Для іншої сторони зміниться тільки те, що ворожі пішаки будуть пасивно відстрілюватися під управлінням ШІ гри. Якщо атакувальник хоче відступити, то він може в меню вибрати пункт Відступити, тоді ті, хто перебуває ближче 10 клітин до будь-якого краю карти, перемістяться в караван. 
+
+Поки йде PVP примусово встановлюється половина першої швидкості. Не можна ні поставити паузу, ні прискорити.
+
+Час доби та кліматичні умови не синхронізуються. Діють поточні на хості (той, кого атакують).
+
+Приручені тварини з каравану не беруть участі в атаці: вони з'являться біля краю карти і будуть вас чекати, щоб залишитися або відступити з вами.
+
+
+Якщо цікаво, ось точна формула максимальної ціни атакуючого каравану:
+4 / (25/1000000 + 10/багатство колонії)
+Виходить, наприклад, так: вартість колонії -> максимум для каравану
 100 000 -> 32 000
 400 000 -> 80 000
 1 000 000 -> 114 400
 2 000 000 -> 133 332
 
 
-Есть ещё пара проблем, которые нужно учитывать атакующему. 
+Є ще пара проблем, які потрібно враховувати атакуючому. 
 
-Всегда действует автоатака, поэтому, когда пешка стоит, она начинает атаковать цель, выбранную ИИ, если не была явно отдана команда атаки. Поэтому с однозарядным оружием нужно быть аккуратным.
+Завжди діє автоатака, тому, коли пішак стоїть, він починає атакувати ціль, обрану ШІ, якщо не було явно віддано команду атаки. Тому з однозарядною зброєю потрібно бути акуратним.
 
-Изредка команда идти может быть отменена или даже пешка может испугаться начать "убегать" к краю карты. Проверяйте, продолжают ли пешки выполнять команды. 
+Зрідка команда йти може бути скасована або навіть пішак може злякатися і почати "тікати" до краю карти. Перевіряйте, чи продовжують пішаки виконувати команди. 
 
-Детальные параметры пешки, такие как инвентарь, здоровье, нужды и прочее обновляются реже. При изменении инвентаря или изменении в здоровье. При этом пешка обновляется целиком и с неё падает выделение, если она была выделена.
+Детальні параметри пішака, такі як інвентар, здоров'я, потреби та інше, оновлюються рідше. При зміні інвентарю або зміні в здоров'ї. При цьому пішак оновлюється цілком і з нього падає виділення, якщо він був виділений.
 
-Цель, которая сражена, не будет выбираться автоатакой и её нельзя бить вплотную, если вы непременно хотите добить, то застрелите её.
+Ціль, яка уражена, не буде вибиратися автоатакою і її не можна бити впритул, якщо ви неодмінно хочете добити, то застрельте її.
 
-Крайняя позиция на границе карты не доступна, из-за сделанной заплатки. Дело в том, что ИИ игры видя, что атакующая пешка хочет уйти и уже находится на краю, немедленно удаляет её. Получается, что вещи, которые упали на самый край, будут доступны, только после захвата колонии. Также есть связанная с этим проблема: иногда, когда пешка находиться через клетку от края карты, она застревает там и не реагирует на команды. Исправить это пока не получилось, но если это произошло, то попробуйте выделить пешку и быстро нажимать правой кнопкой в стороне от края карты по разным точкам, пока она не начнёт туда двигаться.
+Крайня позиція на кордоні карти не доступна, через зроблену латку. Річ у тім, що ШІ гри, бачачи, що атакуючий пішак хоче піти і вже перебуває на краю, негайно видаляє його. Виходить, що речі, які впали на самий край, будуть доступні тільки після захоплення колонії. Також є пов'язана з цим проблема: іноді, коли пішак перебуває через клітку від краю карти, він застряє там і не реагує на команди. Виправити це поки що не вийшло, але якщо це сталося, то спробуйте виділити пішака і швидко натискати правою кнопкою осторонь від краю карти по різних точках, поки він не почне туди рухатися.
 
 
-# 5. Установка мода и как начать играть
+# 5. Встановлення мода і як почати грати
 
-1) Иметь любой RimWorld не ниже 1.1
+1) Мати будь-який RimWorld не нижче 1.1
 
-2) Скачать мод HugsLib и Harmony https://bit.ly/2PQjc6d Или из Workshop https://bit.ly/2KvHtbP
+2) Завантажити мод HugsLib і Harmony https://bit.ly/2PQjc6d Або з Workshop https://bit.ly/2KvHtbP
 
-3) Скачать сам мод OnlineCity. Последняя версия лежит в дискорде https://discord.gg/5DzWrnR на канале #новости, или из Workshop https://steamcommunity.com/sharedfiles/filedetails/?id=1908437382
+3) Завантажити сам мод OnlineCity. Остання версія лежить у discord https://discord.gg/5DzWrnR на каналі #новини, або з Workshop https://steamcommunity.com/sharedfiles/filedetails/?id=1908437382
 
-4) Открыть RimWorld, в "Моды" поставить галочку на Harmony, затем Core, HugsLib, а только потом другие моды и OnlineCity (OnlineCity лучше ставить последним). Нажать кнопку закрыть. Игра должна перезапуститься.
+4) Відкрити RimWorld, у "Моди" поставити галочку на Harmony, потім Core, HugsLib, а тільки потім інші моди і OnlineCity (OnlineCity краще ставити останнім). Натиснути кнопку закрити. Гра має перезапуститися.
 
-5) В главном меню нажать на кнопку "Сетевая Игра". Если её нет, значит или версия RimWorld не поддерживается или мод не был включён правильно.
+5) У головному меню натиснути на кнопку "Мережева Гра". Якщо її немає, значить або версія RimWorld не підтримується, або мод не був увімкнений правильно.
 
-6) Создать аккаунт и войти в него. Перед этим убедитесь, что в папке Mods нет важных данных, сделайте их копию. Первый вход или регистрация на сервере может занять несколько минут, в зависимости от настроек сервера и скорости интернета.
+6) Створити акаунт і увійти в нього. Перед цим переконайтеся, що в папці Mods немає важливих даних, зробіть їхню копію. Перший вхід або реєстрація на сервері може зайняти кілька хвилин, залежно від налаштувань сервера і швидкості інтернету.
 
-7) Выбрать желаемое место для высадки.
+7) Вибрати бажане місце для висадки.
 
-8) Подобрать/Создать своих колонистов. Если есть возможность, то на всякий случай, если создаете в Prepare Carefully, сохраните их.
+8) Підібрати/Створити своїх колоністів. Якщо є можливість, то про всяк випадок, якщо створюєте в Prepare Carefully, збережіть їх.
 
-9) Все готово! Добро пожаловать в Online City!
+9) Усе готово! Ласкаво просимо в Online City!
 
-Дополнительно может быть интересно:
-
-В файле ModsConfig.xml список модов должен начинаться с 
+У файлі ModsConfig.xml список модів повинен починатися з 
     <li>brrainz.harmony</li>
     <li>ludeon.rimworld</li>
     <li>unlimitedhugs.hugslib</li>	
-И заканчиваться (желательно в самый конец):
+І закінчуватися (бажано в самий кінець):
     <li>aant.onlinecity</li>
 
-Часто возникающие проблемы:
+Проблеми, що часто виникають:
 
-* Если ваш компьютер едва справляется с RimWorld, то имейте в виду, что с этим модом требование к памяти несколько увеличено. Рекомендуется играть на 64-битной операционной системе.
+* Якщо ваш комп'ютер ледь справляється з RimWorld, то майте на увазі, що з цим модом вимога до пам'яті дещо збільшена. Рекомендується грати на 64-бітній операційній системі.
 
-* Игра плохо устойчива с плохой связью, если она часто рвется, возможны проблемы.
+* Гра погано стійка до поганого зв'язку, якщо він часто рветься, можливі проблеми.
 
-* Проверьте версию мода. Это можно сделать, нажав Сетевая игра, а затем Что к чему, тут будет версия в первой строке.
+* Перевірте версію мода. Це можна зробити, натиснувши Мережева гра, а потім Що до чого, тут буде версія в першому рядку.
 
-* Если получается подключиться/зарегистрироваться, а дальше черный экран или игра зависает, то попробуйте подождать несколько минут
+* Якщо виходить підключитися/зареєструватися, а далі чорний екран або гра зависає, то спробуйте почекати кілька хвилин
 
-* Если не получается зарегистрироваться и пишет, что такой логин уже занят, то попробуйте использовать больше 3х символов в логине и пароле, и в логине больше латинских букв. Также попробуйте просто войти, если у вас был сбой, то, возможно, он возник после того, как вы были зарегистрированы. 
+* Якщо не виходить зареєструватися і пише, що такий логін уже зайнятий, то спробуйте використати більше 3х символів у логіні та паролі, і в логіні більше латинських літер. Також спробуйте просто увійти, якщо у вас був збій, то, можливо, він виник після того, як ви були зареєстровані. 
 
-* Нет системы сброса пароля. Можно только начать заново. Администратор сервера также не имеет такого доступа, но он может удалить ваше поселение, чтобы освободить место.
+* Немає системи скидання пароля. Можна тільки почати заново. Адміністратор сервера також не має такого доступу, але він може видалити ваше поселення, щоб звільнити місце.
 
-* Если ничего не помогает, то попробуйте отключить другие моды. Если это помогло, и игра запустилась, то напишите нам, какой мод оказался не совместим.
+* Якщо нічого не допомагає, то спробуйте відключити інші моди. Якщо це допомогло, і гра запустилася, то напишіть нам, який мод виявився несумісний.
 
 
-# 6. Дополнительные модификации
+# 6. Додаткові модифікації
 
-На сервере есть настройка точного соответствия модов. Если она включена, папка Mods игры и файл ModsConfig.xml будут удалены и скачены с сервера. Будьте осторожны и перед входом на сервер первый раз убедитесь, что в папке Mods нет ничего ценного! Наличие DLC Royality не контролируется и не будет скачено с сервера, вы должны его поставить самостоятельно, если на сервере он требуется для игры. Убедитесь, что он у вас есть, если он нужен. Если он не нужен для сервера где вы играете, то перед входом его лучше отключить. Если на сервере он не нужен, а у вас он есть, то он будет корректно отключен. Дальше по тексту подразумевается, что настройка выключена и никакой синхронизации не происходит.
+На сервері є налаштування точної відповідності модів. Якщо його ввімкнено, папка Mods гри і файл ModsConfig.xml будуть видалені та завантажені з сервера. Будьте обережні і перед входом на сервер першого разу. Переконайтеся, що в папці Mods немає нічого цінного! Наявність DLC Royality не контролюється і не буде викачано з сервера, ви повинні його поставити самостійно, якщо на сервері він потрібен для гри. Переконайтеся, що він у вас є, якщо він потрібен. Якщо він не потрібен для сервера де ви граєте, то перед входом його краще вимкнути. Якщо на сервері він не потрібен, а у вас він є, то його буде коректно відключено. Далі за текстом мається на увазі, що налаштування вимкнене і ніякої синхронізації не відбувається.
 
-В случае выключенной синхронизации, если мод OnlineCity у вас не совместим с версией на сервере, то будет выдана ошибка, и вам нужно будет самим обновить его. Также выключенная синхронизация означает, что у разных людей могут быть совершенно разные наборы модов.
+У разі вимкненої синхронізації, якщо мод OnlineCity у вас не сумісний з версією на сервері, то буде видано помилку, і вам потрібно буде самим оновити його. Також вимкнена синхронізація означає, що у різних людей можуть бути абсолютно різні набори модів.
 
-Очень внимательно следите за тем, из каких модов предметы кому вы передаете. Если вы оба пользуетесь нужной модификацией, то проблем быть не должно. В других случаях результат не предсказуем. Может быть, будет просто утеряно особое свойство, или предмет просто исчезнет (чаще всего происходит это), но в некоторых случаях игра может полностью сломаться (в этм случае не пробуйте заходить лишний раз, после того как вы убедились, что игра не работает, и сообщите администратору сервера, возможно он сможет восстановить ваше предыдущее сохранение). 
+Дуже уважно стежте за тим, з яких модів предмети кому ви передаєте. Якщо ви обидва користуєтеся потрібною модифікацією, то проблем бути не повинно. В інших випадках результат не передбачуваний. Можливо, буде просто загублена особлива властивість, або предмет просто зникне (найчастіше відбувається це), але в деяких випадках гра може повністю зламатися (у цьому разі не пробуйте заходити зайвий раз, після того як ви переконалися, що гра не працює, і повідомите адміністратора сервера, можливо, він зможе відновити ваше попереднє збереження). 
 
-Также крайне не рекомендуется пользоваться модификациями, которые меняют ландшафт: очертание морей и гор. Таким образом, ваше поселение для других игроков может оказаться посреди океана или оказаться недоступным. В любом случае неприятно играть на не одинаковых планетах. Исключение, если вы поддерживаете контакт со всеми игроками и договорились, что такие моды и их настройки будут у всех одинаковы.
+Також вкрай не рекомендується користуватися модифікаціями, які змінюють ландшафт: обрис морів і гір. Таким чином, ваше поселення для інших гравців може опинитися посеред океану або виявитися недоступним. У будь-якому разі неприємно грати на неоднакових планетах. Виняток, якщо ви підтримуєте контакт з усіма гравцями і домовилися, що такі моди та їхні налаштування будуть у всіх однакові.
 
-Если у вы будете использовать функцию нападения на игроков, то внимательно ознакомитесь с разделом 4. Нападение на поселения игроков, там рассказано и про зависимость дополнительных модификаций.
+Якщо ви будете використовувати функцію нападу на гравців, то уважно ознайомтеся з розділом 4. Напад на поселення гравців, там розказано і про залежність додаткових модифікацій.
 
-На данный момент не совместимый мод только один: Save Our Ship 2
+На даний момент не сумісний мод тільки один: Save Our Ship 2.
 
-Потенциально OnlineCity совместим с любыми другими модами, но, конечно, нужно соблюдать осторожность, особенно используя большие модпаки. Забавно, что мод совместим даже с Zetrith Multiplayer (кроме, возможно, режима PVP - не проверялось). Ведь OnlineCity синхронизирует планету, где у каждого своё поселение, а Zetrith Multiplayer это кооператив одного поселения.
+Потенційно OnlineCity сумісний з будь-якими іншими модами, але, звісно, потрібно дотримуватися обережності, особливо використовуючи великі модпаки. Цікаво, що мод сумісний навіть із Zetrith Multiplayer (крім, можливо, режиму PVP - не перевірялося). Адже OnlineCity синхронізує планету, де в кожного своє поселення, а Zetrith Multiplayer це кооператив одного поселення.
 
 
 # 7. Сервер
 
-Распакуйте архив с сервером в любую папку. После этого нужно создать подпапку World, в которой будут храниться все данные игры.
+Розпакуйте архів із сервером у будь-яку папку. Після цього потрібно створити підпапку World, у якій зберігатимуться всі дані гри.
 
-Создайте в папке World файл Settings.json (его можно открыть простым блокнотом). Вот пример его содержимого:
+Створіть у папці World файл Settings.json (його можна відкрити простим блокнотом). Ось приклад його вмісту:
 
 {
   "ServerName": "OnlineCity Server with modpack",
@@ -698,274 +696,274 @@ OnlineCity - представляет из себя модуль сетевой 
   "IgnoredLocalModFiles": [ ]
 }
 
-ServerName и Description - имя и описание сервера, пока нигде не используется, не обязательно заполнять.
+ServerName і Description - ім'я та опис сервера, поки ніде не використовується, не обов'язково заповнювати.
 
-SaveInterval - частота в ms с которой сервер будет сохранять новые данные при их наличии, лучше не менять значение по умолчанию 10000.
+SaveInterval - частота в ms, з якою сервер зберігатиме нові дані за їх наявності, краще не змінювати значення за замовчуванням 10000.
 
-Port - самый важный параметр, порт на котором работает ваш сервер, по умолчанию 19019.
+Port - найважливіший параметр, порт, на якому працює ваш сервер, за замовчуванням 19019.
 
-IsModsWhitelisted - если используется точное соответствие модов, то установить true, иначе false.
+IsModsWhitelisted - якщо використовується точна відповідність модів, то встановити true, інакше false.
 
-ModsDirectory - если IsModsWhitelisted установлено в истину, то тут папка которая будет скопирована каждому клиенту в его папку Mods, иначе значение игнорируется. Подробнее ниже.
+ModsDirectory - якщо IsModsWhitelisted встановлено в істину, то тут папка, яка буде скопійована кожному клієнту в його папку Mods, інакше значення ігнорується. Докладніше нижче.
 
-ModsConfigsDirectoryPath - если IsModsWhitelisted установлено в истину, то аналогично ModsDirectory следует указать папку с настройками модов. Подробнее ниже.
+ModsConfigsDirectoryPath - якщо IsModsWhitelisted встановлено в істину, то аналогічно ModsDirectory слід вказати папку з налаштуваннями модів. Докладніше нижче.
 
-DisableDevMode - будет ли отключаться режим разработчика, когда игроки заходят онлайн.
+DisableDevMode - чи буде відключатися режим розробника, коли гравці заходять онлайн.
 
-MinutesIntervalBetweenPVP - после нападения на одного игрока другим, на него не могут нападать заданное количество минут. Можно поставить, например, 0 или 20.
+MinutesIntervalBetweenPVP - після нападу на одного гравця іншим, на нього не можуть нападати задану кількість хвилин. Можна поставити, наприклад, 0 або 20.
 
-ProtectingNovice - Защита начинающих игроков от нападения, а также запрет абуза передачи товаров и пешек от новых поселений.
+ProtectingNovice - Захист гравців-початківців від нападу, а також заборона абузу передавання товарів і пішаків від нових поселень.
 
-DeleteAbandonedSettlements - Сервер будет автоматически удалять не развитые поселения за которые давно не играют.
+DeleteAbandonedSettlements - Сервер буде автоматично видаляти нерозвинені поселення, за які давно не грають.
 
-GeneralSettings - Иерархия настроек существующая по техническим нуждам, внутри неё настройки также важны как остальные.
+GeneralSettings - Ієрархія налаштувань, що існує за технічними потребами, усередині неї налаштування так само важливі, як і інші.
 
-EnablePVP - Включить режим нападения игроков друг на друга онлайн с ограниченным управлением
+EnablePVP - Увімкнути режим нападу гравців один на одного онлайн з обмеженим керуванням
 
-DisableGameSettings - Запретить менять настройки рассказчика и модификаций в игре
+DisableGameSettings - Заборонити змінювати налаштування оповідача і модифікацій у грі
 
-IncidentEnable - Разрешены ли инциденты (действия по кнопке Взаимодействие на чужих поселениях)
+IncidentEnable - Чи дозволені інциденти (дії за кнопкою Взаємодія на чужих поселеннях)
 
-IncidentCountInOffline - Сколько разрешено инцидентов в очереди (от одного игрока в любом случае только одно)
+IncidentCountInOffline - Скільки дозволено інцидентів у черзі (від одного гравця в будь-якому разі тільки один)
 
-IncidentMaxMult - Максимальный коэф. силы инцидентов
+IncidentMaxMult - Максимальний коеф. сили інцидентів
 
-IncidentTickDelayBetween - Минимальная пауза между инцидентами в тиках (1 день = 60000)
+IncidentTickDelayBetween - Мінімальна пауза між інцидентами в тиках (1 день = 60000)
 
-IncidentCostPrecent - Модификатор стоимости найма в процентах
+IncidentCostPrecent - Модифікатор вартості найму у відсотках
 
-IncidentPowerPrecent - Модификатор силы рейдов в процентах
+IncidentPowerPrecent - Модифікатор сили рейдів у відсотках
 
-StartGameYear - Назначит стартовый год в игре вместо 5500
+StartGameYear - Призначить стартовий рік у грі замість 5500
 
-IgnoredLocalConfigFiles - Имена игнорируемых файлов настроек. Остальные будут синхронизированы с папкой на сервере указанной в ModsConfigsDirectoryPath, если IsModsWhitelisted установлено в истину.
+IgnoredLocalConfigFiles - Імена ігнорованих файлів налаштувань. Решту буде синхронізовано з папкою на сервері, зазначеною в ModsConfigsDirectoryPath, якщо IsModsWhitelisted встановлено в істину.
 
-IgnoredLocalModFiles - Окончание игнорируемых имен файлов из папки с модами. Остальные будут синхронизированы с папкой на сервере указанной в ModsDirectory, если IsModsWhitelisted установлено в истину. 
+IgnoredLocalModFiles - Закінчення ігнорованих імен файлів із папки з модами. Решта будуть синхронізовані з папкою на сервері, зазначеною в ModsDirectory, якщо IsModsWhitelisted встановлено в істину. 
 
-EquableWorldObjects - функционал пока не готов, следует удалить строку или поставить false.
+EquableWorldObjects - функціонал поки не готовий, слід видалити рядок або поставити false.
 
-ExchengeEnable - функционал пока не готов, следует удалить строку или поставить false.
-
-
-Перед запуском проверьте, что у вас установлен .NET Core 3.1: https://dotnet.microsoft.com/download/dotnet-core/current/runtime
-
-Запустите ServerOnlineCity.exe. Должна открыться консоль, которая и является сервером. Вывод в неё дублируется в лог файлы в папке World.
-
-Для того, что бы люди могли подключится к нему, нужно открыть порт 19019 (или тот который указан в Port).
-
-Когда сервер запустится, в папке с ним будет создана папка "World". Первый человек, который зарегистрируется на сервере через игру, будет считаться администратором. Ему доступны специальные команды и режим разработчика, даже если он выключен настройками сервера. При первом входе/регистрации администратору будет предложено выбирать сиид мира, заполненость мира в процентах и сложность игры (просто/нормально/сложно). Сценарий и рассказчик всегда одинаковы при старте. После этого, игре понадобиться несколько минут, после чего вас вернёт в главное меню. Всё готово! Можно заходить снова и как обычный игрок создавать поселение.
-
-В *nix системах запуск должен происходить также без проблем, т.к. сервер написан на .NET Core 3.1.
-
-Также есть Discord бот. По его настройке можно прочесть отдельно здесь: https://github.com/AantCoder/OnlineCity/tree/dev/Source/DiscordChatBotServer
+ExchengeEnable - функціонал поки не готовий, слід видалити рядок або поставити false.
 
 
-Подробнее как настроить режим точного соответствия модов.
+Перед запуском перевірте, що у вас встановлено .NET Core 3.1: https://dotnet.microsoft.com/download/dotnet-core/current/runtime
 
-Чтобы правильно всё установить настройте свой RimWorld так, чтобы все моды брались из папки Mods (ни одного мода из Steam!). Проверьте, что всё нормально работает в обычной игре. И скопируйте свою папку Mods на сервер. Как минимум у вас должно быть три папки (внутри Mods): Harmony, HugsLib, OnlineCity.
+Запустіть ServerOnlineCity.exe. Має відкритися консоль, яка і є сервером. Виведення в неї дублюється в лог файли в папці World.
 
-После этого скопируйте на сервер в папку World файл ModsConfig.xml из игры 
+Для того, щоб люди могли під'єднатися до нього, потрібно відкрити порт 19019 (або той, який вказано в Port).
+
+Коли сервер запуститься, у папці з ним буде створено папку "World". Перша людина, яка зареєструється на сервері через гру, вважатиметься адміністратором. Їй доступні спеціальні команди і режим розробника, навіть якщо він вимкнений налаштуваннями сервера. Під час першого входу/реєстрації адміністратору буде запропоновано обирати зерно світу, заповненість світу у відсотках і складність гри (просто/нормально/складно). Сценарій і оповідач завжди однакові під час старту. Після цього, грі знадобитися кілька хвилин, після чого вас поверне в головне меню. Усе готово! Можна заходити знову і як звичайний гравець створювати поселення.
+
+У *nix системах запуск має відбуватися також без проблем, тому що сервер написаний на .NET Core 3.1.
+
+Також є Discord бот. Про його налаштування можна прочитати окремо тут: https://github.com/AantCoder/OnlineCity/tree/dev/Source/DiscordChatBotServer
+
+
+Докладніше як налаштувати режим точної відповідності модів.
+
+Щоб правильно все встановити, налаштуйте свій RimWorld так, щоб усі моди бралися з папки Mods (жодного мода зі Steam!). Перевірте, що все нормально працює у звичайній грі. І скопіюйте свою папку Mods на сервер. Як мінімум у вас має бути три папки (всередині Mods): Harmony, HugsLib, OnlineCity.
+
+Після цього скопіюйте на сервер у папку World файл ModsConfig.xml з гри 
 %appdata%\..\LocalLow\Ludeon Studios\RimWorld by Ludeon Studios\Config
-У меня, например, он лежит тут:
+У мене, наприклад, він лежить тут:
 "c:\Users\Ant\AppData\LocalLow\Ludeon Studios\RimWorld by Ludeon Studios\Config\ModsConfig.xml" 
 
-В настройке ModsConfigsDirectoryPath должна указываться папка на сервере, куда нужно скопировать файлы настроек модов. То есть все остальные файлы из той же папки где находиться ModsConfig.xml
+У налаштуванні ModsConfigsDirectoryPath має вказуватися папка на сервері, куди потрібно скопіювати файли налаштувань модів. Тобто всі інші файли з тієї ж папки, де знаходиться ModsConfig.xml.
 
 
-Некоторые решения при проблемах запуска своего сервере:
+Деякі рішення при проблемах запуску свого сервера:
 
-1. Консоль сервера открыта и в ней нет ошибок
-2. Попробовать с того же компьютера зайти в игру по адресу localhost
-3. Проверить, что друзья присоединяются по нужному IP адресу (можно гуглить "как узнать мой IP")
-4. Пробросить порт 19019 в роутере (также гуглится "как открыть порт")
-5. Проверить, что брандмауэр разрешает использовать подключения, либо отключить его
-6. Сверить версии мода у того, кто подключается. Это можно сделать нажав Сетевая игра, и Что к чему, тут будет версия в первой строке
-7. Игра плохо устойчива с плохой связью, если она часто рвется возможны проблемы
-8. Если получается подключиться/зарегистрироваться, а дальше черный экран, то попробуйте подождать 5 минут
-9. Если не получается зарегистрироваться и пишет, что такой логин уже занят, то попробуйте использовать больше 3х символов в логине и пароле, и в логине больше латинских букв
-
-
-Все сохранения игроков лежат в подпапке World\DataPlayers и имеют имя {имя игрока}.dat{номер}
-
-{имя игрока} - это логин игрока, но некоторые символы недопустимые для имени файла заменяются на символ _
-
-{номер} - это история сохранений, 1 - самое последнее, 2 - предыдущее, 3 - самое старое
-
-Также бывают ситуации, когда вместо истории остается только файл {имя игрока}.dat1 и {имя игрока}.bak. Это значит, что возврат к прошлому сохранению нежелателен. Например, так происходит после того, как игрок что-то передал другому игроку, чтобы исключить бесконечную передачу.
-
-Как администратор может помочь игроку?
-
-Если удалить файлы {имя игрока}.dat*, то при следующем входе игроку будет предложено создать новое поселение. Однако лучше для этого воспользоваться командой из консоли /killhimplease {UserLogin}
-
-Если сохранение игрока испортилось, вы можете удалить файл {имя игрока}.dat1 и переименовать в это имя файл {имя игрока}.dat2 или {имя игрока}.dat3
-
-Вы можете регулярно удалять поселения игроков, которые играли меньше нескольких игровых дней и не заходили уже давно. Для этого в игре можно найти их поселения на карте по значку самого маленького домика, нажать на них, затем на информацию i. Здесь можно увидеть общую стоимость поселения (например, если она меньше 30000) и когда пользователь заходил последний раз. Если решено удалить игрока, то воспользуйтесь командой /killhimplease {UserLogin}
-Либо сервер может это делать сам по настройке DeleteAbandonedSettlements.
-
-Как убедиться, что игрок тот за кого себя выдает? Например, если игрок пишет, что его сохранение сломалось, и он просит удалить его поселение. В этом случае попросите его попытаться зайти в игру прямо сейчас. Потом попросите, чтобы он прислал вам свои логи за сегодняшний день. Потом можно найти строки его входа на сервер и сравнить время с логами на самом сервере (имейти в виду, что могут быть разные часовые пояса). 
+1. Консоль сервера відкрита і в ній немає помилок
+2. Спробувати з того ж комп'ютера зайти в гру за адресою localhost
+3. Перевірити, що друзі приєднуються за потрібною IP адресою (можна гуглити "як дізнатися мій IP")
+4. Прокинути порт 19019 у роутері (також гуглиться "як відкрити порт")
+5. Перевірити, що брандмауер дозволяє використовувати підключення, або відключити його
+6. Звірити версії мода у того, хто підключається. Це можна зробити натиснувши Мережева гра, і Що до чого, тут буде версія в першому рядку
+7. Гра погано стійка до поганого зв'язку, якщо він часто рветься можливі проблеми
+8. Якщо виходить підключитися/зареєструватися, а далі чорний екран, то спробуйте почекати 5 хвилин
+9. Якщо не виходить зареєструватися і пише, що такий логін уже зайнятий, то спробуйте використати більше 3х символів у логіні та паролі, і в логіні більше латинських літер
 
 
-Блокировка злоумышленников.
-В папке World можно создать два файла для бана подключений.
-blockip.txt - IP адреса которые нужно заблокировать. Одна строка один IP, последнее значение можно писать через дробь 1.2.3.0/2 добавит три IP закачивающиеся на .0, .1 и .2
+Усі збереження гравців лежать у підпапці World\DataPlayers і мають ім'я {ім'я гравця}.dat{номер}
 
-blockkey.txt - это бан по ключам. каждый игрок имеет уникальные ключи. Узнать их можно из логов по поиску "key=", найдется примерно такая строка:
-Checked loginName key=hlw57jjSV5HacQbb9iiB@@@51b36et2ZBvBUkUztF+N
-У каждого пользователя несколько ключей и совпадения любого из них достаточно для блокировки. Поэтому для бана по ключу в файл нужно добавить оба (каждый в отдельную строку). Ключи разделены тремя символами @@@ их писать не нужно.
-При первом входе с нового оборудования добавляется специальный ключ 111@@@
+{ім'я гравця} - це логін гравця, але деякі символи неприпустимі для імені файлу замінюються на символ _
 
-В оба этих файла можно писать комментарии, которые должны идти после ключа или IP через пробел
+{номер} - це історія збережень, 1 - найостанніше, 2 - попереднє, 3 - найстаріше
 
+Також бувають ситуації, коли замість історії залишається тільки файл {ім'я гравця}.dat1 і {ім'я гравця}.bak. Це означає, що повернення до минулого збереження небажане. Наприклад, так відбувається після того, як гравець щось передав іншому гравцеві, щоб унеможливити нескінченну передачу.
 
-Можно получить общие данные по всем игрокам в консоли, нажав букву S. Будет создан файл Players_дата.csv со списком игроков, временем последнего входа и некоторой игровой информацией. Вот описание некоторых столбцов:
-LastOnlineDay - сколько реальных дней назад игрок был онлайн
-BaseCount - текущее количество поселений
-CaravanCount - текущее количество караванов
-MarketValue - текущая стоимость поселения
-MarketValuePawn - текущая стоимость пешек
-AttacksWonCount - сколько на игрока направили инцидентов
-AttacksInitiatorCount - сколько игрок сделал инцидентов на других игроков
-ColonistsCount - cколько всего колонистов
-ColonistsDownCount - сколько из колонистов не на ногах
-ColonistsBleedCount - сколько из колонистов имеют кровопотерю
-PawnMaxSkill - cколько колонистов имеют 8 из 12 навыков 20 уровня. Предположительно всегда должно быть = 0. Если оно равно ColonistsCount, значит это точно чит
-KillsHumanlikes - сколько колонисты игрока убили других людей
-KillsMechanoids - сколько колонисты игрока убили механоидов
-KillsBestPawnHN - какой колонист убил наибольшее количество других людей
-KillsBestPawnH - сколько именно
-KillsBestPawnMN - какой колонист убил наибольшее количество механоидов
-KillsBestPawnM - колько именно
-Grants - права на сервере, "UsualUser" - обычный пользователь, "SuperAdmin. Moderator" - создатель мира (первый зарегистрировавшийся)
-IntruderKeys - ключи по которым можно банить и искать логины на которые входят с одного компьютера
-StartMarketValue - цена стартового поселения
-StartMarketValuePawn - цена стартовых пешек
-MarketValueBy15Day - максимальная стоимость поселения которую игрок набрал за 15 дней
-MarketValuePawnBy15Day - максимальная стоимость пешек которую игрок набрал за 15 дней
-MarketValueByHour - максимальная стоимость поселения которую игрок набрал за 1 час игры, исключая время на паузе
-MarketValuePawnByHour - максимальная стоимость пешек которую игрок набрал за 1 час игры, исключая время на паузе
-TicksByHour - максимальное количество тиков за один час онлайн (включая время паузы)
-HourInGame - время игры за текущую колонию, исключая время на паузе
+Як адміністратор може допомогти гравцеві?
+
+Якщо видалити файли {ім'я гравця}.dat*, то під час наступного входу гравцеві буде запропоновано створити нове поселення. Однак краще для цього скористатися командою з консолі /killhimplease {UserLogin}
+
+Якщо збереження гравця зіпсувалося, ви можете видалити файл {ім'я гравця}.dat1 і перейменувати на це ім'я файл {ім'я гравця}.dat2 або {ім'я гравця}.dat3
+
+Ви можете регулярно видаляти поселення гравців, які грали менше кількох ігрових днів і не заходили вже давно. Для цього в грі можна знайти їхні поселення на карті за значком найменшого будиночка, натиснути на них, потім на інформацію i. Тут можна побачити загальну вартість поселення (наприклад, якщо вона менша за 30000) і коли користувач заходив востаннє. Якщо вирішено видалити гравця, то скористайтеся командою /killhimplease {UserLogin}
+Або сервер може це робити сам за налаштуванням DeleteAbandonedSettlements.
+
+Як переконатися, що гравець той за кого себе видає? Наприклад, якщо гравець пише, що його збереження зламалося, і він просить видалити його поселення. У цьому разі попросіть його спробувати зайти в гру просто зараз. Потім попросіть, щоб він надіслав вам свої логи за сьогоднішній день. Потім можна знайти рядки його входу на сервер і порівняти час із логами на самому сервері (майте на увазі, що можуть бути різні часові пояси). 
 
 
-Логи сервера создаются автоматически Log_дата.txt, вместе с файлом с инцидентами Incidents_месяц.csv. Здесь отмечается несколько событий на каждый инцидент:
-NewIncident - игрок fromLogin заказал рейд на toLogin
-SendMail - у toLogin прошли все ожидание от прошлых, и пол дня ожидания перед атакой для рейдов и событие непосредственно началось
-DayAfterMail - прошел день после события, в этот момент определяется сколько нужно ждать ещё (или не нужно больше), удобно смотреть сколько рейд нанес урона
-End - окончание ожидания, событие полностью завершено и в этот момент освобождает очередь.
+Блокування зловмисників.
+У папці World можна створити два файли для бану підключень.
+blockip.txt - IP адреси, які потрібно заблокувати. Один рядок один IP, останнє значення можна писати через дріб 1.2.3.0.0/2 додасть три IP, що закачуються на .0, .1 і .2.
+
+blockkey.txt - це бан за ключами. кожен гравець має унікальні ключі. Дізнатися їх можна з логів за пошуком "key=", знайдеться приблизно такий рядок:
+Checked loginName key=hlw57jjSV5HacQbb9iiB@@51b36et2ZBvBUkUztF+N
+У кожного користувача кілька ключів і збігу будь-якого з них достатньо для блокування. Тому для бану за ключем у файл потрібно додати обидва (кожен в окремий рядок). Ключі розділені трьома символами @@@ їх писати не потрібно.
+Під час першого входу з нового обладнання додається спеціальний ключ 111@@@
+
+В обидва ці файли можна писати коментарі, які повинні йти після ключа або IP через пробіл
+
+
+Можна отримати загальні дані щодо всіх гравців у консолі, натиснувши букву S. Буде створено файл Players_дата.csv зі списком гравців, часом останнього входу і деякою ігровою інформацією. Ось опис деяких стовпців:
+LastOnlineDay - скільки реальних днів тому гравець був онлайн
+BaseCount - поточна кількість поселень
+CaravanCount - поточна кількість караванів
+MarketValue - поточна вартість поселення
+MarketValuePawn - поточна вартість пішаків
+AttacksWonCount - скільки на гравця направили інцидентів
+AttacksInitiatorCount - скільки гравець зробив інцидентів на інших гравців
+ColonistsCount - скільки всього колоністів
+ColonistsDownCount - скільки з колоністів не на ногах
+ColonistsBleedCount - скільки з колоністів мають кровотечу
+PawnMaxSkill - скільки колоністів мають 8 із 12 навичок 20 рівня. Імовірно завжди має бути = 0. Якщо воно дорівнює ColonistsCount, значить це точно чит
+KillsHumanlikes - скільки колоністи гравця вбили інших людей
+KillsMechanoids - скільки колоністи гравця вбили механоїдів
+KillsBestPawnHN - який колоніст убив найбільшу кількість інших людей
+KillsBestPawnH - скільки саме
+KillsBestPawnMN - який колоніст убив найбільшу кількість механоїдів
+KillsBestPawnM - скільки саме
+Grants - права на сервері, "UsualUser" - звичайний користувач, "SuperAdmin. Moderator" - творець світу (перший зареєстрований)
+IntruderKeys - ключі, за якими можна банити і шукати логіни, на які входять з одного комп'ютера
+StartMarketValue - ціна стартового поселення
+StartMarketValuePawn - ціна стартових пішаків
+MarketValueBy15Day - максимальна вартість поселення яку гравець набрав за 15 днів
+MarketValuePawnBy15Day - максимальна вартість пішаків яку гравець набрав за 15 днів
+MarketValueByHour - максимальна вартість поселення, яку гравець набрав за 1 годину гри, за винятком часу на паузі
+MarketValuePawnByHour - максимальна вартість пішаків яку гравець набрав за 1 годину гри, за винятком часу на паузі
+TicksByHour - максимальна кількість тиків за одну годину онлайн (включно з часом паузи)
+HourInGame - час гри за поточну колонію, виключаючи час на паузі
+
+
+Логи сервера створюються автоматично Log_дата.txt, разом із файлом з інцидентами Incidents_місяць.csv. Тут зазначається кілька подій на кожен інцидент:
+NewIncident - гравець fromLogin замовив рейд на toLogin
+SendMail - у toLogin минули всі очікування від минулих, і пів дня очікування перед атакою для рейдів і подія безпосередньо почалася
+DayAfterMail - минув день після події, у цей момент визначається, скільки потрібно чекати ще (або не потрібно більше), зручно дивитися скільки рейд завдав шкоди
+End - закінчення очікування, подія повністю завершена і в цей момент звільняє чергу.
 
 Колонки:
-fromDay и toDay - какой на этот момент игровой день у нападающего и цели
-worth - это общая стоимость вещей и пешек. В отдельных колонках для всего аккаунта, в worthTarget именно поселения цели
-delayAfterMail - это сколько дней задержки было рассчитано (в момент расчета 1 день уже прошел)
+fromDay і toDay - який на цей момент ігровий день у нападника і цілі
+worth - це загальна вартість речей і пішаків. В окремих колонках для всього акаунта, у worthTarget саме поселення цілі
+delayAfterMail - це скільки днів затримки було розраховано (у момент розрахунку 1 день уже минув)
 
 
-# 8. Функции мода в игре
+# 8. Функції мода в грі
 
-Специальные команды пишутся в чате (обычно в любой канал), и они не будут в нём отображены. Все такие команды начинаются с символа /
+Спеціальні команди пишуться в чаті (зазвичай у будь-який канал), і вони не будуть у ньому відображені. Усі такі команди починаються з символу /
 
-/killmyallplease - удаляет сохранение с сервера, и все поселения и караваны с карты. Регистрация остается. При следующем заходе будет предложено создать новое поселение. Функцию можно также вызвать с вкладки О моде по кнопке Начать заново.
+/killmyallplease - видаляє збереження з сервера, і всі поселення та каравани з карти. Реєстрація залишається. При наступному заході буде запропоновано створити нове поселення. Функцію можна також викликати з вкладки Про мод за кнопкою Почати заново.
 
-/killhimplease {UserLogin} - (только для администратора) аналогично /killmyallplease, но указанного игрока.
+/killhimplease {UserLogin} - (тільки для адміністратора) аналогічно /killmyallplease, але зазначеного гравця.
 
-/everybodylogoff - (только для администратора) команда для корректного завершения работы сервера. Всем онлайн игрокам передается команда на сохранение и выход. После вызова команды нужно следить за консолью сервера: как только активность игроков исчезнет и сервер сохранит данные консоль можно выключать. Не рекомендуется запускать при активной PVP сессии.
+/everybodylogoff - (тільки для адміністратора) команда для коректного завершення роботи сервера. Усім онлайн гравцям передається команда на збереження і вихід. Після виклику команди потрібно стежити за консоллю сервера: щойно активність гравців зникне і сервер збереже дані, консоль можна вимикати. Не рекомендується запускати під час активної PVP-сесії.
 
-/createchat {Name} - создает новый чат с указанным именем, также доступно в интерфейсе чата
+/createchat {Name} - створює новий чат із зазначеним ім'ям, також доступно в інтерфейсі чату
 
-/addplayer {UserLogin} - добавляет игрока в текущий чат, также доступно в интерфейсе чата
+/addplayer {UserLogin} - додає гравця в поточний чат, також доступно в інтерфейсі чату
 
-/renamechat {Name} - переименовывает текущий чат, также доступно в интерфейсе чата
+/renamechat {Name} - перейменовує поточний чат, також доступно в інтерфейсі чату
 
-/exitchat - выходит из текущего чата, также доступно в интерфейсе чата
+/exitchat - виходить із поточного чату, також доступно в інтерфейсі чату
 
-/discord - подробнее смотри https://github.com/AantCoder/OnlineCity/tree/dev/Source/DiscordChatBotServer
+/discord - докладніше дивись https://github.com/AantCoder/OnlineCity/tree/dev/Source/DiscordChatBotServer
 
-/say {'имя игрока'} {/цвет}* {'заголовок'} {текст} {продолжение текста} ... - отправляет сообщение игроку в виде игрового письма, доступно администратору.
-*не обязательный параметр цвет определяется по началу с / Может быть таким:
-	/treatbig - красное письмо со звуком
-	/treatsmall - красное письмо
-	/death - серое письмо со звуком
-	/negative - желтое письмо
-	/positive - синее письмо со звуком
-	/visitor - синее письмо
-	/neutral - серое письмо (по умолчанию)
+/say {'ім'я гравця'} {/колір}* {'заголовок'} {текст} {продовження тексту} ... - надсилає повідомлення гравцеві у вигляді ігрового листа, доступно адміністратору.
+*не обов'язковий параметр колір визначається за початком з / Може бути таким:
+	/treatbig - червоний лист зі звуком
+	/treatsmall - червоний лист
+	/death - сірий лист зі звуком
+	/negative - жовтий лист
+	/positive - синій лист зі звуком
+	/visitor - синій лист
+	/neutral - сірий лист (за замовчуванням)
 
-/call {событие} {'имя игрока'} {sId поселения цели} {мощность}* {способ прибытия}* {фракция}*
-*опционально для некоторых событий
-имя игрока обязательно в одинарных кавычках, например: /call raid 'babur'
-Список доступных событий:
-	raid - вызов рейда на игрока. Доступен выбор мощности, целое число от 1 до 10. Также доступен способ прибытия и выбор фракции.
-	inf - вызов жуков на карте игрока. Доступен выбор мощности
-	acid - вызов кислотного дождя на карте игрока
-Список доступных способов прибытия:
-	walk - прибытие пешком со случайного края карты
-	air - сброс в десантных капсулах в домашнюю область игрока
-	random - сброс в капсулах в случайные точки на карте. Даёт сильно рассредоточенный рейд
-Список доступных фракций:
-	tribe - враждебная фракция аборигенов. Огромное количество людей с примитивным оружием
-	pirate - враждебная фракция индустриального уровня развития. Прибудут как солдаты с хорошим огнестрельным оружием и ракетницами, так и бойцы ближнего боя
-	mech - фракция механоидов. Тяжелобронированные, как правило, прибывают в малом количестве. Когда качество важнее количества
-Пример:
+/call {подія} {'ім'я гравця'} {sId поселення цілі} {потужність}* {спосіб прибуття}* {фракція}*
+*опціонально для деяких подій
+ім'я гравця обов'язково в одинарних лапках, наприклад: /call raid 'babur'
+Список доступних подій:
+	raid - виклик рейду на гравця. Доступний вибір потужності, ціле число від 1 до 10. Також доступний спосіб прибуття і вибір фракції.
+	inf - виклик жуків на карті гравця. Доступний вибір потужності
+	acid - виклик кислотного дощу на карті гравця
+Список доступних способів прибуття:
+	walk - прибуття пішки з випадкового краю карти
+	air - скидання в десантних капсулах у домашню область гравця
+	random - скидання в капсулах у випадкові точки на карті. Дає сильно розосереджений рейд
+Список доступних фракцій:
+	tribe - ворожа фракція аборигенів. Величезна кількість людей із примітивною зброєю
+	pirate - ворожа фракція індустріального рівня розвитку. Прибудуть як солдати з хорошою вогнепальною зброєю і ракетницями, так і бійці ближнього бою
+	mech - фракція механоїдів. Важкоброньовані, як правило, прибувають у малій кількості. Коли якість важливіша за кількість
+Приклад:
 /call raid 'babur' 143 8 random pirate
 /call inf 'SSDExecutor' 23 4
 /call acid 'Aant' 16
-Примечание:
-если для события raid не указать мощность, способ прибытия и фракцию, по умолчанию вызывается
-/call raid {'имя игрока'} 1 walk pirate
+Примітка:
+якщо для події raid не вказати потужність, спосіб прибуття і фракцію, за замовчуванням викликається
+/call raid {'ім'я гравця'} 1 walk pirate
 
 
-# 9. Возможные проблемы
+# 9. Можливі проблеми
 
-Если игра сломалась (не загружается колония или из-за ошибок невозможно играть), то вы можете связаться с администратором и попросить его восстановить игру с прошлого сохранения. Также вы можете начать игру заново под тем же аккаунтом.
+Якщо гра зламалася (не завантажується колонія або через помилки неможливо грати), то ви можете зв'язатися з адміністратором і попросити його відновити гру з минулого збереження. Також ви можете почати гру заново під тим самим акаунтом.
 
-Есть не решенная проблема передачи пешек при использовании HardcoreSK. Может быть подобная проблема будет с ещё каким-нибудь модами, пока не известно.
+Є невирішена проблема передачі пішаків під час використання HardcoreSK. Можливо, подібна проблема буде з ще якимось модами, поки що не відомо.
 
-Если вы попытались зайти на сервер, но игра выдала сообщение, что не все файлы прошли проверку, то просто зайдите ещё раз. Это нормальная ситуация. Либо произошли какие-нибудь, возможно незначительные, изменения в модпаке. Либо что-то изменилось в папке Mods или файл ModsConfig.xml был изменен вашей игрой.
+Якщо ви спробували зайти на сервер, але гра видала повідомлення, що не всі файли пройшли перевірку, то просто зайдіть ще раз. Це нормальна ситуація. Або відбулися якісь, можливо незначні, зміни в модпаку. Або щось змінилося в папці Mods або файл ModsConfig.xml був змінений вашою грою.
 
-После регистрации и входа может происходить загрузка модов и сохранения с сервера. Иногда это может занимать несколько минут, в течении которых игра может зависнуть или отображать чёрный экран. Попробуйте подождать до 10 минут. В отдельных случаях при первом заходе на сервер с загрузкой большого модпака с плохой скоростью интернета это может занять значительно большее время.
+Після реєстрації та входу може відбуватися завантаження модів і збереження з сервера. Іноді це може займати кілька хвилин, протягом яких гра може зависнути або відображати чорний екран. Спробуйте почекати до 10 хвилин. В окремих випадках під час першого заходу на сервер із завантаженням великого модпака з поганою швидкістю інтернету це може зайняти значно більший час.
 
-Если вы уже заходили и играли на сервер с синхронизацией модов, то если после перезагрузки игры нажать в главном меню Моды, то при следующем заходе на сервер игра скорее всего будет перезапущена. Фактически ничего не менялось, но игра после открытия списка модов перезаписывает ModsConfig.xml и он может немного измениться. Это нормальное поведение, просто реже нажимайте кнопку Моды :)
+Якщо ви вже заходили і грали на сервері з синхронізацією модів, то якщо після перезавантаження гри натиснути в головному меню Моди, то під час наступного заходу на сервер гру, найімовірніше, буде перезапущено. Фактично нічого не змінювалося, але гра після відкриття списку модів перезаписує ModsConfig.xml і він може трохи змінитися. Це нормальна поведінка, просто рідше натискайте кнопку Моди :)
 
-Есть баг, который сложно поймать. Иногда после передачи поселенца другому игроку его копия (пешка с тем же именем, професией и навыками) может появиться в каком-нибудь событии или попросить присоединиться к поселению. Не соглашайтесь, очевидцы говорят, что это призрак который крашит игру! :)
+Є баг, який складно зловити. Іноді після передачі поселенця іншому гравцеві його копія (пішак з тим самим ім'ям, професією і навичками) може з'явитися в якій-небудь події або попросити приєднатися до поселення. Не погоджуйтеся, очевидці кажуть, що це привид, який крашить гру! :)
 
-# 10. Другие часто задаваемые вопросы
+# 10. Інші поширені запитання
 
->Как выбрать сценарий игры?
-Сценарий игры настроить нельзя, но рассказчика и сложность можно сменить сразу после старта через настройки. Первоначально игра начинается с рассказчиком Кассандрой, стандартным сценарием Классика и сложности, которую установили при создании сервера.
+>Як вибрати сценарій гри?
+Сценарій гри налаштувати не можна, але оповідача і складність можна змінити відразу після старту через налаштування. Спочатку гра починається з оповідачем Кассандрою, стандартним сценарієм Класика і складністю, яку встановили під час створення сервера.
 
->Можно ли играть вместе за одно поселение?
-Играть на одной карте нельзя, кроме нападения на поселение другого игрока, но это всё равно не прямое управление. Если вам нужна такого типа игра, попробуйте Zetrith Multiplayer
+>Чи можна грати разом за одне поселення?
+Грати на одній карті не можна, крім нападу на поселення іншого гравця, але це все одно не пряме управління. Якщо вам потрібна такого типу гра, спробуйте Zetrith Multiplayer
 
->Что происходит у других когда я нажимаю паузу?
-Ничего :) Течение игры всех участников независимо. У каждого игрока на карте своя игровая сессия, в которую добавлено взаимодействие с чужими поселениями и караванами. Например, можно поставить паузу, и посмотреть, как чужие караваны двигаются по карте (хотя, попасть на время когда другой игрок ходит караваном сложно).
-А вот какой может быть пример взаимодействия: в момент нападения можно запросить помощи у друга и поставить игру на паузу, он в это время подойдёт караваном и передаст своих поселенцев; после отбития атаки можно вернуть поселенцев таким же способом. Или, например, тот кто пришёл на помощь может передать всех пешек кроме одного животного, чтобы караван не был расформирован, тогда вернуть поселенцев можно будет сразу же после отбития, создав из них новый караван и передав их в назад в караван друга.
+>Що відбувається в інших, коли я натискаю паузу?
+Нічого :) Перебіг гри всіх учасників незалежний. У кожного гравця на карті своя ігрова сесія, до якої додано взаємодію з чужими поселеннями і караванами. Наприклад, можна поставити паузу і подивитися, як чужі каравани рухаються картою (хоча потрапити на час, коли інший гравець ходить караваном, складно).
+А ось який може бути приклад взаємодії: у момент нападу можна попросити допомоги в друга і поставити гру на паузу, він у цей час підійде караваном і передасть своїх поселенців; після відбиття атаки можна повернути поселенців у такий самий спосіб. Або, наприклад, той, хто прийшов на допомогу, може передати всіх пішаків, окрім однієї тварини, щоб караван не був розформований, тоді повернути поселенців можна буде одразу ж після відбиття, створивши з них новий караван і передавши їх назад у караван союзника.
 
->Игра зависает после авторизации
-Не зависает, а прогружает, просто подождите. Процесс подгрузки может занять до ~5 - 10 минут.
+>Гра зависає після авторизації
+Не зависає, а провантажує, просто почекайте. Процес підвантаження може зайняти до ~5 - 10 хвилин.
 
->Как найти логи
-Отдельные логи OnlineCity пишутся в: %appdata%\..\LocalLow\Ludeon Studios\RimWorld by Ludeon Studios\OnlineCity (это можно вставить в проводник)
+>Як знайти логи
+Окремі логи OnlineCity пишуться в: %appdata%\..\LocalLow\Ludeon Studios\RimWorld by Ludeon Studios\OnlineCity (це можна вставити в провідник)
 
->Как удалить свою колонию?
-Нужно открыть окно Онлайн через панель внизу или через Меню в игре. Далее на вкладке О моде нажать Начать заново.
-Это же действие можно сделать, написав в чат команду: /killmyallplease
+>Як видалити свою колонію?
+Потрібно відкрити вікно Онлайн через панель внизу або через Меню в грі. Далі на вкладці Про мод натиснути Почати заново.
+Цю ж дію можна зробити, написавши в чат команду: /killmyallplease
 
->Как часто сохраняется игра?
-Игра сохраняется на сервер раз в 15 минут, если вы не изменили это на вкладке Настройки, также сохраняется при выходе из игры через меню. 
-Используя ALT + F4, вы можете откатить свою колонию к последнему сохранению.
+>Як часто зберігається гра?
+Гра зберігається на сервер раз на 15 хвилин, якщо ви не змінили це у вкладці Налаштування, також зберігається під час виходу з гри через меню. 
+Використовуючи ALT + F4, ви можете відкотити свою колонію до останнього збереження.
 
->Что делать если я забыл пароль?
-К сожалению системы восстановления пароля нету. Попытайтесь вспомнить и если доступ никак не получиться восстановить, то попросите администратора удалить вашу колонию, чтобы освободить место на планете и зарегистрируйте нового пользователя.
+>Що робити, якщо я забув пароль?
+На жаль системи відновлення пароля немає. Спробуйте згадати і якщо доступ ніяк не вдасться відновити, то попросіть адміністратора видалити вашу колонію, щоб звільнити місце на планеті і зареєструйте нового користувача.
 
->Доступен ли режим разработчика другим игрокам?
-Это зависит от настроек сервера. Если режим запрещен, то все, кроме администратора, не смогут его поставить. Вы можете проверить это сами :)
+>Чи доступний режим розробника іншим гравцям?
+Це залежить від налаштувань сервера. Якщо режим заборонено, то всі, крім адміністратора, не зможуть його поставити. Ви можете перевірити це самі :)
 
 
-Ссылки:
-Основной сервер для игры и тестирования:  rimworld.online
+Посилання:
+Основний сервер для гри та тестування:  rimworld.online
 Discord:  https://discord.gg/5DzWrnR
-Оф. группа мода ВК:  https://vk.com/rimworldonline
+Оф. група моду ВК:  https://vk.com/rimworldonline
 Trello:  https://trello.com/b/gXtWtDjy/onlinecity-mod-rimworld
 GitHub:  https://github.com/AantCoder/OnlineCity//github.com/AantCoder/OnlineCity
-	</OCity_AboutGeneralText>
+</OCity_AboutGeneralText>
 
 </LanguageData>
