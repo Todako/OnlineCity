@@ -99,15 +99,8 @@ namespace ClientAncillary
 #endif
                 data = null;
             }
+
             return data;
         }
-        
-
-                data = null;
-            }
-            return data;
-        }
-#endif
-
     }
 }
