@@ -164,8 +164,9 @@
     <Compile Include="GameClasses\TradeOrdersOnline.cs" />
     <Compile Include="GameClasses\TradeThingsOnline.cs" />
     <Compile Include="GameClasses\WorldObjectBaseOnline.cs" />
-        <Compile Include="MailController.cs" />
+    <Compile Include="MailController.cs" />
     <Compile Include="Model\ClientHashCheckerResult.cs" />
+    <Compile Include="RenderMap.cs" />
     <Compile Include="Services\AnyLoad.cs" />
     <Compile Include="Services\ClientHashChecker.cs" />
     <Compile Include="Services\IOnlineCityClientService.cs" />
