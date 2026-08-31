@@ -19,7 +19,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\BuildOutput\Server\Debug\</OutputPath>
+    <OutputPath>..\BuildOutput\Server\Debug</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -29,7 +29,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\BuildOutput\Server\Release\</OutputPath>
+    <OutputPath>..\BuildOutput\Server\Release</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -181,5 +181,36 @@
       <ErrorText>Данный проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Используйте восстановление пакетов NuGet, чтобы скачать их.  Дополнительную информацию см. по адресу: http://go.microsoft.com/fwlink/?LinkID=322105. Отсутствует следующий файл: {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\System.Text.Json.6.0.2\build\System.Text.Json.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.Text.Json.6.0.2\build\System.Text.Json.targets'))" />
+  </Target>
+
+  <Target Name="PackageServer" AfterTargets="Build" Condition="'$(Configuration)' == 'Release'">
+    <PropertyGroup>
+      <ServerPackageDir>$(MSBuildProjectDirectory)\..\..\Build\Server</ServerPackageDir>
+    </PropertyGroup>
+
+    <RemoveDir Directories="$(ServerPackageDir)" Condition="Exists('$(ServerPackageDir)')" />
+    <MakeDir Directories="$(ServerPackageDir)" />
+
+    <ItemGroup>
+      <ServerRuntimeFiles Include="$(TargetDir)ICSharpCode.SharpZipLib.dll" />
+      <ServerRuntimeFiles Include="$(TargetDir)Microsoft.Bcl.AsyncInterfaces.dll" />
+      <ServerRuntimeFiles Include="$(TargetDir)Newtonsoft.Json.dll" />
+      <ServerRuntimeFiles Include="$(TargetDir)OCUnion.dll" />
+      <ServerRuntimeFiles Include="$(TargetDir)Server.exe" />
+      <ServerRuntimeFiles Include="$(TargetDir)Server.exe.config" />
+      <ServerRuntimeFiles Include="$(TargetDir)System.Buffers.dll" />
+      <ServerRuntimeFiles Include="$(TargetDir)System.ComponentModel.Annotations.dll" />
+      <ServerRuntimeFiles Include="$(TargetDir)System.Memory.dll" />
+      <ServerRuntimeFiles Include="$(TargetDir)System.Numerics.Vectors.dll" />
+      <ServerRuntimeFiles Include="$(TargetDir)System.Runtime.CompilerServices.Unsafe.dll" />
+      <ServerRuntimeFiles Include="$(TargetDir)System.Text.Encoding.CodePages.dll" />
+      <ServerRuntimeFiles Include="$(TargetDir)System.Text.Encodings.Web.dll" />
+      <ServerRuntimeFiles Include="$(TargetDir)System.Text.Json.dll" />
+      <ServerRuntimeFiles Include="$(TargetDir)System.Threading.Tasks.Extensions.dll" />
+      <ServerRuntimeFiles Include="$(TargetDir)System.ValueTuple.dll" />
+    </ItemGroup>
+
+    <Copy SourceFiles="@(ServerRuntimeFiles)" DestinationFolder="$(ServerPackageDir)" SkipUnchangedFiles="true" />
+    <Message Importance="high" Text="OnlineCity Server package: $(ServerPackageDir)" />
   </Target>
 </Project>
