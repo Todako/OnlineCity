@@ -1,8 +1,16 @@
-Copyright 2018-2019 Ivanov Vasilii Sergeevich aka Aant
+OnlineCity
+Copyright 2018-2023 Ivanov Vasilii Sergeevich aka Aant
 Licensed under the Apache License, Version 2.0
 
 List of components used in OnlineCity:
 * Harmony library made by Andreas Pardeike (MIT license) https://github.com/pardeike/Harmony
 * HugsLib https://github.com/UnlimitedHugs/RimworldHugsLib
-* SharpZipLib made by ICSharpCode (MIT license)  https://github.com/icsharpcode/SharpZipLib 
+* SharpZipLib made by ICSharpCode (MIT license)  https://github.com/icsharpcode/SharpZipLib
 * Circle icon on main buttom from ResearchTree (MIT license) https://github.com/FluffierThanThou/ResearchTree
+
+=======================================================================
+
+Fork OnlineCity
+Copyright 2026 Petro Bodnar, known as Todako
+
+This product contains modifications developed by Your Name.
