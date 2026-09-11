@@ -1,269 +1,226 @@
-# OnlineCity
-OnlineCity mod for RimWorld
-Author: Vasilii Ivanov // Aant
-English translation by Travis Martin // T3rrabyte // Lakuna
+# Fork of the OnlineCity mod for RimWorld
+Author: Petro Bodnar, known as Todako
+Original author: Vasyl Ivanov, known as Aant
 
-OnlineCity is a mod for RimWorld that allows players to connect to an online server and play on the same planet. After registering, players can create their own faction and develop along with other players. You are able to watch the progress of your neighbors, their settlements, and their caravans, and you can trade food, medicine, weapons, prisoners, and other commodities with them just as you would a normal non-player faction.
+**OnlineCity** is a mod for RimWorld that allows multiple players to play on the same planet.
+Build your own colony, develop it, and interact with other players. Keep an eye on their colonies and caravans, and help each other by sharing resources, equipment, and even colonists.
 
-The goal of the mod is to make it possible to play RimWorld with friends without ruining the balance or immersion of the game. The mod is currently in early development, and only contains minimal features to enable you to play with your friends.
+# Fork моду OnlineCity для гри RimWorld
+Автор: Петро Боднар, відомий як Todako
+Автор оригінального : Василь Іванов, відомий як Aant
 
-# OnlineCity
-OnlineCity мод для игры RimWorld
-Автор Василий Иванов aka Aant
+**OnlineCity** — модифікація для RimWorld, яка дозволяє кільком гравцям грати на одній планеті.
+Створюйте власне поселення, розвивайте його та взаємодійте з іншими гравцями. Спостерігайте за їхніми поселеннями й караванами та допомагайте одне одному, передаючи ресурси, спорядження і навіть поселенців.
 
-OnlineCity – это модуль сетевой игры для симулятора выживания RimWorld. Он позволяет нескольким игрокам играть на одной планете в режиме онлайн. После регистрации, вы сможете создать свое поселение и начать развиваться бок о бок с другими участниками. Вы сможете наблюдать за прогрессом соседей, их поселениями и караванами, но самое главное вы сможете оказывать друг другу вполне материальную помощь, передавая еду, медикаменты, оружие или любые другие вещи, включая поселенцев. Для этого необходимо лишь по всем правилам игры собрать караван и добраться до них! 
-
-Цель мода – сделать возможной игру с друзьями, не нарушая баланса и не снижая уровень погружения в игру. На данный момент жизненный путь мода только начался. Он обладает минимальным набором функций, чтобы предоставить вам возможность совместной игры. Вы можете видеть других игроков на карте планеты, переписываться с ними в чате и обмениваться товарами с караванами и поселениям. А разработка продолжается! За ее прогрессом вы можете следить в новостях группы. 
-
-# Links
-Official mod page: https://vk.com/rimworldonline (includes donation links).
-
-Discord: https://discord.gg/5DzWrnR.
-
-Email: emAnt@mail.ru.
-
-Track development on Trello: https://trello.com/b/gXtWtDjy/onlinecity-mod-rimworld.
-
-Official server IP: 194.87.95.90 (as of October 2019).
-
-# Ссылки
-Официальная страница мода: https://vk.com/rimworldonline
-(там же есть ссылки для финансовой помощи автору)
-
-Общение в Дискорд: https://discord.gg/5DzWrnR
-
-Почта emAnt@mail.ru
-
-Процесс разработки на Trello: https://trello.com/b/gXtWtDjy/onlinecity-mod-rimworld
-
-Текущий сервер для игры и тестов 194.87.95.90 (актуально на 10.2019) 
 
 # Information for Players
-Requires RimWorld version 1.1 or above and HugsLib.
+**OnlineCity works with RimWorld versions 1.1–1.4.**
 
-In order to connect to a server, your mod list much match that of the server. OnlineCity will automatically synchronize your mod list with the server when you try to connect.
+To play, install **Harmony → Core → HugsLib → OnlineCity**.
+OnlineCity is compatible with most mods, but the specific set of mods supported may vary by server.
 
-Your save will synchronize with the server every 5 seconds, with a full save every 15 minutes or when you disconnect.
+**Synchronization** with the server occurs every 5 seconds, and a full save takes place every 15 minutes or when you exit via the menu.
+Do not close the game by clicking the X button to avoid losing your progress since the last save.
 
-Things to note:
-* Networked games are focused on mutual assistance and survival.
-* Other players' bases and caravans are blue on the world map.
-* In order to force transactions with another player to appear in a certain stockpile, rename that stockpile so that its name contains "trade".
-* The general chat sends messages to all players who are online. To chat privately with a player, click on their username.
+Good to know:
+* OnlineCity is currently designed primarily for mutual assistance among players.
+* Other players’ settlements and caravans are marked in blue. You can interact with them by right-clicking on your own caravan.
+* To have items from other players automatically stored in the correct warehouse, add “trade” to the warehouse’s name.
+* All online players can chat in the general chat. You can also create a private chat.
+* Click on a player’s nickname to view their profile or open a private chat.
 
-# Игрокам
-Текущая версия RimWorld 1.1+
+# Інформація для гравців
+**OnlineCity працює з RimWorld 1.1–1.4.**
 
-Чтобы начать играть установите мод как обычно в папку Mods. Для работы также требуется установленный мод HugsLib. Таким образом минимальный набор может быть в такой последовательности:
-Harmony
-Core
-HugsLib
-OnlineCity
+Для гри встановіть **Harmony → Core → HugsLib → OnlineCity**.
+OnlineCity сумісний із більшістю модів, але їхній набір може залежати від сервера.
 
-Мод должен быть совместим практически со всеми другими модами. Однако набор модов и, возможно, каких-то настроек может ограничиваться сервером, на котором вы хотите играть. Т.е. на одном сервере набор определенных (конфликтных) модов должен быть одинаков у всех игроков.
+**Синхронізація** з сервером відбувається кожні 5 секунд, а повне збереження — кожні 15 хвилин або під час виходу через меню.
+Не закривайте гру хрестиком щоб не втратити прогрес після останнього збереження.
 
-Синхронизация с сервером происходит каждые 5 секунд, полноценное сохранение – раз в 15 минут или при выходе из игры посредством меню. 
-Не рекомендуется закрывать игру нажатием на крестик! Это может привести к потере прогресса игры с последнего сохранения. 
+Корисно знати:
+* OnlineCity наразі призначений переважно для взаємодопомоги між гравцями.
+* Поселення та каравани інших гравців позначені синім. Взаємодіяти з ними можна правою кнопкою миші, вибравши свій караван.
+* Щоб товари від інших гравців автоматично зберігалися на потрібному складі, додайте до його назви «торг» або «trade».
+* У загальному чаті можуть спілкуватися всі гравці онлайн. Також можна створити приватний чат.
+* Натисніть на нікнейм гравця, щоб переглянути його інформацію або відкрити приватний чат.
 
-Полезно знать: 
-* Пока сетевая игра ориентирована только на взаимопомощь в выживании. 
-* Цвет домов и караванов других игроков – синий. С ними можно взаимодействовать, выделив свой караван и нажав на них правой кнопкой мыши. 
-* При передаче товаров учитывайте грузоподъемность караванов. При перегрузе караван не сможет передвигаться. Выделив караван, можно узнать сколько груза он ещё может принять. 
-* Чтобы товары, полученные от сделок с другими игроками, складировались в определенном месте вашего поселения, переименуйте нужный склад так, чтобы он содержал символы "торг" или "trade".
-* В общем чате можно общаться со всеми игроками, которые находятся онлайн. Так же можно создать приватный канал для общения с одним игроком лично. 
-* По щелчку любой кнопки мыши на никнейме игрока происходит добавление игрока в активный чат, открытие приватного канала чата, либо просмотр общей информации об игроке на выбор. 
 
 # Information for Developers
-Development is based in the OnlineCity folder in the RimWorld "Mods" folder.
+Projects
+* **Chat** — Authentication and communication in the general chat.
+* **Converter** — Conversion of world saves for newer versions.
+* **RimWorldOnlineCity** — The main mod library for the game.
+* **ServerConsole** — a shell for launching the server.
+* **ServerDll** — the server component that accepts player connections.
+* **UnionDll** — shared code and models for the client and server.
 
-Projects:
-* Chat - a utility to allow players to communicate with each other on the server.
-* Converter - a utility that converts a world save to newer versions.
-* RimWorldOnlineCity - the modification for RimWorld.
-* ServerConsole - the server startup shell.
-* ServerDll - a server that opens a port and handles connections.
-* UnionDll - contains code that is used by both the client and the server.
+Build
+The project is built into the **Build** folder, which is located next to **Source**. The `Source` folder must remain in the root of the repository, since the files for the build are taken from there.
 
-The ServerConsole project is assembled into a special folder called "RimWorldOnlineCityServerOut".
+After the build:
+* **Build/Client** — the finished OnlineCity for players. Move it to the game’s `Mods` folder.
+* **Build/Server** — the server component.
 
-Notable files:
-* StartPoint.cs is the starting point for the mod. It contais two classes that add buttons to the main menu in-game, and the constructor in which the mod is initialized. Basic initialization occurs when the player logs into a server.
-* SessionClientController.cs contains the initializer itself (which is called from StartPoint.cs) and InitConnected (which starts work on the game immediately following the connection to the server).
-* Dialog_MainOnlineCity.cs contains the main dialog for the game, which is opened through the button on the main menu.
+Where to start:
+* **StartPoint.cs** — the mod’s entry point and its initialization. The OnlineCity button in the game’s bottom bar is also created here.
+* **SessionClientController.cs** — main client initialization, server connection, and general functions.
+* **Dialog_MainOnlineCity.cs** — the main OnlineCity window and user interaction.
 
-# Помощь в разработке
-Разработка задумывается из папки OnlineCity в игровой папке Mods.
+# Інформація для розробників
+Проєкти
+* **Chat** — авторизація та спілкування в загальному чаті.
+* **Converter** — конвертація збережень світу для новіших версій.
+* **RimWorldOnlineCity** — основна бібліотека мода для гри.
+* **ServerConsole** — оболонка для запуску сервера.
+* **ServerDll** — серверна частина, що приймає підключення гравців.
+* **UnionDll** — спільний код і моделі для клієнта та сервера.
 
-Проекты:
-* Chat - утилита через которую можно залогиниться и общаться в общем чате
-* Converter - утилита для перевода файла сохраненного мира на более новые версии
-* RimWorldOnlineCity - библиотека мода прикрепляемая к игре
-* ServerConsole - оболочка запуска сервера
-* ServerDll - сервер, открывает указанный порт и радует игроков (по задумке)
-* UnionDll - содержит модель и некоторый код, который используется и клиентом и сервером
+Збірка
+Проєкт збирається у папку **Build**, яка знаходиться поруч із **Source**. Папка `Source` має залишатися в корені репозиторію, оскільки файли для збірки беруться саме звідти.
 
-Проект сервера ServerConsole разворачивается в специальную папку RimWorldOnlineCityServerOut 
-Сама библиотека мода RimWorldOnlineCity в папку Assemblies так, что после компиляции можно сразу тестировать в игре.
+Після збірки:
+* **Build/Client** — готовий OnlineCity для гравців. Переміщуємо в папку гри  `Mods`.
+* **Build/Server** — серверна частина.
 
-Начать знакомство можно с:
-* StartPoint.cs - здесь точка запуска нашего мода. Сейчас тут два класса которые добавляют кнопку на нижней панели в игре. И здесь же (в конструкторе) идет первая инициализация. Основная инициализация происходит после входа в игру (после логина или регистрации).
-* SessionClientController.cs - тут собственно Init (который запускается из StartPoint), и InitConnected (начало работы над игрой сразу после коннекта и авторизации на сервере). А также тут функции с общими действиями.
-* Dialog_MainOnlineCity.cs - основная форма игры, которая запускается по кнопке на нижней панели в игре. Сейчас, временно, при старте формы происходит запрос подключения к серверу и начало всех диалогов с пользователем.
+З чого почати:
+* **StartPoint.cs** — точка входу мода та його первинна ініціалізація. Тут також створюється кнопка OnlineCity у нижній панелі гри.
+* **SessionClientController.cs** — основна ініціалізація клієнта, підключення до сервера та загальні функції.
+* **Dialog_MainOnlineCity.cs** — головне вікно OnlineCity та взаємодія з користувачем.
 
-## Связь клиент сервер // Client-Server Communication
-### How the Connection Works
-Client:
-* The connection begins on Dialog_LoginForm or Dialog_RegistrationForm
-* In SessionClientController, the dialogs call the .Login and .Registration methods, respectively.
-* Those methods call the SessionClientController.Connect method to create a connection.
-* Also calls the SessionClient.Connect method (which is implemented as a singleton), which sends one packet to the server (one byte // 0x00) and receives a key for the connection as a response (which is then used to encrypt and decrypt information to/from the server).
-* Direct communication is provided by ConnectClient and the class that opens the port on the ConnectServer.
 
-All further communication occurs through the TransObject<> method.
-* TransObject<> is used to pack data into a single ModelContainer and transfer it to the server using .Trans.
-* In .Trans, the object is serialized to bytes, compressed (using GZip.ZipObjByte), and encrypted (using CryptoProvider.SymetricEncrypt).
-* The same container is used to decompress and deserialize the message from the server.
-* Also used to send error messages.
+## Взаємодія «клієнт-сервер» // Client-Server Communication
+### Start of the Exchange
+**Client**
+The exchange begins in `Dialog_LoginForm` or `Dialog_Registration`, which call `SessionClientController.Login` / `Registration`.
+Next, `SessionClientController.Connect` establishes a connection via `SessionClient.Connect`.
+During connection:
+1. The client sends a `0x00` packet to the server.
+2. The server returns a symmetric session key for encrypting traffic.
+3. The connection is maintained by `ConnectClient` on the client and `ConnectServer` on the server.
 
-Server:
-* A ServerManager.ConnectionAccepted event is raised
-* A separate thread is created.
-* The DoClient handler is launched
-* A game session is created (SessionServer) and runs the .Do method.
-* The .Do method listens to the stream of packets from the client.
-* Information is routed from the .Do method using the .Service method.
+Further data exchange occurs via `TransObject<>`:
+* Data is packaged into `ModelContainer`;
+* `Trans` serializes, compresses (`GZip.ZipObjByte`), encrypts (`CryptoProvider.SymmetricEncrypt`), and sends it to the server;
+* the received data is decrypted, unpacked, and deserialized back into a `ModelContainer`.
+A `ModelContainer` may also contain error messages.
 
-### Начало обмена (или как оно устроено)
-Клиент.
-* Начало обмена начинается на форме Dialog_LoginForm, либо Dialog_Registration.
-* Они вызывают функции SessionClientController Login и Registration соответственно.
-* Они вызывают создание подключения функцией SessionClientController.Connect.
-* Она же вызывает Connect из класса SessionClient (он реализован как синглтон).
-* Здесь происходит следующее (пока ключ на сессию передаётся открыто):
-*  Посылаем серверу первый пакет в один байт 0x00
-*  В ответ нам приходит симметричный ключ на сессию, которым мы будем шифровать и расшифровывать трафик
-* Непосредственную связь обеспечивает ConnectClient и класс открывающий порт на сервере ConnectServer.
+**Server**
+After the connection is established, the `ServerManager.ConnectionAccepted` event is triggered. A separate thread is created for the client, and `DoClient` is launched, which creates a `SessionServer` game session and calls its `Do` method.
+`Do` continuously receives and processes packets, then passes them on for processing via `Service`.
+More details on how the server works are provided below.
 
-Весь дальнейший обмен происходит через функцию TransObject<>
-* В TransObject<> запаковываем различные данные в стандартный единый контейнер ModelContainer и передаем серверу методом Trans.
-* В Trans мы сериализуем объект в байты и сжимаем (GZip.ZipObjByte), шифруем (CryptoProvider.SymmetricEncrypt) и отправляем на сервер.
-* Принитое сообщение от сервера расшифровываем, разжимаем и десериализуем в такой же стандартный единый контейнер ModelContainer.
-В нём, также, может быть передано сообщение об ошибке.
+### Початок обміну
+**Клієнт**
+Обмін починається у `Dialog_LoginForm` або `Dialog_Registration`, які викликають `SessionClientController.Login` / `Registration`.
+Далі `SessionClientController.Connect` встановлює з’єднання через `SessionClient.Connect`.
+Під час підключення:
+1. Клієнт надсилає серверу пакет `0x00`.
+2. Сервер повертає симетричний ключ сесії для шифрування трафіку.
+3. З’єднання забезпечують `ConnectClient` на клієнті та `ConnectServer` на сервері.
 
-Сервер.
+Подальший обмін відбувається через `TransObject<>`:
+* дані упаковуються в `ModelContainer`;
+* `Trans` серіалізує, стискає (`GZip.ZipObjByte`), шифрує (`CryptoProvider.SymmetricEncrypt`) і надсилає їх серверу;
+* отримані дані розшифровуються, розпаковуються та десеріалізуються назад у `ModelContainer`.
+`ModelContainer` також може містити повідомлення про помилки.
 
-При установлении подключения возникает событие ServerManager.ConnectionAccepted в котором порождается отдельная нить и запускается обработчик DoClient, который порождает игровую сессию на сервере в виде класса SessionServer и запускает в нём метод Do.
+**Сервер**
+Після підключення виникає подія `ServerManager.ConnectionAccepted`. Для клієнта створюється окремий потік і запускається `DoClient`, який створює ігрову сесію `SessionServer` та запускає її метод `Do`.
+`Do` безперервно приймає й обробляє пакети, після чого передає їх на обробку через `Service`.
+Детальніше про роботу сервера — нижче.
 
-В этом методе мы бесконечно слушаем поток и принимаем пакеты аналогично описанному у клиента выше, после чего полученный пакет "маршрутизируем" методом Service. Подробнее смотри ниже про сервер.
+### Request—Response
+**Client**
+There is a separate function in `SessionClient` for each type of request. It:
+* wraps the parameters into a model;
+* calls `TransObject<>`;
+* passes the expected response model and the request/response codes.
+Typically, **an odd-numbered code indicates a request, and the next even-numbered code indicates a response**.
 
-### How Requests and Responses Work
-Client:
-* For each request, a separate function is created in the SessionClient.
-* In the SessionClient, transmitted parameters are packed into a .TransObject<>, which is sent to the server.
-* .TransObject<> also contains the model of the expected response and the reception-transmission codes.
-* The response to an odd request is +1.
+**Server**
+The received `ModelContainer` is processed via `SessionServer.Service`. Based on the request code, `Service` determines the appropriate handler in the `Service` class.
+Thus, `Service` on the server is a kind of counterpart to `SessionClient` on the client: the client calls a function, and the server processes the corresponding request.
+To add a new request, you need to:
+1. Add a function to `SessionClient`.
+2. Add the corresponding handler to `Service`.
+3. Register the new request codes in `SessionServer.Service`.
 
-Server:
-* Requests are received in the form of a ModelContainer and are routed by the SessionServer.Service method.
-* In the Service method, the method used to process the data in the Service class is selected (based on the data).
-* The Service class is an analogue of the SessionClient.
-* To add a new handler to the server, a new method must be added to both the SessionClient and Service classes, and an entry with new codes must be added to the SessionServer.Service method.
+### Запит — відповідь
+**Клієнт**
+Для кожного типу запиту в `SessionClient` є окрема функція. Вона:
+* упаковує параметри в модель;
+* викликає `TransObject<>`;
+* передає модель очікуваної відповіді та коди запиту/відповіді.
+Зазвичай **непарний код — запит, наступний парний — відповідь**.
 
-### Запрос - ответ (или как пользоваться)
-Клиент.
+**Сервер**
+Отриманий `ModelContainer` обробляється через `SessionServer.Service`. За кодом запиту `Service` визначає потрібний обробник у класі `Service`.
+Таким чином, `Service` на сервері є своєрідним аналогом `SessionClient` на клієнті: клієнт викликає функцію, а сервер обробляє відповідний запит.
+Для додавання нового запиту потрібно:
+1. Додати функцію в `SessionClient`.
+2. Додати відповідний обробник у `Service`.
+3. Зареєструвати нові коди в `SessionServer.Service`.
 
-Для всех типов запросов создается своя функция в SessionClient.
 
-В ней происходит запаковка передаваемых параметров в модель и запускается TransObject<> для передачи на сервер и приема ответа от него. В TransObject<> помимо данных передается также модель ожидаемого ответа и коды приема-передачи (обычно нечётное - запрос, а ответ это +1 от него).
-
-Сервер.
-* Принятый запрос в виде стандартного контейнера ModelContainer маршрутизируется функцией SessionServer.Service.
-* Здесь на основе кода запроса выбирается обрабатывающая функция в классе Service.
-Можно сказать, что класс Service это аналог SessionClient для клиента (в том смысле, что в SessionClient мы вызываем функцию, а сервер обрабатывает её в зеркальном отражении в классе Service)
-
-Для добавления нового обработчика на сервере соответственно добавляем функции в классы SessionClient и Service, и запись с новыми кодами внутри функции SessionServer.Service.
-
-## Взаимодействие с игрой // Interaction with the Game
+## Взаємодія з грою // Interaction with the Game
 ### Connection
-Game data is stored in the SessionClientController class in ClientData.
+The main game data is stored in `SessionClientController.ClientData`.
+The mod starts by calling `Dialog_LoginForm` or `Dialog_Registration`, which in turn call `Login` / `Registration` and connect to the server.
 
-Step-by-step if the server does not have a planet:
-* The connection begins on Dialog_LoginForm or Dialog_RegistrationForm
-* In SessionClientController, the dialogs call the .Login and .Registration methods, respectively.
-* After the methods form a connection, the .InitConnected method is called.
-* If the server world is not created, the connected user is registered as the administrator and the Dialog_CreateWorld is opened.
-* After the user is finished with the dialog, the world is generated (using GameStarter.GameGeneration).
-* After the world is generated, the .CreatingWorld method is launched. This method updates the world and saves its data to the server (using CreateWorld.toServ).
-* The user is then returned to the main menu.
+Once connected, `InitConnected` is triggered:
+* **The world has not yet been created** — the administrator opens `Dialog_CreateWorld`, after which `GameStarter.GameGeneration` creates the world, and `CreatingWorld` saves it to the server via `connect.CreateWorld()`.
+* **No player save** — a new planet is created with other players’ settlements. After selecting a landing site and creating a colony, `CreatePlayerMap` is triggered, which saves the game and proceeds to `InitGame`.
+* **A save exists** — it is loaded, after which `InitGame` is triggered via `GameLoades.AfterLoad`.
 
-Step-by-step if the player is connecting to the server for the first time:
-* A planet is created, and the other players' settlements are loaded.
-* The user selects a landing site and pawns as normal.
-* When the game starts as normal, the GameStarter.AfterStart event occurs and the .CreatePlayerMap method runs.
-* This method saves the game at first, then calls the .InitGame method.
+### Game Initialization
+`InitGame`:
+* clears the world via `UpdateWorldController.ClearWorld()`;
+* initiates synchronization with the server via `UpdateWorldController.InitGame()`;
+* executes the first `UpdateWorld(true)` to link existing settlements to their `serverId`s;
+* starts three periodic timer-based events;
+* configures exit handling: performs an out-of-turn save to the server and disconnects.
 
-Step-by-step for normal connections:
-* The player loads the world saved on the server.
-* The GameLoades.AfterLoad event occurs, which calls the .InitGame method.
+### Підключення
+Основні ігрові дані зберігаються в `SessionClientController.ClientData`.
+Робота мода починається з `Dialog_LoginForm` або `Dialog_Registration`, які викликають `Login` / `Registration` і підключаються до сервера.
 
-Functionality of the .InitGame method:
-* Starts world preprocessing in the UpdateWorldController.ClearWorld method. For now, settlements and caravans of networked players are inherited from CaravanOnline.
-* Prepares the updater in the UpdateWorldController.InitGame method, which synchronizes the planet with the server.
-* Launches the first world update. The first call is different from others in that it receives data used to create settlements which exist on the server.
-* Starts three timer events (information below).
-* Sets up the event that occurs when you exit the game.
+Після підключення запускається `InitConnected`:
+* **Світ ще не створено** — адміністратор відкриває `Dialog_CreateWorld`, після чого `GameStarter.GameGeneration` створює світ, а `CreatingWorld` зберігає його на сервері через `connect.CreateWorld()`.
+* **Збереження гравця немає** — створюється нова планета з поселеннями інших гравців. Після вибору місця висадки та створення колонії запускається `CreatePlayerMap`, яке зберігає гру та переходить до `InitGame`.
+* **Збереження є** — воно завантажується, після чого через `GameLoades.AfterLoad` запускається `InitGame`.
 
-### Подключение
-В основном игровые данные храняться в классе SessionClientController в ClientData Data.
+### Ініціалізація гри
+`InitGame`:
+* очищає світ через `UpdateWorldController.ClearWorld()`;
+* запускає синхронізацію з сервером через `UpdateWorldController.InitGame()`;
+* виконує перше `UpdateWorld(true)` для прив’язки вже існуючих поселень до їхніх `serverId`;
+* запускає три циклічні події за таймером;
+* налаштовує обробку виходу з гри: виконується позачергове збереження на сервері та роз’єднання.
 
-* Начало работы мода начинается на форме Dialog_LoginForm, либо Dialog_Registration.
-* Они вызывают функции SessionClientController Login и Registration соответственно, в которых происходит подключение к серверу.
-* После успешного подключения запускается InitConnected:
 
-Если мир на сервере не создан, и вошёл админ, то вызывается диалог создания мира Dialog_CreateWorld. По его завершении запускается создание мира GameStarter.GameGeneration, после окончании создания запускается CreatingWorld. Тут идет модернизация мира (пока отсутствует) и сохранение его данных на сервер connect.CreateWorld(toServ). После чего пользователя выкидывает в главное меню.
+### Recurring Events During Gameplay
+* **Every 0.5 seconds — chat update `UpdateChats()`**
+  * We request new messages from the server via `connect.UpdateChat()`, passing the time of the last request.
+  * The received messages are added to `Data.Chats` via `Data.ApplyChats()`.
+  * If the server does not respond for more than 8 seconds, `ServerConnected` marks the connection as disconnected.
 
-Если у игрока нет сейва на сервере, то создаем планету, загружаем туда поселения других игроков и передаём управение пользователю для выбора места высадки и, потом, стандартным диалогам выбора поселенцев и прочим. По окончании диалога естественным образом игра стартует и срабатывает событие GameStarter.AfterStart = CreatePlayerMap; (запускается функция CreatePlayerMap). В этой функции происходит первое сохранение игры и переход к InitGame (см ниже).
+* **Every few seconds — world synchronization `UpdateWorld(false)`**
+  * `SendToServer` sends changes to the planet to the server.
+  * `LoadFromServer` retrieves the latest data about the world and other players.
 
-Если сейв на сервере есть, то загружаем его и по событию GameLoades.AfterLoad переходим также к InitGame
+* **Every 15 minutes — save `BackgroundSaveGame()`**
+  * `SaveGame` is executed, and the resulting save file is sent to the server during the next world synchronization.
 
-* Если пользователь только что создал игру, или загрузил её, то в момент готовности будет запущена функция InitGame.
-В ней запускается:
+### Циклічні події під час гри
+* **Кожні 0,5 секунди — оновлення чату `UpdateChats()`**
+  * Запитуємо з сервера нові повідомлення через `connect.UpdateChat()`, передаючи час останнього запиту.
+  * Отримані повідомлення додаються до `Data.Chats` через `Data.ApplyChats()`.
+  * Якщо сервер не відповідає понад 8 секунд, `ServerConnected` визначає з’єднання як розірване.
 
-* Предобработка мира в UpdateWorldController.ClearWorld() (пока только удаление всех наших объектов (поселения сетевых игроков и их караваны наследуются от CaravanOnline)) 
-* Подготовка апдейтера UpdateWorldController.InitGame(); который будет синхронизировать планету с сервером
-* Запуск первого обновления мир UpdateWorld(true); Первое отличается тем, что мы только получаем данные, чтобы установить для наших поселений (которые уже есть на сервере) serverId для правильной связи. Иначе при загрузке карты мы бы каждый раз отправляли, что у нас новые поселения и караваны.
-* Запуск трёх циклических событий по таймеру (см ниже)
-* Установка события возникающего при выходе из игры любым способом. В нём происходит внеочередное сохранение игры на сервер и дисконнект.
+* **Кожні кілька секунд — синхронізація світу `UpdateWorld(false)`**
+  * `SendToServer` передає на сервер зміни планети.
+  * `LoadFromServer` отримує актуальні дані про світ та інших гравців.
 
-### Timer Events
-Chat:
-* Updated every 0.5 seconds (using .UpdateChats).
-* The time of the last request is passed through .UpdateChat, and the server responds with all chat messages sent since the last request.
-* Data.ApplyChats adds current chat data to chat data from the server.
-* Also checks for player disconnects that didn't happen normally (i.e. through a game crash or force close).
-
-World:
-* Every few seconds, the world updates. Data is collected from the planet (using UpdateWorldController.SendToServer).
-* Data is loaded to the planet (using UpdateWorldController.LoadFromServer).
-* Every 15 minutes, the full world is saved to the BackgroundSaveGame (using the .SaveGame method).
-
-### Циклические события во время игры по таймеру
-* Каждые пол сек. обновление данных чата UpdateChats()
-Получаем данные с сервера dc = connect.UpdateChat(Data.ChatsTime);
-
-Здесь передаем дату и время прошлого запроса. В ответ сервер выдает все сообщения от переданного времени до текущего момента. Новое текущее время сервера сохраняем до следующего запроса.
-
-Далее запускаем функцию дополнения текущих данных чата теми, что пришли с сервера в Data.ApplyChats(dc);
-
-Помимо этого в чате сохраняется время последнего отклика сервера. И если ответа на чат нет, то по проверке в ClientData в свойстве bool ServerConnected проверяем на диссконнект (не было отклика более 8 секунд)
-
-* Каждые несколько секунд синхронизация мира UpdateWorld(false)
-Cобираем данные с планеты UpdateWorldController.SendToServer (не запускается первый раз)
-
-Обновляем информацию по игрокам, время обновления и прочее
-
-Обновляем планету UpdateWorldController.LoadFromServer
-
-* Каждые 15 минут сохранение и передача сейва на сервер BackgroundSaveGame()
-
-Сохраняем запуская функцию сохранения SaveGame, а результат сохраняем в переменную, которую отправит на сервер следующий запуск синхронизаци мира
+* **Кожні 15 хвилин — збереження `BackgroundSaveGame()`**
+  * Виконується `SaveGame`, а отримане збереження передається на сервер під час наступної синхронізації світу.
