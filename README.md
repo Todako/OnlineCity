@@ -1,12 +1,12 @@
 # Fork of the OnlineCity mod for RimWorld
-Author: Petro Bodnar, known as Todako
+Author: Petro Bodnar, known as Todako.
 Author of the original OnlineCity: Vasyl Ivanov, known as Aant
 
 **OnlineCity** is a mod for RimWorld that allows multiple players to play on the same planet.
 Build your own colony, develop it, and interact with other players. Keep an eye on their colonies and caravans, and help each other by sharing resources, equipment, and even colonists.
 
 # Fork моду OnlineCity для гри RimWorld
-Автор: Петро Боднар, відомий як Todako
+Автор: Петро Боднар, відомий як Todako.
 Автор оригінального OnlineCity: Василь Іванов, відомий як Aant
 
 **OnlineCity** — модифікація для RimWorld, яка дозволяє кільком гравцям грати на одній планеті.
