@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,17 +9,17 @@ namespace ServerOnlineCity
     public class APIRequest
     {
         /// <summary>
-        /// Тип запроса (регистр не важен):
-        /// "s" результат APIResponseStatus - общая информация по онлайну
-        /// "p" результат APIResponsePlayers - информация по игроку с ником в Login
-        /// "a" результат APIResponsePlayers - информация обо всех зарегистрированных игроках
-        /// "PlayerStat" результат APIResponseRawData, заполнить Key для доступа - отчет обо всех игроках, который можно получить нажав в консоле сервера S
-        /// "BlockKey" результат APIResponseRawData, заполнить Key для доступа - передает содержимое blockkey.txt с сервера
-        /// "cc" заполнить N и Key для доступа - выполняет однобуквенную команду в консоли, как если бы она была нажата на сервере
-        /// "cp" заполнить N и Key для доступа - пишет N в общий чат игры, как выполнение command.txt
-        /// "pa" результат APIResponseStatus, заполнить Key для доступа - передать подтверждение регистрации пользователя (в Login списком через *) и отказ в регистрации (ники игроков к удалению в N через *)
-        /// "li" результат APIResponseRawData, заполнить N и Key для доступа - получить изображение
-        /// "si" заполнить N, Data и Key для доступа - сохранить изображение
+        /// Тип запиту (регістр не має значення):
+        /// "s" результат APIResponseStatus - загальна інформація щодо онлайну
+        /// "p" результат APIResponsePlayers - інформація щодо гравця з ніком у Login
+        /// "a" результат APIResponsePlayers - інформація про всіх зареєстрованих гравців
+        /// "PlayerStat" результат APIResponseRawData, заповнити Key для доступу - звіт про всіх гравців, який можна отримати, натиснувши в консолі сервера S
+        /// "BlockKey" результат APIResponseRawData, заповнити Key для доступу - передає вміст blockkey.txt із сервера
+        /// "cc" заповнити N та Key для доступу - виконує однолітерну команду в консолі, наче її було натиснуто на сервері
+        /// "cp" заповнити N та Key для доступу - пише N у загальний чат гри, як виконання command.txt
+        /// "pa" результат APIResponseStatus, заповнити Key для доступу - передати підтвердження реєстрації користувача (у Login списком через *) та відмову в реєстрації (ніки гравців на видалення в N через *)
+        /// "li" результат APIResponseRawData, заповнити N та Key для доступу - отримати зображення
+        /// "si" заповнити N, Data та Key для доступу - зберегти зображення
         /// </summary>
         public string Q { get; set; }
         public int T { get; set; }
@@ -46,19 +46,19 @@ namespace ServerOnlineCity
     public class APIResponseStatus : APIResponse
     {
         /// <summary>
-        /// Кол-во игроков онлайн
+        /// Кількість гравців онлайн
         /// </summary>
         public int OnlineCount { get; set; }
         /// <summary>
-        /// Кол-во зарегистрированно игроков
+        /// Кількість зареєстрованих гравців
         /// </summary>
         public int PlayerCount { get; set; }
         /// <summary>
-        /// Список ников игроков онлайн
+        /// Список ніків гравців онлайн
         /// </summary>
         public List<string> Onlines { get; set; }
         /// <summary>
-        /// Игроки требующие подтверждения после регистрации. Здесь логин*discordИмя
+        /// Гравці, які потребують підтвердження після реєстрації. Тут логін*discordІм'я
         /// </summary>
         public List<string> NeedApprove { get; set; }
     }
@@ -75,34 +75,33 @@ namespace ServerOnlineCity
         public string DiscordUserName { get; set; }
 
         /// <summary>
-        /// Время последней активности в игре по гринвичу
+        /// Час останньої активності в грі за Гринвічем
         /// </summary>
         public DateTime LastOnlineTime { get; set; }
 
         /// <summary>
-        /// Кол-во игровых дней. Days / 60 = годов
+        /// Кількість ігрових днів. Days / 60 = років
         /// </summary>
         public long Days { get; set; }
 
         /// <summary>
-        /// Кол-во поселений игрока
+        /// Кількість поселень гравця
         /// </summary>
         public int BaseCount { get; set; }
 
         /// <summary>
-        /// Кол-во караванов игрока
+        /// Кількість караванів гравця
         /// </summary>
         public int CaravanCount { get; set; }
 
         /// <summary>
-        /// Общая игровая стоимость
+        /// Загальна ігрова вартість
         /// </summary>
         public float MarketValueTotal { get; set; }
 
         /// <summary>
-        /// Id поселений игрока разделенные запятой
+        /// Id поселень гравця, розділені комою
         /// </summary>
         public string BaseServerIds { get; set; }
     }
-
 }
