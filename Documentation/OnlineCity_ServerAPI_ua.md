@@ -16,7 +16,7 @@
 }
 ```
 
-Доступні команди описані в `OnlineCityAPIModel.cs`. Для C# можна використовувати `OnlineCityAPIClient.cs`.
+Доступні API-команди описані нижче та в `OnlineCityAPIModel.cs`. Для C# можна використовувати `OnlineCityAPIClient.cs`.
 
 **Перевірка через Telnet**
 Для швидкої перевірки підключення можна використати `telnet`:
