@@ -1,197 +1,612 @@
-OnlineCity - is a network game module for the RimWorld survival simulator. It allows multiple players to play on the same planet online.
+**OnlineCity** is a multiplayer mod for **RimWorld** that allows multiple players to play on the same planet online.
+
+Each player develops their own colony, sees the colonies and caravans of other players, and can interact with them: transfer resources and colonists, trigger events, or attack.
+
+1. Installation and Getting Started
+2. Multiplayer Basics
+3. Transferring Items and Colonists
+4. Events and Other Interactions
+5. PvP — Attacking Colonies
+6. Mods and Compatibility
+7. Known Issues and Troubleshooting
+8. Frequently Asked Questions (FAQ)
+9. Quick Server Setup
+10. Preparing Mods for the Server
+11. Mod Synchronization
+12. Server Settings
+13. Player Administration
+14. Banning Players
+15. Statistics and Monitoring
+16. Server Logs
+17. Commands
+
+---
+
+# 1. Installation and Getting Started
+
+## Installation
+
+1. Install **RimWorld 1.1–1.4**.
+2. Install **Harmony** and **HugsLib**.
+3. Install **OnlineCity**.
+4. In the **"Mods"** menu, arrange the load order roughly as follows:
+**Harmony → Core → HugsLib → other mods → OnlineCity**
+
+OnlineCity should preferably be kept **last**. Restart the game after changing mod order.
+
+### `ModsConfig.xml`
+
+The mod list must start with:
+
+```xml
+<li>brrainz.harmony</li>
+<li>ludeon.rimworld</li>
+<li>unlimitedhugs.hugslib</li>
 
-After registration, you can create your own settlement and begin to develop alongside other participants. You are given the opportunity to monitor the progress of your neighbors, their settlements and caravans, but most importantly, you can provide each other with quite material assistance by transferring food, medicine, weapons or any other things, including settlers. For example, you can send your doctor to help in difficult times, and arrange for the doctor to be returned back after treatment. To transfer it is necessary only by all the rules of the game to collect a caravan and get to the goal! Also now you can beat off attacks on your settlement and capture the settlements of other players, giving commands to your colonists!
-
-1. General description
-2. Exchange between players
-3. Other interaction
-4. Attack on player settlements (PVP)
-5. Installing the mod and how to start playing
-6. Additional modifications
-7. Server
-8. Functions of the mod in the game
-9. Possible problems
-10. Other frequently asked questions
-
-# 1. General description
-
-This mod almost does not change the gameplay. All events, settlements of the NPC and game mechanics for each player are different and are not connected with each other. Thanks to this, the balance of the game, which was conceived by the developers, is not upset. What exactly is changing?
-
-Your game is saved exclusively to the server and you can get into the network game only by clicking on the Network game button and entering the login and password. Autosaves occur every 15 minutes (can be changed in the settings) and when you exit the game. Important! Do not close the game using Alt-F4 or the operating system, in this case saving upon exit will not work and progress will be rolled back to the moment of the last successful saving. Use the menu to exit. If for one reason or another you want to play this game offline, you can do this by downloading the onlineCityTempLoad file, but your progress cannot be transferred to the server, you can only play offline. If you start the game in any way except by the Network game button, then the mod is completely turned off and does not work.
-
-When playing online on the planet, settlements of other players appear. The appearance of the icons approximately shows the wealth of the settlement, and if they are online, the light will be on in the house. By clicking on them you can see what kind of player it is, whether it is online, what is the total cost of people and things in the settlement. Caravans of other players are also displayed.
-
-Having equipped your caravan and reaching the settlement or player’s caravan, you can transfer any goods and pawns. In addition, caravans display the weight that they can still take. Transfer is carried out in one direction. That is, if you need to exchange goods, you must first agree on this in the chat and first one player must pass on what is needed, then the other player will give back. If the player is not online, then the goods will be transferred to him when he enters the game.
-
-In the game, by clicking the Online button, you can open chat, settings, and more. On the first tab in the chat you can see a list of all players and those who are online. You can create new channels in the chat and add any players there. By right-clicking on any player, you can select the Information item, and see that the player wrote about himself how much he has been playing, when was the last time, a list of all his colonies and caravans, their value and total wealth.
-
-For those who want more, you can set the Participate in PVP item on the Settings tab. After that, it will be possible to attack the settlements of players who also have this option turned on, and, of course, if they are also online.
-
-
-# 2. Exchange between players
-
-Transfer between players is possible only from the caravan. To transfer anything you need to select your usual caravan, right-click on the settlement or caravan of another player and select the item Exchange of goods. An intuitive window for selecting the item to transfer opens. You can transfer the player any amount of goods, animals and settlers. You can transfer as many times as you like, even if the player is offline.
-
-Upon receipt of the transfer, a message will be issued, which will briefly list what is being transmitted and the opportunity to refuse it (in this case things will be destroyed). If the player agrees, then the transferred items will appear in the largest warehouse, in the name of which there are symbols "trad", if there is none, then in the largest warehouse with any name.
-
-When transferring prisoners there is a nuance. They do not appear immediately in the prison, but in the warehouse in the form of a passive hostile pawn, without weapons that need to be captured and placed in the right prison on their own.
-
-When the last pawn is transferred, the caravan will be disbanded, and the remaining items will be automatically added to the transfer. But you can leave some kind of animal, so that later an ally could return your colonists to this caravan from one animal.
-
-When a settler is transferred, all his connections with other settlers are lost. So, do not be surprised at easy amnesia when your militants return after helping a neighbor :)
-
-There is an unresolved issue of transferring pawns when using HardcoreSK. Maybe a similar problem will be with some other mods, is not yet known.
-
-
-# 3. Other interaction
-
-Pirates and warlike natives will gladly agree to work for a reward. In addition, by paying the required amount of gold, you can cause acid precipitation, set beetles, mechanoids, and so on. To trigger different events, find another player's settlement on the palnet, select it, and click on the Interact button.
-
-Certain events can have a force of impact, such as raids and beetles. You can double, triple, etc. their number, relative to what the game itself generates for the settlement. As a rule, * 10 is very difficult to survive even for experienced players. The price of a call increases non-linearly with an increase in the level. Here is the general price per call formula:
-
-(value_of_attacked_settlement / 100 000) ^ (2/3) * 100 * impact_power ^ (3/2)
-
-Additional multiplier * 3 if it is a beetle summon. Multiplier * 2 for summoning industrial grade pirates. Multiplier * 5 for summoning mechanoids.
-
-Takde a raid can be called not only on foot from the edge of the map, but also with a landing in the center (price * 1.4), or scattered landing (price * 1.5), while the cost of capsules will also be deducted by the game from the total cost of the raid.
-
-These calculations may change over time, during balance adjustment. In addition, on the server, you can set the total price coefficient and the final cost of the attacking raid. You can also change the maximum force factor (default * 10).
-
-The summoned raid will come to the goal when the player enters the game. If the raid is very large (the strength is more than 50% of the possible choice), then the settlers will notice its approach in half a day. After the attack, the next one will come no earlier than in a game day, but after how much it will be calculated using the following formula:
-
-1 + impact_power * 0.16666 + 0.03333 * (attack_set_value / 100 000) = days delay before next event
-
-There is novice defense: both the attacking player and his target must have a playtime of more than two years and a settlement cost of more than 100 000.
-
-Events from different tabs can be called simultaneously. Each player can only trigger 1 event from each tab per player. But another player can also add his own event to the same target: in this case, they will be triggered in turn, keeping the delays. The total number of events in the queue cannot exceed 2.
-
-
-# 4. Attack on player settlements (PVP)
-
-Now, if you want, you can attack a foreign colony with your caravan. You will appear at the edge of the map in a random place. Then you can look at the enemy’s base, be horrified and retreat (all pawns near the edge of the map in this case will go to the caravan). Rob, if something can be carried away with you. Or capture the settlement, killing or knocking down all the enemy pawns.
-
-Your colonists will attack the enemy colony in the form in which it is playing at the moment (of course, it must be online). True, the interiors of the premises will be closed until the doors or walls are broken. The attacking pawns are always in combat mode and accept commands to go to the position, shoot at the target and attack the target closely. They can also throw and pick up weapons, clothes and take or throw something from the inventory, they can also eat or drink something. Actually, the control possibilities end there: it turns out that only the main teams for fighting are available. For example, items such as Activate Artifacts do not work. Pawn behavior settings also do not work, for example, auto-attack is always on. Peaceful skills are not available in battle, that is, if you need to disassemble the wall and you have a wonderful miner, you still have to blow it up with a grenade or shoot from what is. All this, including the capture of pawns, can be done after the settlement is captured.
-
-We should also say that the attacker manages the situation remotely. Because of what, his orders are executed, but he does not see the process of aiming and shooting. Movements also occur in jerks. It is sad that it did not work out to do everything smoothly. At the moment, I do not see the technical ability to make this mechanism better. In order to slightly compensate for the loss of control, the speed of movement of the pawns of the attacked is halved (the reduction takes effect a minute after the start of the battle in order to have time to take a position).
-
-To attack, both you and the enemy in the Settings tab should have a checkmark "Participate in PVP". You can change it once a day. Also, for an attack, the value of people, animals and things of your caravan should not exceed a certain cost, which depends on the price of the settlement. If you encounter such a problem, you can split the caravan by removing animals from it or reducing the number of attackers. You can find out the exact cost of your caravan by clicking on your nickname in the chat and selecting the Information item, general information and information will be opened for each settlement and caravan separately. The server has a setting how many minutes a player cannot be attacked after the last attack. For example, on the official server it is 20 minutes.
-
-If either side during the battle leaves the game, this will be tantamount to defeat and the player will lose the colony or the caravan that is attacking. For the other side, only the fact that hostile pawns will passively shoot back under the control of the AI game will change. If the attacker wants to retreat, then he can select the Retreat option in the menu, then those who are closer than 10 cells to any edge of the map will move to the caravan.
-
-While PVP is in progress, half of the first speed is forcibly set. You can neither pause nor accelerate.
-
-Time of day and climatic conditions are not synchronized. The current ones on the host act (the one being attacked).
-
-Tamed animals from the caravan do not participate in the attack: they will appear at the edge of the map and will wait for you to stay or retreat with you.
-
-
-If interested, here is the exact formula for the maximum price of an attacking caravan:
-4 / (25/1000000 + 10 / colony wealth)
-It turns out, for example, like this: the cost of a colony -> maximum for a caravan
-100,000 -> 32,000
-
-400,000 -> 80,000
-
-1,000,000 -> 114,400
-
-2,000,000 -> 133,332
-
-
-There are a couple more issues that an attacker needs to consider.
-
-There is always an auto attack, therefore, when a pawn stands, it begins to attack the target chosen by the AI, if the attack command was not given explicitly. Therefore, with a single-shot weapon, you need to be careful.
-
-Occasionally, the command to go may be canceled or even a pawn may be afraid to start "running away" to the edge of the map. Check if pawns continue to execute commands.
-
-Detailed pawn parameters such as inventory, health, needs, etc. are updated less frequently. When changing inventory or changing in health. In this case, the pawn is updated as a whole and the selection drops from it, if it has been allocated.
-
-A target that is slain will not be selected by an auto attack and cannot be beaten closely, if you absolutely want to finish it, then shoot it.
-
-The extreme position on the border of the map is not available due to the patch. The fact is that the AI of the game, seeing that the attacking pawn wants to leave and is already on the edge, immediately removes it. It turns out that things that have fallen to the very edge will be available only after the capture of the colony. There is also a problem associated with this: sometimes, when a pawn is located across the cell from the edge of the map, it gets stuck there and does not respond to commands. It has not yet been possible to fix this, but if this happened, then try to select a pawn and quickly click
-
-
-# 5. Installing the mod and how to start playing
-
-1) Have any RimWorld not lower than 1.1
-
-2) Download the HugsLib and Harmony mod https://bit.ly/2PQjc6d Or from Workshop https://bit.ly/2KvHtbP
-
-3) Download the OnlineCity mod itself. The latest version is in the discord https://discord.gg/5DzWrnR on the channel #news, or from Workshop https://steamcommunity.com/sharedfiles/filedetails/?id=1908437382
-
-4) Open RimWorld, in “Mods” put a checkmark on Harmony, then Core, HugsLib, and only then other mods and OnlineCity (OnlineCity is best to be the last one). Click the close button. The game must restart.
-
-5) In the main menu, click on the "Network Game" button. If it is not, then either the RimWorld version is not supported or the mod was not enabled correctly.
-
-6) Create an account and enter it. Before doing this, make sure that there are no important data in the Mods folder, make a copy of it. The first login or registration on the server may take several minutes, depending on the server settings and Internet speed.
-
-7) Select the desired landing site.
-
-8) Pick / Create your own colonists. If possible, just in case you create in Prepare Carefully, save them.
-
-9) Everything is ready! Welcome to Online City!
-
-Additionally, it may be interesting:
-
-In the ModsConfig.xml file, the list of mods should start with
-    <li> brrainz.harmony </li>
-    <li> ludeon.rimworld </li>
-    <li> unlimitedhugs.hugslib </li>
-And end (preferably at the very end):
-    <li> aant.onlinecity </li>
-
-	
-Common problems:
-
-* If your computer can barely handle RimWorld, then keep in mind that with this mod the memory requirement is slightly increased. It is recommended to play on a 64-bit operating system.
-
-* The game is poorly stable with poor communication, if it is often torn, problems may occur.
-
-* Check the mod version. This can be done by clicking Network game, and then What’s what, there will be a version in the first line.
-
-* If it turns out to connect / register, and then the black screen or the game freezes, then try to wait a few minutes
-
-* If you can’t register and writes that such a login is already taken, then try to use more than 3 characters in the username and password, and the login has more Latin letters. Also try just logging in, if you had a failure, then it may have occurred after you were registered.
-
-* No password reset system. You can only start over. The server administrator also does not have this access, but he can delete your settlement to free up space.
-
-* If all else fails, then try disabling other mods. If this helped, and the game started, then write to us which mod turned out to be incompatible.
-
-
-# 6. Additional modifications
-
-On the server there is an exact match mods setting. If it is enabled, the game’s Mods folder and the ModsConfig.xml file will be deleted and downloaded from the server. Be careful, and before entering the server for the first time, make sure that there is nothing valuable in the Mods folder! The presence of DLC Royality is not controlled and will not be downloaded from the server; you must install it yourself if it is required for the game on the server. Make sure you have one if you need one. If it is not needed for the server where you play, then before entering it is better to disable it. If the server does not need it, but you have it, then it will be correctly disabled. Further in the text, it is assumed that the setting is turned off and no synchronization occurs.
-
-If synchronization is turned off, if the OnlineCity mod is not compatible with the version on the server, an error will be generated and you will need to update it yourself. Also turned off synchronization means that different people can have completely different sets of mods.
-
-Watch carefully from which mods items to whom you pass. If both of you use the necessary modification, then there should be no problems. In other cases, the result is not predictable. Maybe a special property will simply be lost, or the item will simply disappear (most often this happens), but in some cases the game may completely break down (in this case, do not try to log in again after you have verified that the game is not working, and inform the server administrator, maybe he will be able to restore your previous save).
-
-It is also highly recommended not to use modifications that change the landscape: the outline of the seas and mountains. Thus, your settlement for other players may be in the middle of the ocean or may be inaccessible. In any case, it is unpleasant to play on different planets. An exception is if you maintain contact with all players and agree that such mods and their settings will be the same for everyone.
-
-If you will use the function of attacking players, then carefully read section 3. Attacking player settlements, it also tells about the dependence of additional modifications.
-
-At the moment, there is only one incompatible mod: Save Our Ship 2
-
-Potentially, OnlineCity is compatible with any other mods, but, of course, you need to be careful, especially when using large modpacks. It's funny that the mod is even compatible with Zetrith Multiplayer (except, perhaps, the PVP mode was not tested). After all, OnlineCity synchronizes the planet where everyone has their own settlement, and Zetrith Multiplayer is a cooperative of one settlement.
-
-
-# 7. Server
-
-!The information in this section is outdated, it is being updated in the process!
-
-Unzip the archive with the server to any folder. After that, you need to create a subfolder of World, which will store all the game data.
-
-Create a Settings.json file in the World folder (it can be opened with a simple notepad). Here is an example of its contents:
 ```
 
+OnlineCity should preferably be placed at the end:
+
+```xml
+<li>aant.onlinecity</li>
+
+```
+
+## Getting Started
+
+1. In the main menu, select **"Multiplayer"**.
+2. Register a new account or log in to an existing one.
+3. Select a landing site.
+4. Create or select colonists.
+5. Start the game.
+
+> ℹ️ The first login may take several minutes, especially if the server uses a large modpack.
+
+Before connecting for the first time, it is strongly recommended to back up your **`Mods`** and **`Config`** folders.
+
+## Saving the Game
+
+Multiplayer progress is saved **on the server**.
+
+* Autosaves run every **15 minutes**. The interval can be adjusted in the settings.
+* The game is also saved when exiting via the in-game menu.
+* Closing the game with **Alt+F4** or force-closing it will result in lost unsaved progress.
+
+For offline play, you can load `onlineCityTempLoad`, but changes made there **cannot be transferred back to the server**.
+
+OnlineCity functions only when launched through the **"Multiplayer"** menu option.
+
+---
+
+# 2. Multiplayer Basics
+
+OnlineCity does not alter vanilla RimWorld core gameplay. Factions, NPCs, events, and other mechanics for each player function independently. Each player has their own game session and colony, but all players share the same global world map.
+
+## Colonies and Caravans
+
+Other players' colonies and caravans are displayed on the world map.
+
+**Colonies:**
+
+* The icon appearance roughly indicates its wealth.
+* A lit window on the colony icon shows that the player is online.
+* Selecting a colony displays the player name, online status, and total colony market value.
+
+**Caravans** of other players are also visible on the world map. Caravan tooltips display remaining available **carrying capacity**.
+
+## Online Chat
+
+The **"Online"** button opens the chat and other multiplayer features.
+
+In the chat, you can:
+
+* View the list of all players and players currently online;
+* Create custom channels;
+* Invite other players to your channels;
+* View player profile information.
+
+---
+
+# 3. Transferring Items and Colonists
+
+Transfers between players are carried out **exclusively via caravans**.
+
+## How to Transfer Items
+
+1. Select your caravan.
+2. **Right-click** on another player's colony or caravan.
+3. Select **"Trade goods"** (Exchange goods).
+4. Select the goods, animals, or colonists to transfer.
+
+You can transfer **any volume of goods an unlimited number of times**. The recipient can be offline.
+
+There is no direct barter window: players negotiate in chat and send items turn by turn.
+
+## Receiving Transfers
+
+Upon receiving a transfer, a notification appears listing the transferred items along with options to **accept or decline**.
+
+⚠️ If a transfer is declined, the transferred items are **permanently destroyed**.
+
+Accepted items are placed:
+
+1. In the largest stockpile containing `trad` or `торг` in its name (e.g., `trade`);
+2. If no such stockpile exists — in the largest available stockpile.
+
+## Special Cases
+
+**Prisoners.**
+
+Transferred prisoners appear as passive hostile colonists. You must manually arrest and escort them to a prison cell.
+
+**The Caravan's Last Colonist.**
+
+If you transfer the final colonist, the caravan disbands, and its entire inventory is automatically added to the transfer. To prevent this, leave at least **one animal** in the caravan.
+
+**Social Bonds.**
+
+When a colonist is transferred, all social bonds with other colonists are broken.
+
+**Assisting Another Player.**
+
+Transfer mechanics can be used not only for trade, but also for emergency aid during raids or other disasters. For example, you can send combat colonists to an ally and have them transferred back after the battle.
+
+---
+
+# 4. Events and Other Interactions
+
+Selecting another player's colony on the world map allows you to trigger incidents via the **"Interaction"** menu. For gold, you can summon: pirate raids, tribal assaults, infestations, mechanoids, toxic fallout, and other events.
+
+## Event Power
+
+For certain events, you can specify impact power — a multiplier relative to the standard event scale. The typical maximum multiplier is **×10**.
+
+Cost depends on colony wealth and event power:
+
+```text
+(colony_wealth / 100,000)^(2/3) × 100 × impact_power^(3/2)
+
+```
+
+### Threat Type Multipliers
+
+* **×2** — Industrial-tech Pirates
+* **×3** — Infestations (Insects)
+* **×5** — Mechanoids
+
+### Arrival Method Multipliers
+
+* **×1.0** — Walk-in from map edge
+* **×1.4** — Center drop pods
+* **×1.5** — Scattered drop pods
+
+The cost of drop pods is automatically calculated into the total raid price.
+
+> ℹ️ Formulas and coefficients may change during rebalancing. The server can also enforce custom cost modifiers and maximum event power caps.
+
+## Summoning Raids
+
+A summoned raid does not necessarily arrive instantly and will only trigger if the target player is online.
+If raid power exceeds **50% of the maximum allowed**, an early warning notification is sent **half an in-game day** in advance.
+
+After a raid concludes, the next event cannot occur sooner than **1 in-game day**.
+The cooldown delay is calculated as follows:
+
+```text
+1 + impact_power × 0.16666 + 0.03333 × (colony_wealth / 100,000)
+
+```
+
+## Novice Protection
+
+Combat interaction is restricted to players who meet **both** criteria:
+
+* Both the aggressor and the target must have over **2 years of in-game time**;
+* Colony wealth must exceed **100,000**.
+
+## Event Queue
+
+Events from different categories can be initiated simultaneously.
+
+* A player can queue **1 event from each tab** against a single target.
+* Other players can also add events against the same target.
+* Events execute **sequentially**, preserving scheduled cooldown delays.
+* Maximum queue length is **2 events**.
+
+---
+
+# 5. PvP — Attacking Colonies
+
+PvP allows you to attack another player's colony using your caravan. To initiate an attack, **both players** must have **"Participate in PvP"** enabled. You can only attack a player who is **currently online**.
+
+## Initiating an Attack
+
+Once combat begins, the attacker's caravan spawns at a random location along the map edge.
+
+The attacker can:
+
+* Scout the colony and retreat;
+* Pillage resources;
+* Conquer the colony by downing all defending colonists.
+
+Interior rooms remain concealed behind fog of war until doors or walls are breached.
+
+## PvP Mechanics & Peculiarities
+
+Attacking colonists are controlled **remotely**. Because of this:
+
+* Movement and commands may exhibit latency;
+* Aiming and firing sequences are not displayed in real time;
+* After **1 minute** of combat, defender colonist movement speed is halved as partial compensation.
+
+During PvP:
+
+* Game speed is locked to **×0.5**;
+* Pausing and fast-forwarding are disabled;
+* Time of day and weather synchronize with the defender's instance.
+
+## Colonist Controls
+
+Only fundamental combat commands are permitted during an assault:
+
+* Movement;
+* Ranged attack;
+* Melee attack;
+* Picking up and dropping items;
+* Swapping weapons and apparel;
+* Consuming food and drinks.
+
+Building, deconstructing structures, activating artifacts, and most non-combat tasks are disabled.
+
+**Auto-attack is always active.**
+
+Once the colony is captured, these restrictions are lifted.
+
+## Maximum Attacker Caravan Wealth
+
+The caravan's total market value cannot exceed:
+
+```text
+4 / (25 / 1,000,000 + 10 / colony_wealth)
+
+```
+
+Reference values:
+
+| Colony Wealth | Maximum Caravan Wealth |
+| --- | --- |
+| 100,000 | 32,000 |
+| 400,000 | 80,000 |
+| 1,000,000 | 114,400 |
+| 2,000,000 | 133,332 |
+
+If a caravan exceeds the limit, split it or reduce the number of attacking pawns.
+
+## Disconnecting and Retreating
+
+If either player disconnects during combat, it is considered an **automatic forfeit**:
+
+* The attacker loses the caravan;
+* The defender loses the colony.
+
+After a disconnection, remaining hostile colonists continue fighting under vanilla AI control.
+
+To retreat safely, use the **"Retreat"** command. All colonists within **10 tiles of the map edge** will return to the caravan.
+
+Tamed animals in the attacking caravan do not participate in combat. They remain at the map edge until combat resolves or a retreat is called.
+
+## Limitations and Known Issues
+
+* Move commands may occasionally drop, causing the colonist to fall back.
+* Health, inventory, and needs updates sync with a slight delay.
+* Downed pawns are excluded from auto-targeting and melee attacks. Use targeted ranged fire to execute them.
+* Tiles directly on the map boundary are impassable for attacking pawns.
+* Items dropped on map edge tiles can only be retrieved after capturing the settlement.
+* If a colonist gets stuck near the map edge, select them and right-click several locations further inland until pathfinding resumes.
+
+> ℹ️ Servers can adjust PvP parameters, including maximum caravan value and grace periods between attacks. The default grace period is **20 minutes**.
+
+---
+
+# 6. Mods and Compatibility
+
+OnlineCity is compatible with many third-party mods, but stability depends on their mechanics and configuration.
+
+## Mod Synchronization
+
+The server can enforce **Mod Synchronization**. When connecting, the following may be overwritten:
+
+* The `Mods` folder;
+* The `ModsConfig.xml` file.
+
+⚠️ Always back up your **`Mods`** and **`Config`** directories before connecting for the first time.
+
+**DLCs are not synchronized.**
+
+* If the server runs a DLC, you must own and install it locally.
+* If the server does not run a DLC, it will be automatically disabled.
+
+If mod synchronization is disabled, players may run differing mod setups. However, the OnlineCity mod version must strictly match the server build.
+
+## Items from Other Mods
+
+Exercise caution when transferring modded items. If the requisite mod is present on **both clients**, issues rarely arise.
+
+If the recipient lacks the mod, the item may:
+
+* Lose custom stats/properties;
+* Disappear entirely;
+* Throw null errors or, in rare cases, corrupt the local save.
+
+In case of severe corruption, contact the server administrator to restore a backup.
+
+## Planet-Altering Mods
+
+Mods modifying world generation should never be used without server synchronization, including those changing:
+
+* Terrain and biomes;
+* Oceans and coastlines;
+* Mountain ranges;
+* Global map features.
+
+Mismatched world generation will cause colonies to spawn submerged in water or become unreachable.
+
+These mods are only safe when all players share **identical mods and generation configs**.
+
+## Known Compatibility Issues
+
+Confirmed incompatible mod: **Save Our Ship 2**
+
+Other mods can function with OnlineCity, but extensive overhauls altering core RimWorld game loops may cause desyncs and crashes.
+
+**Zetrith Multiplayer** can run alongside OnlineCity, as they employ distinct multiplayer architectures:
+
+* OnlineCity — single planet with independent colonies;
+* Zetrith Multiplayer — co-op control over a shared colony.
+
+---
+
+# 7. Known Issues and Troubleshooting
+
+## Long Loading Times Upon Login
+
+After authenticating, OnlineCity downloads required mods and saves from the server. During this phase, the client may:
+
+* Freeze;
+* Display a black screen;
+* Become unresponsive for several minutes.
+
+This is expected behavior. Typically, waiting **5–10 minutes** resolves it. First-time connections over slow connections with large modpacks take significantly longer.
+
+## "Not All Files Passed Verification"
+
+If a file verification error appears after connecting, try **reconnecting**. This often happens after minor changes to the local `Mods` directory or `ModsConfig.xml`.
+
+## Game Restarts After Opening the "Mods" Menu
+
+When mod synchronization is enabled, opening the vanilla **"Mods"** menu prompts RimWorld to touch `ModsConfig.xml`. Consequently, OnlineCity may restart the game upon the next connection. This is normal. Avoid modifying mod lists locally when mod sync is enabled.
+
+## Version Mismatch
+
+Navigate to: **"Multiplayer" → "What's what"**
+The OnlineCity version is listed on the first line and must match the server version.
+
+## Username Already Taken
+
+Ensure your username and password are longer than 3 Latin characters. If the error persists, select a different nickname.
+
+## Connection Instability
+
+Unstable network connections can cause:
+
+* Desynchronization errors;
+* Stalled transfers/downloads;
+* Repeated drops.
+
+## Mod Conflicts
+
+Disable secondary mods and test the base mod setup. If the issue resolves, isolate the conflicting mod. Mods modifying vanilla combat/PvP logic are especially prone to breaking game states.
+
+## Colonist Transfer Errors
+
+A known issue exists when transferring colonists generated under **HardcoreSK**. Similar conflicts can occur with complex pawn-modifying frameworks.
+
+## Duplicate Transferred Colonists
+
+Occasionally, after transferring a colonist, a cloned copy with identical names, backgrounds, and skills may spawn in a world quest or ask to join your colony. Do not accept this pawn — it can crash the save file.
+
+## Corrupted Saves
+
+If a colony fails to load or critical errors halt progress, contact your administrator. Administrators can **restore the colony from an earlier server backup**. Alternatively, you can start a fresh colony under your existing account.
+
+## System Requirements
+
+OnlineCity increases system RAM overhead. A **64-bit operating system** is strongly recommended.
+
+---
+
+# 8. Frequently Asked Questions (FAQ)
+
+## Can multiple players manage the same colony?
+
+No. Under standard operation, each player controls their own colony. The only exception is attacking another player's base in PvP, which is not cooperative colony management. For co-op play, use **Zetrith Multiplayer**.
+
+## What happens to other players when I pause the game?
+
+Nothing. Each participant's game runs independently. Pausing only halts your local simulation. You will still see real-time movements of other colonies and caravans on the world map.
+
+## How do I change difficulty and the AI Storyteller?
+
+They cannot be changed by players. They are defined globally by the administrator during world creation.
+
+## How do I delete my colony?
+
+Open the **"Online"** window via the bottom dock or in-game menu. Under the **"About mod"** tab, click **"Start anew"**.
+You can also execute this command via chat:
+
+```text
+/killmyallplease
+
+```
+
+## How frequently does the game save?
+
+By default, **every 15 minutes**. It also saves whenever you exit through the main menu.
+
+⚠️ **Alt+F4 bypasses exit saving**, which rolls your colony back to the most recent autosave.
+
+## What should I do if I forget my password?
+
+An administrator can reset your password using the command:
+
+```text
+/ChangePassword {UserLogin} {NewPassword}
+
+```
+
+Administrators should verify account ownership before resetting passwords.
+
+## Is Developer Mode available?
+
+This depends on the server configuration. If disabled on the server, regular players cannot activate Dev Mode.
+
+## Where are the OnlineCity logs located?
+
+Logs are written to:
+
+```text
+%appdata%\..\LocalLow\Ludeon Studios\RimWorld by Ludeon Studios\OnlineCity
+
+```
+
+Paste this path directly into the Windows File Explorer address bar.
+
+---
+
+# 9. Quick Server Setup
+
+## Installation
+
+1. Extract the server archive to any folder.
+2. Launch `Server.exe` and close it immediately.
+3. Upon first launch, the server generates:
+* The `World` folder;
+* The `Settings.json` file.
+
+
+
+For a vanilla server configuration without mod synchronization, simply relaunch `Server.exe`.
+
+## First Launch
+
+The first user to register on the server automatically receives **Administrator** privileges.
+
+During initial setup, configure:
+
+* World seed;
+* Planet coverage;
+* Game difficulty;
+* AI Storyteller.
+
+World generation takes several minutes. Once finished, reconnect and establish your colony like a standard player.
+
+## Testing Local Connection
+
+To verify server functionality:
+
+1. Start the server.
+2. Launch RimWorld on the same machine.
+3. In the server address field, enter:
+
+```text
+localhost
+
+```
+
+If you connect successfully, the server works, and any connection failures from outside are caused by network/firewall routing.
+
+## External Player Connections
+
+The default server port is: **19019**
+
+To allow connections over the internet, forward this port:
+
+* In your local OS firewall;
+* In your router settings.
+
+If you changed `Port` in `Settings.json`, forward that designated port instead.
+
+If you lack a dedicated public IP address, use tunneling tools such as **Hamachi**, **Radmin VPN**, or similar virtual networks.
+
+---
+
+# 10. Preparing Mods for the Server
+
+The server requires mod copies stored directly in the local game folder rather than symlinked Steam Workshop directories.
+
+## Preparing the `Mods` Folder
+
+1. Remove all mods not intended for server use.
+2. Copy the required mods into the server mod directory.
+
+Whenever the modpack is updated, test stability locally before starting the server.
+
+## Preparing `Config`
+
+Clear the game settings folder prior to setup:
+
+```text
+%appdata%\..\LocalLow\Ludeon Studios\RimWorld by Ludeon Studios\Config
+
+```
+
+You may retain `KeyPrefs.xml` and `Prefs.xml`.
+
+Launch the game and configure your mod settings. It is recommended to **start a temporary single-player game and play for a few minutes** so mods finish writing their configurations to disk, as some mods do not initialize configs on launch. Skipping this can cause settings mismatches, prompting the server to repeatedly overwrite configs in an endless loop.
+
+Next, copy these directories over to the server root:
+
+* The `Mods` folder;
+* The `Config` folder.
+
+Your root directory next to `Server.exe` should contain:
+
+```text
+World
+Mods
+Config
+
+```
+
+---
+
+# 11. Mod Synchronization
+
+Synchronization rules are defined in `Settings.json` inside the following array:
+
+```json
+"EqualFiles": [...]
+
+```
+
+This defines which files and folders must be verified or overwritten on client machines upon connection.
+
+> ⚠️ Ensure all JSON syntax, especially commas, remains valid in `Settings.json`.
+
+Open `Settings.json` in a text editor. By default, it appears as follows:
+
+```json
 {
-  "ServerName": "OnlineCity Server with modpack",
+  "ServerName": "Another OnlineCity Server",
   "SaveInterval": 10000,
   "Port": 19019,
-  "Description": "Official server OnlineCity with modpack",
-  "IsModsWhitelisted": true,
-  "DisableDevMode": true,
-  "MinutesIntervalBetweenPVP": 20,
+  "Description": null,
+  "IsModsWhitelisted": false,
+  "DisableDevMode": false,
+  "MinutesIntervalBetweenPVP": 0,
   "GeneralSettings": {
+    "StorytellerDef": "",
+    "Difficulty": "",
     "EnablePVP": false,
     "DisableGameSettings": false,
     "IncidentEnable": true,
@@ -200,366 +615,769 @@ Create a Settings.json file in the World folder (it can be opened with a simple 
     "IncidentTickDelayBetween": 60000,
     "IncidentCostPrecent": 100,
     "IncidentPowerPrecent": 100,
+    "IncidentCoolDownPercent": 100,
+    "IncidentAlarmInHours": 10,
     "EquableWorldObjects": false,
-    "ExchengeEnable": false,
-    "StartGameYear": -1
+    "ExchengeEnable": true,
+    "ScenarioAviable": true,
+    "ExchengePrecentCommissionConvertToCashlessCurrency": 50,
+    "ExchengeCostCargoDelivery": 1000,
+    "ExchengeAddPrecentCostForFastCargoDelivery": 100,
+    "StartGameYear": -1,
+    "EntranceWarning": null,
+    "EntranceWarningRussian": null
   },
-  "ModsDirectory": "C:\\CityOnlineTest19019\\Mods",
-  "ProtectingNovice": true,
-  "DeleteAbandonedSettlements": false,
-  "ModsConfigsDirectoryPath": "C:\\CityOnlineTest19019\\Config\\",
-  "IgnoredLocalConfigFiles": [
-    "KeyPrefs.xml",
-    "Knowledge.xml",
-    "LastPlayedVersion.txt",
-    "Prefs.xml"
+  "EqualFiles": [
+    {
+      "FolderType": 2,
+      "ServerPath": "Mods",
+      "NeedReplace": true,
+      "IgnoreTag": null,
+      "XMLFileName": null,
+      "IgnoreFile": [
+        ".cs",
+        ".csproj",
+        ".sln",
+        ".gitignore",
+        ".gitattributes"
+      ],
+      "IgnoreFolder": [
+        "bin",
+        "obj",
+        ".vs"
+      ]
+    },
+    {
+      "FolderType": 0,
+      "ServerPath": "Config",
+      "NeedReplace": true,
+      "IgnoreTag": null,
+      "XMLFileName": null,
+      "IgnoreFile": [
+        "KeyPrefs.xml",
+        "Knowledge.xml",
+        "LastPlayedVersion.txt",
+        "Prefs.xml"
+      ],
+      "IgnoreFolder": null
+    },
+    {
+      "FolderType": 0,
+      "ServerPath": "Config",
+      "NeedReplace": true,
+      "IgnoreTag": [
+        "OnlineCity"
+      ],
+      "XMLFileName": "..\\HugsLib\\ModSettings.xml",
+      "IgnoreFile": null,
+      "IgnoreFolder": null
+    }
   ],
-  "IgnoredLocalModFiles": [ ]
+  "ProtectingNovice": false,
+  "DeleteAbandonedSettlements": false,
+  "ColonyScreenFolderMaxMb": 0
 }
+
 ```
 
-ServerName and Description - the name and description of the server, while not used anywhere, is not necessary.
+Replace the entire `"EqualFiles": [ ... ]` block with:
+
+```json
+  "EqualFiles": [
+    {
+      "FolderType": 2,
+      "ServerPath": "Mods",
+      "NeedReplace": true,
+      "IgnoreTag": null,
+      "XMLFileName": null,
+      "IgnoreFile": [
+        ".cs",
+        ".csproj",
+        ".sln",
+        ".gitignore",
+        ".gitattributes",
+        "resources.assets.resS",
+        ".git",
+        ".obj",
+        "packages",
+        ".vs"
+      ],
+      "IgnoreFolder": [
+        "bin",
+        "obj",
+        ".vs", 
+        "packages"
+      ]
+    },
+    {
+      "FolderType": 0,
+      "ServerPath": "Config",
+      "NeedReplace": true,
+      "IgnoreTag": null,
+      "XMLFileName": null,
+      "IgnoreFile": [
+        "Mod___LocalCopy_Performance Optimizer_-18-12_PerformanceOptimizerMod.xml",
+        "Mod_2664723367_PerformanceOptimizerMod.xml",
+        "Mod_Dubs Mint Menus_DubsMintMenusMod.xml",
+        "Mod_Dubs Performance Analyzer_Modbase.xml",
+        "Mod___LocalCopy_FrameRateControl_-26-12_FrameRateControlMod.xml",
+        "Mod_Camera+_CameraPlusMain.xml",
+        "Mod_FrameRateControl_FrameRateControlMod.xml",
+        "Mod_RimThemes_RimThemes.xml",
+        "Mod_performance_optimizer_PerformanceOptimizerMod.xml",
+        "KeyPrefs.xml",
+        "Knowledge.xml",
+        "LastPlayedVersion.txt",
+        "Prefs.xml"
+      ],
+      "IgnoreFolder": [
+        "RimHUD"
+      ]
+    }
+  ],
+
+```
+
+## Enabling Synchronization
+
+To enforce synchronization, set:
+
+```json
+"IsModsWhitelisted": true
+
+```
+
+If set to `false`, the `EqualFiles` block is bypassed.
+
+## Structure of `EqualFiles`
+
+Each entry defines an independent synchronization rule.
+
+| Field | Purpose |
+| --- | --- |
+| `FolderType` | Identifies the client-side root target directory |
+| `ServerPath` | Relative path to the folder on the server |
+| `NeedReplace` | Overwrite (`true`) or disconnect on mismatch (`false`) |
+| `IgnoreFile` | List of file names or extensions to exclude |
+| `IgnoreFolder` | List of folder names to exclude |
+| `XMLFileName` | Target XML file for discrete node synchronization |
+| `IgnoreTag` | XML tags or lines filtered out during comparison |
+
+### `FolderType`
+
+* 0 — Config
+* 1 — Game root directory
+* 2 — Mods
+
+### `ServerPath`
+
+Specifies the path on the server relative to `Server.exe`.
+
+Examples:
+
+```text
+Mods
+Config
+Game
+
+```
+
+### `NeedReplace`
+
+`true` — On mismatch, the file is automatically downloaded from the server.
+
+`false` — On mismatch, the connection is rejected. This prevents transferring full game directories to clients while still validating file integrity.
+
+---
+
+## Example: Synchronizing the `Mods` Folder
+
+```json
+{
+  "FolderType": 2,
+  "ServerPath": "Mods",
+  "NeedReplace": true,
+  "IgnoreTag": null,
+  "XMLFileName": null,
+  "IgnoreFile": [
+    ".cs",
+    ".csproj",
+    ".sln",
+    ".gitignore",
+    ".gitattributes",
+    ".git",
+    ".obj",
+    "packages",
+    ".vs"
+  ],
+  "IgnoreFolder": [
+    "bin",
+    "obj",
+    ".vs",
+    "packages"
+  ]
+}
+
+```
+
+This block synchronizes the **Mods folder**:
+
+* Files with extensions in `IgnoreFile` and directories listed in `IgnoreFolder` are **ignored**.
+* `NeedReplace: true` — Missing or modified mod files are **automatically downloaded and updated** from the server. Without this, an error is thrown and the client exits.
+* `IgnoreTag` and `XMLFileName` must always be **`null`** when synchronizing directories.
+
+> `IgnoreFile` — List of filenames or extensions to skip. You can supply exact names like `Prefs.xml` or extensions like `.cs`.
+> `IgnoreFolder` — List of folder names to skip. Matches the **exact directory name**, regardless of nesting depth. Both folder content and directory existence checks are bypassed on both ends.
+
+---
+
+## Example: Synchronizing the Game Directory
+
+```json
+    {
+      "FolderType": 1,
+      "ServerPath": "Game",
+      "NeedReplace": false,
+      "IgnoreTag": null,
+      "XMLFileName": null,
+      "IgnoreFile": [
+        ".cs",
+        ".csproj",
+        ".sln",
+        ".gitignore",
+        ".gitattributes",
+        "unins000.dat",
+        "unins000.exe",
+        "Version.txt"
+      ],
+      "IgnoreFolder": [
+        "Mods",
+        "RimWorldWin64_Data",
+        "Languages"
+      ]
+  },
+
+```
+
+This block synchronizes the **Game directory**:
+
+* For this directory, it is standard practice to use:
+
+```json
+"NeedReplace": false
+
+```
+
+Mismatched files are not transferred to the client; the connection is simply rejected to prevent distributing paid DLC files illegally.
+
+* Excluded elements:
+* `Mods` — Handled in its own sync rule;
+* `RimWorldWin64_Data` — Large asset archive unneeded for simple integrity checks;
+* Localization directories;
+* `Version.txt` — May vary across game versions and store platforms.
+
+
+* `IgnoreTag` and `XMLFileName` must be **`null`**.
+
+> When using this block, mirror the game folder structure on the server. Folders listed in `IgnoreFolder` do not need to be copied to the server.
+
+---
+
+## Example: Synchronizing the `Config` Folder
+
+```json
+    {
+      "FolderType": 0,
+      "ServerPath": "Config",
+      "NeedReplace": true,
+      "IgnoreTag": null,
+      "XMLFileName": null,
+      "IgnoreFile": [
+        "Mod_performance_optimizer_PerformanceOptimizerMod.xml",
+        "Mod_dubs mint menus_DubsMintMenusMod.xml",
+        "TrueTerrainColorsCache.xml",
+        "Mod_2800857642_map_preview_ModInstance.xml",
+        "TrueTerrainColorsCache.xml",
+        "Mod_Rpg Style + CE_Sandy_Detailed_RPG_Inventory.xml",
+        "KeyPrefs.xml",
+        "Knowledge.xml",
+        "LastPlayedVersion.txt",
+        "Prefs.xml"
+      ],
+      "IgnoreFolder": [
+        "RimHUD"
+      ]
+    }
+
+```
+
+This block synchronizes the **Configuration folder**:
+
+* Files in `IgnoreFile` and folders in `IgnoreFolder` are **ignored**.
+* `NeedReplace: true` — Modified or missing settings files are **downloaded directly** from the server.
+* `IgnoreTag` and `XMLFileName` must be **`null`**.
+
+### Excluding Local Settings
+
+If a specific setting **does not affect server balance** and can be left to player preference, add it to `IgnoreFile`. The server will not overwrite it. While you cannot modify it live during multiplayer sessions, it can be adjusted in **single-player mode** without desyncing other configs.
+
+---
+
+## Example: Synchronizing a Specific XML File
+
+```json
+    {
+      "FolderType": 0,
+      "ServerPath": "Config",
+      "NeedReplace": true,
+      "IgnoreTag": [
+        "OnlineCity"
+      ],
+      "XMLFileName": "..\\HugsLib\\ModSettings.xml",
+      "IgnoreFile": null,
+      "IgnoreFolder": null
+    },
+
+```
+
+This block synchronizes **`HugsLib` settings**:
+
+* The `OnlineCity` tags are **ignored** so synchronization does not erase saved server credentials and host history.
+* `NeedReplace: true` — Modified files are automatically synchronized.
+* `IgnoreFile` and `IgnoreFolder` must be set to **`null`** when syncing single files.
+
+This is useful for synchronizing files while whitelisting select editable settings. Add target nodes to the `IgnoreTag` array.
+
+> This example also demonstrates referencing files **outside the `Config` directory** specified in `ServerPath`. The `..` traverses up one folder level into `HugsLib`. All path separators must be escaped: `\\`.
+
+---
+
+## Example: Synchronizing While Ignoring a Specific Mod
+
+```json
+    {
+      "FolderType": 0,
+      "ServerPath": "Config",
+      "NeedReplace": true,
+      "IgnoreTag": [
+        "version",
+        "{lineWith}pirateby.anothertweaks"
+      ],
+      "XMLFileName": "ModsConfig.xml",
+      "IgnoreFile": null,
+      "IgnoreFolder": null
+    }
+
+```
+
+This block synchronizes **`ModsConfig.xml` inside `Config**`:
+
+* Elements in `IgnoreTag` are **ignored**. To ignore a specific mod, create an entry starting with `{lineWith}` followed by its mod ID tag (e.g., `<li>pirateby.anothertweaks</li>`).
+* `NeedReplace: true` — Replaces invalid configurations.
+* `IgnoreFile` and `IgnoreFolder` are **`null`**.
+
+> Target tags are stripped before comparing files. If the client file differs only within these tags, it is treated as identical. `{lineWith}text` ignores any line containing that exact string.
+
+To also prevent verification of that mod's folder, add its name to `IgnoreFolder` in your primary `Mods` sync block (e.g., `"AnotherTweaks"`):
+
+```json
+      "IgnoreFolder": [
+        "bin",
+        "obj",
+        ".vs", 
+        "packages", 
+        "AnotherTweaks"
+      ]
 
-SaveInterval - the frequency in ms at which the server will save new data, if any, it is better not to change the default value of 10000.
+```
+
+### Critical Behavior
+
+If an XML file contains differences outside of `IgnoreTag`, the entire file will be replaced by the server version.
+
+---
 
-Port - the most important parameter, the port on which your server is running, by default 19019.
+# 12. Server Settings
 
-IsModsWhitelisted - if exact mod matching is used, then set to true, otherwise false.
+`Settings.json` parameters:
 
-ModsDirectory - if IsModsWhitelisted is set to true, then there is a folder that will be copied to each client in its Mods folder, otherwise the value is ignored. More details below.
+| Parameter | Description |
+| --- | --- |
+| `ServerName` | Name of the server. |
+| `Description` | Server description. |
+| `SaveInterval` | Interval for saving world data in ms. The default **10000** is recommended. |
+| `Port` | Server port. **Primary networking parameter**. Default: `19019`. |
+| `IsModsWhitelisted` | Strict mod list validation. `true` to enable, `false` to disable. When `false`, `EqualFiles` is skipped. |
+| `DisableDevMode` | Forces Developer Mode off when players join. |
+| `GeneralSettings` | Structural object containing gameplay and incident configurations. |
+| `ProtectingNovice` | Prevents attacks and trade exploits targeting newly founded colonies. |
+| `DeleteAbandonedSettlements` | Automatically cleans up inactive, underdeveloped colonies. |
+| `DisableGameSettings` | Locks storyteller and mod settings during gameplay. |
+| `IncidentEnable` | Enables summoning events via the **"Interaction"** menu on other colonies. |
+| `IncidentCountInOffline` | Maximum queued events. Individual players can only queue one event at a time regardless. |
+| `IncidentMaxMult` | Maximum event power multiplier. |
+| `IncidentTickDelayBetween` | Minimum cooldown between events in ticks. **1 in-game day = 60,000 ticks.** |
+| `IncidentCostPrecent` | Global event cost modifier, in percent. |
+| `IncidentPowerPrecent` | Global raid power modifier, in percent. |
+| `IncidentCoolDownPercent` | Cooldown duration modifier, in percent. Scales `IncidentTickDelayBetween`. |
+| `IncidentAlarmInHours` | Early warning alert timer for strong incoming raids, in game hours. |
+| `ExchengePrecentWealthForIncident` | Contribution of market assets, open orders, and balance toward threat scale. E.g., `1200` = **120%**. |
+| `ExchengeCostCargoDelivery` | Cargo delivery fee per 100 tiles for every 1,000 silver in value. |
+| `StartGameYear` | Initial game starting year (vanilla default: **5500**). |
+| `EntranceWarning` | MOTD / notification shown when joining the server. |
+| `EntranceWarningRussian` | The same notification in Russian. |
+| `ColonyScreenEnable` | Takes a daily snapshot of all player colonies at midday. Viewable via **"Zoom in"**. |
+| `ColonyScreenHighQuality` | Enables uncompressed colony snapshots. Improves visual fidelity but uses significantly more storage. |
+| `ColonyScreenFolderMaxMb` | Snapshot directory storage quota. Older files are purged, but the latest capture of each colony is retained. |
+| `ScenarioAviable` | Currently unused. |
+| `StorytellerDef` | Currently unused. |
+| `Difficulty` | Currently unused. |
+| `ExchengePrecentCommissionConvertToCashlessCurrency` | Currently unused. |
+| `ExchengeAddPrecentCostForFastCargoDelivery` | Currently unused. |
+| `EquableWorldObjects` | Incomplete feature. Delete or set to `false`. |
+| `ExchengeEnable` | Incomplete feature. Delete or set to `false`. |
+| `EnablePVP` | **Deprecated parameter.** PvP is no longer supported. Formerly toggled PvP functionality. |
+| `MinutesIntervalBetweenPVP` | **Deprecated parameter.** Formerly defined cooldown between PvP assaults in minutes. |
 
-ModsConfigsDirectoryPath - if IsModsWhitelisted is true, then, similarly to ModsDirectory, you should specify the folder with mods settings. More details below.
+## Blueprints and Balance
 
-DisableDevMode - whether the developer mode will be disabled when players enter online.
+If the server does not require custom trade blueprints designed for massive economy servers and you wish to maintain vanilla pacing, delete this folder:
 
-MinutesIntervalBetweenPVP - after an attack on one player by another, he cannot be attacked for a given number of minutes. You can put, for example, 0 or 20.
+```text
+OnlineCity\1.1\patches
 
-ProtectingNovice - Protection of novice players from attack, as well as a ban on transferring goods from new settlements.
+```
 
-DeleteAbandonedSettlements - The server will automatically delete undeveloped settlements that have not been played for a long time.
+Perform this on:
 
-GeneralSettings - A hierarchy of settings existing for technical needs, within it, the settings are as important as the rest.
+* The local game client mod folder;
+* The server mod directory (if mod sync is used).
 
-EnablePVP - Enable the mode of attacking players against each other online with limited control
+Blueprint balances can be manually customized in:
 
-DisableGameSettings - Disallow changing the settings of the narrator and modifications in the game
+```text
+TechBlueprints.xml
 
-IncidentEnable - are incidents allowed (actions on the Interaction button on foreign settlements)
+```
 
-IncidentCountInOffline - How many incidents are allowed in the queue (from one player in any case only one)
+---
 
-IncidentMaxMult - Maximum odds. the forces of incidents
+# 13. Player Administration
 
-IncidentTickDelayBetween - Minimum pause between incidents in ticks (1 day = 60000)
+## Verifying Player Identity
 
-IncidentCostPrecent - Percentage hiring cost modifier
+To confirm that a user owns an account:
 
-IncidentPowerPrecent - Percentage raid strength modifier
+1. Ask them to **connect to the server**.
+2. Request their **client log for the current day**.
+3. Locate the connection entry in their log.
+4. Cross-reference the timestamp with the server logs.
 
-ExchengePrecentWealthForIncident - How much the cost of things on the exchange, in orders and on the account will affect game incidents (how much silver per 1000 silver of the cost of things. For example, 1200 is 120%, 20% more influence on the raid from things moved to the server)
+> Remember to account for time zone differences.
 
-StartGameYear - Assign the starting year in the game instead of 5500
+## Restoring Saves
 
-IgnoredLocalConfigFiles - The names of the configuration files to ignore. The rest will be synchronized with the server folder specified in ModsConfigsDirectoryPath if IsModsWhitelisted is true.
+Player save files are stored in `World\DataPlayers`:
 
-IgnoredLocalModFiles - The ending of ignored file names from the mods folder. The rest will be synchronized with the server folder specified in ModsDirectory if IsModsWhitelisted is true.
+Format:
 
-EquableWorldObjects - the functionality is not ready yet, you should delete the line or put false.
+```text
+{player_login}.dat{number}
 
-ExchengeEnable - the functionality is not ready yet, you should delete the line or put false.
+```
 
+Examples:
 
-Check that you have .NET Core 3.1 installed before starting: https://dotnet.microsoft.com/download/dotnet-core/current/runtime
+```text
+player.dat1
+player.dat2
+player.dat3
 
-Run ServerOnlineCity.exe. The console should open, which is the server. The output to it is duplicated to the log files in the World folder.
+```
 
-In order for people to be able to connect to it, you need to open port 19019 (or the one specified in Port).
+`dat1` — Most recent save state.
 
-When the server starts up, the "World" folder will be created in the folder with it. The first person to register on the server through the game will be considered an administrator. Special commands and developer mode are available to him, even if he is turned off by the server settings. At the first login / registration, the administrator will be asked to select the world seed, the percentage of the world filled in and the complexity of the game (simple / normal / difficult). The script and the narrator are always the same at startup. After that, the game will take several minutes, after which you will be returned to the main menu. Everything is ready! You can go again and as a regular player to create a settlement.
+`dat2` — Previous backup.
 
-In *nix systems, the launch should also occur without problems, because The server is written in .NET Core 3.1.
+`dat3` — Older backup.
 
-There is also a Discord bot. You can read about its configuration separately here: https://github.com/AantCoder/OnlineCity/tree/dev/Source/DiscordChatBotServer
+If the primary save is corrupted:
 
+1. Delete:
 
-More details on how to configure the mode of exact matching mods.
+```text
+{player_login}.dat1
 
-To install everything correctly, configure your RimWorld so that all mods are taken from the Mods folder (not a single mod from Steam!). Check that everything works fine in a regular game. And copy your Mods folder to the server. You should have at least three folders (inside Mods): Harmony, HugsLib, OnlineCity.
+```
 
-After that, copy the ModsConfig.xml file from the game to the server in the World folder
-%appdata%\..\LocalLow\Ludeon Studios\RimWorld by Ludeon Studios\Config
-For example, I have it here:
-"c:\Users\Ant\AppData\LocalLow\Ludeon Studios\RimWorld by Ludeon Studios\Config\ModsConfig.xml"
+2. Rename `dat2` or `dat3` to `dat1`.
 
+> ⚠️ In some situations, the server retains both `dat1` and a `.bak` copy to prevent rollback exploits after resource transfers.
 
-Some solutions to problems starting your server:
+## Deleting a Player's Colony
 
-1. The server console is open and there are no errors
-2. Try to enter the game from the same computer at localhost
-3. Check that friends are joining at the right IP address (you can google "how to find my IP")
-4. Forward port 19019 in the router (also google "how to open the port")
-5. Verify that the firewall allows the use of connections, or disable it
-6. Verify the version of the mod with the one who is connecting. This can be done by clicking Network game, and What’s what, there will be a version in the first line
-7. The game is poorly stable with poor communication, if it is often torn, problems may occur.
-8. If it turns out to connect / register, and then the black screen, then try to wait 5 minutes
-9. If you are unable to register and writes that such a login is already taken, then try to use more than 3 characters in the login and password, and in the login more Latin letters
+Administrators can purge a colony using:
 
+```text
+/killhimplease {UserLogin}
 
-All player saves are in a subfolder of World\DataPlayers and have the name {player name}.dat {number}
+```
 
-{player name} is the player’s login, but some characters that are not allowed for the file name are replaced with the symbol _
+The target player will be prompted to settle a new colony upon their next login.
 
-{number} is the save history, 1 is the latest, 2 is the previous, 3 is the oldest
+The following setting:
 
-There are also situations when, instead of history, only the file {player name}.dat1 and {player name}.bak remains. This means that a return to a previous save is undesirable. For example, this happens after a player transfers something to another player in order to exclude endless transmission.
+```text
+DeleteAbandonedSettlements
 
-How can an administrator help a player?
+```
 
-If you delete the files {player name}.dat *, then the next time you enter the player will be asked to create a new settlement. However, it is better to use the command from the console /killhimplease {UserLogin}
+automates this cleanup for inactive settlements.
 
-If the player’s save is corrupted, you can delete the file {player name}.dat1 and rename the file {player name}.dat2 or {player name}.dat3 to this name
+## Resetting a Player's Password
 
-You can regularly delete settlements of players who have played less than a few gaming days and have not entered for a long time. To do this, in the game you can find their settlements on the map by the icon of the smallest house, click on them, then on the information i. Here you can see the total cost of the settlement (for example, if it is less than 30000) and when the user last visited. If you decide to remove the player, then use the command /killhimplease {UserLogin}
-Or the server can do it itself by configuring DeleteAbandonedSettlements.
+Administrators can reset passwords using:
 
-How to make sure that the player is who he claims to be? For example, if a player writes that his preservation is broken, and he asks to remove his settlement. In this case, ask him to try to enter the game right now. Then ask him to send you his logs for today. Then you can find the lines of his login to the server and compare the time with the logs on the server itself (keep in mind that there may be different time zones).
+```text
+/ChangePassword {UserLogin} {NewPassword}
 
+```
 
-Blocking intruders.
-In the World folder, you can create two files for the connection ban.
-blockip.txt - IP addresses to be blocked. One line one IP, the last value can be written through the fraction 1.2.3.0/2 will add three IPs uploaded to .0, .1 and .2
+> ⚠️ Always confirm account ownership before resetting passwords.
 
-blockkey.txt is a key ban. each player has unique keys. You can find them out from the logs by searching for "key=", there is something like this line:
+---
 
-Checked loginName key=hlw57jjSV5HacQbb9iiB@@@51b36et2ZBvBUkUztF+N
+# 14. Banning Players
 
-Each user has several keys and matching any of them is enough to block. Therefore, to ban by key, you need to add both to the file (each on a separate line). Keys are separated by three @@@ symbols, you do not need to write them.
-When you first log in from new equipment, a special key 111@@@ is added
+Create these files inside the `World` folder:
 
-In both of these files, you can write comments that must go after the key or IP separated by a space
+```text
+blockip.txt
+blockkey.txt
 
+```
 
-You can get a summary of all the players in the console by pressing the letter S. This will create a Players_date.csv file with a list of players, last login time and some game information. Here's a description of some of the columns:
+## IP Bans: `blockip.txt`
 
-LastOnlineDay - how many real days ago the player was online
+Contains IP addresses to ban, one address per line. You can specify ranges using the mod's custom slash notation: `1.2.3.0/2` will ban three consecutive IPs ending in `.0`, `.1`, and `.2` (offset range, not standard CIDR notation).
 
-BaseCount - current number of settlements
+## Hardware ID Bans: `blockkey.txt`
 
-CaravanCount - the current number of caravans
+Bans users via persistent hardware keys. Locate these in the server logs by searching for `key=`. The line will appear similar to:
 
-MarketValue - the current value of the settlement
+`Checked loginName key=hlw57jjSV5HacQbb9iiB@@51b36et2ZBvBUkUztF+N`
 
-MarketValuePawn - the current value of the pawns
+Place each unique key on a separate line.
 
-AttacksWonCount - how many incidents were directed at the player
+A single machine generates multiple keys. Matching **any single key** triggers a ban, but adding all associated keys ensures total coverage. Keys in the log are separated by `@@@` — do not include this delimiter in the file. A new machine connection also reports a default `111@@@` identifier.
 
-AttacksInitiatorCount - how many incidents the player made on other players
+> Comments can be added after an IP or key by inserting a space.
 
-ColonistsCount - how many colonists there are
+---
 
-ColonistsDownCount - how many of the colonists are off their feet
+# 15. Statistics and Monitoring
 
-ColonistsBleedCount - how many of the colonists have bleed
+## Player Dump
 
-PawnMaxSkill - how many colonists have 8 out of 12 skills of level 20. It should probably always be = 0. If it is equal to ColonistsCount, then this is definitely a cheat
+Press `S` in the server console. This exports a `Players_date.csv` file containing player lists, last seen timestamps, and game telemetry.
 
-KillsHumanlikes - How many player colonists killed other people
+| Parameter | Description |
+| --- | --- |
+| `LastOnlineDay` | Real-world days elapsed since the player was last online. |
+| `BaseCount` | Number of colonies owned. |
+| `CaravanCount` | Number of caravans on the world map. |
+| `MarketValue` | Total colony market value. |
+| `MarketValuePawn` | Cumulative market value of all colonists. |
+| `AttacksWonCount` | Incidents directed at this player. |
+| `AttacksInitiatorCount` | Incidents this player initiated against others. |
+| `ColonistsCount` | Total colonist count. |
+| `ColonistsDownCount` | Count of currently downed/incapacitated colonists. |
+| `ColonistsBleedCount` | Count of colonists currently suffering blood loss. |
+| `PawnMaxSkill` | Colonists with level 20 in 8 out of 12 skills. Normal value is `0`. If equal to `ColonistsCount`, suspect cheating. |
+| `KillsHumanlikes` | Humanlike kills by this player's faction. |
+| `KillsMechanoids` | Mechanoid kills by this player's faction. |
+| `KillsBestPawnHN` | Name of the colonist with the highest humanlike kill count. |
+| `KillsBestPawnH` | Humanlike kills achieved by that colonist. |
+| `KillsBestPawnMN` | Name of the colonist with the highest mechanoid kill count. |
+| `KillsBestPawnM` | Mechanoids killed by that colonist. |
+| `Grants` | Permission tier. `UsualUser` = standard user; `SuperAdmin.Moderator` = world creator (first registered user). |
+| `IntruderKeys` | Hardware IDs used to track bans and multi-account logins from the same PC. |
+| `StartMarketValue` | Colony wealth at generation. |
+| `StartMarketValuePawn` | Colonist market value at generation. |
+| `MarketValueBy15Day` | Peak colony wealth recorded within the first 15 days. |
+| `MarketValuePawnBy15Day` | Peak colonist market value within the first 15 days. |
+| `MarketValueByHour` | Highest colony wealth achieved in a single real-world hour (excluding pause time). |
+| `MarketValuePawnByHour` | Highest colonist value achieved in a single real-world hour (excluding pause time). |
+| `TicksByHour` | Peak tick volume within one real-world hour online, including pause time. |
+| `HourInGame` | Total playtime for the current colony, excluding pause time. |
 
-KillsMechanoids - how many player colonists killed mechanoids
+---
 
-KillsBestPawn - which colonist killed the most
+# 16. Server Logs
 
-Grants - rights on the server, "UsualUser" - regular user, "SuperAdmin. Moderator" - world creator (first registered)
+The server automatically generates:
 
-IntruderKeys - keys by which you can ban and search for logins to which you enter from one computer
+* `Log_date.txt` — General server log
+* `Incidents_month.csv` — Incident ledger
 
-StartMarketValue - the price of the starting settlement
+| Event | Description |
+| --- | --- |
+| `NewIncident` | Player `fromLogin` scheduled an incident targeting `toLogin`. |
+| `SendMail` | Pre-raid countdowns (half an in-game day) and queues resolved; incident has spawned. |
+| `DayAfterMail` | 24 hours elapsed since incident started. Post-raid cooldowns calculate here. Useful for evaluating raid impact. |
+| `End` | All delays resolved; the incident terminates and frees its queue slot. |
 
-StartMarketValuePawn - price of starting pawns
+| Field | Description |
+| --- | --- |
+| `fromDay` | Current in-game day of the initiating player. |
+| `toDay` | Current in-game day of the target player. |
+| `worth` | Combined net worth of items and pawns account-wide. |
+| `worthTarget` | Total wealth inside the targeted colony specifically. |
+| `delayAfterMail` | Calculated extra cooldown after the incident. One day has already passed at calculation time. |
 
-MarketValueBy15Day - the maximum settlement value that the player has collected in 15 days
+---
 
-MarketValuePawnBy15Day - the maximum value of pawns that a player has collected in 15 days
+# 17. Commands
 
-MarketValueByHour - the maximum settlement value that a player has collected in 1 hour of play, excluding pause time
+Commands can be typed into any chat window and are hidden from chat logs. All commands begin with a `/`.
 
-MarketValuePawnByHour - the maximum value of the pawns that the player has collected in 1 hour of play, excluding the pause time
+## User Permissions
 
-TicksByHour - maximum number of ticks in one hour online (including pause time)
+| Command | Description |
+| --- | --- |
+| `/grants add {UserLogin} Moderator` | Grant **Moderator** rights to a user. |
+| `/grants revoke {UserLogin} Moderator` | Revoke **Moderator** rights from a user. |
+| `/grants type {UserLogin}` | View current user permissions. |
 
-HourInGame - game time for the current colony, excluding pause time
+## Colony Management
 
+| Command | Description |
+| --- | --- |
+| `/killmyallplease` | Purges all server-side saves, colonies, and caravans for the user. Registration remains valid. Prompts a fresh colony setup on the next login. Identical to **"About mod" → "Start anew"**. |
+| `/killhimplease {UserLogin}` | **Administrator only.** Executes `/killmyallplease` on the target user. |
 
-Server logs are created automatically Log_data.txt, together with the file with incidents Incidents_month.csv. Several events are marked here for each incident:
+## Safe Server Shutdown
 
-NewIncident - fromLogin player ordered a raid on toLogin
+`/everybodylogoff` — **Administrator only.** Safely shuts down the server: broadcasts an order to all online clients to save and disconnect. Monitor the server console and close it only after all clients disconnect and saves finish writing. **Do not use during active PvP sessions.**
 
-SendMail - toLogin passed all the expectations from the past, and half a day of waiting before the attack for raids and the event started directly
+## Chat and Messaging
 
-DayAfterMail - a day has passed after the event, at this moment it is determined how long you need to wait more (or not more), it is convenient to see how much damage the raid did
+| Command | Description |
+| --- | --- |
+| `/createchat {Name}` | Creates a chat channel. Can also be done via the UI. |
+| `/addplayer {UserLogin}` | Invites a player to the current channel. |
+| `/renamechat {Name}` | Renames the current channel. |
+| `/exitchat` | Leaves the active channel. |
+| `/discord` | Discord bot integration. Reference: [https://github.com/Todako/OnlineCity/tree/master/Source/DiscordChatBotServer](https://github.com/Todako/OnlineCity/tree/master/Source/DiscordChatBotServer) |
 
-End - the end of the wait, the event is fully completed and at this moment releases the queue.
+Administrators can dispatch notifications as in-game letters:
 
-Columns:
+```text
+/say {player_name} {color} {title} {text}
 
-fromDay and toDay - what is the attacker's game day and target at this moment
+```
 
-worth - is the total cost of items and pawns. In separate columns for the entire account, in the worthTarget exactly the settlement of the target
+Target substitutions for `player_name`:
 
-delayAfterMail is how many days of delay were calculated (at the time of calculation, 1 day has already passed)
+* `all` — Every registered player;
+* `online` — Only players currently online.
 
+`color` is an optional prefix argument starting with `/`:
 
-# 8. Functions of the mod in the game
+| Value | Letter Style |
+| --- | --- |
+| `/treatbig` | Red letter with audio alarm. |
+| `/treatsmall` | Red letter. |
+| `/death` | Gray letter with audio cue. |
+| `/negative` | Yellow letter. |
+| `/positive` | Blue letter with audio cue. |
+| `/visitor` | Blue letter. |
+| `/neutral` | Standard gray letter (default). |
 
-Special commands are written in the chat (usually in any channel), and they will not be displayed in it. All such commands begin with a /
+## Triggering Incidents
 
-/grants add {UserLogin} Moderator - add user right.
+Administrators can force events using:
 
-/grants revoke {UserLogin} Moderator - revoke the user right.
+`/call {event} {"player_name"} {target_colony_sId} {power}* {arrival_mode}* {faction}*`
 
-/grants type {UserLogin} - view current user rights.
+Arguments marked with `*` are **optional** and apply only to specific event types.
 
-/killmyallplease - removes the save from the server, and all settlements and caravans from the map. Registration remains. At the next call, it will be proposed to create a new settlement. The function can also be called from the About tab by clicking the Start again button.
+Enclose the player nickname in **double quotes**:
 
-/killhimplease {UserLogin} - (admin only) is similar to /killmyallplease, but the specified player.
+```text
+/call raid "babur"
 
-/everybodylogoff - (admin only) command for the server to shut down correctly. All online players are given a save and exit command. After calling the team, you need to monitor the server console: as soon as the activity of the players disappears and the server saves the data, the console can be turned off. It is not recommended to start with an active PVP session.
+```
 
-/createchat {Name} - creates a new chat with the specified name, also available in the chat interface
+### Available Events
 
-/addplayer {UserLogin} - adds a player to the current chat, also available in the chat interface
+| Code | Description |
+| --- | --- |
+| `raid` | Spawns a raid on the player's colony. Power: integer from `1` to `10`. Supports arrival mode and faction overrides. |
+| `inf` | Triggers an infestation (insects). Supports power scaling. |
+| `acid` | Triggers toxic fallout on the player's map. |
 
-/renamechat {Name} - renames the current chat, also available in the chat interface
+### Arrival Modes
 
-/exitchat - leaves the current chat, also available in the chat interface
+| Code | Description |
+| --- | --- |
+| `walk` | Walk in from a random map edge. |
+| `air` | Drop pods targeting the home area. |
+| `random` | Drop pods scattered randomly across the entire map. |
 
-/discord - for details see https://github.com/AantCoder/OnlineCity/tree/dev/Source/DiscordChatBotServer
+### Factions
 
-/say {'player name'} {/color}* {'title'} {text} {continuation of the text} ... - sends a message to the player in the form of a game letter, available to the administrator.
-*optional parameter color is defined by beginning with / Can be like this:
-	/treatbig - red letter with sound
-	/treatsmall - red letter
-	/death - gray letter with sound
-	/negative - yellow letter
-	/positive - blue letter with sound
-	/visitor - blue letter
-	/neutral - gray letter (default)
+| Code | Description |
+| --- | --- |
+| `tribe` | Hostile tribal faction — swarm attacks with primitive weaponry. |
+| `pirate` | Industrial pirate faction — firearms, rocket launchers, and advanced melee. |
+| `mech` | Mechanoid faction — heavily armored combat units. |
 
-/call {событие} {'player name'} {sId settlement target} {power}* {way of arrival}* {fraction}*
-*optional for some events
-the player's name is required in single quotes, for example: /call raid 'babur'
+### Examples
 
-List of available events:
-*	raid - calling a raid on a player. The choice of capacity is available, an integer from 1 to 10. The method of arrival and the choice of fraction are also available.
-*	inf - summon beetles on the player's card. Power selection available
-*	acid - acid rain challenge on player card
-	
-List of available arrival methods:
-*	walk - arriving on foot from a random edge of the map
-*	air - drop in drop pods to the player's home area
-*	random - drop in capsules to random points on the map. Grants a highly dispersed raid
-	
-List of available factions:
-*	tribe - a hostile Aboriginal faction. A huge number of people with primitive weapons
-*	pirate - hostile faction of the industrial level of development. Soldiers with good firearms and rocket launchers as well as melee fighters will arrive
-*	mech - fraction of mechanoids. Heavily armored, as a rule, arrive in small numbers. When quality is more important than quantity
-	
-Example:
+```text
+/call raid "babur" 143 8 random pirate
+/call inf "SSDExecutor" 23 4
+/call acid "Aant" 16
 
-/call raid 'babur' 143 8 random pirate
+```
 
-/call inf 'SSDExecutor' 23 4
+For `raid`, omitting power, arrival mode, and faction falls back to:
 
-/call acid 'Aant' 16
+```text
+/call raid {"player_name"} 1 walk pirate
 
-Note:
+```
 
-if the power, arrival method and fraction are not specified for the raid event, the default is called
+### Vanilla Game Incidents
 
-/call raid {'player name'} 1 walk pirate
+Trigger standard RimWorld incidents using their internal `defName`:
 
+```text
+/call def online 0 0 {defName}
 
-/statecreate {Name} - create a new state with itself led by the given name
+```
 
-/stateadd {UserLogin} - send an invitation to join a player in your state
+The `0 0` values are required internal compatibility flags. Example:
 
-/stateexclude {UserLogin} - expel a player from your state
+```text
+/call def online 0 0 ThrumboPasses
 
-/stateposition {PositionName} {1/0 RightAddPlayer} {1/0 RightExcludePlayer} {1/0 RightEditRights} - create a position in the state, if it already exists, then the existing one is changed.
-	The name is followed by a space-separated 1 or 0 for three rights: the right to invite new players, the right to exclude players, and the right to edit, issue or select positions.
-/stateposition {PositionName} del - remove a position in the state. If after the name of the position you specify not the three digits 0/1, but the word del, then the position will be deleted.
+```
 
-/stateset {UserLogin} {PositionName/del} - set or remove the specified position in your state for the specified player
+Spawns a herd of Thrumbos for all online players.
 
+## States (Nations)
 
+| Command | Description |
+| --- | --- |
+| `/statecreate {Name}` | Founds a new state with the specified name; you become its ruler. |
+| `/stateadd {UserLogin}` | Sends an invitation to join your state. |
+| `/stateexclude {UserLogin}` | Expels a player from your state. |
+| `/stateposition {PositionName} {1/0 RightAddPlayer} {1/0 RightExcludePlayer} {1/0 RightEditRights}` | Creates or edits a role. Assign `1` or `0` to toggle three permissions: **invite players**, **kick players**, and **manage/assign roles**. |
+| `/stateposition {PositionName} del` | Deletes the specified role. |
+| `/stateset {UserLogin} {PositionName/del}` | Assigns a role to a player, or strips their role if `del` is specified. |
 
+# Links
 
-# 9. Possible problems
-
-If the game crashes (the colony does not load or it is impossible to play due to errors), then you can contact the administrator and ask him to restore the game from the previous save. You can also restart the game under the same account.
-
-There is an unresolved issue of transferring pawns when using HardcoreSK. Maybe a similar problem will be with some other mods, is not yet known.
-
-If you tried to log into the server, but the game showed a message that not all files passed the test, then just go again. This is a normal situation. Or there have been some, possibly minor, changes in the modpack. Either something has changed in the Mods folder or the ModsConfig.xml file has been changed by your game.
-
-After registration and login, mods can be downloaded and saved from the server. Sometimes this can take several minutes, during which the game may freeze or display a black screen. Try to wait up to 10 minutes. In some cases, when you first enter the server with downloading a large modpack with poor Internet speed, this can take a significantly longer time.
-
-If you have already logged in and played on the server with the mods synchronized, then if after restarting the game click on the Mods main menu, then the next time you log into the server, the game will most likely restart. In fact, nothing has changed, but the game after opening the list of mods overwrites ModsConfig.xml and it can change a little. This is normal behavior, just click the Fashion button less often :)
-
-There is a bug that is difficult to catch. Sometimes after transferring a settler to another player, a copy of it (a pawn with the same name, profession and skills) may appear in some event or ask to join the settlement. Do not agree, eyewitnesses say that this is a ghost that crashes the game! :)
-
-
-# 10. Other frequently asked questions
-
-> How to choose a game scenario?
-
-The game scenario cannot be customized, but the narrator and difficulty can be changed immediately after starting through the settings. Initially, the game begins with the narrator Cassandra, a standard scenario of the Classic and the complexity that was set when creating the server.
-
-> Is it possible to play together in one settlement?
-
-You cannot play on one map, except for attacking another player’s settlement, but this is still not direct control. If you need this type of game, try Zetrith Multiplayer
-
-> What happens to others when I pause?
-
-Nothing :) The course of the game of all participants is independent. Each player on the map has his own game session, in which interaction with foreign settlements and caravans is added. For example, you can pause and see how other people's caravans move on the map (although it’s difficult to get to the time when another player goes by caravan).
-But what an example of interaction may be: at the time of the attack, you can ask for help from a friend and pause the game, at that time he will come up as a caravan and transfer his settlers; after repulsing the attack, you can return the settlers in the same way. Or, for example, the one who came to the rescue can transfer all the pawns except one animal so that the caravan is not disbanded, then it will be possible to return the settlers immediately after repulsion, creating a new caravan from them and transferring them back to the friend’s caravan.
-
-> Game freezes after authorization
-
-It does not freeze, but it loads, just wait. The loading process can take up to ~ 5 - 10 minutes.
-
-> How to find logs
-
-Individual OnlineCity logs are written in: %appdata%\..\LocalLow\Ludeon Studios\RimWorld by Ludeon Studios\OnlineCity (this can be inserted into Explorer)
-
-> How to remove your colony?
-
-You need to open the Online window through the panel below or through the Menu in the game. Next, on the About Fashion tab, click Start Again.
-The same action can be done by writing the command in the chat: /killmyallplease
-
-> How often is the game saved?
-
-The game is saved to the server once every 15 minutes, if you have not changed it on the Settings tab, it is also saved when you exit the game through the menu.
-Using ALT + F4, you can roll back your colony to the last save.
-
-> What should I do if I forget my password?
-
-You can ask the admin to change your password using the command /Change Password {UserLogin} {NewPassword}
-Admins – do not blindly believe in the words of the players, ask them for data that only they can know.
-
-> Is developer mode available to other players?
-
-It depends on the server settings. If the mode is disabled, then everyone except the administrator will not be able to put it. You can check it out yourself :)
-
-
-References:
-
-The main server address is: rimworld.online
-
-Discord: https://discord.gg/5DzWrnR
-
-Official VK mod group: https://vk.com/rimworldonline
-
-Trello: https://trello.com/b/gXtWtDjy/onlinecity-mod-rimworld
-
-GitHub: https://github.com/AantCoder/OnlineCity
+GitHub: [https://github.com/Todako/OnlineCity/tree/master](https://github.com/Todako/OnlineCity/tree/master)
