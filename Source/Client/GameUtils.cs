@@ -1,6 +1,7 @@
-﻿using RimWorld;
+using RimWorld;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using Verse;
@@ -66,14 +67,14 @@ namespace RimWorldOnlineCity
         }
 
         /// <summary>
-        /// Иконка вещи, опционально "i". Запускается в произвольном Rect
+        /// Іконка речі, опціонально "i". Запускається у довільному Rect
         /// </summary>
         public static void DravLineThing(Rect rect, ThingTrade thing, bool withInfo)
         {
             DravLineThing(rect, thing, withInfo, Color.white);
         }
         /// <summary>
-        /// Иконка вещи, опционально "i". Запускается в произвольном Rect
+        /// Іконка речі, опціонально "i". Запускається у довільному Rect
         /// </summary>
         public static void DravLineThing(Rect rect, ThingTrade thing, bool withInfo, Color labelColor, float xi = 24f, float yi = 0)
         {
@@ -150,7 +151,7 @@ namespace RimWorldOnlineCity
         }
 
         /// <summary>
-        /// Иконка вещи, "i" и название. Должно запускаться в относительных коор
+        /// Іконка речі, "i" та назва. Повинно запускатися у відносних координатах
         /// </summary>
         /// <param name="rectLine"></param>
         /// <param name="thing"></param>
@@ -196,7 +197,7 @@ namespace RimWorldOnlineCity
         }
 
         /// <summary>
-        /// Объединяет одинаковые вещи в список внутри одного контейнера TransferableOneWay
+        /// Об'єднує однакові речі в список всередині одного контейнера TransferableOneWay
         /// </summary>
         /// <param name=""></param>
         /// <returns></returns>
@@ -217,8 +218,8 @@ namespace RimWorldOnlineCity
         }
 
         /// <summary>
-        /// Разворачивает список из (вид вещи (внутри список конкретных вещей), кол-во выбора) до словаря (конкретная вещь, кол-во)
-        /// Операция обратная DistinctThings, с сохранение кол-во выбранных (CountToTransfer)
+        /// Розгортає список із (вид речі (всередині список конкретних речей), кількість вибору) до словника (конкретна річ, кількість)
+        /// Операція, зворотна DistinctThings, зі збереженням кількості вибраних (CountToTransfer)
         /// </summary>
         /// <returns></returns>
         public static Dictionary<Thing, int> TransferableOneWaysToDictionary(this IEnumerable<TransferableOneWay> selectByGroup, bool seletAll = false)
@@ -257,29 +258,29 @@ namespace RimWorldOnlineCity
         }
 
         /// <summary>
-        /// Возвращает набор вещей из allThings выбранных в targets или null, если чего то не хватает.
-        /// Выставляет target.NotTrade
+        /// Повертає набір речей з allThings, вибраних у targets, або null, якщо чогось не вистачає.
+        /// Встановлює target.NotTrade
         /// </summary>
-        /// <param name="targets">Искомые вещи или фильтры из ордера</param>
-        /// <param name="allThings">Все доступные вещи</param>s
+        /// <param name="targets">Шукані речі або фільтри з ордера</param>
+        /// <param name="allThings">Усі доступні речі</param>s
         /// <returns></returns>
         public static List<TransferableOneWay> ChechToTrade(IEnumerable<ThingTrade> targets, IEnumerable<Thing> allThings)
         {
-            //сортируем цели для выборки более плохих вначале
-            var rate = 1;//Максимальное кол-во повторов, уменьшается для каждой следующей вещи. Расчет на то, что вещи не конкурируют между собой или конкурируют незначительно
-            //первый запуск для выяснения rate
+            // сортуємо цілі для вибірки гірших спочатку
+            var rate = 1;// Максимальна кількість повторів, зменшується для кожної наступної речі. Розрахунок на те, що речі не конкурують між собою або конкурують незначно
+            // перший запуск для з'ясування rate
             return ChechToTradeDo(targets, allThings, null, ref rate, false);
 
         }
         /// <summary>
-        /// Возвращает набор вещей из allThings выбранных в targets или null, если чего то не хватает.
-        /// Выставляет target.NotTrade
+        /// Повертає набір речей з allThings, вибраних у targets, або null, якщо чогось не вистачає.
+        /// Встановлює target.NotTrade
         /// </summary>
-        /// <param name="targets">Искомые вещи или фильтры из ордера</param>
-        /// <param name="allThings">Все доступные вещи</param>
-        /// <param name="altThings">Дополнительные вещи, которые учавствуют в отборе если на позицию в allThings не хватило. Если задано, то в результате только часть из этого набора</param>
-        /// <param name="rate">Кол-во повтором этой сделки</param>
-        /// <param name="incomplete">Если не 0, то указано желателное rate, но если каких-то вещей нет, то результат всё равно будет выдан, и только недостающих не будет в результате</param>
+        /// <param name="targets">Шукані речі або фільтри з ордера</param>
+        /// <param name="allThings">Усі доступні речі</param>
+        /// <param name="altThings">Додаткові речі, які беруть участь у відборі, якщо на позицію в allThings не вистачило. Якщо задано, то в результаті лише частина з цього набору</param>
+        /// <param name="rate">Кількість повторів цієї угоди</param>
+        /// <param name="incomplete">Якщо не 0, то вказано бажане rate, але якщо якихось речей немає, то результат усе одно буде видано, і лише бракуючих не буде в результаті</param>
         /// <returns></returns>
         public static List<TransferableOneWay> ChechToTrade(IEnumerable<ThingTrade> targets, IEnumerable<Thing> allThings, IEnumerable<Thing> altThings, out int rate, int incomplete = 0)
         {
@@ -288,31 +289,31 @@ namespace RimWorldOnlineCity
                 + "allThings: " + allThings.Select(t => ThingTrade.CreateTrade(t, t.stackCount)).ToList().ToStringLabel() + Environment.NewLine
                 );
             
-            //сортируем цели для выборки более хорошие вначале, а вещи сначала более плохие
+            // сортуємо цілі для вибірки кращих спочатку, а речі спочатку гірші
             var trs = targets.OrderByCost();
                 //.Where(t => t.Count > 0)
                 //.OrderBy(t => t.DefName + "#" + (9 - t.Quality).ToString() + t.HitPoints.ToString().PadLeft(5) + t.Count.ToString().PadLeft(6))
                 //.ToList();
             if (incomplete == 0)
             {
-                rate = 100000000;//Максимальное кол-во повторов, уменьшается для каждой следующей вещи. Расчет на то, что вещи не конкурируют между собой или конкурируют незначительно
-                //первый запуск для выяснения rate
+                rate = 100000000;// Максимальна кількість повторів, зменшується для кожної наступної речі. Розрахунок на те, що речі не конкурують між собою або конкурують незначно
+                // перший запуск для з'ясування rate
                 var res = ChechToTradeDo(trs, allThings, altThings, ref rate, true);
                 if (res == null) return null;
-                //повторно запускаем для корректного заполнения CountToTransfer (т.к. при уменьшении rate не перерасчитываются вещи отобранные ранее)
+                // повторно запускаємо для коректного заповнення CountToTransfer (оскільки при зменшенні rate не перераховуються речі, відібрані раніше)
                 return ChechToTradeDo(trs, allThings, altThings, ref rate, false);
             }
             else
             {
-                rate = incomplete; //отличие от блока выше 1
-                //первый запуск для выяснения rate
+                rate = incomplete; // відмінність від блоку вище 1
+                // перший запуск для з'ясування rate
                 var res = ChechToTradeDo(trs, allThings, altThings, ref rate, true);
                 if (res == null)
-                {   //отличие от блока выше 2
+                {   // відмінність від блоку вище 2
                     rate = incomplete;
                     return ChechToTradeDo(trs, allThings, altThings, ref rate, false, true);
                 }    
-                //повторно запускаем для корректного заполнения CountToTransfer (т.к. при уменьшении rate не перерасчитываются вещи отобранные ранее)
+                // повторно запускаємо для коректного заповнення CountToTransfer (оскільки при зменшенні rate не перераховуються речі, відібрані раніше)
                 return ChechToTradeDo(trs, allThings, altThings, ref rate, false);
             }
         }
@@ -322,7 +323,7 @@ namespace RimWorldOnlineCity
             bool result = true;
             var selects = new List<TransferableOneWay>();
             var source = allThings.ToDictionary(i => i, i => i.stackCount);
-            //сортируем вещи сначала более плохие
+            // сортуємо речі спочатку гірші
             var sourceKeys = source.Keys
                 .Select(t =>
                 {
@@ -333,9 +334,9 @@ namespace RimWorldOnlineCity
                 .OrderBy(t => t.thing.def.defName + "#" + ((int)t.q).ToString() + (10000 - t.thing.HitPoints).ToString() + t.thing.stackCount.ToString().PadLeft(6))
                 .Select(t => t.thing)
                 .ToList();
-            //копия для alt
+            // копія для alt
             var sourcealt = altThings?.ToDictionary(i => i, i => i.stackCount);
-            //сортируем вещи сначала более плохие
+            // сортуємо речі спочатку гірші
             var sourcealtKeys = sourcealt?.Keys
                 .Select(t =>
                 {
@@ -351,12 +352,12 @@ namespace RimWorldOnlineCity
                 target.TradeCount = 0;
                 if (target.Count == 0)
                 {
-                    target.NotTrade = false; //где NotTrade истина, там будет красная строка в интерфейсе
+                    target.NotTrade = false; // де NotTrade істина, там буде червоний рядок в інтерфейсі
                     target.TradeCount = 0; 
                     continue;
                 }
                 if (MainHelper.DebugMode) Log.Message("--- --- " + target.DefName.ToString() + " " + target.Count.ToString() + "*" + rate.ToString());
-                if (setRect && target.Count > 100 && rate > 1000000) rate = 1000000; //от переполнения
+                if (setRect && target.Count > 100 && rate > 1000000) rate = 1000000; // від переповнення
                 var select = new TransferableOneWay();
                 var selectalt = new TransferableOneWay();
                 //Log.Message(target.DefName);
@@ -366,7 +367,7 @@ namespace RimWorldOnlineCity
                     if (source[thing] == 0) continue;
                     if (target.MatchesThing(thing))
                     {
-                        //нам подходит выбираем нужное кол-во
+                        // нам підходить, вибираємо потрібну кількість
                         target.TradeCount += source[thing];
                         if (target.Count <= select.CountToTransfer) continue;
                         select.things.Add(thing);
@@ -381,7 +382,7 @@ namespace RimWorldOnlineCity
                     }
                     //else Log.Message(target.DefName + " != " + thing.def.defName + " " + select.CountToTransfer.ToString());
                 }
-                //копия для alt + запись в selectalt
+                // копія для alt + запис у selectalt
                 if (altThings != null)
                 {
                     foreach (var thing in sourcealtKeys)
@@ -390,7 +391,7 @@ namespace RimWorldOnlineCity
                         if (sourcealt[thing] == 0) continue;
                         if (target.MatchesThing(thing))
                         {
-                            //нам подходит выбираем нужное кол-во
+                            // нам підходить, вибираємо потрібну кількість
                             target.TradeCount += sourcealt[thing];
                             if (target.Count <= select.CountToTransfer) continue;
                             select.things.Add(thing);
@@ -401,7 +402,7 @@ namespace RimWorldOnlineCity
                             select.ForceTo(select.CountToTransfer + count);
                             if (MainHelper.DebugMode) Log.Message("---a + " + (select.CountToTransfer + count).ToString());
                             sourcealt[thing] -= count;
-                            //дополнительно записываем в selectalt
+                            // додатково записуємо в selectalt
                             selectalt.things.Add(thing);
                             selectalt.ForceTo(selectalt.CountToTransfer + count);
                         }
@@ -436,7 +437,7 @@ namespace RimWorldOnlineCity
             bool result = true;
             var selects = new List<TransferableOneWay>();
             var source = allThings.ToDictionary(i => i, i => i.stackCount);
-            //сортируем вещи сначала более плохие
+            // сортуємо речі спочатку гірші
             var sourceKeys = source.Keys
                 .Select(t =>
                 {
@@ -447,9 +448,9 @@ namespace RimWorldOnlineCity
                 .OrderBy(t => t.thing.def.defName + "#" + ((int)t.q).ToString() + (10000 - t.thing.HitPoints).ToString() + t.thing.stackCount.ToString().PadLeft(6))
                 .Select(t => t.thing)
                 .ToList();
-            //копия для alt
+            // копія для alt
             var sourcealt = altThings?.ToDictionary(i => i, i => i.stackCount);
-            //сортируем вещи сначала более плохие
+            // сортуємо речі спочатку гірші
             var sourcealtKeys = sourcealt?.Keys
                 .Select(t =>
                 {
@@ -465,7 +466,7 @@ namespace RimWorldOnlineCity
                 target.TradeCount = 0;
                 if (target.Count == 0)
                 {
-                    target.NotTrade = false; //где NotTrade истина, там будет красная строка в интерфейсе
+                    target.NotTrade = false; // де NotTrade істина, там буде червоний рядок в інтерфейсі
                     continue;
                 }
                 Log.Message("--- --- " + target.DefName.ToString() + " " + target.Count.ToString());
@@ -478,7 +479,7 @@ namespace RimWorldOnlineCity
                     if (source[thing] == 0) continue;
                     if (target.MatchesThing(thing))
                     {
-                        //нам подходит выбираем нужное кол-во
+                        // нам підходить, вибираємо потрібну кількість
                         target.TradeCount += source[thing];
                         if (target.Count <= select.CountToTransfer) continue;
                         select.things.Add(thing);
@@ -493,7 +494,7 @@ namespace RimWorldOnlineCity
                     }
                     //else Log.Message(target.DefName + " != " + thing.def.defName + " " + select.CountToTransfer.ToString());
                 }
-                //копия для alt + запись в selectalt
+                // копія для alt + запис у selectalt
                 if (altThings != null)
                 {
                     foreach (var thing in sourcealtKeys)
@@ -502,7 +503,7 @@ namespace RimWorldOnlineCity
                         if (sourcealt[thing] == 0) continue;
                         if (target.MatchesThing(thing))
                         {
-                            //нам подходит выбираем нужное кол-во
+                            // нам підходить, вибираємо потрібну кількість
                             target.TradeCount += sourcealt[thing];
                             if (target.Count <= select.CountToTransfer) continue;
                             select.things.Add(thing);
@@ -513,7 +514,7 @@ namespace RimWorldOnlineCity
                             select.ForceTo(select.CountToTransfer + count);
                             Log.Message("---a + " + (select.CountToTransfer + count).ToString());
                             sourcealt[thing] -= count;
-                            //дополнительно записываем в selectalt
+                            // додатково записуємо в selectalt
                             selectalt.things.Add(thing);
                             selectalt.ForceTo(selectalt.CountToTransfer + count);
                         }
@@ -550,18 +551,18 @@ namespace RimWorldOnlineCity
         {
             if (UpdateWorldController.ExistsEnemyPawns) return new List<Thing>();
 
-            //для идеалогии запрещаем передачу пешек, которые имеют идеологическую роль лидер или проповедника
+            // для ідеології забороняємо передачу пешок, які мають ідеологічну роль лідера чи проповідника
             var rolesListForReading = Find.FactionManager.OfPlayer.ideos.PrimaryIdeo.RolesListForReading
                 .Where(r => r.def.defName == "IdeoRole_Leader" || r.def.defName == "IdeoRole_Moralist")
                 .ToList();
             if (MainHelper.DebugMode) foreach (var r in Find.FactionManager.OfPlayer.ideos.PrimaryIdeo.RolesListForReading) Loger.Log(" Role " + r.def.defName + " " + r.TipLabel);
 
             var res = list.Where(thing => !(thing is Pawn) || !rolesListForReading.Any(r => r.IsAssigned(thing as Pawn)))
-                //Запрет на передачу трупов
+                // Заборона на передачу трупів
                 .Where(thing => !(thing is Corpse))
-                //Запрет на передачу мешков с отходами Wastepack
+                // Заборона на передачу мішків з відходами Wastepack
                 .Where(thing => thing.def.defName != "Wastepack")
-                //Запрещенные настройкой
+                // Заборонені налаштуванням
                 .Where(thing => !SessionClientController.Data.GeneralSettings.ExchengeForbiddenDefNamesList.Contains(thing.def.defName));
 
             //Loger.Log($"Debug IsProtectingNovice={IsProtectingNovice()} " + Environment.NewLine + res.Select(t => ThingTrade.CreateEntry(t, t.stackCount)).ToStringThing());
@@ -603,7 +604,7 @@ namespace RimWorldOnlineCity
         }
 
         /// <summary>
-        /// Вытащить все вещи у пешки, из самых хитрых мест (оружие, одежда, инвентарь и то, что в руках)
+        /// Витягнути всі речі у пешки, з найхитриших місць (зброя, одяг, інвентар і те, що в руках)
         /// </summary>
         private static IEnumerable<Thing> GetThingOnPawn(IEnumerable<Thing> pawns)
         {
@@ -630,7 +631,7 @@ namespace RimWorldOnlineCity
 
         public static void ShortSetupForQuickTestPlay()
         {
-            //частичная копия
+            // часткова копія
             Current.Game = new Game();
             Current.Game.InitData = new GameInitData();
             Current.Game.Scenario = ScenarioDefOf.Crashlanded.scenario;
@@ -646,7 +647,7 @@ namespace RimWorldOnlineCity
         }
 
         /// <summary>
-        /// Куски с SpawnSetup на карту, не относящиеся к карте
+        /// Шматки з SpawnSetup на карту, що не стосуються карти
         /// </summary>
         /// <param name="pawn"></param>
         public static void SpawnSetupOnCaravan(Pawn pawn)
@@ -703,13 +704,13 @@ namespace RimWorldOnlineCity
         }
 
         /// <summary>
-        /// Получаем координаты ячейки куда сгружать груз для указанной карты.
-        /// Ячейка - центр склада. Выбирается склад как лучший по:
-        /// имеет в названии слово "торг" или "trad", не свалка с именем поумолчанию, самый большой, по названию
+        /// Отримуємо координати клітинки, куди звантажувати вантаж для вказаної карти.
+        /// Клітинка — центр складу. Склад вибирається як найкращий за:
+        /// має в назві слово "торг" або "trad", не смітник із назвою за замовчуванням, найбільший, за назвою
         /// </summary>
         public static IntVec3 GetTradeCell(Map map)
         {
-            //название свалки по умолчанию
+            // назва смітника за замовчуванням
             var labelDumping = "DumpingStockpile".Translate();
             var labelDumping2 = "DumpingStockpileLabel".Translate();
 
@@ -718,7 +719,7 @@ namespace RimWorldOnlineCity
                     (z.label.IndexOf("торг", StringComparison.OrdinalIgnoreCase) >= 0
                     || z.label.IndexOf("trad", StringComparison.OrdinalIgnoreCase) >= 0
                     ? "0" : "1")
-                    //пробуем выбирать не свалку
+                    // намагаємося вибирати не смітник
                     + (z.label.IndexOf(labelDumping, StringComparison.OrdinalIgnoreCase) == 0
                     || z.label.IndexOf(labelDumping2, StringComparison.OrdinalIgnoreCase) == 0
                     ? "1" : "0")
@@ -768,7 +769,7 @@ namespace RimWorldOnlineCity
             return SpawnList(map, pawns, true, (p) => true, spawn, (p) => nextCell());
         }
 
-        //используется только в ПВП
+        // використовується тільки в ПВП
         public static IntVec3 SpawnList<TE>(Map map, List<TE> pawns, bool attackCell
             , Func<TE, bool> getPirate
             , Action<Thing, TE> spawn = null
@@ -777,7 +778,7 @@ namespace RimWorldOnlineCity
         {
             if (MainHelper.DebugMode) Loger.Log("SpawnList...");
 
-            //на основе UpdateWorldController.DropToWorldObjectDo
+            // на основі UpdateWorldController.DropToWorldObjectDo
             var factionPirate = Find.FactionManager.AllFactions.FirstOrDefault(f => f.def.defName == "Pirate")
                     ?? Find.FactionManager.OfAncientsHostile; //SessionClientController.Data.FactionPirate;
 
@@ -833,12 +834,12 @@ namespace RimWorldOnlineCity
         public static void PawnDestroy(Pawn pawn)
         {
             pawn.Destroy(DestroyMode.Vanish);
-            Find.WorldPawns.RemovePawn(pawn); //не проверенное полное удаление, чтобы не появлялось клонов пешки после возврата её назад
+            Find.WorldPawns.RemovePawn(pawn); // неперевірене повне видалення, щоб не з'являлися клони пешки після повернення її назад
         }
 
         public static void ApplyState(Thing thing, AttackThingState state, bool pawnHealthStateDead = false)
         {
-            //полезное из игры: RecoverFromUnwalkablePositionOrKill
+            // корисне з гри: RecoverFromUnwalkablePositionOrKill
             if (state.StackCount > 0 && thing.stackCount != state.StackCount)
             {
                 Loger.Log("Client ApplyState Set StackCount " + thing.stackCount.ToString() + " -> " + state.StackCount.ToString());
@@ -851,13 +852,13 @@ namespace RimWorldOnlineCity
                 if (thing is Pawn)
                 {
                     var pawn = (Pawn)thing;
-                    //после 1.4
+                    // після 1.4
                     if (CellFinder.TryFindBestPawnStandCell(pawn, out var cell))
                     {
                         pawn.Position = cell;
                         pawn.Notify_Teleported(endCurrentJob: true, resetTweenedPos: false);
                     }
-                    /* что было до обновления 1.4:
+                    /* що було до оновлення 1.4:
                     try
                     {
                         pawn.Notify_Teleported(true, true);
@@ -905,13 +906,13 @@ namespace RimWorldOnlineCity
                     else if (state.DownState == AttackThingState.PawnHealthState.Down)
                     {
                         Loger.Log("Client ApplyState Set pawn state (2): " + pawn.health.State.ToString() + " -> " + state.DownState.ToString());
-                        //Применяем наркоз?
+                        // Застосовуємо наркоз?
                         HealthUtility.DamageUntilDowned(pawn, false);
                     }
                     else
                     {
                         Loger.Log("Client ApplyState Set pawn state (3): " + pawn.health.State.ToString() + " -> " + state.DownState.ToString());
-                        //полное лечение
+                        // повне лікування
                         pawn.health.Notify_Resurrected();
                     }
                 }
@@ -921,7 +922,7 @@ namespace RimWorldOnlineCity
         /*
         public static void PawnKill(Pawn pawn)
         {
-            //заменено на HealthUtility.DamageUntilDead(p);
+            // замінено на HealthUtility.DamageUntilDead(p);
             DamageDef crush = DamageDefOf.Crush;
             float amount = 99999f;
             float armorPenetration = 999f;
@@ -950,7 +951,7 @@ namespace RimWorldOnlineCity
 
             if (target != null)
             {
-                var diaOptionT = new DiaOption("JumpToLocation".Translate()); //"Перейти к месту"
+                var diaOptionT = new DiaOption("JumpToLocation".Translate()); // "Перейти до місця"
                 diaOptionT.action = () =>
                 {
                     CameraJumper.TryJumpAndSelect(target.Value);
@@ -958,9 +959,9 @@ namespace RimWorldOnlineCity
                 diaNode.options.Add(diaOptionT);
             }
 
-            DiaOption diaOption = new DiaOption("OCity_GameUtils_Ok".Translate()); //OK -> Принять передачу
+            DiaOption diaOption = new DiaOption("OCity_GameUtils_Ok".Translate()); // OK -> Прийняти передачу
             diaOption.action = () => { ActOK(); DialodQueueGoNext(); };
-            /*{ спавн пешки бегущей "на помощь"
+            /*{ спавн пешки бігучої "на допомогу"
                 GenSpawn.Spawn(refugee, spawnSpot, map, WipeMode.Vanish);
                 refugee.SetFaction(Faction.OfPlayer, null);
                 CameraJumper.TryJump(refugee);
@@ -982,8 +983,8 @@ namespace RimWorldOnlineCity
             if (ActCancel != null)
             {
                 diaOption = new DiaOption("RejectLetter".Translate());
-                //RansomDemand_Reject это "Отказаться"
-                //RejectLetter это Отклонить
+                // RansomDemand_Reject це "Відмовитися"
+                // RejectLetter це Відхилити
                 diaOption.action = () => { ActCancel(); DialodQueueGoNext(); };
                 diaOption.resolveTree = true;
                 diaNode.options.Add(diaOption);
@@ -991,7 +992,7 @@ namespace RimWorldOnlineCity
 
             Action show = () => Find.WindowStack.Add(new Dialog_NodeTreeWithFactionInfo(diaNode, null, true, true, title));
 
-            //если окно одно, то запускаем, если это окно создается при уже открытом другом, то ставим в очередь
+            // якщо вікно одне, то запускаємо, якщо це вікно створюється при вже відкритому іншому, то ставимо в чергу
             lock (DialodQueue)
             {
                 if (!DialodShowing)
@@ -1022,7 +1023,7 @@ namespace RimWorldOnlineCity
         }
 
         /// <summary>
-        /// Рисуем кружок с цифрой. Код из мода ResearchTree (MIT license)
+        /// Малюємо кружок із цифрою. Код із мода ResearchTree (MIT license)
         /// </summary>
         /// <param name="canvas"></param>
         /// <param name="main"></param>
@@ -1030,18 +1031,18 @@ namespace RimWorldOnlineCity
         /// <param name="label"></param>
         public static void DrawLabel(Rect canvas, Color main, Color background, int label)
         {
-            // draw coloured tag
+            // малюємо кольоровий тег
             GUI.color = main;
             GUI.DrawTexture(canvas, CircleFill);
 
-            // if this is not first in line, grey out centre of tag
+            // якщо це не перший у лінійці, робимо центр тегу сірим
             if (background != main)
             {
                 GUI.color = background;
                 GUI.DrawTexture(canvas.ContractedBy(2f), CircleFill);
             }
 
-            // draw queue number
+            // малюємо номер черги
             GUI.color = Color.white;
             Text.Anchor = TextAnchor.MiddleCenter;
             Widgets.Label(canvas, label.ToString());
@@ -1049,13 +1050,13 @@ namespace RimWorldOnlineCity
         }
 
         /// <summary>
-        /// Ищем вещь по образцу, и выбрать нужное количество. Выбор начинается с карты с максимальным кол-во вещей.
+        /// Шукаємо річ за зразком і вибираємо потрібну кількість. Вибір починається з карти з максимальною кількістю речей.
         /// </summary>
-        /// <param name="def">Искомый образец</param>
-        /// <param name="select">Сколько выбрать в thingsMaxByMap. Если не хватает, то выбрано будет столько сколько есть</param>
-        /// <param name="getMaxByMap">Выводить не общую сумму, а максимальное количество на одной из карт.</param>
-        /// <param name="thingsMaxByMap">Если не null, заполняется для карты с максимальным количеством. Не виляет на удаление.</param>
-        /// <returns>Количество найденных вещей до удаления. Если это число меньше destroy, значит удаление не было произведено вообще.</returns>
+        /// <param name="def">Шуканий зразок</param>
+        /// <param name="select">Скільки вибрати в thingsMaxByMap. Якщо не вистачає, то буде вибрано стільки, скільки є</param>
+        /// <param name="getMaxByMap">Виводити не загальну суму, а максимальну кількість на одній з карт.</param>
+        /// <param name="thingsMaxByMap">Якщо не null, заповнюється для карти з максимальною кількістю. Не впливає на видалення.</param>
+        /// <returns>Кількість знайдених речей до видалення. Якщо це число менше destroy, отже видалення взагалі не проводилося.</returns>
         public static int FindThings(ThingDef def, int select, bool getMaxByMap, out Dictionary<Thing, int> thingsSelect)
         {
             int countAll = 0;
@@ -1104,12 +1105,12 @@ namespace RimWorldOnlineCity
         }
 
         /// <summary>
-        /// Ищем вещь по образцу, и удаляем нужное количество. Удаление начинается с карты с максимальным кол-во вещей.
+        /// Шукаємо річ за зразком і видаляємо потрібну кількість. Видалення починається з карти з максимальною кількістю речей.
         /// </summary>
-        /// <param name="def">Искомый образец</param>
-        /// <param name="destroy">Сколько удалить. Не удаляет нисколько, если нужного количества не будет</param>
-        /// <param name="getMaxByMap">Выводить не общую сумму, а максимальное количество на одной из карт. Влияет на удаление.</param>
-        /// <returns>Количество найденных вещей до удаления. Если это число меньше destroy, значит удаление не было произведено вообще.</returns>
+        /// <param name="def">Шуканий зразок</param>
+        /// <param name="destroy">Скільки видалити. Не видаляє взагалі нічого, якщо потрібної кількості не буде</param>
+        /// <param name="getMaxByMap">Виводити не загальну суму, а максимальну кількість на одній з карт. Впливає на видалення.</param>
+        /// <returns>Кількість знайдених речей до видалення. Якщо це число менше destroy, отже видалення взагалі не проводилося.</returns>
         public static int FindThings(ThingDef def, int destroy, bool getMaxByMap)
         {
             int countAll = 0;
@@ -1196,8 +1197,8 @@ namespace RimWorldOnlineCity
             foreach (ScenarioDef allDef in DefDatabase<ScenarioDef>.AllDefs)
             {
                 //Loger.Log($"AllowedScenarios {allDef.defName}={allDef.LabelCap}={allDef.fileName}=Name:{allDef.modContentPack.Name}=RootDir:{allDef.modContentPack.RootDir}");
-                if (allDef.modContentPack.Name != "OnlineCity") continue;
-                //// старое перечисление всех ванильных
+                if (allDef.modContentPack.Name != "OnlineCity fork") continue;
+                //// старе перерахування всіх ванільних
                 //if (allDef.defName == "Crashlanded"
                 //    || allDef.defName == "Tutorial"
                 //    || allDef.defName == "LostTribe"
@@ -1218,7 +1219,7 @@ namespace RimWorldOnlineCity
 
         public static Command_Action CommandShowMap(BaseOnline that)
         {
-            //Кнопка открытия изображения базы
+            // Кнопка відкриття зображення бази
             if (SessionClientController.Data.GeneralSettings.ColonyScreenEnable)
             {
                 var command_Action = new Command_Action();
@@ -1229,35 +1230,35 @@ namespace RimWorldOnlineCity
                 var keyColonyScreen = "cs_" + that.OnlineWObject.LoginOwner + "@" + that.OnlineWObject.PlaceServerId;
 
                 var time = GeneralTexture.Get.GetLoadTimeByName(keyColonyScreen);
-                //с сервера не пробовали скачивать
+                // з сервера не намагалися завантажувати
                 bool isNotCheck = GeneralTexture.Get.IsNotCheckByLoadTime(time);
-                //делали запрос на сервер - нет данных
+                // робили запит на сервер — немає даних
                 bool isNotData = GeneralTexture.Get.IsNotDataByLoadTime(time);
 
                 if (!that.IsOnline && that.ImageBaseWhenOwnerOffline != null)
                 {
-                    command_Action.defaultDesc = "OC_ImageBase1".Translate() + " " + that.OnlineWObject.LoginOwner; //Откройте изображение базы игрока
+                    command_Action.defaultDesc = "OC_ImageBase1".Translate() + " " + that.OnlineWObject.LoginOwner; // Відкрийте зображення бази гравця
                 }
                 else if (isNotData)
                 {
-                    command_Action.defaultDesc = "OC_DataNotAvailable".Translate(); //Данные не доступны 
+                    command_Action.defaultDesc = "OC_DataNotAvailable".Translate(); // Дані недоступні 
                     command_Action.disabled = true;
                 }
                 else if (isNotCheck)
                 {
-                    command_Action.defaultDesc = "OC_ImageBase2".Translate() + " " + that.OnlineWObject.LoginOwner; //Нажмите для загрузки изображения базы игрока
+                    command_Action.defaultDesc = "OC_ImageBase2".Translate() + " " + that.OnlineWObject.LoginOwner; // Натисніть для завантаження зображення бази гравця
                 }
                 else if (GeneralTexture.UpdateSecondColonyScreen - (int)time.TotalSeconds < 0)
                 {
-                    command_Action.defaultDesc = "OC_ImageBase1".Translate() + " " + that.OnlineWObject.LoginOwner //Откройте изображение базы игрока
-                        + " " + Environment.NewLine + "OC_ImageBase4".Translate(); //И проверить наличие обновлений
+                    command_Action.defaultDesc = "OC_ImageBase1".Translate() + " " + that.OnlineWObject.LoginOwner // Відкрийте зображення бази гравця
+                        + " " + Environment.NewLine + "OC_ImageBase4".Translate(); // І перевірити наявність оновлень
                 }
                 else
                 {
                     var showSec = GeneralTexture.UpdateSecondColonyScreen - (int)time.TotalSeconds;
-                    showSec -= showSec % 5 + 5; //иначе подсказка мерцает каждую секунду
-                    command_Action.defaultDesc = "OC_ImageBase1".Translate() + " " + that.OnlineWObject.LoginOwner // Откройте изображение базы игрока
-                        + ". " + Environment.NewLine + "OC_ImageBase6".Translate() + " " + showSec + " " + "OC_Seconds".Translate(); // Проверка обновлений доступна через 5 секунд
+                    showSec -= showSec % 5 + 5; // інакше підказка мерехтить щосекунди
+                    command_Action.defaultDesc = "OC_ImageBase1".Translate() + " " + that.OnlineWObject.LoginOwner // Відкрийте зображення бази гравця
+                        + ". " + Environment.NewLine + "OC_ImageBase6".Translate() + " " + showSec + " " + "OC_Seconds".Translate(); // Перевірка оновлень доступна через 5 секунд
                 }
                 //command_Action.defaultDesc = command_Action.defaultDesc + Environment.NewLine + (int)time.TotalSeconds;
 
@@ -1291,7 +1292,7 @@ namespace RimWorldOnlineCity
                             }
                             else
                             {
-                                //проверяем, что запрос завершился и картинки нет, т.к. нет результата
+                                // перевіряємо, що запит завершився і картинки немає, оскільки немає результату
                                 if (!isLoading)
                                 {
                                     formView.TextShowOnUp = false;
