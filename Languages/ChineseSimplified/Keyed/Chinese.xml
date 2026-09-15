@@ -1,968 +1,839 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-	<TransportPodsContentsWillBeLost>To the Trading warehouse on the server</TransportPodsContentsWillBeLost>
+	<TransportPodsContentsWillBeLost>进入服务器贸易仓库</TransportPodsContentsWillBeLost>
 
 	<!-- MainMenu.cs -->
-	<OCity_LAN_btn>多人网络游戏</OCity_LAN_btn>
+	<OCity_LAN_btn>多人游戏</OCity_LAN_btn>
 	<OCity_MainMenu_Online>在线</OCity_MainMenu_Online>
-	<OCity_MainMenu_Withdraw>撤回</OCity_MainMenu_Withdraw>
+	<OCity_MainMenu_Withdraw>撤退</OCity_MainMenu_Withdraw>
 	<OCity_MainMenu_Surrender>投降</OCity_MainMenu_Surrender>
-	<OCity_MainMenu_Saved>Saved</OCity_MainMenu_Saved>
+	<OCity_MainMenu_Saved>已保存</OCity_MainMenu_Saved>
 
 	<!-- CaravanArrivalAction_VisitOnline.cs -->
-	<OCity_Caravan_GoTrade>我们要和 {0} 来交换货物哦(￣▽￣)"。</OCity_Caravan_GoTrade>
+	<OCity_Caravan_GoTrade>与{0}交易物资</OCity_Caravan_GoTrade>
 	<OCity_Caravan_GoTrade2>{0}</OCity_Caravan_GoTrade2>
-	<OCity_Caravan_LOGNoData>服务器上没有关于此交易对象的数据(* ￣︿￣)</OCity_Caravan_LOGNoData>
-	<OCity_Caravan_LOGSwap>商队交换：选择全部商队</OCity_Caravan_LOGSwap>
-	<OCity_Caravan_Go_Attack_Target>攻击╰（‵□′）╯</OCity_Caravan_Go_Attack_Target>
-	<OCity_Caravan_Confirm_Attack_TestBattle_Possible>要玩真的攻打这个定居点吗？（训练战不会造成损失哦）</OCity_Caravan_Confirm_Attack_TestBattle_Possible>
-	<OCity_Caravan_Practive>不，只是训练战呢。</OCity_Caravan_Practive>
+	<OCity_Caravan_LOGNoData>没有关于该贸易目标的服务器数据</OCity_Caravan_LOGNoData>
+	<OCity_Caravan_LOGSwap>远行队交换：选择整支远行队</OCity_Caravan_LOGSwap>
+	<OCity_Caravan_Go_Attack_Target>攻击</OCity_Caravan_Go_Attack_Target>
+	<OCity_Caravan_Confirm_Attack_TestBattle_Possible>你确定要攻击该定居点吗？你可以先进行一场无损失的模拟战</OCity_Caravan_Confirm_Attack_TestBattle_Possible>
+	<OCity_Caravan_Practive>不，仅进行模拟演习。</OCity_Caravan_Practive>
 
 	<!-- OnlineCity_CaravanOnline.cs -->
-	<OCity_Caravan_Player>{0} 属于玩家 {1}</OCity_Caravan_Player>
-	<OCity_Caravan_Other>总财富值： {2}
-人和动物的价值： {3}
-Wealh of exchange: {4}</OCity_Caravan_Other>
-	<OCity_Caravan_PlayerAttackCost>进攻军队的最高财富值： {0}</OCity_Caravan_PlayerAttackCost>
-	<OCity_Caravan_FreeWeight>剩余载货能力： </OCity_Caravan_FreeWeight>
-	<OCity_Caravan_Trade>与{0}交易</OCity_Caravan_Trade>
-	<OCity_Caravan_Abort>你玩了不到一年，或者你的财富值小于</OCity_Caravan_Abort>
-	<OCity_Caravan_Attack>攻击 {0}</OCity_Caravan_Attack>
+	<OCity_Caravan_Player>玩家{1}的{0}</OCity_Caravan_Player>
+	<OCity_Caravan_Other>物品价值：{2}
+人员与动物价值：{3}
+交易所价值：{4}</OCity_Caravan_Other>
+	<OCity_Caravan_PlayerAttackCost>进攻方最大允许价值：{0}</OCity_Caravan_PlayerAttackCost>
+	<OCity_Caravan_FreeWeight>剩余负重能力：</OCity_Caravan_FreeWeight>
+	<OCity_Caravan_Trade>与{0}交易物资</OCity_Caravan_Trade>
+	<OCity_Caravan_Abort>你的游戏时间不足一年或基地财富过低</OCity_Caravan_Abort>
+	<OCity_Caravan_Attack>攻击{0}</OCity_Caravan_Attack>
 
 	<!-- DevelopTest.cs -->
-	<OCity_DevTest_Test>检验</OCity_DevTest_Test>
-	<OCity_DevTest_NameTestPlayer>测试者名称</OCity_DevTest_NameTestPlayer>
+	<OCity_DevTest_Test>测试</OCity_DevTest_Test>
+	<OCity_DevTest_NameTestPlayer>测试玩家名称</OCity_DevTest_NameTestPlayer>
 
 	<!-- GameStarter.cs -->
-	<OCity_Starter_CityNotBuild>这个地方被其他玩家占据了</OCity_Starter_CityNotBuild>
+	<OCity_Starter_CityNotBuild>该地点已被其他玩家占据</OCity_Starter_CityNotBuild>
 
 	<!-- StorageTest.cs -->
-	<OCity_StorageTest_CreateGrass>在春天种草</OCity_StorageTest_CreateGrass>
-	<OCity_StorageTest_CreateGrassDescrip>每年一次，在每卡上，当气温上升到5度以上时，在每一个无人居住、生长的小格子上，按距离草丛10左右的距离，种植一个新的小格子。</OCity_StorageTest_CreateGrassDescrip>
-	<OCity_StorageTest_LastIP>最后一个IP</OCity_StorageTest_LastIP>
+	<OCity_StorageTest_CreateGrass>春季植草（修复）</OCity_StorageTest_CreateGrass>
+	<OCity_StorageTest_CreateGrassDescrip>每年一次，当气温升至5度以上时，在每张地图上现有杂草10格范围内所有未被占用且可生长的地块上种植新草。</OCity_StorageTest_CreateGrassDescrip>
+	<OCity_StorageTest_LastIP>建议的IP</OCity_StorageTest_LastIP>
 
 	<!-- OnlineCity_ClientData.cs -->
 	<OCity_ClientData_ChatDot>...</OCity_ClientData_ChatDot>
-	<OCity_ClientData_Chat>聊天o(*￣▽￣*)o </OCity_ClientData_Chat>
-	<OC_OK>OK</OC_OK>
-	<OC_Loading>Loading</OC_Loading>
-	<OC_DataNotAvailable>Data not availabl</OC_DataNotAvailable>
-	<OC_Seconds>seconds</OC_Seconds>
-	<OC_ImageBase1>Open the image of the base of the player</OC_ImageBase1>
-	<OC_ImageBase2>Click to download image of player's base</OC_ImageBase2>
-	<OC_ImageBase4>And check for updates</OC_ImageBase4>
-	<OC_ImageBase6>Check for updates available in</OC_ImageBase6>
+	<OCity_ClientData_Chat>聊天 </OCity_ClientData_Chat>
+	<OC_OK>确定</OC_OK>
+	<OC_Loading>加载中</OC_Loading>
+	<OC_DataNotAvailable>数据不可用</OC_DataNotAvailable>
+	<OC_Seconds>秒</OC_Seconds>
+	<OC_ImageBase1>打开玩家基地截图</OC_ImageBase1>
+	<OC_ImageBase2>点击下载玩家基地截图</OC_ImageBase2>
+	<OC_ImageBase4>并检查更新</OC_ImageBase4>
+	<OC_ImageBase6>检查更新可用时间：</OC_ImageBase6>
 
 	<!-- OnlineCity_Hash_Checker -->
-	<OC_Hash_CalculateLocalFiles>验证本地文件</OC_Hash_CalculateLocalFiles>
-	<OC_Hash_CalculateFor>验证文件: </OC_Hash_CalculateFor>
-	<OC_Hash_CalculateComplete>验证文件完毕</OC_Hash_CalculateComplete>
-	<OC_Hash_CalculateConfFile>模组配置文件: </OC_Hash_CalculateConfFile>
-	<OC_Hash_Complete>完成:</OC_Hash_Complete>
-	<OC_Hash_Downloading>正在下载模组更新...</OC_Hash_Downloading>
-	<OC_Hash_Downloading_Finish>下载 </OC_Hash_Downloading_Finish>
-	<OC_Mods_Wait>还不能在线玩，请稍等...</OC_Mods_Wait>
-	<OC_Mods_Complete>完成:</OC_Mods_Complete>
-	<OC_HashCheckerResult_VersionErr>The game version is different. You use {0}, but you need {1}</OC_HashCheckerResult_VersionErr>
-	<OC_HashCheckerResult_NeedMods>Necessary mods not included:</OC_HashCheckerResult_NeedMods>
-	<OC_HashCheckerResult_ExcessMods>Excess mods included:</OC_HashCheckerResult_ExcessMods>
-	<OC_HashCheckerResult_UnexpectedDiff>Unexpected difference ModsConfig.xml</OC_HashCheckerResult_UnexpectedDiff>
-	<OC_HashCheckerResult_DiffFiles>Game files are different, try reinstalling the game and DLC of the required version</OC_HashCheckerResult_DiffFiles>
-	<OC_HashCheckerResult_ChangedFiles>The following files has been changed:</OC_HashCheckerResult_ChangedFiles>
-	<OC_HashCheckerResult_ChangedDir>Changed files in these mod folders:</OC_HashCheckerResult_ChangedDir>
-	<OC_HashCheckerResult_CriticalDiff>The non-updatable files different:</OC_HashCheckerResult_CriticalDiff>
+	<OC_Hash_CalculateLocalFiles>正在计算本地文件哈希值</OC_Hash_CalculateLocalFiles>
+	<OC_Hash_CalculateFor>正在计算哈希：</OC_Hash_CalculateFor>
+	<OC_Hash_CalculateComplete>哈希计算完成</OC_Hash_CalculateComplete>
+	<OC_Hash_CalculateConfFile>Mods Config配置文件：</OC_Hash_CalculateConfFile>
+	<OC_Hash_Complete>已完成：</OC_Hash_Complete>
+	<OC_Hash_Downloading>正在下载模组...</OC_Hash_Downloading>
+	<OC_Hash_Downloading_Finish>已下载 </OC_Hash_Downloading_Finish>
+	<OC_Mods_Wait>进入联机前请稍候...</OC_Mods_Wait>
+	<OC_Mods_Complete>已完成：</OC_Mods_Complete>
+	<OC_HashCheckerResult_VersionErr>游戏版本不匹配。当前为{0}，服务器需要{1}</OC_HashCheckerResult_VersionErr>
+	<OC_HashCheckerResult_NeedMods>未启用必需的模组：</OC_HashCheckerResult_NeedMods>
+	<OC_HashCheckerResult_ExcessMods>启用了多余的模组：</OC_HashCheckerResult_ExcessMods>
+	<OC_HashCheckerResult_UnexpectedDiff>ModsConfig.xml存在异常差异</OC_HashCheckerResult_UnexpectedDiff>
+	<OC_HashCheckerResult_DiffFiles>游戏文件不一致，请尝试重新安装对应版本的游戏与DLC</OC_HashCheckerResult_DiffFiles>
+	<OC_HashCheckerResult_ChangedFiles>以下文件已被修改：</OC_HashCheckerResult_ChangedFiles>
+	<OC_HashCheckerResult_ChangedDir>这些模组文件夹中的文件已被修改：</OC_HashCheckerResult_ChangedDir>
+	<OC_HashCheckerResult_CriticalDiff>以下无法自动更新的文件存在差异：</OC_HashCheckerResult_CriticalDiff>
 
 	<!-- Dialog_MainOnlineCity.cs -->
 	<OCity_Dialog_HelloLAN></OCity_Dialog_HelloLAN>
 	<OCity_Dialog_ListChat>聊天</OCity_Dialog_ListChat>
-	<OCity_Dialog_ListInfo>聊天信息</OCity_Dialog_ListInfo>
-	<OCity_Dialog_ListAbout>关于MOD</OCity_Dialog_ListAbout>
+	<OCity_Dialog_ListInfo>信息</OCity_Dialog_ListInfo>
+	<OCity_Dialog_ListAbout>关于模组</OCity_Dialog_ListAbout>
 	<OCity_Dialog_Settings>设置</OCity_Dialog_Settings>
-	<OCity_Dialog_Connecting>连接...</OCity_Dialog_Connecting>
-	<OCity_Dialog_Login>登录: </OCity_Dialog_Login>
-	<OCity_Dialog_Players>玩家: </OCity_Dialog_Players>
+	<OCity_Dialog_Connecting>正在连接...</OCity_Dialog_Connecting>
+	<OCity_Dialog_Login>用户名：</OCity_Dialog_Login>
+	<OCity_Dialog_Players>玩家：</OCity_Dialog_Players>
 	<OCity_Dialog_ChennelOwn> 频道创建者</OCity_Dialog_ChennelOwn>
-	<OCity_Dialog_ChennelUser> 会员</OCity_Dialog_ChennelUser>
+	<OCity_Dialog_ChennelUser> 成员</OCity_Dialog_ChennelUser>
 	<OCity_Dialog_ChennelCreate>创建频道</OCity_Dialog_ChennelCreate>
 	<OCity_Dialog_ChennelClose>关闭频道</OCity_Dialog_ChennelClose>
 	<OCity_Dialog_OthersFunctions>其他功能</OCity_Dialog_OthersFunctions>
-	<OCity_Dialog_ChennelCreate2>创建一个频道</OCity_Dialog_ChennelCreate2>
-	<OCity_Dialog_ChennelLeave>离开频道</OCity_Dialog_ChennelLeave>
+	<OCity_Dialog_ChennelCreate2>创建频道</OCity_Dialog_ChennelCreate2>
+	<OCity_Dialog_ChennelLeave>退出频道</OCity_Dialog_ChennelLeave>
 	<OCity_Dialog_ChennelRen>重命名</OCity_Dialog_ChennelRen>
 	<OCity_Dialog_ChennelCreating>创建频道</OCity_Dialog_ChennelCreating>
 	<OCity_Dialog_ChennelCreateName>输入频道名称</OCity_Dialog_ChennelCreateName>
-	<OCity_Dialog_ChennelQuit>退出通道</OCity_Dialog_ChennelQuit>
-	<OCity_Dialog_ChennelQuitCheck>你真的想要离开这个频道嘛?</OCity_Dialog_ChennelQuitCheck>
-	<OCity_Dialog_ChennelRenLabel>重命名这个频道~</OCity_Dialog_ChennelRenLabel>
+	<OCity_Dialog_ChennelQuit>退出频道</OCity_Dialog_ChennelQuit>
+	<OCity_Dialog_ChennelQuitCheck>确定要退出该频道吗？</OCity_Dialog_ChennelQuitCheck>
+	<OCity_Dialog_ChennelRenLabel>重命名频道</OCity_Dialog_ChennelRenLabel>
 	<OCity_Dialog_ChennelNewName>输入新的频道名称 </OCity_Dialog_ChennelNewName>
-	<OCity_Dialog_PrivateMessage>个人信息</OCity_Dialog_PrivateMessage>
-	<OCity_Dialog_ChennelAddUser>添加会员(成员)</OCity_Dialog_ChennelAddUser>
+	<OCity_Dialog_PrivateMessage>私聊消息</OCity_Dialog_PrivateMessage>
+	<OCity_Dialog_ChennelAddUser>添加成员</OCity_Dialog_ChennelAddUser>
 	<OCity_Dialog_ChennelPlayerInfo>信息</OCity_Dialog_ChennelPlayerInfo>
-	<OCity_Dialog_ChennelPlayerInfoTitle>关于</OCity_Dialog_ChennelPlayerInfoTitle>
-	<OCity_Dialog_AboutMode>关于多人城镇</OCity_Dialog_AboutMode>
-	<OCity_Dialog_AutorPage>作者页面</OCity_Dialog_AutorPage>
+	<OCity_Dialog_ChennelPlayerInfoTitle>关于 </OCity_Dialog_ChennelPlayerInfoTitle>
+	<OCity_Dialog_AboutMode>关于OnlineCity模组</OCity_Dialog_AboutMode>
+	<OCity_Dialog_AutorPage>作者主页</OCity_Dialog_AutorPage>
 	<OCity_Dialog_Regame>重新开始</OCity_Dialog_Regame>
 	<OCity_Dialog_DeleteData>删除所有游戏数据</OCity_Dialog_DeleteData>
-	<OCity_Dialog_DeleteDataCheck>你真的要完全删除游戏，然后重新开始吗？</OCity_Dialog_DeleteDataCheck>
-	<OCity_Dialog_DeletedData>游戏已被删除。再次登录以重新开始。</OCity_Dialog_DeletedData>
+	<OCity_Dialog_DeleteDataCheck>确定要彻底删除所有游戏数据并重新开始吗？</OCity_Dialog_DeleteDataCheck>
+	<OCity_Dialog_DeletedData>游戏数据已删除。如需创建新基地，请重新登录。</OCity_Dialog_DeletedData>
 
 	<!-- OnlineCity_Dialog_CreateWorld.cs -->
-	<OCity_Dialog_CreateWorld_Create>创建世界</OCity_Dialog_CreateWorld_Create>
-	<OCity_Dialog_CreateWorld_BtnOk>OK/好的</OCity_Dialog_CreateWorld_BtnOk>
+	<OCity_Dialog_CreateWorld_Create>生成世界</OCity_Dialog_CreateWorld_Create>
+	<OCity_Dialog_CreateWorld_BtnOk>确定</OCity_Dialog_CreateWorld_BtnOk>
 	<OCity_Dialog_CreateWorld_Err>错误</OCity_Dialog_CreateWorld_Err>
-	<OCity_Dialog_CreateWorld_Err2>设置不正确</OCity_Dialog_CreateWorld_Err2>
+	<OCity_Dialog_CreateWorld_Err2>参数填写有误</OCity_Dialog_CreateWorld_Err2>
 	<OCity_Dialog_CreateWorld_BtnCancel>取消</OCity_Dialog_CreateWorld_BtnCancel>
 	<OCity_Dialog_CreateWorld_Seed>种子</OCity_Dialog_CreateWorld_Seed>
-	<OCity_Dialog_CreateWorld_Scenario>选择剧本</OCity_Dialog_CreateWorld_Scenario>
-	<OCity_Dialog_CreateWorld_Storyteller>Storyteller</OCity_Dialog_CreateWorld_Storyteller>
-	<OCity_Dialog_CreateWorld_Difficulty>选择难度</OCity_Dialog_CreateWorld_Difficulty>
-	<OCity_Dialog_CreateWorld_MapSize>当地地图的大小(200--小，400--大)</OCity_Dialog_CreateWorld_MapSize>
-	<OCity_Dialog_CreateWorld_PercentWorld>占地球表面生成量的百分比(开发者模式从5到100，普通模式30到100): {0}</OCity_Dialog_CreateWorld_PercentWorld>
+	<OCity_Dialog_CreateWorld_Scenario>剧本</OCity_Dialog_CreateWorld_Scenario>
+	<OCity_Dialog_CreateWorld_Storyteller>故事叙述者</OCity_Dialog_CreateWorld_Storyteller>
+	<OCity_Dialog_CreateWorld_Difficulty>难度</OCity_Dialog_CreateWorld_Difficulty>
+	<OCity_Dialog_CreateWorld_MapSize>地图尺寸（200 - 小，400 - 巨大）</OCity_Dialog_CreateWorld_MapSize>
+	<OCity_Dialog_CreateWorld_PercentWorld>行星地表覆盖百分比（5至100）：{0}</OCity_Dialog_CreateWorld_PercentWorld>
 
 	<!-- OnlineCity_Dialog_Scenario.cs -->
-	<OCity_Dialog_Choose_Scenario>Choose scenario</OCity_Dialog_Choose_Scenario>
-	<OCity_Dialog_CreateScen_Err>Error</OCity_Dialog_CreateScen_Err>
-	<OCity_Dialog_CreateScen_Err2>Scenario is not choosed</OCity_Dialog_CreateScen_Err2>
+	<OCity_Dialog_Choose_Scenario>选择剧本</OCity_Dialog_Choose_Scenario>
+	<OCity_Dialog_CreateScen_Err>错误</OCity_Dialog_CreateScen_Err>
+	<OCity_Dialog_CreateScen_Err2>未选择剧本</OCity_Dialog_CreateScen_Err2>
 	
 	<!-- Dialog_LoginForm.cs -->
 	<OCity_LoginForm_BtnEnter>登录</OCity_LoginForm_BtnEnter>
 	<OCity_LoginForm_Register>注册</OCity_LoginForm_Register>
 	<OCity_LoginForm_Close>关闭</OCity_LoginForm_Close>
 	<OCity_LoginForm_LabelEnter>登录</OCity_LoginForm_LabelEnter>
-	<OCity_LoginForm_Server>服务器:</OCity_LoginForm_Server>
-	<OCity_Dialog_Choose_server>Choose server</OCity_Dialog_Choose_server>
-	<OCity_LoginForm_Login>账号:</OCity_LoginForm_Login>
-	<OCity_LoginForm_Pass>密码:</OCity_LoginForm_Pass>
-	<OCity_LoginForm_Err1>两次密码输入不一致</OCity_LoginForm_Err1>
-	<OCity_LoginForm_Err2>服务器, 账号及密码必须大于两个字</OCity_LoginForm_Err2>
-	<OCity_LoginForm_Mail>邮箱(选填)</OCity_LoginForm_Mail>
-	<OCity_LoginForm_NeedApproveText0>On this server, confirmation in the discord is required. Confirm registration in discord in response to a request from a bot.</OCity_LoginForm_NeedApproveText0>
-	<OC_LoginForm_NeedApproveText1>On this server, confirmation in the discord is required. Enter your discord name, register here, and then confirm your discord registration when prompted by the bot.</OC_LoginForm_NeedApproveText1>
-	<OCity_LoginForm_Discord>Discord login</OCity_LoginForm_Discord>
+	<OCity_LoginForm_Server>服务器：</OCity_LoginForm_Server>
+	<OCity_Dialog_Choose_server>选择服务器</OCity_Dialog_Choose_server>
+	<OCity_LoginForm_Login>用户名：</OCity_LoginForm_Login>
+	<OCity_LoginForm_Pass>密码：</OCity_LoginForm_Pass>
+	<OCity_LoginForm_Err1>两次输入的密码不一致</OCity_LoginForm_Err1>
+	<OCity_LoginForm_Err2>服务器地址、用户名和密码长度必须至少为2个字符</OCity_LoginForm_Err2>
+	<OCity_LoginForm_Mail>电子邮箱（可选）</OCity_LoginForm_Mail>
+	<OCity_LoginForm_NeedApproveText0>此服务器需要Discord验证。请在Discord中回复机器人的请求以确认注册。</OCity_LoginForm_NeedApproveText0>
+	<OC_LoginForm_NeedApproveText1>此服务器需要Discord验证。请输入你的Discord昵称在此注册，随后在Discord中回复机器人的请求以完成验证。</OC_LoginForm_NeedApproveText1>
+	<OCity_LoginForm_Discord>Discord用户名</OCity_LoginForm_Discord>
 
 	<!-- SessionClientController.cs -->
-	<OCity_SessionCC_ConnectionFailTitle>连接失败</OCity_SessionCC_ConnectionFailTitle>
-	<OCity_SessionCC_LoginFailTitle>登录错误</OCity_SessionCC_LoginFailTitle>
-	<OCity_SessionCC_RegFailTitle>注册错误</OCity_SessionCC_RegFailTitle>
-	<OCity_SessionCC_MsgCanceledCreateW>取消</OCity_SessionCC_MsgCanceledCreateW>
-	<OCity_SessionCC_MsgCreateWorlErr>错误，再试一次吧.</OCity_SessionCC_MsgCreateWorlErr>
-	<OCity_SessionCC_MsgCreateWorlGood>哦耶！服务器上的世界已经创建成功！</OCity_SessionCC_MsgCreateWorlGood>
-	<OCity_SessionCC_MsgCreatingServer>创建服务器</OCity_SessionCC_MsgCreatingServer>
-	<OCity_SessionCC_Disconnected>连接错误.</OCity_SessionCC_Disconnected>
-	<OCity_SessionCC_Disconnect>断开连接</OCity_SessionCC_Disconnect>
-	<OCity_SessionCC_Synchronization>Pause</OCity_SessionCC_Synchronization>
-	<OCity_SessionCC_SynchronizationText>Game pause mode, syncing...</OCity_SessionCC_SynchronizationText>
-	<OCity_SessionCC_Shutdown_Command_ProgressSaved>服务器即将关闭或重启，即将断开连接。游戏进度已经保存。请在服务器重启后重新登录。</OCity_SessionCC_Shutdown_Command_ProgressSaved>
-	<OCity_SessionCC_Shutdown_Command>服务器收到关闭命令.</OCity_SessionCC_Shutdown_Command>
+	<OCity_SessionCC_ConnectionFailTitle>连接未建立</OCity_SessionCC_ConnectionFailTitle>
+	<OCity_SessionCC_LoginFailTitle>登录失败</OCity_SessionCC_LoginFailTitle>
+	<OCity_SessionCC_RegFailTitle>注册失败</OCity_SessionCC_RegFailTitle>
+	<OCity_SessionCC_MsgCanceledCreateW>已取消</OCity_SessionCC_MsgCanceledCreateW>
+	<OCity_SessionCC_MsgCreateWorlErr>发生错误，请重试。</OCity_SessionCC_MsgCreateWorlErr>
+	<OCity_SessionCC_MsgCreateWorlGood>太棒了！服务器上的世界已创建！</OCity_SessionCC_MsgCreateWorlGood>
+	<OCity_SessionCC_MsgCreatingServer>正在创建服务器</OCity_SessionCC_MsgCreatingServer>
+	<OCity_SessionCC_Disconnected>连接错误。</OCity_SessionCC_Disconnected>
+	<OCity_SessionCC_Disconnect>游戏已中断</OCity_SessionCC_Disconnect>
+	<OCity_SessionCC_Synchronization>暂停</OCity_SessionCC_Synchronization>
+	<OCity_SessionCC_SynchronizationText>游戏暂停模式，正在同步...</OCity_SessionCC_SynchronizationText>
+	<OCity_SessionCC_Shutdown_Command_ProgressSaved>收到服务器的断开连接指令。游戏进度已保存。</OCity_SessionCC_Shutdown_Command_ProgressSaved>
+	<OCity_SessionCC_Shutdown_Command>已收到服务器的断开连接指令。</OCity_SessionCC_Shutdown_Command>
 	<OCity_SessionCC_Scenario_Classic>经典</OCity_SessionCC_Scenario_Classic>
-	<OCity_SessionCC_Client_UpdateNeeded>升级客户端! 此服务器的版本: </OCity_SessionCC_Client_UpdateNeeded>
-	<OCity_SessionCC_InitConnectedIntro_Title>注意事项!</OCity_SessionCC_InitConnectedIntro_Title>
-	<OCity_SessionCC_InitConnectedIntro_Text>如果你的模组跟服务器不一样，现在就会同步和下载。如果模组文件夹里有重要信息，请点击取消并进行备份! 模组同步的过程可能需要几分钟的时间，之后游戏将重新启动。</OCity_SessionCC_InitConnectedIntro_Text>
-	<OCity_SessionCC_FilesUpdated>文件验证和更新完成，需要重启游戏。</OCity_SessionCC_FilesUpdated>
+	<OCity_SessionCC_Client_UpdateNeeded>请更新客户端！此服务器对应版本为：</OCity_SessionCC_Client_UpdateNeeded>
+	<OCity_SessionCC_InitConnectedIntro_Title>注意！</OCity_SessionCC_InitConnectedIntro_Title>
+	<OCity_SessionCC_InitConnectedIntro_Text>若服务器要求模组完全匹配，现在将下载缺失的模组，游戏的Mods文件夹将被更新。如有需要，请点击“取消”并提前备份！模组同步过程可能需要几分钟，完成后游戏将自动重启。</OCity_SessionCC_InitConnectedIntro_Text>
+	<OCity_SessionCC_FilesUpdated>未通过哈希验证的文件已更新。若游戏未自动重启，请手动重启。</OCity_SessionCC_FilesUpdated>
 
 	<!-- Dialog_Exchenge.cs -->
 	<OCity_Dialog_Exchenge_Close>关闭</OCity_Dialog_Exchenge_Close>
 	<OCity_Dialog_Exchenge_Edit>编辑</OCity_Dialog_Exchenge_Edit>
 	<OCity_Dialog_Exchenge_Trade_Orders>贸易订单</OCity_Dialog_Exchenge_Trade_Orders>
-	<OCity_Dialog_Exchenge_Trade_OrdersLoad>Loading trade orders</OCity_Dialog_Exchenge_Trade_OrdersLoad>
-	<OCity_Dialog_Exchenge_Trade_FilterDistance>Filters: Distance</OCity_Dialog_Exchenge_Trade_FilterDistance>
-	<OCity_Dialog_Exchenge_Trade_FilterSell>Sale</OCity_Dialog_Exchenge_Trade_FilterSell>
-	<OCity_Dialog_Exchenge_Trade_FilterBuy>Buy</OCity_Dialog_Exchenge_Trade_FilterBuy>
-	<OCity_Dialog_Exchenge_TradeCount>How many</OCity_Dialog_Exchenge_TradeCount>
-	<OCity_Dialog_Exchenge_Max>maximum</OCity_Dialog_Exchenge_Max>
-	<OCity_Dialog_Exchenge_No_Available_ExchangenInfo>This parameter shows the number of available transactions on the specified conditions at the moment.
-To find out how many of our things are stored in the warehouse, multiply this parameter by the "we give" field.
-Decreasing the parameter - we return the resources, increasing - we reserve additional ones.</OCity_Dialog_Exchenge_No_Available_ExchangenInfo>
-	<OCity_Dialog_Exchenge_You>You</OCity_Dialog_Exchenge_You>
-	<OCity_Dialog_Exchenge_Tile>tile</OCity_Dialog_Exchenge_Tile>	
+	<OCity_Dialog_Exchenge_Trade_OrdersLoad>正在加载贸易订单</OCity_Dialog_Exchenge_Trade_OrdersLoad>
+	<OCity_Dialog_Exchenge_Trade_FilterDistance>筛选：距离</OCity_Dialog_Exchenge_Trade_FilterDistance>
+	<OCity_Dialog_Exchenge_Trade_FilterSell>出售</OCity_Dialog_Exchenge_Trade_FilterSell>
+	<OCity_Dialog_Exchenge_Trade_FilterBuy>求购</OCity_Dialog_Exchenge_Trade_FilterBuy>
+	<OCity_Dialog_Exchenge_TradeCount>数量</OCity_Dialog_Exchenge_TradeCount>
+	<OCity_Dialog_Exchenge_Max>最大值</OCity_Dialog_Exchenge_Max>
+	<OCity_Dialog_Exchenge_No_Available_ExchangenInfo>此参数显示当前在指定条件下可执行的交易次数。
+要查看我们在仓库中存放了多少物品，请将此数值乘以“我们支付”栏中的数量。
+减小该数值将返还物资，增大该数值将预留额外物资。</OCity_Dialog_Exchenge_No_Available_ExchangenInfo>
+	<OCity_Dialog_Exchenge_You>你</OCity_Dialog_Exchenge_You>
+	<OCity_Dialog_Exchenge_Tile>格</OCity_Dialog_Exchenge_Tile>
 	<OCity_Dialog_Exchenge_Viewing_Orders>查看订单</OCity_Dialog_Exchenge_Viewing_Orders>
-	<OCity_Dialog_Exchenge_Deal_Open_Everyone>这个交易对每个人来说都是可以参加的.</OCity_Dialog_Exchenge_Deal_Open_Everyone>
-	<OCity_Dialog_Exchenge_Deal_Open_Specific>此交易仅提供: {0}</OCity_Dialog_Exchenge_Deal_Open_Specific>
+	<OCity_Dialog_Exchenge_Deal_Open_Everyone>交易对所有人公开。</OCity_Dialog_Exchenge_Deal_Open_Everyone>
+	<OCity_Dialog_Exchenge_Deal_Open_Specific>交易仅对以下玩家开放：{0}</OCity_Dialog_Exchenge_Deal_Open_Specific>
 	<OCity_Dialog_Exchenge_Seller>卖家</OCity_Dialog_Exchenge_Seller>
-	<OCity_Dialog_Exchenge_BeenOnline>已上线 </OCity_Dialog_Exchenge_BeenOnline>
-	<OCity_Dialog_Exchenge_Location>位置</OCity_Dialog_Exchenge_Location>
-	<OCity_Dialog_Exchenge_Days> 天数 </OCity_Dialog_Exchenge_Days>
-	<OCity_Dialog_Exchenge_To>To</OCity_Dialog_Exchenge_To>
-	<OCity_Dialog_Exchenge_Location_Goods>货物的位置:</OCity_Dialog_Exchenge_Location_Goods>
+	<OCity_Dialog_Exchenge_BeenOnline>上次在线 </OCity_Dialog_Exchenge_BeenOnline>
+	<OCity_Dialog_Exchenge_Location>地点</OCity_Dialog_Exchenge_Location>
+	<OCity_Dialog_Exchenge_Days> 天 </OCity_Dialog_Exchenge_Days>
+	<OCity_Dialog_Exchenge_To>至</OCity_Dialog_Exchenge_To>
+	<OCity_Dialog_Exchenge_Location_Goods>货物所在地：</OCity_Dialog_Exchenge_Location_Goods>
 	<OCity_Dialog_Exchenge_Number>数量</OCity_Dialog_Exchenge_Number>
-	<OCity_Dialog_Exchenge_Max_Repetition_Transaction>交易的最大重复次数:</OCity_Dialog_Exchenge_Max_Repetition_Transaction>
-	<OCity_Dialog_Exchenge_Acquire>购入</OCity_Dialog_Exchenge_Acquire>
-	<OCity_Dialog_Exchenge_GiveTo>给我吧</OCity_Dialog_Exchenge_GiveTo>
-	<OCity_Dialog_Exchenge_No_Warrants>没有权限</OCity_Dialog_Exchenge_No_Warrants>
-	<OCity_Dialog_Exchenge_Active_Orders>有效订单 {0}</OCity_Dialog_Exchenge_Active_Orders>
-	<OCity_Dialog_Exchenge_Update>更新</OCity_Dialog_Exchenge_Update>
-	<OCity_Dialog_Exchenge_Select_For_Sale>从{0}中选择出售</OCity_Dialog_Exchenge_Select_For_Sale>
+	<OCity_Dialog_Exchenge_Max_Repetition_Transaction>交易最大重复执行次数：</OCity_Dialog_Exchenge_Max_Repetition_Transaction>
+	<OCity_Dialog_Exchenge_Acquire>购买</OCity_Dialog_Exchenge_Acquire>
+	<OCity_Dialog_Exchenge_GiveTo>支付</OCity_Dialog_Exchenge_GiveTo>
+	<OCity_Dialog_Exchenge_No_Warrants>暂无订单</OCity_Dialog_Exchenge_No_Warrants>
+	<OCity_Dialog_Exchenge_Active_Orders>活跃订单：{0}</OCity_Dialog_Exchenge_Active_Orders>
+	<OCity_Dialog_Exchenge_Update>刷新</OCity_Dialog_Exchenge_Update>
+	<OCity_Dialog_Exchenge_Select_For_Sale>从{0}中选择出售物资 </OCity_Dialog_Exchenge_Select_For_Sale>
 	<OCity_Dialog_Exchenge_Choose>选择</OCity_Dialog_Exchenge_Choose>
-	<OCity_Dialog_Exchenge_Move>Move</OCity_Dialog_Exchenge_Move>
+	<OCity_Dialog_Exchenge_Move>移动</OCity_Dialog_Exchenge_Move>
 	<OCity_Dialog_Exchenge_Order_Create>创建新订单</OCity_Dialog_Exchenge_Order_Create>
 	<OCity_Dialog_Exchenge_Save>保存</OCity_Dialog_Exchenge_Save>
 	<OCity_Dialog_Exchenge_Create>创建</OCity_Dialog_Exchenge_Create>
-	<OCity_Dialog_Exchenge_Trade>贸易</OCity_Dialog_Exchenge_Trade>
-	<OCity_Dialog_Exchenge_Counterproposal>反建议</OCity_Dialog_Exchenge_Counterproposal>
-	<OCity_Dialog_Exchenge_Action_Not_CarriedOut>未执行的行动</OCity_Dialog_Exchenge_Action_Not_CarriedOut>
-	<OCity_Dialog_Exchenge_Action_CarriedOut>Done</OCity_Dialog_Exchenge_Action_CarriedOut>
+	<OCity_Dialog_Exchenge_Trade>交易</OCity_Dialog_Exchenge_Trade>
+	<OCity_Dialog_Exchenge_Counterproposal>还价 / 对应报价</OCity_Dialog_Exchenge_Counterproposal>
+	<OCity_Dialog_Exchenge_Action_Not_CarriedOut>未执行</OCity_Dialog_Exchenge_Action_Not_CarriedOut>
+	<OCity_Dialog_Exchenge_Action_CarriedOut>已执行</OCity_Dialog_Exchenge_Action_CarriedOut>
 	<OCity_Dialog_Exchenge_Delete>删除</OCity_Dialog_Exchenge_Delete>
-	<OCity_Dialog_Exchenge_Order_New>新订单</OCity_Dialog_Exchenge_Order_New>
-	<OCity_Dialog_Exchenge_No_Exchanges>没有这种交换:</OCity_Dialog_Exchenge_No_Exchanges>
-	<OCity_Dialog_Exchenge_No_Available_Exchange>没有其他东西可供交换.</OCity_Dialog_Exchenge_No_Available_Exchange>
-	<OCity_Dialog_Exchenge_Done_Once>已经做了一次了:</OCity_Dialog_Exchenge_Done_Once>
-	<OCity_Dialog_Exchenge_We_Give>我们给予</OCity_Dialog_Exchenge_We_Give>
-	<OCity_Dialog_Exchenge_We_Give2>我们给予 {0} :</OCity_Dialog_Exchenge_We_Give2>
-	<OCity_Dialog_Exchenge_We_Get>我们得到</OCity_Dialog_Exchenge_We_Get>
-	<OCity_Dialog_Exchenge_No_User_Restrictions>没有用户限制.</OCity_Dialog_Exchenge_No_User_Restrictions>
-	<OCity_Dialog_Exchenge_User_Restrictions>只对此用户开放:</OCity_Dialog_Exchenge_User_Restrictions>
+	<OCity_Dialog_Exchenge_Order_New>新建订单</OCity_Dialog_Exchenge_Order_New>
+	<OCity_Dialog_Exchenge_No_Exchanges>在订单中设定重复执行次数：</OCity_Dialog_Exchenge_No_Exchanges>
+	<OCity_Dialog_Exchenge_No_Available_Exchange>当前可用重复次数：</OCity_Dialog_Exchenge_No_Available_Exchange>
+	<OCity_Dialog_Exchenge_Done_Once>已完成次数：</OCity_Dialog_Exchenge_Done_Once>
+	<OCity_Dialog_Exchenge_We_Give>我们支付</OCity_Dialog_Exchenge_We_Give>
+	<OCity_Dialog_Exchenge_We_Give2>我们支付 {0} ：</OCity_Dialog_Exchenge_We_Give2>
+	<OCity_Dialog_Exchenge_We_Get>我们获得</OCity_Dialog_Exchenge_We_Get>
+	<OCity_Dialog_Exchenge_No_User_Restrictions>没有用户限制。</OCity_Dialog_Exchenge_No_User_Restrictions>
+	<OCity_Dialog_Exchenge_User_Restrictions>交易仅对以下用户开放：</OCity_Dialog_Exchenge_User_Restrictions>
 	<OCity_Dialog_Exchenge_Add_User>+ 添加用户</OCity_Dialog_Exchenge_Add_User>
-	<OCity_Dialog_Exchenge_Specific_Facility_Assigned>已指定了一个具体的设施</OCity_Dialog_Exchenge_Specific_Facility_Assigned>
+	<OCity_Dialog_Exchenge_Specific_Facility_Assigned>已指定特定物品</OCity_Dialog_Exchenge_Specific_Facility_Assigned>
 	<OCity_Dialog_Exchenge_Add>+ 添加</OCity_Dialog_Exchenge_Add>
-	<OCity_Dialog_Exchenge_Whole_On>{1}的{0}上的一个整体（{2}%）。</OCity_Dialog_Exchenge_Whole_On>
-	<OCity_Dialog_Exchenge_Quality>质量</OCity_Dialog_Exchenge_Quality>
-	<OCity_Dialog_Exchenge_Whole_Less_Than>不亚于 </OCity_Dialog_Exchenge_Whole_Less_Than>
-	<OCity_Dialog_Exchenge_QualityNo_Less_Than>质量不亚于</OCity_Dialog_Exchenge_QualityNo_Less_Than>
+	<OCity_Dialog_Exchenge_Whole_On>耐久度 {0}/{1} ({2}%)。</OCity_Dialog_Exchenge_Whole_On>
+	<OCity_Dialog_Exchenge_Quality>品质 </OCity_Dialog_Exchenge_Quality>
+	<OCity_Dialog_Exchenge_Whole_Less_Than>耐久度不低于 </OCity_Dialog_Exchenge_Whole_Less_Than>
+	<OCity_Dialog_Exchenge_QualityNo_Less_Than>品质不低于 </OCity_Dialog_Exchenge_QualityNo_Less_Than>
 	<OCity_Dialog_Exchenge_All>全部</OCity_Dialog_Exchenge_All>
-	<OCity_Dialog_Exchenge_FromCorpse>从一具尸体上提取的</OCity_Dialog_Exchenge_FromCorpse>
-	<OCity_Dialog_Exchenge_FromCorpseD>允许从尸体上脱掉衣服是可以的。</OCity_Dialog_Exchenge_FromCorpseD>
-	<OCity_Dialog_Exchenge_FromNotCorpse>不是尸体上的</OCity_Dialog_Exchenge_FromNotCorpse>
-	<OCity_Dialog_Exchenge_FromNotCorpseD>不允许从尸体上脱掉衣服。</OCity_Dialog_Exchenge_FromNotCorpseD>
-	<OC_ExchengeOperator_tradeSold0>Your order has been accepted</OC_ExchengeOperator_tradeSold0>
-	<OC_ExchengeOperator_tradeSold1>times,</OC_ExchengeOperator_tradeSold1>
-	<OC_ExchengeOperator_tradeSold2>You get:</OC_ExchengeOperator_tradeSold2>
-	<OC_ExchengeOperator_tradeBought0>You got by the deal</OC_ExchengeOperator_tradeBought0>
-	<OC_ExchengeOperator_tradeBought1>times. You get:</OC_ExchengeOperator_tradeBought1>
-	<OC_ExchengeOperator_Closed>it's closed</OC_ExchengeOperator_Closed>
-	<OC_ExchengeOperator_left>left </OC_ExchengeOperator_left>
-	<OC_ExchengeOperator_OrderClosedBetter>The deal was done more profitably than it was asked for. Your items are being returned:</OC_ExchengeOperator_OrderClosedBetter>
-	<OC_ExchengeOperator_OrderDone>Your deal done</OC_ExchengeOperator_OrderDone>
-	<OC_ExchengeOperator_YouBought>You bought with a order</OC_ExchengeOperator_YouBought>
-	<OC_ExchangeEdit_err1>Error. Order from another player</OC_ExchangeEdit_err1>
-	<OC_ExchangeEdit_err2>Error. Player not found</OC_ExchangeEdit_err2>
-	<OC_ExchangeEdit_err4>Unable to create order: not enough items</OC_ExchangeEdit_err4>
-	<OC_ExchangeEdit_err3>Error. Order not found</OC_ExchangeEdit_err3>
-	<OC_ExchangeEdit_OrderPlaced>Order Placed</OC_ExchangeEdit_OrderPlaced>
-	<OC_ExchangeEdit_YouSell>You will sell:</OC_ExchangeEdit_YouSell>
-	<OC_ExchangeEdit_YouBuy>You will recieve:</OC_ExchangeEdit_YouBuy>
-	<OC_ExchangeEdit_Laps>repeats</OC_ExchangeEdit_Laps>
-	<OC_ExchangeEdit_ForAll>Order for all</OC_ExchangeEdit_ForAll>
-	<OC_ExchangeEdit_PrivateOrder>Order only for players: </OC_ExchangeEdit_PrivateOrder>
-	<OC_ExchangeEdit_OrderRedacted>Order redacted</OC_ExchangeEdit_OrderRedacted>
-	<OC_ExchangeEdit_OrderDeleted>Order canceled</OC_ExchangeEdit_OrderDeleted>
-	<OC_SessionCC_Info>You are connected to server {0}. Login {1}</OC_SessionCC_Info>
-	<OC_SessionCC_Balance>Amount on a non-cash account:</OC_SessionCC_Balance>
-	<OC_SessionCC_MinSave>Minutes since saving</OC_SessionCC_MinSave>
-	<OCity_Coordinates>Coordinates</OCity_Coordinates>
-	<OCity_SetAvatar>Change avatar</OCity_SetAvatar>
-	<OCity_Successfully>Successfully</OCity_Successfully>
-	<OCity_Error>Error</OCity_Error>
-	<OC_TradeThingsOnline_Storage>Trade warehouse</OC_TradeThingsOnline_Storage>
-	<OC_TradeThingsOnline_ThingTypes>Here are the kinds of things: {0}</OC_TradeThingsOnline_ThingTypes>
-	<OC_TradeThingsOnline_Info>These are your things, you can pick them up by moving them to a settlement or caravan on the same cell. Open the trade window, choose what you need and click</OC_TradeThingsOnline_Info>
-	<OC_TradeOrdersOnline_Orders>Trade orders</OC_TradeOrdersOnline_Orders>
-	<OC_TradeOrdersOnline_OpenForInfo>Open trade orders for more info</OC_TradeOrdersOnline_OpenForInfo>
-	<OCity_DialogExchenge_Things>Things</OCity_DialogExchenge_Things>
-	<OCity_DialogExchenge_Deal>Deal</OCity_DialogExchenge_Deal>
-	<OCity_DialogExchenge_Sell>Sell</OCity_DialogExchenge_Sell>
-	<OCity_DialogExchenge_OnExchange>On exchange</OCity_DialogExchenge_OnExchange>
-	<OCity_DialogExchenge_Move>Move</OCity_DialogExchenge_Move>
-	<OCity_DialogExchenge_InThisPosition>In this position</OCity_DialogExchenge_InThisPosition>
-	<OCity_DialogExchenge_Delivery>Delivery</OCity_DialogExchenge_Delivery>
-	<OCity_DialogExchenge_ToARemotePoint>To a remote point</OCity_DialogExchenge_ToARemotePoint>
-	<OCity_DialogExchenge_Destroy>Destroy</OCity_DialogExchenge_Destroy>
-	<OCity_DialogExchenge_ForTenPercentThePrice>(For 10% the price)</OCity_DialogExchenge_ForTenPercentThePrice>
-	<OCity_DialogExchenge_NegativeBalance>Impossible with negative balance</OCity_DialogExchenge_NegativeBalance>
-	<OCity_DialogExchenge_ToStorage>Items transferred to the trade warehouse</OCity_DialogExchenge_ToStorage>
+	<OCity_Dialog_Exchenge_FromCorpse>死者衣物</OCity_Dialog_Exchenge_FromCorpse>
+	<OCity_Dialog_Exchenge_FromCorpseD>允许从尸体上剥下的衣物（死者衣物）</OCity_Dialog_Exchenge_FromCorpseD>
+	<OCity_Dialog_Exchenge_FromNotCorpse>非死者衣物</OCity_Dialog_Exchenge_FromNotCorpse>
+	<OCity_Dialog_Exchenge_FromNotCorpseD>禁止从尸体上剥下的衣物（仅限纯净衣物）</OCity_Dialog_Exchenge_FromNotCorpseD>
+	<OC_ExchengeOperator_tradeSold0>你的贸易订单已成交 </OC_ExchengeOperator_tradeSold0>
+	<OC_ExchengeOperator_tradeSold1> 次，</OC_ExchengeOperator_tradeSold1>
+	<OC_ExchengeOperator_tradeSold2>你获得了：</OC_ExchengeOperator_tradeSold2>
+	<OC_ExchengeOperator_tradeBought0>你通过交易购买了 </OC_ExchengeOperator_tradeBought0>
+	<OC_ExchengeOperator_tradeBought1> 次。你获得了：</OC_ExchengeOperator_tradeBought1>
+	<OC_ExchengeOperator_Closed>订单已完成关闭</OC_ExchengeOperator_Closed>
+	<OC_ExchengeOperator_left>剩余：</OC_ExchengeOperator_left>
+	<OC_ExchengeOperator_OrderClosedBetter>订单以优于设定的条件成交。多余物品已返还：</OC_ExchengeOperator_OrderClosedBetter>
+	<OC_ExchengeOperator_OrderDone>你的交易订单已完成</OC_ExchengeOperator_OrderDone>
+	<OC_ExchengeOperator_YouBought>你通过交易完成了购买</OC_ExchengeOperator_YouBought>
+	<OC_ExchangeEdit_err1>错误。此订单属于其他玩家</OC_ExchangeEdit_err1>
+	<OC_ExchangeEdit_err2>错误。指定了不存在的玩家</OC_ExchangeEdit_err2>
+	<OC_ExchangeEdit_err4>无法创建订单：物品不足</OC_ExchangeEdit_err4>
+	<OC_ExchangeEdit_err3>错误。未找到该订单</OC_ExchangeEdit_err3>
+	<OC_ExchangeEdit_OrderPlaced>订单已发布</OC_ExchangeEdit_OrderPlaced>
+	<OC_ExchangeEdit_YouSell>你将支付：</OC_ExchangeEdit_YouSell>
+	<OC_ExchangeEdit_YouBuy>你将获得：</OC_ExchangeEdit_YouBuy>
+	<OC_ExchangeEdit_Laps>重复次数</OC_ExchangeEdit_Laps>
+	<OC_ExchangeEdit_ForAll>此订单对所有人公开</OC_ExchangeEdit_ForAll>
+	<OC_ExchangeEdit_PrivateOrder>仅限玩家：</OC_ExchangeEdit_PrivateOrder>
+	<OC_ExchangeEdit_OrderRedacted>订单已修改</OC_ExchangeEdit_OrderRedacted>
+	<OC_ExchangeEdit_OrderDeleted>订单已取消</OC_ExchangeEdit_OrderDeleted>
+	<OC_SessionCC_Info>已连接至服务器 {0}。用户名：{1}</OC_SessionCC_Info>
+	<OC_SessionCC_Balance>虚拟账户余额：</OC_SessionCC_Balance>
+	<OC_SessionCC_MinSave>距上次保存（分钟）</OC_SessionCC_MinSave>
+	<OCity_Coordinates>坐标</OCity_Coordinates>
+	<OCity_SetAvatar>更换头像</OCity_SetAvatar>
+	<OCity_Successfully>成功</OCity_Successfully>
+	<OCity_Error>错误</OCity_Error>
+	<OC_TradeThingsOnline_Storage>贸易仓库</OC_TradeThingsOnline_Storage>
+	<OC_TradeThingsOnline_ThingTypes>存放物品种类数：{0}</OC_TradeThingsOnline_ThingTypes>
+	<OC_TradeThingsOnline_Info>这是你的物品。你可以通过交易窗口将其转移到同一地块上的定居点或远行队中取回</OC_TradeThingsOnline_Info>
+	<OC_TradeOrdersOnline_Orders>贸易报价</OC_TradeOrdersOnline_Orders>
+	<OC_TradeOrdersOnline_OpenForInfo>打开贸易报价查看详情</OC_TradeOrdersOnline_OpenForInfo>
+	<OCity_DialogExchenge_Things>物品</OCity_DialogExchenge_Things>
+	<OCity_DialogExchenge_Deal>交易</OCity_DialogExchenge_Deal>
+	<OCity_DialogExchenge_Sell>出售</OCity_DialogExchenge_Sell>
+	<OCity_DialogExchenge_OnExchange>在交易所</OCity_DialogExchenge_OnExchange>
+	<OCity_DialogExchenge_Move>移动</OCity_DialogExchenge_Move>
+	<OCity_DialogExchenge_InThisPosition>就地</OCity_DialogExchenge_InThisPosition>
+	<OCity_DialogExchenge_Delivery>运送</OCity_DialogExchenge_Delivery>
+	<OCity_DialogExchenge_ToARemotePoint>送往远程地点</OCity_DialogExchenge_ToARemotePoint>
+	<OCity_DialogExchenge_Destroy>销毁</OCity_DialogExchenge_Destroy>
+	<OCity_DialogExchenge_ForTenPercentThePrice>（收取10%手续费）</OCity_DialogExchenge_ForTenPercentThePrice>
+	<OCity_DialogExchenge_NegativeBalance>余额为负时无法操作</OCity_DialogExchenge_NegativeBalance>
+	<OCity_DialogExchenge_ToStorage>物品已转入贸易仓库</OCity_DialogExchenge_ToStorage>
 	
 	<!--ExchengeUtils-->
-	<OCity_ExchengeUtils_Distance>Distance</OCity_ExchengeUtils_Distance>
-	<OCity_ExchengeUtils_Cost>Cost</OCity_ExchengeUtils_Cost>
+	<OCity_ExchengeUtils_Distance>距离</OCity_ExchengeUtils_Distance>
+	<OCity_ExchengeUtils_Cost>价格</OCity_ExchengeUtils_Cost>
 	
 	<!--GameInterface-->
-	<OCity_GameInterface_InsertIntoChat>Insert into chat</OCity_GameInterface_InsertIntoChat>
+	<OCity_GameInterface_InsertIntoChat>发送至聊天</OCity_GameInterface_InsertIntoChat>
 	
 	<!--GamePatch-->
-	<OCity_GamePatch_DisableModOptions>Editing settings is disabled, after clicking Network Game. To edit, restart the game</OCity_GamePatch_DisableModOptions>
+	<OCity_GamePatch_DisableModOptions>点击“多人游戏”后已禁用模组选项编辑。如需编辑请重启游戏</OCity_GamePatch_DisableModOptions>
 	
 	<!--GamePresetFiles-->
-	<OCity_GamePresetFiles_IdeologyNotCreatedDuringANetworkGame>Ideology  not created while playing on this server</OCity_GamePresetFiles_IdeologyNotCreatedDuringANetworkGame>
-	<OCity_GamePresetFiles_XenotypeNotCreatedDuringANetworkGame>Xenotype  not created while playing on this server</OCity_GamePresetFiles_XenotypeNotCreatedDuringANetworkGame>
+	<OCity_GamePresetFiles_IdeologyNotCreatedDuringANetworkGame>该文化理念并非在此服务器游戏中创建</OCity_GamePresetFiles_IdeologyNotCreatedDuringANetworkGame>
+	<OCity_GamePresetFiles_XenotypeNotCreatedDuringANetworkGame>该异种形并非在此服务器游戏中创建</OCity_GamePresetFiles_XenotypeNotCreatedDuringANetworkGame>
 
 	<!-- ThingTrade.cs -->
-	<OCity_ThingTrade_Quality_Strength>质量{0}。强度{1}的{2}。</OCity_ThingTrade_Quality_Strength>
-	<OCity_ThingTrade_Cut_Body_Off>切掉身体。</OCity_ThingTrade_Cut_Body_Off>
-	<OCity_ThingTrade_QualityBetter_StrengthMore>质量{0}和更好。强度{1}%及以上</OCity_ThingTrade_QualityBetter_StrengthMore>
-	<OCity_ThingTrade_CouldTake_OffCorpse>可以从身体上取下。</OCity_ThingTrade_CouldTake_OffCorpse>
+	<OCity_ThingTrade_Quality_Strength>品质 {0}。耐久度 {1}/{2}</OCity_ThingTrade_Quality_Strength>
+	<OCity_ThingTrade_Cut_Body_Off>死者衣物。</OCity_ThingTrade_Cut_Body_Off>
+	<OCity_ThingTrade_QualityBetter_StrengthMore>品质 {0} 或更佳。耐久度 {1}% 或以上</OCity_ThingTrade_QualityBetter_StrengthMore>
+	<OCity_ThingTrade_CouldTake_OffCorpse>可以为死者衣物。</OCity_ThingTrade_CouldTake_OffCorpse>
 
 	<!-- UpdateWorldController.cs -->
-	<OCity_UpdateWorld_Trade>贸易</OCity_UpdateWorld_Trade>
-	<OCity_UpdateWorld_TradeDetails>玩家{0}到{1}转移物品。{2}</OCity_UpdateWorld_TradeDetails>
+	<OCity_UpdateWorld_Trade>转移</OCity_UpdateWorld_Trade>
+	<OCity_UpdateWorld_TradeDetails>由玩家 {0} 转交给 {1} 的物品：{2}</OCity_UpdateWorld_TradeDetails>
 
 	<!-- Dialog_Input.cs -->
-	<OCity_DialogInput_Ok>好的</OCity_DialogInput_Ok>
+	<OCity_DialogInput_Ok>确定</OCity_DialogInput_Ok>
 	<OCity_DialogInput_Cancele>取消</OCity_DialogInput_Cancele>
 
 	<!-- Dialog_Registration.cs -->
 	<OCity_Dialog_Registration_Close>关闭</OCity_Dialog_Registration_Close>
 	<OCity_Dialog_Registration_BtnReg>注册</OCity_Dialog_Registration_BtnReg>
 	<OCity_Dialog_Registration_LabelReg>注册</OCity_Dialog_Registration_LabelReg>
-	<OCity_Dialog_Registration_Server>服务器:</OCity_Dialog_Registration_Server>
-	<OCity_Dialog_Registration_Login>登录:</OCity_Dialog_Registration_Login>
-	<OCity_Dialog_Registration_Pass>密码:</OCity_Dialog_Registration_Pass>
-	<OCity_Dialog_Registration_Check>确认密码:</OCity_Dialog_Registration_Check>
+	<OCity_Dialog_Registration_Server>服务器：</OCity_Dialog_Registration_Server>
+	<OCity_Dialog_Registration_Login>用户名：</OCity_Dialog_Registration_Login>
+	<OCity_Dialog_Registration_Pass>密码：</OCity_Dialog_Registration_Pass>
+	<OCity_Dialog_Registration_Check>确认密码：</OCity_Dialog_Registration_Check>
 
 	<!-- Dialog_TradeOnline.cs -->
-	<OCity_Dialog_TradeOnline_Trade>货物转让</OCity_Dialog_TradeOnline_Trade>
+	<OCity_Dialog_TradeOnline_Trade>物品交付</OCity_Dialog_TradeOnline_Trade>
 
 	<!-- GrassFix.cs -->
-	<OCity_GrassFix_Plant>种植  </OCity_GrassFix_Plant>
-	<OCity_GrassFix_Grass> 药材</OCity_GrassFix_Grass>
+	<OCity_GrassFix_Plant> 已种植 </OCity_GrassFix_Plant>
+	<OCity_GrassFix_Grass> 杂草</OCity_GrassFix_Grass>
 
 	<!-- PlayerClient.cs -->
-	<OCity_PlayerClient_LastTick>玩了多少年: {0}, 天: {1}.</OCity_PlayerClient_LastTick>
-	<OCity_PlayerClient_LastSaveTime>在游戏中：{2}</OCity_PlayerClient_LastSaveTime>
-	<OCity_PlayerClient_baseCount>基地数量： {3}</OCity_PlayerClient_baseCount>
-	<OCity_PlayerClient_caravanCount>商队：{4}</OCity_PlayerClient_caravanCount>
-	<OCity_PlayerClient_marketValue>物品财富：{5}</OCity_PlayerClient_marketValue>
-	<OCity_PlayerClient_marketValuePawn>人和动物的价值：{6}</OCity_PlayerClient_marketValuePawn>
-	<OCity_PlayerClient_marketValueTrading>Wealh of exchange: {7}</OCity_PlayerClient_marketValueTrading>
+	<OCity_PlayerClient_LastTick>游玩时长：{0}年，{1}天。</OCity_PlayerClient_LastTick>
+	<OCity_PlayerClient_LastSaveTime>最近在线：{2}</OCity_PlayerClient_LastSaveTime>
+	<OCity_PlayerClient_baseCount>定居点数：{3}</OCity_PlayerClient_baseCount>
+	<OCity_PlayerClient_caravanCount>远行队数：{4}</OCity_PlayerClient_caravanCount>
+	<OCity_PlayerClient_marketValue>物品价值：{5}</OCity_PlayerClient_marketValue>
+	<OCity_PlayerClient_marketValuePawn>人员与动物价值：{6}</OCity_PlayerClient_marketValuePawn>
+	<OCity_PlayerClient_marketValueTrading>交易所价值：{7}</OCity_PlayerClient_marketValueTrading>
 	<OCity_PlayerClient_LastSaveTimeNon>未参与</OCity_PlayerClient_LastSaveTimeNon>
-	<OCity_PlayerClient_InvolvedInPVP>参加VP</OCity_PlayerClient_InvolvedInPVP>
-	<OCity_PlayerClient_NotInvolvedInPVP>不参与PVP</OCity_PlayerClient_NotInvolvedInPVP>
-	<OCity_PlayerClient_Discord>纷争: </OCity_PlayerClient_Discord>
-	<OCity_PlayerClient_Email>Email: </OCity_PlayerClient_Email>
-	<OCity_PlayerClient_AboutMyself>关于我自己: </OCity_PlayerClient_AboutMyself>
+	<OCity_PlayerClient_InvolvedInPVP>参与PvP</OCity_PlayerClient_InvolvedInPVP>
+	<OCity_PlayerClient_NotInvolvedInPVP>不参与PvP</OCity_PlayerClient_NotInvolvedInPVP>
+	<OCity_PlayerClient_Discord>Discord：</OCity_PlayerClient_Discord>
+	<OCity_PlayerClient_Email>电子邮箱：</OCity_PlayerClient_Email>
+	<OCity_PlayerClient_AboutMyself>个人简介：</OCity_PlayerClient_AboutMyself>
 	<OCity_PlayerClient_Settings>设置</OCity_PlayerClient_Settings>
 	<OCity_PlayerClient_Save>保存</OCity_PlayerClient_Save>
-	<OCity_PlayerClient_CanChange>(可以改变{0})</OCity_PlayerClient_CanChange>
-	<OCity_PlayerClient_CanChangeNow>(现在可以改了)</OCity_PlayerClient_CanChangeNow>
-	<OCity_PlayerClient_SaveInterval>保存时间，间隔为分钟（至少5，默认为15）。</OCity_PlayerClient_SaveInterval>
+	<OCity_PlayerClient_CanChange>（可在 {0} 修改）</OCity_PlayerClient_CanChange>
+	<OCity_PlayerClient_CanChangeNow>（现在可以修改）</OCity_PlayerClient_CanChangeNow>
+	<OCity_PlayerClient_SaveInterval>自动保存间隔（分钟，不少于5，默认15）：</OCity_PlayerClient_SaveInterval>
 	
-	<OC_PlayerClient_In>Is part of</OC_PlayerClient_In>
-	<OC_PlayerClient_Position>in position</OC_PlayerClient_Position>
-	<OC_PlayerClient_EnemiesOnMap>Game items are not available while there are enemies on the map!</OC_PlayerClient_EnemiesOnMap>
-	<OC_PlayerClient_RememberPassword>Remember password</OC_PlayerClient_RememberPassword>
-	<OC_PlayerClient_Rating>Rating</OC_PlayerClient_Rating>
-	<OC_PlayerClient_NoRating>No rating</OC_PlayerClient_NoRating>
-	<OC_PlayerClient_PastRating>Past place</OC_PlayerClient_PastRating>
-	<OC_PlayerClient_BetterPlayers>Better than {0}% of players</OC_PlayerClient_BetterPlayers>	
-	<OC_PlayerClient_TotalCost>Total cost</OC_PlayerClient_TotalCost>
-	<OC_PlayerClient_Maximum>Maximum</OC_PlayerClient_Maximum>
-	<OC_PlayerClient_TotalColonists>Total colonists</OC_PlayerClient_TotalColonists>
-	<OC_PlayerClient_ColonistsRequiringTreatment>Colonists requiring treatment</OC_PlayerClient_ColonistsRequiringTreatment>
-	<OC_PlayerClient_ColonistsUnconscious>Colonists unconscious</OC_PlayerClient_ColonistsUnconscious>
-	<OC_PlayerClient_TotalTrainedAnimals>Total trained animals</OC_PlayerClient_TotalTrainedAnimals>
-	<OC_PlayerClient_EnemieOnMap>Enemies on the map</OC_PlayerClient_EnemieOnMap>
+	<OC_PlayerClient_In>位于</OC_PlayerClient_In>
+	<OC_PlayerClient_Position>位列第</OC_PlayerClient_Position>
+	<OC_PlayerClient_EnemiesOnMap>当地图上有敌人时，无法使用游戏物品！</OC_PlayerClient_EnemiesOnMap>
+	<OC_PlayerClient_RememberPassword>记住密码</OC_PlayerClient_RememberPassword>
+	<OC_PlayerClient_Rating>排名</OC_PlayerClient_Rating>
+	<OC_PlayerClient_NoRating>无排名</OC_PlayerClient_NoRating>
+	<OC_PlayerClient_PastRating>历史排名</OC_PlayerClient_PastRating>
+	<OC_PlayerClient_BetterPlayers>超越了 {0}% 的玩家</OC_PlayerClient_BetterPlayers>
+	<OC_PlayerClient_TotalCost>总财富</OC_PlayerClient_TotalCost>
+	<OC_PlayerClient_Maximum>最高</OC_PlayerClient_Maximum>
+	<OC_PlayerClient_TotalColonists>殖民者总数</OC_PlayerClient_TotalColonists>
+	<OC_PlayerClient_ColonistsRequiringTreatment>需要治疗的殖民者</OC_PlayerClient_ColonistsRequiringTreatment>
+	<OC_PlayerClient_ColonistsUnconscious>失去意识的殖民者</OC_PlayerClient_ColonistsUnconscious>
+	<OC_PlayerClient_TotalTrainedAnimals>训练动物总数</OC_PlayerClient_TotalTrainedAnimals>
+	<OC_PlayerClient_EnemieOnMap>地图上有敌人</OC_PlayerClient_EnemieOnMap>
 
-	<OC_Shooting>Shooting</OC_Shooting>
-	<OC_Melee>Melee</OC_Melee>
-	<OC_Construction>Construction</OC_Construction>
-	<OC_Mining>Mining</OC_Mining>
-	<OC_Cooking>Cooking</OC_Cooking>
-	<OC_Plants>Plants</OC_Plants>
-	<OC_Animals>Animals</OC_Animals>
-	<OC_Crafting>Crafting</OC_Crafting>
-	<OC_Artistic>Artistic</OC_Artistic>
-	<OC_Medical>Medical</OC_Medical>
-	<OC_Social>Social</OC_Social>
-	<OC_Intellectual>Intellectual</OC_Intellectual>
+	<OC_Shooting>射击</OC_Shooting>
+	<OC_Melee>格斗</OC_Melee>
+	<OC_Construction>建造</OC_Construction>
+	<OC_Mining>采掘</OC_Mining>
+	<OC_Cooking>烹饪</OC_Cooking>
+	<OC_Plants>种植</OC_Plants>
+	<OC_Animals>驯兽</OC_Animals>
+	<OC_Crafting>手工</OC_Crafting>
+	<OC_Artistic>艺术</OC_Artistic>
+	<OC_Medical>医疗</OC_Medical>
+	<OC_Social>社交</OC_Social>
+	<OC_Intellectual>智力</OC_Intellectual>
 	
 	<!-- GameUtils.cs -->
-	<OCity_GameUtils_From> 从 </OCity_GameUtils_From>
-	<OCity_GameUtils_Ok>OK</OCity_GameUtils_Ok>
+	<OCity_GameUtils_From> 制成自 </OCity_GameUtils_From>
+	<OCity_GameUtils_Ok>确定</OCity_GameUtils_Ok>
 
 	<!-- GameAttacker.cs -->
-	<OCity_GameAttacker_Dialog_ErrorMessage>错误攻击</OCity_GameAttacker_Dialog_ErrorMessage>
-	<OCity_GameAttacker_Dialog_Settlement_Attack>你在攻击定居点</OCity_GameAttacker_Dialog_Settlement_Attack>
-	<OCity_GameAttacker_Withdraw>撤回</OCity_GameAttacker_Withdraw>
-	<OCity_GameAttacker_Main_Dialog>在这种模式下，必须永久激活暂停。尽管如此，游戏还在继续，形势也发生了变化。如果你想完成一次攻击，把那些你能做的事情带到地图的任何边缘，从主菜单中按下 </OCity_GameAttacker_Main_Dialog>
-	<OCity_GameAttacker_Main_Preparation_Dialog>准备工作已经完成。你有1分钟的时间看一下地图，攻击就会开始!</OCity_GameAttacker_Main_Preparation_Dialog>
-	<Ocity_GameAttacker_TrainingFight_Won>你赢了这场训练战！:)</Ocity_GameAttacker_TrainingFight_Won>
-	<Ocity_GameAttacker_TrainingFight_Caravan_Restore>车队现在要恢复了，你需要进入。:)</Ocity_GameAttacker_TrainingFight_Caravan_Restore>
-	<Ocity_GameAttacker_TrainingFight_Lost>你在这次的训练攻击中被打败了。:(</Ocity_GameAttacker_TrainingFight_Lost>
-	<OCity_GameAttacker_Done>完成了.</OCity_GameAttacker_Done>
-	<OCity_GameAttacker_Settlement_TakenOver>你接管了这个定居点！:) </OCity_GameAttacker_Settlement_TakenOver>
-	<OCity_GameAttacker_Defeated>你已经被打败了：(</OCity_GameAttacker_Defeated>
-	<OCity_GameAttacker_Colonist_Return>剩余的殖民者，有能力移动的，退到地图边缘的殖民者们，纷纷返回：</OCity_GameAttacker_Colonist_Return>
+	<OCity_GameAttacker_Dialog_ErrorMessage>进攻错误</OCity_GameAttacker_Dialog_ErrorMessage>
+	<OCity_GameAttacker_Dialog_Settlement_Attack>你正在攻击定居点</OCity_GameAttacker_Dialog_Settlement_Attack>
+	<OCity_GameAttacker_Withdraw>撤退</OCity_GameAttacker_Withdraw>
+	<OCity_GameAttacker_Main_Dialog>在此模式下，游戏必须保持暂停状态。即使暂停，战斗仍将继续进行且战况实时变动。如果你想结束进攻，请将尽可能多的成员撤至任意地图边缘，并在主菜单中点击“撤退”。</OCity_GameAttacker_Main_Dialog>
+	<OCity_GameAttacker_Main_Preparation_Dialog>准备完成。在攻击正式开始前，你有1分钟的时间侦察地图。</OCity_GameAttacker_Main_Preparation_Dialog>
+	<Ocity_GameAttacker_TrainingFight_Won>你赢得了这场模拟战！:)</Ocity_GameAttacker_TrainingFight_Won>
+	<Ocity_GameAttacker_TrainingFight_Caravan_Restore>远行队即将复原，你需要重新登录。</Ocity_GameAttacker_TrainingFight_Caravan_Restore>
+	<Ocity_GameAttacker_TrainingFight_Lost>你在这场模拟进攻中落败。:(</Ocity_GameAttacker_TrainingFight_Lost>
+	<OCity_GameAttacker_Done>完成</OCity_GameAttacker_Done>
+	<OCity_GameAttacker_Settlement_TakenOver>你占领了该定居点！:) </OCity_GameAttacker_Settlement_TakenOver>
+	<OCity_GameAttacker_Defeated>你失败了 :(</OCity_GameAttacker_Defeated>
+	<OCity_GameAttacker_Colonist_Return>撤退到地图边缘且具备移动能力的殖民者正在返回。</OCity_GameAttacker_Colonist_Return>
 
 	<!-- GameAttackHost.cs -->
-	<OCity_GameAttack_Host_Test_Attack>{0}正在对你的定居点进行测试攻击</OCity_GameAttack_Host_Test_Attack>
-	<OCity_GameAttack_Host_Settlement_Attacking>你的定居点正在攻击{0}</OCity_GameAttack_Host_Settlement_Attacking>
-	<OCity_GameAttack_Host_GameSpeed_Lock_Dialog>等到攻击者准备好了之后。之后，速度会自动开启X1，并且不会改变。</OCity_GameAttack_Host_GameSpeed_Lock_Dialog>
-	<OCity_GameAttack_Host_GameSpeed_Lock_Dialog2>如果你想完成并放弃结算，请点击主菜单。</OCity_GameAttack_Host_GameSpeed_Lock_Dialog2>
-	<OCity_GameAttack_Host_Cancel_Action> 如果你想完成并取消操作，请点击主菜单。 </OCity_GameAttack_Host_Cancel_Action>
+	<OCity_GameAttack_Host_Test_Attack>{0} 正在对你的定居点发起模拟进攻</OCity_GameAttack_Host_Test_Attack>
+	<OCity_GameAttack_Host_Settlement_Attacking>你的定居点正在遭到 {0} 的攻击</OCity_GameAttack_Host_Settlement_Attacking>
+	<OCity_GameAttack_Host_GameSpeed_Lock_Dialog>请等待进攻方准备就绪。随后游戏速度将自动锁定为1倍速且无法更改。</OCity_GameAttack_Host_GameSpeed_Lock_Dialog>
+	<OCity_GameAttack_Host_GameSpeed_Lock_Dialog2>如果你想投降并放弃该定居点，请在主菜单中点击</OCity_GameAttack_Host_GameSpeed_Lock_Dialog2>
+	<OCity_GameAttack_Host_Cancel_Action> 如果你想结束并取消模拟战，请在主菜单中点击 </OCity_GameAttack_Host_Cancel_Action>
 	<OCity_GameAttack_Host_Surrender>投降</OCity_GameAttack_Host_Surrender>
-	<OCity_GameAttack_Host_Error_Message_Attack>错误攻击</OCity_GameAttack_Host_Error_Message_Attack>
-	<OCity_GameAttack_Host_Card_Restored>现在地图会恢复，你需要登录。</OCity_GameAttack_Host_Card_Restored>
-	<OCity_GameAttack_Host_Training_Attack_Repulsed>你击退了这次训练的攻击！:)</OCity_GameAttack_Host_Training_Attack_Repulsed>
-	<OCity_GameAttack_Host_Caravan_TransferToNewOwner>你已经被打败了，你已经被打败了，和解的权利转给了新的主人。:(</OCity_GameAttack_Host_Caravan_TransferToNewOwner>
-	<OCity_GameAttack_Host_Atack_Repulsed>你击退了攻击！ :) </OCity_GameAttack_Host_Atack_Repulsed>
-	<OCity_GameAttack_Host_Stranded_EnemiesLostCommander_Touch>跑不掉的敌人会留在地图上，但他们已经和指挥官失去了联系</OCity_GameAttack_Host_Stranded_EnemiesLostCommander_Touch>
+	<OCity_GameAttack_Host_Error_Message_Attack>进攻错误</OCity_GameAttack_Host_Error_Message_Attack>
+	<OCity_GameAttack_Host_Card_Restored>地图即将复原，你需要重新登录。</OCity_GameAttack_Host_Card_Restored>
+	<OCity_GameAttack_Host_Training_Attack_Repulsed>你击退了这场模拟进攻！:)</OCity_GameAttack_Host_Training_Attack_Repulsed>
+	<OCity_GameAttack_Host_Caravan_TransferToNewOwner>你被击溃，定居点已转交给新的所有者 :(</OCity_GameAttack_Host_Caravan_TransferToNewOwner>
+	<OCity_GameAttack_Host_Atack_Repulsed>你成功击退了这次攻击！:) </OCity_GameAttack_Host_Atack_Repulsed>
+	<OCity_GameAttack_Host_Stranded_EnemiesLostCommander_Touch>未能成功撤退的敌军将留在地图上，但会与指挥官失去联系。</OCity_GameAttack_Host_Stranded_EnemiesLostCommander_Touch>
 
 	<!-- OCMessadge -->
-	<OC_IncdidentMessadge_ArgErr>需要至少三个参数，玩家名，标题，文本</OC_IncdidentMessadge_ArgErr>
-	<OC_IncdidentMessadge_targetErr>你不能指示你自己</OC_IncdidentMessadge_targetErr>
-	<OC_IncdidentMessadge_typeErr>无效的消息类型</OC_IncdidentMessadge_typeErr>
-
+	<OC_IncdidentMessadge_ArgErr>需要3个参数：名称、标题、正文</OC_IncdidentMessadge_ArgErr>
+	<OC_IncdidentMessadge_targetErr>不能指定你自己</OC_IncdidentMessadge_targetErr>
+	<OC_IncdidentMessadge_typeErr>消息类型错误</OC_IncdidentMessadge_typeErr>
+	
 	<!-- OCIncidents -->
-	<OC_Incidents_CallIncidents_Err1>输入事件类型和玩家。一些事件需要额外参数</OC_Incidents_CallIncidents_Err1>
-	<OC_Incidents_CallIncidents_TypeErr>输入允许的事件类型</OC_Incidents_CallIncidents_TypeErr>
-	<OC_Incidents_CallIncidents_MaxIncidentsInHour>达到了每小时允许的最大事件数量</OC_Incidents_CallIncidents_MaxIncidentsInHour>
-	<OC_Incidents_CallIncidents_MaxIncidentsCnt>达到了对这个玩家允许的最大事件数量</OC_Incidents_CallIncidents_MaxIncidentsCnt>
-	<OC_Incidents_CallIncidents_NotShooted>你之前对这个玩家的事件还没开始</OC_Incidents_CallIncidents_NotShooted>
-	<OC_Incidents_IncidentsTurnedOFF>服务器禁用了事件</OC_Incidents_IncidentsTurnedOFF>
-	<OC_Incidents_CallIncidebts_selfErr>你不能选择你自己</OC_Incidents_CallIncidebts_selfErr>
-	<OC_Incidents_CallIncidebts_YearErr1>你必须玩至少两年才能进攻（新手保护）</OC_Incidents_CallIncidebts_YearErr1>
-	<OC_Incidents_CallIncidebts_YearErr2>目标必须玩至少两年才能被进攻（新手保护）</OC_Incidents_CallIncidebts_YearErr2>
-	<OC_Incidents_CallIncidebts_CostErr1>你的据点财富值过低（新手保护）</OC_Incidents_CallIncidebts_CostErr1>
-	<OC_Incidents_CallIncidebts_CostErr2>目标据点财富值过低（新手保护）</OC_Incidents_CallIncidebts_CostErr2>
-	<OC_Incidents_OCIncident_WrongArg>参数设置不正确</OC_Incidents_OCIncident_WrongArg>
-	<OC_Incidents_OCIncident_WealthErr>计算财富值错误</OC_Incidents_OCIncident_WealthErr>
-	<OC_Incidents_OCIncident_GoldErr>没有足够的黄金，现有{0}，需要{1}, 还需要{2}</OC_Incidents_OCIncident_GoldErr>
-	<OC_Incidents_OCIncident_NotEnoughGold>需要的黄金数量{0}已经足够</OC_Incidents_OCIncident_NotEnoughGold>
-	<OC_Incidents_OCIncident_GoldPay>需要的黄金数量{0}已经支付给了雇佣兵</OC_Incidents_OCIncident_GoldPay>
-	<OC_Incident_Atacker>客户:</OC_Incident_Atacker>
-	<OCity_OCIncident_NotEnoughThingsOnMap>There are not enough things on the map. In stock</OCity_OCIncident_NotEnoughThingsOnMap>
-	<OCity_OCIncident_Required>Required</OCity_OCIncident_Required>
+	<OC_Incidents_CallIncidents_Err1>请指定事件类型与目标玩家，部分操作可设置附加参数</OC_Incidents_CallIncidents_Err1>
+	<OC_Incidents_CallIncidents_TypeErr>请指定有效的事件类型</OC_Incidents_CallIncidents_TypeErr>
+	<OC_Incidents_CallIncidents_MaxIncidentsInHour>该玩家每小时被触发的事件数量已达上限</OC_Incidents_CallIncidents_MaxIncidentsInHour>
+	<OC_Incidents_CallIncidents_MaxIncidentsCnt>该玩家的事件总数已达上限</OC_Incidents_CallIncidents_MaxIncidentsCnt>
+	<OC_Incidents_CallIncidents_NotShooted>你针对该玩家发起的上一个事件尚未结束</OC_Incidents_CallIncidents_NotShooted>
+	<OC_Incidents_IncidentsTurnedOFF>此服务器已禁用事件触发功能</OC_Incidents_IncidentsTurnedOFF>
+	<OC_Incidents_CallIncidebts_selfErr>不能对自己发起</OC_Incidents_CallIncidebts_selfErr>
+	<OC_Incidents_CallIncidebts_YearErr1>定居点发展满2年后方可发起进攻</OC_Incidents_CallIncidebts_YearErr1>
+	<OC_Incidents_CallIncidebts_YearErr2>目标玩家发展满2年后方可被攻击</OC_Incidents_CallIncidebts_YearErr2>
+	<OC_Incidents_CallIncidebts_CostErr1>你的定居点财富过低</OC_Incidents_CallIncidebts_CostErr1>
+	<OC_Incidents_CallIncidebts_CostErr2>攻击目标的定居点财富过低</OC_Incidents_CallIncidebts_CostErr2>
+	<OC_Incidents_OCIncident_WrongArg>参数设置错误</OC_Incidents_OCIncident_WrongArg>
+	<OC_Incidents_OCIncident_WealthErr>价值计算错误</OC_Incidents_OCIncident_WealthErr>
+	<OC_Incidents_OCIncident_GoldErr>黄金不足：已有 {0}/{1}，缺少 {2}</OC_Incidents_OCIncident_GoldErr>
+	<OC_Incidents_OCIncident_NotEnoughGold>所需黄金 {0} 充足</OC_Incidents_OCIncident_NotEnoughGold>
+	<OC_Incidents_OCIncident_GoldPay>委托已受理。已向雇佣兵支付 {0} 黄金</OC_Incidents_OCIncident_GoldPay>
+	<OC_Incident_Atacker>幕后指使者：</OC_Incident_Atacker>
+	<OCity_OCIncident_NotEnoughThingsOnMap>地图上物品不足。当前存量：</OCity_OCIncident_NotEnoughThingsOnMap>
+	<OCity_OCIncident_Required>需要</OCity_OCIncident_Required>
 
-	<OC_Incidents_Raid_Warning_label>严重威胁!</OC_Incidents_Raid_Warning_label>
-	<OC_Incidents_Raid_Warning_Text_human>一大群其他玩家的武装分子正在接近！他们会在10到14小时后到达。请做好充足准备！</OC_Incidents_Raid_Warning_Text_human>
-	<OC_Incidents_Raid_Warning_Text_mech>一大群其他玩家的机械族正在接近！他们会在10到14小时后到达。请做好充足准备！</OC_Incidents_Raid_Warning_Text_mech>
-	<OC_Incidents_Inf_Warning_Text_inf>大地在颤抖！你的专家说这不是地震，你感到地下有什么在接近! 预计10到14小时后到达。（虫子？）</OC_Incidents_Inf_Warning_Text_inf>
-	<OC_Incidents_Raid_Label>赏金猎人们!</OC_Incidents_Raid_Label>
-	<OC_Incidents_Raid_Text>雇佣兵到达了你的据点。</OC_Incidents_Raid_Text>
-	<OC_Incidents_Acid_Label>毒气攻击！</OC_Incidents_Acid_Label>
-	<OC_Incidents_Acid_Text>毒气被喷到了你的据点。</OC_Incidents_Acid_Text>
-	<OC_Incidents_Inf_Label>人造虫灾!</OC_Incidents_Inf_Label>
-	<OC_Incidents_Inf_Text>有人用高频振动把虫子引出来了！</OC_Incidents_Inf_Text>
-	<OC_Incidents_EMP_Label>E.M.P.</OC_Incidents_EMP_Label>
-	<OC_Incidents_EMP_Text>你的据点被EMP攻击了，所有电气设备都不能用。</OC_Incidents_EMP_Text>
-	<OC_Incidents_Eclipse_Label>阳光吸收器!</OC_Incidents_Eclipse_Label>
-	<OC_Incidents_Eclipse_Text>一个特制的卫星被发射到你的据点上方，吸收你的阳光。</OC_Incidents_Eclipse_Text>
-	<OC_Incidents_Pack_Label>野兽战斗!</OC_Incidents_Pack_Label>
-	<OC_Incidents_Pack_Text>一群动物被搞疯了，然后送向了你的据点。</OC_Incidents_Pack_Text>
-	<OC_Incidents_Plague_Label>Epidemic!</OC_Incidents_Plague_Label>
-	<OC_Incidents_Plague_text>A dangerous virus was spreaded near your settlement, some of the colonists are infected</OC_Incidents_Plague_text>
+	<OC_Incidents_Raid_Warning_label>严重威胁！</OC_Incidents_Raid_Warning_label>
+	<OC_Incidents_Raid_Warning_Text_human>你的殖民者惊恐万分！侦测到由其他玩家指派的大批武装分子正向此处逼近！他们将在数小时后抵达。建议尽快向盟友求援或准备撤离。</OC_Incidents_Raid_Warning_Text_human>
+	<OC_Incidents_Raid_Warning_Text_mech>你的殖民者惶恐不安！侦测到由其他玩家引来的大群机械族正逼近定居点！它们将在数小时后抵达。在没有盟友支援的情况下生还几率极低，撤离定居点也是一种选择。</OC_Incidents_Raid_Warning_Text_mech>
+	<OC_Incidents_Inf_Warning_Text_inf>大地在脚下颤抖！你的专家断定这不是地震，而是地下有什么庞然大物正朝着你们挖掘涌来！预计将在10-14小时后到达。</OC_Incidents_Inf_Warning_Text_inf>
+	<OC_Incidents_Raid_Label>赏金猎人！</OC_Incidents_Raid_Label>
+	<OC_Incidents_Raid_Text>雇佣兵正接近你的定居点</OC_Incidents_Raid_Text>
+	<OC_Incidents_Acid_Label>化学袭击！</OC_Incidents_Acid_Label>
+	<OC_Incidents_Acid_Text>有毒气体已在你的定居点上空散布</OC_Incidents_Acid_Text>
+	<OC_Incidents_Inf_Label>虫群！</OC_Incidents_Inf_Label>
+	<OC_Incidents_Inf_Text>有人利用高频震动将巨虫引诱到了地表</OC_Incidents_Inf_Text>
+	<OC_Incidents_EMP_Label>电磁脉冲（EMP）</OC_Incidents_EMP_Label>
+	<OC_Incidents_EMP_Text>你的定居点遭到电磁脉冲辐射打击，所有电子设备已瘫痪</OC_Incidents_EMP_Text>
+	<OC_Incidents_Eclipse_Label>日光遮蔽器！</OC_Incidents_Eclipse_Label>
+	<OC_Incidents_Eclipse_Text>一颗吸收阳光的特种卫星已被部署到定居点上空</OC_Incidents_Eclipse_Text>
+	<OC_Incidents_Pack_Label>发狂动物群！</OC_Incidents_Pack_Label>
+	<OC_Incidents_Pack_Text>一群陷入疯狂的动物已被驱赶向你的定居点</OC_Incidents_Pack_Text>
+	<OC_Incidents_Plague_Label>瘟疫！</OC_Incidents_Plague_Label>
+	<OC_Incidents_Plague_text>定居点附近被释放了危险病毒，部分殖民者已被感染</OC_Incidents_Plague_text>
 
 	<!-- OCIncidents UI-->
 	<OC_Incidents_Hire_label>雇佣袭击</OC_Incidents_Hire_label>
-	<OC_Incidents_Impact_label>影响这个地区</OC_Incidents_Impact_label>
-	<OC_Incidents_Impact_text>一些疯狂科学家可以改变天气。现在他们可以制造酸雨。不免费！</OC_Incidents_Impact_text>
-	<OC_Incidents_Hire_text>海盗和部落野蛮人会接受报酬并替你做一些肮脏的活。你甚至可以联系高科技据点的科学家们，用特殊无线电吸引一群虫子或机械族。</OC_Incidents_Hire_text>
+	<OC_Incidents_Impact_label>区域影响</OC_Incidents_Impact_label>
+	<OC_Incidents_Impact_text>你找到了能改变天气并对指定区域施加影响的科学家。只需支付合理的费用。</OC_Incidents_Impact_text>
+	<OC_Incidents_Hire_text>海盗和好战的土著人很乐意收取赏金发起袭击。甚至可以联系尖端聚落的技工，通过特殊的无线电信号诱引虫群或机械族。受袭定居点越富裕，雇佣兵索要的酬金就越高。</OC_Incidents_Hire_text>
 	<OC_Incidents_Execute>执行！</OC_Incidents_Execute>
-	<OC_Acid_Rain>酸雨</OC_Acid_Rain>
-	<OC_Storm>Storm</OC_Storm>
-	<OC_Eclipse>Sunlight absorber</OC_Eclipse>
-	<OC_EMP>E.M.P.</OC_EMP>
-	<OC_Plague>Virus</OC_Plague> 
-	<OC_duration>Duration: {0}</OC_duration>
-	<OC_What_To_DO>要做什么</OC_What_To_DO>
+	<OC_Acid_Rain>有毒落尘</OC_Acid_Rain>
+	<OC_Storm>雷暴</OC_Storm>
+	<OC_Eclipse>日光遮蔽器</OC_Eclipse>
+	<OC_EMP>电磁脉冲</OC_EMP>
+	<OC_Plague>瘟疫</OC_Plague> 
+	<OC_duration>持续时间：{0}</OC_duration>
+	<OC_What_To_DO>行动</OC_What_To_DO>
 	<OC_Raid>袭击</OC_Raid>
 	<OC_Bugs>巨型昆虫</OC_Bugs>
-	<OC_Who_Hire>雇佣谁</OC_Who_Hire>
+	<OC_Who_Hire>雇佣对象</OC_Who_Hire>
 	<OC_Tribe>部落</OC_Tribe>
 	<OC_Pirate>海盗</OC_Pirate>
 	<OC_Mech>机械族</OC_Mech>
-	<OC_TrustRandy>I'm trust Randy</OC_TrustRandy>
-	<OC_Arrive>到达方式</OC_Arrive>
-	<OC_Arrive_EdgeWalk>从地图边缘步行进入</OC_Arrive_EdgeWalk>
-	<OC_Arrive_DropCenter>空投到中心</OC_Arrive_DropCenter>
-	<OC_Arrive_RandomDrop>分散空投</OC_Arrive_RandomDrop>
-	<OC_Raid_Power>袭击强度: x{0}</OC_Raid_Power>
-	<OC_Choose_what_to_do>选择做什么</OC_Choose_what_to_do>
-	<OC_Choose_who_hire>选择雇佣谁</OC_Choose_who_hire>
-	<OC_Choose_arrive>选择到达方式</OC_Choose_arrive>
+	<OC_TrustRandy>听天由命（兰迪）</OC_TrustRandy>
+	<OC_Arrive>抵达方式</OC_Arrive>
+	<OC_Arrive_EdgeWalk>步行（边缘）</OC_Arrive_EdgeWalk>
+	<OC_Arrive_DropCenter>空降至中心</OC_Arrive_DropCenter>
+	<OC_Arrive_RandomDrop>分散空降</OC_Arrive_RandomDrop>
+	<OC_Raid_Power>袭击强度：x{0}</OC_Raid_Power>
+	<OC_Choose_what_to_do>请选择执行行动</OC_Choose_what_to_do>
+	<OC_Choose_who_hire>请选择雇佣对象</OC_Choose_who_hire>
+	<OC_Choose_arrive>请选择抵达方式</OC_Choose_arrive>
 
 	<!-- OC_World_Map-->
-	<OC_Base_Interact>与 {0} “互动”</OC_Base_Interact>
-	<OC_Base_InteractWith>与据点 {0} 玩家 {1} 的“互动”</OC_Base_InteractWith>
-	
+	<OC_Base_Interact>与 {0} 互动</OC_Base_Interact>
+	<OC_Base_InteractWith>与玩家 {1} 的定居点 {0} 互动</OC_Base_InteractWith>
+
 	<!-- SCC.cs -->
-	<!-- <OCity_SCC_Disconnected>Disconnected.</OCity_SCC_Disconnected>
-	<OCity_SCC_DisconnectedShow>Сonnection aborted</OCity_SCC_DisconnectedShow> -->
+	<!-- <OCity_SCC_Disconnected>连接错误。</OCity_SCC_Disconnected>
+	<OCity_SCC_DisconnectedShow>连接中断</OCity_SCC_DisconnectedShow> -->
 
 	<!-- Dialog_MainOnlineCity.cs -->
-	<OCity_Dialog_Exchenge_Chat>聊天</OCity_Dialog_Exchenge_Chat>
-	<OCity_Dialog_Exchenge_Gamers>游戏玩家</OCity_Dialog_Exchenge_Gamers>
-	<OCity_Dialog_Exchenge_What_Point>关于</OCity_Dialog_Exchenge_What_Point>
+	<OCity_Dialog_Exchenge_Chat>聊天中</OCity_Dialog_Exchenge_Chat>
+	<OCity_Dialog_Exchenge_Gamers>玩家</OCity_Dialog_Exchenge_Gamers>
+	<OCity_Dialog_Exchenge_What_Point>指南 / 常见问题</OCity_Dialog_Exchenge_What_Point>
 
 	<OCity_InfoTabText></OCity_InfoTabText>
-	<OCity_AboutTabText> 作者AantCoder.</OCity_AboutTabText>
-	<OCity_AboutGeneralText>Greetings, colonizer!
-		
-OnlineCity - is a network game module for the RimWorld survival simulator. It allows multiple players to play on the same planet online.
+	<OCity_AboutTabText>作者：Petro Bodnar（又名 Todako）。OnlineCity原作者：Vasily Ivanov（又名 Aant）。</OCity_AboutTabText>
+	<OCity_AboutGeneralText>你好，殖民者！
 
-After registration, you can create your own settlement and begin to develop alongside other participants. You are given the opportunity to monitor the progress of your neighbors, their settlements and caravans, but most importantly, you can provide each other with quite material assistance by transferring food, medicine, weapons or any other things, including settlers. For example, you can send your doctor to help in difficult times, and arrange for the doctor to be returned back after treatment. To transfer it is necessary only by all the rules of the game to collect a caravan and get to the goal! Also now you can beat off attacks on your settlement and capture the settlements of other players, giving commands to your colonists!
+OnlineCity 是 RimWorld 的联机多人游戏模组，允许多名玩家在同一颗星球上在线游玩。
 
-1. General description
-2. Exchange between players
-3. Other interaction
-4. Attack on player settlements (PVP)
-5. Installing the mod and how to start playing
-6. Additional modifications
-7. Server
-8. Functions of the mod in the game
-9. Possible problems
-10. Other frequently asked questions
+每位玩家独立发展自己的殖民地，可以在大地图上看到其他玩家的定居点和远行队，并与他们互动：运送资源与殖民者、触发事件或发起攻击。
 
-# 1. General description
+1. 安装与开始游戏
+2. 联机游戏基础
+3. 运送财产与殖民者
+4. 事件与互动机制
+5. PvP — 进攻定居点
+6. 模组与兼容性
+7. 已知问题与解决方案
+8. 常见问题解答
+9. 安装与开始游戏
 
-This mod almost does not change the gameplay. All events, settlements of the NPC and game mechanics for each player are different and are not connected with each other. Thanks to this, the balance of the game, which was conceived by the developers, is not upset. What exactly is changing?
+安装
+1. 安装 RimWorld 1.1–1.4 版本。
+2. 安装 Harmony 和 HugsLib。
+3. 安装 OnlineCity。
+4. 在“模组”菜单中按大致如下顺序排列模组：
+Harmony -> Core -> HugsLib -> 其他模组 -> OnlineCity
 
-Your game is saved exclusively to the server and you can get into the network game only by clicking on the Network game button and entering the login and password. Autosaves occur every 15 minutes (can be changed in the settings) and when you exit the game. Important! Do not close the game using Alt-F4 or the operating system, in this case saving upon exit will not work and progress will be rolled back to the moment of the last successful saving. Use the menu to exit. If for one reason or another you want to play this game offline, you can do this by downloading the onlineCityTempLoad file, but your progress cannot be transferred to the server, you can only play offline. If you start the game in any way except by the Network game button, then the mod is completely turned off and does not work.
+OnlineCity 建议放在最后。调整模组顺序后请重启游戏。
 
-When playing online on the planet, settlements of other players appear. The appearance of the icons approximately shows the wealth of the settlement, and if they are online, the light will be on in the house. By clicking on them you can see what kind of player it is, whether it is online, what is the total cost of people and things in the settlement. Caravans of other players are also displayed.
+ModsConfig.xml
+模组列表开头必须为：
+brrainz.harmony
+ludeon.rimworld
+unlimitedhugs.hugslib
 
-Having equipped your caravan and reaching the settlement or player’s caravan, you can transfer any goods and pawns. In addition, caravans display the weight that they can still take. Transfer is carried out in one direction. That is, if you need to exchange goods, you must first agree on this in the chat and first one player must pass on what is needed, then the other player will give back. If the player is not online, then the goods will be transferred to him when he enters the game.
+OnlineCity 建议放置在末尾：
+todako.onlinecity
 
-In the game, by clicking the Online button, you can open chat, settings, and more. On the first tab in the chat you can see a list of all players and those who are online. You can create new channels in the chat and add any players there. By right-clicking on any player, you can select the Information item, and see that the player wrote about himself how much he has been playing, when was the last time, a list of all his colonies and caravans, their value and total wealth.
+开始游戏
+1. 在主菜单中选择“多人游戏”。
+2. 注册账号或登录现有账号。
+3. 选择着陆地点。
+4. 创建或选择殖民者。
+5. 开始游戏。
 
-For those who want more, you can set the Participate in PVP item on the Settings tab. After that, it will be possible to attack the settlements of players who also have this option turned on, and, of course, if they are also online.
+首次登录可能需要几分钟，尤其是服务器使用了大型模组包时。
 
+首次连接前，建议备份 Mods 和 Config 文件夹。
 
-# 2. Exchange between players
+游戏保存
+联机游戏进度保存在服务器上。
+* 每15分钟自动保存一次。可在设置中修改间隔。
+* 通过游戏菜单正常退出时也会执行保存。
+* 若通过 Alt+F4 强制退出，未保存的进度将会丢失。
 
-Transfer between players is possible only from the caravan. To transfer anything you need to select your usual caravan, right-click on the settlement or caravan of another player and select the item Exchange of goods. An intuitive window for selecting the item to transfer opens. You can transfer the player any amount of goods, animals and settlers. You can transfer as many times as you like, even if the player is offline.
+离线游玩可加载 onlineCityTempLoad，但其中的改动无法同步回服务器。
 
-Upon receipt of the transfer, a message will be issued, which will briefly list what is being transmitted and the opportunity to refuse it (in this case things will be destroyed). If the player agrees, then the transferred items will appear in the largest warehouse, in the name of which there are symbols "trad", if there is none, then in the largest warehouse with any name.
+OnlineCity 仅在通过“多人游戏”菜单项启动时有效。
 
-When transferring prisoners there is a nuance. They do not appear immediately in the prison, but in the warehouse in the form of a passive hostile pawn, without weapons that need to be captured and placed in the right prison on their own.
+2. 联机游戏基础
+OnlineCity 不会改变 RimWorld 的核心玩法。每个玩家的派系、NPC、事件和其他机制均独立运作。每位玩家拥有自己的游戏会话与定居点，但所有玩家共享同一张全球地图。
 
-When the last pawn is transferred, the caravan will be disbanded, and the remaining items will be automatically added to the transfer. But you can leave some kind of animal, so that later an ally could return your colonists to this caravan from one animal.
+定居点与远行队
+大地图上会显示其他玩家的定居点和远行队。
 
-When a settler is transferred, all his connections with other settlers are lost. So, do not be surprised at easy amnesia when your militants return after helping a neighbor :)
+定居点：
+* 图标外观大致反映其财富水平；
+* 房屋窗户亮灯表示该玩家当前在线；
+* 选中定居点可查看玩家信息、在线状态及定居点总价值。
 
-There is an unresolved issue of transferring pawns when using HardcoreSK. Maybe a similar problem will be with some other mods, is not yet known.
+大地图上同样会显示其他玩家的远行队及其可用负重能力。
 
+在线聊天
+点击“在线”按钮可打开聊天界面及网络功能。
 
-# 3. Other interaction
+在聊天中可以：
+* 查看所有玩家列表及在线玩家；
+* 创建自定义频道；
+* 邀请其他玩家加入频道；
+* 查看玩家详细信息。
 
-Pirates and warlike natives will gladly agree to work for a reward. In addition, by paying the required amount of gold, you can cause acid precipitation, set beetles, mechanoids, and so on. To trigger different events, find another player's settlement on the palnet, select it, and click on the Interact button.
+3. 运送财产与殖民者
+玩家之间的物品转移只能通过远行队进行。
 
-Certain events can have a force of impact, such as raids and beetles. You can double, triple, etc. their number, relative to what the game itself generates for the settlement. As a rule, * 10 is very difficult to survive even for experienced players. The price of a call increases non-linearly with an increase in the level. Here is the general price per call formula:
+如何运送物资
+1. 选中你的远行队。
+2. 右键点击其他玩家的定居点或远行队。
+3. 选择“交换物资”。
+4. 指定要移交的物资、动物或殖民者。
 
-(value_of_attacked_settlement / 100 000) ^ (2/3) * 100 * impact_power ^ (3/2)
+转移物资的次数与数量不受限制。接收方可以处于离线状态。
 
-Additional multiplier * 3 if it is a beetle summon. Multiplier * 2 for summoning industrial grade pirates. Multiplier * 5 for summoning mechanoids.
+模组没有即时双向易货窗口：玩家需在聊天中商定好，然后依次将物品运送给对方。
 
-Takde a raid can be called not only on foot from the edge of the map, but also with a landing in the center (price * 1.4), or scattered landing (price * 1.5), while the cost of capsules will also be deducted by the game from the total cost of the raid.
+接收物资
+收到物资时会出现提示信息，列出转移的财产并提供接受或拒绝的选项。
 
-These calculations may change over time, during balance adjustment. In addition, on the server, you can set the total price coefficient and the final cost of the attacking raid. You can also change the maximum force factor (default * 10).
+若拒绝接收，移交的物资将被销毁。
 
-The summoned raid will come to the goal when the player enters the game. If the raid is very large (the strength is more than 50% of the possible choice), then the settlers will notice its approach in half a day. After the attack, the next one will come no earlier than in a game day, but after how much it will be calculated using the following formula:
+接受的物资将存放于：
+1. 名称中包含 торг 或 trad 的最大仓库；
+2. 若没有此类仓库，则存放于当前最大可用仓库中。
 
-1 + impact_power * 0.16666 + 0.03333 * (attack_set_value / 100 000) = days delay before next event
+特殊情况
+囚犯：
+转移过来的囚犯将作为被动敌对殖民者出现，需手动将其逮捕并押送至牢房。
 
-There is novice defense: both the attacking player and his target must have a playtime of more than two years and a settlement cost of more than 100 000.
+远行队中的最后一名殖民者：
+若移交了远行队中的最后一名殖民者，远行队将解散，其所有物资将自动归入转移清单。为避免此情况，请在远行队中至少保留一只动物。
 
-Events from different tabs can be called simultaneously. Each player can only trigger 1 event from each tab per player. But another player can also add his own event to the same target: in this case, they will be triggered in turn, keeping the delays. The total number of events in the queue cannot exceed 2.
+殖民者的人际关系：
+转移殖民者后，其与其他殖民者的社交关系将会重置。
 
+支援其他玩家
+转移机制不仅可用于贸易，还可用于袭击等突发事件时的防守支援。例如，你可以将殖民者借给盟友，战斗结束后再将其转回。
 
-# 4. Attack on player settlements (PVP)
+4. 事件与互动机制
+在大地图上选中其他玩家的定居点，可通过“互动”菜单引发各类事件。花费黄金可召集：海盗袭击、部落进攻、昆虫侵扰、机械族袭击、有毒落尘等事件。
 
-Now, if you want, you can attack a foreign colony with your caravan. You will appear at the edge of the map in a random place. Then you can look at the enemy’s base, be horrified and retreat (all pawns near the edge of the map in this case will go to the caravan). Rob, if something can be carried away with you. Or capture the settlement, killing or knocking down all the enemy pawns.
+事件强度
+部分事件可调整强度倍率（即相对于普通事件强度的倍数），常见最大强度为 x10。
 
-Your colonists will attack the enemy colony in the form in which it is playing at the moment (of course, it must be online). True, the interiors of the premises will be closed until the doors or walls are broken. The attacking pawns are always in combat mode and accept commands to go to the position, shoot at the target and attack the target closely. They can also throw and pick up weapons, clothes and take or throw something from the inventory, they can also eat or drink something. Actually, the control possibilities end there: it turns out that only the main teams for fighting are available. For example, items such as Activate Artifacts do not work. Pawn behavior settings also do not work, for example, auto-attack is always on. Peaceful skills are not available in battle, that is, if you need to disassemble the wall and you have a wonderful miner, you still have to blow it up with a grenade or shoot from what is. All this, including the capture of pawns, can be done after the settlement is captured.
+费用取决于目标定居点的财富值与事件强度：(定居点价值 / 100 000)^(2/3) x 100 x 强度倍率^(3/2)
 
-We should also say that the attacker manages the situation remotely. Because of what, his orders are executed, but he does not see the process of aiming and shooting. Movements also occur in jerks. It is sad that it did not work out to do everything smoothly. At the moment, I do not see the technical ability to make this mechanism better. In order to slightly compensate for the loss of control, the speed of movement of the pawns of the attacked is halved (the reduction takes effect a minute after the start of the battle in order to have time to take a position).
+威胁类型加成倍率
+* x2 — 工业科技海盗
+* x3 — 昆虫
+* x5 — 机械族
 
-To attack, both you and the enemy in the Settings tab should have a checkmark "Participate in PVP". You can change it once a day. Also, for an attack, the value of people, animals and things of your caravan should not exceed a certain cost, which depends on the price of the settlement. If you encounter such a problem, you can split the caravan by removing animals from it or reducing the number of attackers. You can find out the exact cost of your caravan by clicking on your nickname in the chat and selecting the Information item, general information and information will be opened for each settlement and caravan separately. The server has a setting how many minutes a player cannot be attacked after the last attack. For example, on the official server it is 20 minutes.
+抵达方式加成倍率
+* x1.0 — 步行从地图边缘进入
+* x1.4 — 空降至中心
+* x1.5 — 分散空降
 
-If either side during the battle leaves the game, this will be tantamount to defeat and the player will lose the colony or the caravan that is attacking. For the other side, only the fact that hostile pawns will passively shoot back under the control of the AI game will change. If the attacker wants to retreat, then he can select the Retreat option in the menu, then those who are closer than 10 cells to any edge of the map will move to the caravan.
+空投舱的费用会自动计入袭击总开销中。
 
-While PVP is in progress, half of the first speed is forcibly set. You can neither pause nor accelerate.
+公式与系数可能会随平衡性调整而改动。服务器也可能设定自定义费用系数与最大事件强度。
 
-Time of day and climatic conditions are not synchronized. The current ones on the host act (the one being attacked).
+发起袭击
+召集的袭击不一定会立即触发，且仅在目标玩家在线时发生。
+若袭击强度超过上限的50%，系统会在提前半个游戏日发出逼近预警。
 
-Tamed animals from the caravan do not participate in the attack: they will appear at the edge of the map and will wait for you to stay or retreat with you.
+袭击结束后，至少需经过1个游戏日才会触发下一个事件。
+冷却延迟计算公式：
+1 + 强度倍率 x 0.16666 + 0.03333 x (定居点价值 / 100 000)
 
+新人保护
+战斗互动仅允许在同时满足以下两个条件的玩家之间进行：
+* 进攻方和目标的游戏时间均超过2年；
+* 双方定居点的总价值均超过 100,000。
 
-If interested, here is the exact formula for the maximum price of an attacking caravan:
-4 / (25/1000000 + 10 / colony wealth)
-It turns out, for example, like this: the cost of a colony -> maximum for a caravan
-100,000 -> 32,000
-400,000 -> 80,000
-1,000,000 -> 114,400
-2,000,000 -> 133,332
+事件排队
+来自不同标签页的事件可同时发起。
+* 同一玩家在每个标签页中最多对同一目标排入1个事件；
+* 其他玩家也可对该目标排入事件；
+* 事件将按照设定的冷却时间依次执行；
+* 最大队列长度为2个事件。
 
+5. PvP — 进攻定居点
+PvP 允许使用你的远行队攻击其他玩家的定居点。发起攻击前，双方玩家必须均已开启“参与PvP”，且只能攻击当前在线的玩家。
 
-There are a couple more issues that an attacker needs to consider.
+进攻开始
+战斗开始后，进攻方远行队将在地图边缘的随机位置着陆。
 
-There is always an auto attack, therefore, when a pawn stands, it begins to attack the target chosen by the AI, if the attack command was not given explicitly. Therefore, with a single-shot weapon, you need to be careful.
+进攻方可以选择：
+* 侦察定居点后撤退；
+* 进行掠夺；
+* 击倒敌方所有殖民者以攻占定居点。
 
-Occasionally, the command to go may be canceled or even a pawn may be afraid to start "running away" to the edge of the map. Check if pawns continue to execute commands.
+建筑内部处于战争迷雾中，直至门或墙壁被摧毁。
 
-Detailed pawn parameters such as inventory, health, needs, etc. are updated less frequently. When changing inventory or changing in health. In this case, the pawn is updated as a whole and the selection drops from it, if it has been allocated.
+PvP 特性
+进攻方殖民者是通过远程网络进行控制的，因此：
+* 移动和指令执行可能存在网络延迟；
+* 瞄准与射击过程无法完全实时同步；
+* 战斗开始1分钟后，防守方殖民者的移动速度将减半，以部分补偿网络延迟带来的不利。
 
-A target that is slain will not be selected by an auto attack and cannot be beaten closely, if you absolutely want to finish it, then shoot it.
+PvP 期间：
+* 游戏速度强制锁定为 x0.5；
+* 暂停和加速功能被禁用；
+* 时间和天气以防守方游戏为准。
 
-The extreme position on the border of the map is not available due to the patch. The fact is that the AI of the game, seeing that the attacking pawn wants to leave and is already on the edge, immediately removes it. It turns out that things that have fallen to the very edge will be available only after the capture of the colony. There is also a problem associated with this: sometimes, when a pawn is located across the cell from the edge of the map, it gets stuck there and does not respond to commands. It has not yet been possible to fix this, but if this happened, then try to select a pawn and quickly click
+殖民者控制限制
+进攻期间仅可使用基础战斗指令：
+* 移动；
+* 远程攻击；
+* 近战攻击；
+* 拾取与丢弃物品；
+* 更换武器和衣物；
+* 进食和服用药物。
 
+禁止建造、拆除建筑、使用神器以及执行多数非战斗指令。
 
-# 5. Installing the mod and how to start playing
+自动攻击始终处于开启状态。
 
-1) Have any RimWorld not lower than 1.1
+攻占定居点后，这些限制将被解除。
 
-2) Download the HugsLib and Harmony mod https://bit.ly/2PQjc6d Or from Workshop https://bit.ly/2KvHtbP
+进攻远行队最大价值限制
+进攻远行队的总价值不得超过：4 / (25 / 1 000 000 + 10 / 定居点价值)
 
-3) Download the OnlineCity mod itself. The latest version is in the discord https://discord.gg/5DzWrnR on the channel #news, or from Workshop https://steamcommunity.com/sharedfiles/filedetails/?id=1908437382
+示例：
+定居点价值：100,000 | 远行队最大价值：32,000
+定居点价值：400,000 | 远行队最大价值：80,000
+定居点价值：1,000,000 | 远行队最大价值：114,400
+定居点价值：2,000,000 | 远行队最大价值：133,332
 
-4) Open RimWorld, in “Mods” put a checkmark on Harmony, then Core, HugsLib, and only then other mods and OnlineCity (OnlineCity is best to be the last one). Click the close button. The game must restart.
+若远行队总价值过高，可分出部分队伍或减少进攻人数。
 
-5) In the main menu, click on the "Network Game" button. If it is not, then either the RimWorld version is not supported or the mod was not enabled correctly.
+断开连接与撤退
+若任一方在战斗中退出游戏，均被判定为失败：
+* 进攻方失去其远行队；
+* 防守方失去其定居点。
 
-6) Create an account and enter it. Before doing this, make sure that there are no important data in the Mods folder, make a copy of it. The first login or registration on the server may take several minutes, depending on the server settings and Internet speed.
+玩家退出后，其殖民者将由本地 AI 接管继续作战。
 
-7) Select the desired landing site.
+如需撤退，请使用“撤退”功能。距离地图边缘10格以内的所有殖民者都将返回远行队。
 
-8) Pick / Create your own colonists. If possible, just in case you create in Prepare Carefully, save them.
+进攻方远行队中驯服的动物不参与战斗，它们将留在地图边缘直至战斗结束或撤退。
 
-9) Everything is ready! Welcome to Online City!
+限制与已知问题
+* 移动指令有时可能意外取消，导致殖民者自行撤退。
+* 健康、物品栏和需求状态信息的更新存在延迟。
+* 倒地的殖民者不会被自动攻击索敌，也无法进行近战攻击。请使用远程攻击将其补刀。
+* 地图最边缘边界的地块对进攻方殖民者不可达。
+* 掉落在地图边缘的物品只有在完全占领定居点后才能拾取。
+* 若殖民者卡在地图边缘，请选中该殖民者并在远离边缘的内陆区域反复右键指定移动目标，直至其恢复移动。
 
-Additionally, it may be interesting:
+服务器可调整 PvP 参数，包括远行队最大价值及进攻保护间隔。默认保护时间为 20 分钟。
 
-In the ModsConfig.xml file, the list of mods should start with
-    <li> brrainz.harmony </li>
-    <li> ludeon.rimworld </li>
-    <li> unlimitedhugs.hugslib </li>
-And end (preferably at the very end):
-    <li> aant.onlinecity </li>
+6. 模组与兼容性
+OnlineCity 可与其他模组配合使用，但兼容性取决于其具体机制和配置。
 
-	
-Common problems:
+模组同步
+服务器可强制启用模组同步。在此情况下，登录时可能会覆盖替换：
+* Mods 文件夹；
+* ModsConfig.xml 文件。
 
-* If your computer can barely handle RimWorld, then keep in mind that with this mod the memory requirement is slightly increased. It is recommended to play on a 64-bit operating system.
+首次连接前，请务必备份 Mods 和 Config 文件夹。
 
-* The game is poorly stable with poor communication, if it is often torn, problems may occur.
+DLC 不参与同步：
+* 若服务器启用了 DLC，玩家必须自行拥有并安装；
+* 若服务器未启用 DLC，该 DLC 将在会话中被禁用。
 
-* Check the mod version. This can be done by clicking Network game, and then What’s what, there will be a version in the first line.
+若关闭模组同步，玩家之间的模组列表可有所不同。但 OnlineCity 模组自身的版本必须与服务器完全一致。
 
-* If it turns out to connect / register, and then the black screen or the game freezes, then try to wait a few minutes
+第三方模组物品
+转移其他模组添加的物品时需谨慎。若双方玩家均安装了对应模组，通常不会产生问题。
 
-* If you can’t register and writes that such a login is already taken, then try to use more than 3 characters in the username and password, and the login has more Latin letters. Also try just logging in, if you had a failure, then it may have occurred after you were registered.
+若接收方未安装该模组，物品可能会：
+* 丢失原有属性；
+* 完全消失；
+* 产生错误，极少数情况下可能损坏存档。
 
-* No password reset system. You can only start over. The server administrator also does not have this access, but he can delete your settlement to free up space.
+若遭遇严重错误，请联系服务器管理员以确认能否恢复存档。
 
-* If all else fails, then try disabling other mods. If this helped, and the game started, then write to us which mod turned out to be incompatible.
+修改星球地图的模组
+在未启用同步的情况下，严禁使用修改以下内容的模组：
+* 地形生成；
+* 海洋与湖泊；
+* 山脉分布；
+* 全球地图的其他地貌要素。
 
+若玩家之间的星球地形不一致，基地可能会生成在深海中或处于无法抵达的区域。
 
-# 6. Additional modifications
+此类模组仅在全体玩家拥有完全相同的模组与参数配置时方可使用。
 
-On the server there is an exact match mods setting. If it is enabled, the game’s Mods folder and the ModsConfig.xml file will be deleted and downloaded from the server. Be careful, and before entering the server for the first time, make sure that there is nothing valuable in the Mods folder! The presence of DLC Royality is not controlled and will not be downloaded from the server; you must install it yourself if it is required for the game on the server. Make sure you have one if you need one. If it is not needed for the server where you play, then before entering it is better to disable it. If the server does not need it, but you have it, then it will be correctly disabled. Further in the text, it is assumed that the setting is turned off and no synchronization occurs.
+已知不兼容模组
+目前已确认不兼容的模组：Save Our Ship 2
 
-If synchronization is turned off, if the OnlineCity mod is not compatible with the version on the server, an error will be generated and you will need to update it yourself. Also turned off synchronization means that different people can have completely different sets of mods.
+其他模组通常可以运行，但大型整合包及大幅重构 RimWorld 核心玩法的模组可能引发冲突。
 
-Watch carefully from which mods items to whom you pass. If both of you use the necessary modification, then there should be no problems. In other cases, the result is not predictable. Maybe a special property will simply be lost, or the item will simply disappear (most often this happens), but in some cases the game may completely break down (in this case, do not try to log in again after you have verified that the game is not working, and inform the server administrator, maybe he will be able to restore your previous save).
+Zetrith Multiplayer 模组可与 OnlineCity 共存，因为两者的联机架构机制不同：
+* OnlineCity — 同一星球，各自独立发展定居点；
+* Zetrith Multiplayer — 多人共同协作操控同一座定居点。
 
-It is also highly recommended not to use modifications that change the landscape: the outline of the seas and mountains. Thus, your settlement for other players may be in the middle of the ocean or may be inaccessible. In any case, it is unpleasant to play on different planets. An exception is if you maintain contact with all players and agree that such mods and their settings will be the same for everyone.
+7. 已知问题与解决方案
+登录后长时间加载
+验证登录后，OnlineCity 可能会从服务器下载模组和存档文件。在此期间游戏可能会：
+* 卡死；
+* 持续黑屏；
+* 数分钟内未响应。
 
-If you will use the function of attacking players, then carefully read section 3. Attacking player settlements, it also tells about the dependence of additional modifications.
+这并不一定代表发生错误。通常只需耐心等待 5–10 分钟即可。首次连接带有大型模组包且网速较慢的服务器时，耗时会明显更长。
 
-At the moment, there is only one incompatible mod: Save Our Ship 2
+“部分文件未通过验证”
+若连接后提示文件校验未通过，请尝试重新登录。这通常是由于本地 Mods 文件夹或 ModsConfig.xml 的轻微差异引起的。
 
-Potentially, OnlineCity is compatible with any other mods, but, of course, you need to be careful, especially when using large modpacks. It's funny that the mod is even compatible with Zetrith Multiplayer (except, perhaps, the PVP mode was not tested). After all, OnlineCity synchronizes the planet where everyone has their own settlement, and Zetrith Multiplayer is a cooperative of one settlement.
+打开“模组”菜单后游戏重启
+若服务器启用了模组同步，进入本地“模组”菜单可能导致 RimWorld 修改 ModsConfig.xml。因此在下次登录时，OnlineCity 会强制重启游戏以恢复配置。这是正常现象。模组同步开启时，请勿随意更改模组列表。
 
+版本不匹配
+依次点击：“多人游戏” -> “指南 / 常见问题”
+第一行会显示 OnlineCity 的版本号，该版本必须与服务器一致。
 
-# 7. Server
+用户名已被占用
+请确保用户名和密码长度超过 3 个英文字符；若该账号已被注册，请尝试更换其他名称。
 
-Unzip the archive with the server to any folder. After that, you need to create a subfolder of World, which will store all the game data.
+连接问题
+不稳定的网络连接可能导致：
+* 同步错误；
+* 下载中断；
+* 频繁断开连接。
 
-Create a Settings.json file in the World folder (it can be opened with a simple notepad). Here is an example of its contents:
+模组冲突排查
+尝试暂时禁用其他模组以测试启动。若问题消失，则很可能是模组冲突所致。修改 PvP 底层判定逻辑的模组可能会导致游戏系统故障。
 
-{
-  "ServerName": "OnlineCity Server with modpack",
-  "SaveInterval": 10000,
-  "Port": 19019,
-  "Description": "Official server OnlineCity with modpack",
-  "IsModsWhitelisted": true,
-  "DisableDevMode": true,
-  "MinutesIntervalBetweenPVP": 20,
-  "GeneralSettings": {
-    "EnablePVP": false,
-    "DisableGameSettings": false,
-    "IncidentEnable": true,
-    "IncidentCountInOffline": 2,
-    "IncidentMaxMult": 10,
-    "IncidentTickDelayBetween": 60000,
-    "IncidentCostPrecent": 100,
-    "IncidentPowerPrecent": 100,
-    "EquableWorldObjects": false,
-    "ExchengeEnable": false,
-    "StartGameYear": -1
-  },
-  "ModsDirectory": "C:\\CityOnlineTest19019\\Mods",
-  "ProtectingNovice": true,
-  "DeleteAbandonedSettlements": false,
-  "ModsConfigsDirectoryPath": "C:\\CityOnlineTest19019\\Config\\",
-  "IgnoredLocalConfigFiles": [
-    "KeyPrefs.xml",
-    "Knowledge.xml",
-    "LastPlayedVersion.txt",
-    "Prefs.xml"
-  ],
-  "IgnoredLocalModFiles": [ ]
-}
+殖民者转移异常
+在 HardcoreSK 整合包环境下转移殖民者存在已知问题。其他大型机制重构模组也可能出现类似现象。
 
-ServerName and Description - the name and description of the server, while not used anywhere, is not necessary.
+转移殖民者出现克隆复制体
+有时在转移殖民者后，具有相同姓名、职业和技能的复制人可能会出现在随机事件中或主动申请加入。切勿接纳该殖民者——据目击者称，这是一种会导致游戏崩溃的幽灵！
 
-SaveInterval - the frequency in ms at which the server will save new data, if any, it is better not to change the default value of 10000.
+存档损坏处理
+若定居点无法加载或严重错误导致游戏无法继续，请联系服务器管理员。管理员通常可以从之前的自动备份中恢复你的定居点。你也可以在同一账号下重新开始新殖民地。
 
-Port - the most important parameter, the port on which your server is running, by default 19019.
+系统配置要求
+运行 OnlineCity 会增加内存（RAM）占用。强烈建议使用 64 位操作系统。
 
-IsModsWhitelisted - if exact mod matching is used, then set to true, otherwise false.
+8. 常见问题解答
+我们可以共同操控同一个定居点吗？
+不能。在常规模式下，每位玩家独立管理自己的定居点。除进攻他人基地的战斗外，不存在共同管理模式。如需多人协作操控单个基地，请使用 Zetrith Multiplayer 模组。
 
-ModsDirectory - if IsModsWhitelisted is set to true, then there is a folder that will be copied to each client in its Mods folder, otherwise the value is ignored. More details below.
+我暂停游戏时，其他玩家会怎样？
+没有任何影响。每位玩家的后台运算均独立进行。暂停仅会停止你本地的游戏进程。即便处于暂停状态，你依然能在大地图上看到其他玩家的定居点与远行队动态。
 
-ModsConfigsDirectoryPath - if IsModsWhitelisted is true, then, similarly to ModsDirectory, you should specify the folder with mods settings. More details below.
+如何调整难度和故事叙述者？
+玩家无法自行调整。它们由服务器管理员在创世时统一设定。
 
-DisableDevMode - whether the developer mode will be disabled when players enter online.
+如何删除自己的定居点并重开？
+通过底部工具栏或游戏菜单打开“在线”窗口。在“关于模组”标签页中点击“重新开始”。
+也可以在聊天栏中输入以下指令：
+/killmyallplease
 
-MinutesIntervalBetweenPVP - after an attack on one player by another, he cannot be attacked for a given number of minutes. You can put, for example, 0 or 20.
+游戏保存的频率如何？
+默认每 15 分钟自动保存一次。通过游戏菜单正常退出时也会进行保存。
 
-ProtectingNovice - Protection of novice players from attack, as well as a ban on transferring goods from new settlements.
+使用 Alt+F4 强制退出不会触发退出保存，定居点进度将回滚至最后一次自动存档。
 
-DeleteAbandonedSettlements - The server will automatically delete undeveloped settlements that have not been played for a long time.
+忘记密码怎么办？
+管理员可使用以下控制台指令重置密码：
+/ChangePassword {UserLogin} {NewPassword}
 
-GeneralSettings - A hierarchy of settings existing for technical needs, within it, the settings are as important as the rest.
+建议管理员在重置前仔细核实申请者的账号归属。
 
-EnablePVP - Enable the mode of attacking players against each other online with limited control
+可以使用开发者模式吗？
+取决于服务器设定。若服务器禁用了开发者模式，普通玩家将无法开启。
 
-DisableGameSettings - Disallow changing the settings of the narrator and modifications in the game
+OnlineCity 的日志文件存放在哪里？
+日志文件保存路径为：
+%appdata%\..\LocalLow\Ludeon Studios\RimWorld by Ludeon Studios\OnlineCity
 
-IncidentEnable - are incidents allowed (actions on the Interaction button on foreign settlements)
+可直接将上述路径复制并粘贴至 Windows 文件资源管理器的地址栏中打开。
 
-IncidentCountInOffline - How many incidents are allowed in the queue (from one player in any case only one)
-
-IncidentMaxMult - Maximum odds. the forces of incidents
-
-IncidentTickDelayBetween - Minimum pause between incidents in ticks (1 day = 60000)
-
-IncidentCostPrecent - Percentage hiring cost modifier
-
-IncidentPowerPrecent - Percentage raid strength modifier
-
-StartGameYear - Assign the starting year in the game instead of 5500
-
-IgnoredLocalConfigFiles - The names of the configuration files to ignore. The rest will be synchronized with the server folder specified in ModsConfigsDirectoryPath if IsModsWhitelisted is true.
-
-IgnoredLocalModFiles - The ending of ignored file names from the mods folder. The rest will be synchronized with the server folder specified in ModsDirectory if IsModsWhitelisted is true.
-
-EquableWorldObjects - the functionality is not ready yet, you should delete the line or put false.
-
-ExchengeEnable - the functionality is not ready yet, you should delete the line or put false.
-
-
-Check that you have .NET Core 3.1 installed before starting: https://dotnet.microsoft.com/download/dotnet-core/current/runtime
-
-Run ServerOnlineCity.exe. The console should open, which is the server. The output to it is duplicated to the log files in the World folder.
-
-In order for people to be able to connect to it, you need to open port 19019 (or the one specified in Port).
-
-When the server starts up, the "World" folder will be created in the folder with it. The first person to register on the server through the game will be considered an administrator. Special commands and developer mode are available to him, even if he is turned off by the server settings. At the first login / registration, the administrator will be asked to select the world seed, the percentage of the world filled in and the complexity of the game (simple / normal / difficult). The script and the narrator are always the same at startup. After that, the game will take several minutes, after which you will be returned to the main menu. Everything is ready! You can go again and as a regular player to create a settlement.
-
-In *nix systems, the launch should also occur without problems, because The server is written in .NET Core 3.1.
-
-There is also a Discord bot. You can read about its configuration separately here: https://github.com/AantCoder/OnlineCity/tree/dev/Source/DiscordChatBotServer
-
-
-More details on how to configure the mode of exact matching mods.
-
-To install everything correctly, configure your RimWorld so that all mods are taken from the Mods folder (not a single mod from Steam!). Check that everything works fine in a regular game. And copy your Mods folder to the server. You should have at least three folders (inside Mods): Harmony, HugsLib, OnlineCity.
-
-After that, copy the ModsConfig.xml file from the game to the server in the World folder
-%appdata%\..\LocalLow\Ludeon Studios\RimWorld by Ludeon Studios\Config
-For example, I have it here:
-"c:\Users\Ant\AppData\LocalLow\Ludeon Studios\RimWorld by Ludeon Studios\Config\ModsConfig.xml"
-
-
-Some solutions to problems starting your server:
-
-1. The server console is open and there are no errors
-2. Try to enter the game from the same computer at localhost
-3. Check that friends are joining at the right IP address (you can google "how to find my IP")
-4. Forward port 19019 in the router (also google "how to open the port")
-5. Verify that the firewall allows the use of connections, or disable it
-6. Verify the version of the mod with the one who is connecting. This can be done by clicking Network game, and What’s what, there will be a version in the first line
-7. The game is poorly stable with poor communication, if it is often torn, problems may occur.
-8. If it turns out to connect / register, and then the black screen, then try to wait 5 minutes
-9. If you are unable to register and writes that such a login is already taken, then try to use more than 3 characters in the login and password, and in the login more Latin letters
-
-
-All player saves are in a subfolder of World\DataPlayers and have the name {player name}.dat {number}
-
-{player name} is the player’s login, but some characters that are not allowed for the file name are replaced with the symbol _
-
-{number} is the save history, 1 is the latest, 2 is the previous, 3 is the oldest
-
-There are also situations when, instead of history, only the file {player name}.dat1 and {player name}.bak remains. This means that a return to a previous save is undesirable. For example, this happens after a player transfers something to another player in order to exclude endless transmission.
-
-How can an administrator help a player?
-
-If you delete the files {player name}.dat *, then the next time you enter the player will be asked to create a new settlement. However, it is better to use the command from the console /killhimplease {UserLogin}
-
-If the player’s save is corrupted, you can delete the file {player name}.dat1 and rename the file {player name}.dat2 or {player name}.dat3 to this name
-
-You can regularly delete settlements of players who have played less than a few gaming days and have not entered for a long time. To do this, in the game you can find their settlements on the map by the icon of the smallest house, click on them, then on the information i. Here you can see the total cost of the settlement (for example, if it is less than 30000) and when the user last visited. If you decide to remove the player, then use the command /killhimplease {UserLogin}
-Or the server can do it itself by configuring DeleteAbandonedSettlements.
-
-How to make sure that the player is who he claims to be? For example, if a player writes that his preservation is broken, and he asks to remove his settlement. In this case, ask him to try to enter the game right now. Then ask him to send you his logs for today. Then you can find the lines of his login to the server and compare the time with the logs on the server itself (keep in mind that there may be different time zones).
-
-
-Blocking intruders.
-In the World folder, you can create two files for the connection ban.
-blockip.txt - IP addresses to be blocked. One line one IP, the last value can be written through the fraction 1.2.3.0/2 will add three IPs uploaded to .0, .1 and .2
-
-blockkey.txt is a key ban. each player has unique keys. You can find them out from the logs by searching for "key=", there is something like this line:
-Checked loginName key=hlw57jjSV5HacQbb9iiB@@@51b36et2ZBvBUkUztF+N
-Each user has several keys and matching any of them is enough to block. Therefore, to ban by key, you need to add both to the file (each on a separate line). Keys are separated by three @@@ symbols, you do not need to write them.
-When you first log in from new equipment, a special key 111@@@ is added
-
-In both of these files, you can write comments that must go after the key or IP separated by a space
-
-
-You can get a summary of all the players in the console by pressing the letter S. This will create a Players_date.csv file with a list of players, last login time and some game information. Here's a description of some of the columns:
-LastOnlineDay - how many real days ago the player was online
-BaseCount - current number of settlements
-CaravanCount - the current number of caravans
-MarketValue - the current value of the settlement
-MarketValuePawn - the current value of the pawns
-AttacksWonCount - how many incidents were directed at the player
-AttacksInitiatorCount - how many incidents the player made on other players
-ColonistsCount - how many colonists there are
-ColonistsDownCount - how many of the colonists are off their feet
-ColonistsBleedCount - how many of the colonists have bleed
-PawnMaxSkill - how many colonists have 8 out of 12 skills of level 20. It should probably always be = 0. If it is equal to ColonistsCount, then this is definitely a cheat
-KillsHumanlikes - How many player colonists killed other people
-KillsMechanoids - how many player colonists killed mechanoids
-KillsBestPawn - which colonist killed the most
-Grants - rights on the server, "UsualUser" - regular user, "SuperAdmin. Moderator" - world creator (first registered)
-IntruderKeys - keys by which you can ban and search for logins to which you enter from one computer
-StartMarketValue - the price of the starting settlement
-StartMarketValuePawn - price of starting pawns
-MarketValueBy15Day - the maximum settlement value that the player has collected in 15 days
-MarketValuePawnBy15Day - the maximum value of pawns that a player has collected in 15 days
-MarketValueByHour - the maximum settlement value that a player has collected in 1 hour of play, excluding pause time
-MarketValuePawnByHour - the maximum value of the pawns that the player has collected in 1 hour of play, excluding the pause time
-TicksByHour - maximum number of ticks in one hour online (including pause time)
-HourInGame - game time for the current colony, excluding pause time
-
-
-Server logs are created automatically Log_data.txt, together with the file with incidents Incidents_month.csv. Several events are marked here for each incident:
-NewIncident - fromLogin player ordered a raid on toLogin
-SendMail - toLogin passed all the expectations from the past, and half a day of waiting before the attack for raids and the event started directly
-DayAfterMail - a day has passed after the event, at this moment it is determined how long you need to wait more (or not more), it is convenient to see how much damage the raid did
-End - the end of the wait, the event is fully completed and at this moment releases the queue.
-
-Columns:
-fromDay and toDay - what is the attacker's game day and target at this moment
-worth is the total cost of items and pawns. In separate columns for the entire account, in the worthTarget exactly the settlement of the target
-delayAfterMail is how many days of delay were calculated (at the time of calculation, 1 day has already passed)
-
-
-# 8. Functions of the mod in the game
-
-Special commands are written in the chat (usually in any channel), and they will not be displayed in it. All such commands begin with a /
-
-/killmyallplease - removes the save from the server, and all settlements and caravans from the map. Registration remains. At the next call, it will be proposed to create a new settlement. The function can also be called from the About tab by clicking the Start again button.
-
-/killhimplease {UserLogin} - (admin only) is similar to /killmyallplease, but the specified player.
-
-/everybodylogoff - (admin only) command for the server to shut down correctly. All online players are given a save and exit command. After calling the team, you need to monitor the server console: as soon as the activity of the players disappears and the server saves the data, the console can be turned off. It is not recommended to start with an active PVP session.
-
-/createchat {Name} - creates a new chat with the specified name, also available in the chat interface
-
-/addplayer {UserLogin} - adds a player to the current chat, also available in the chat interface
-
-/renamechat {Name} - renames the current chat, also available in the chat interface
-
-/exitchat - leaves the current chat, also available in the chat interface
-
-/discord - for details see https://github.com/AantCoder/OnlineCity/tree/dev/Source/DiscordChatBotServer
-
-/say {'player name'} {/color}* {'title'} {text} {continuation of the text} ... - sends a message to the player in the form of a game letter, available to the administrator.
-*optional parameter color is defined by beginning with / Can be like this:
-	/treatbig - red letter with sound
-	/treatsmall - red letter
-	/death - gray letter with sound
-	/negative - yellow letter
-	/positive - blue letter with sound
-	/visitor - blue letter
-	/neutral - gray letter (default)
-
-/call {событие} {'player name'} {sId settlement target} {power}* {way of arrival}* {fraction}*
-*optional for some events
-the player's name is required in single quotes, for example: /call raid 'babur'
-List of available events:
-	raid - calling a raid on a player. The choice of capacity is available, an integer from 1 to 10. The method of arrival and the choice of fraction are also available.
-	inf - summon beetles on the player's card. Power selection available
-	acid - acid rain challenge on player card
-List of available arrival methods:
-	walk - arriving on foot from a random edge of the map
-	air - drop in drop pods to the player's home area
-	random - drop in capsules to random points on the map. Grants a highly dispersed raid
-List of available factions:
-	tribe - a hostile Aboriginal faction. A huge number of people with primitive weapons
-	pirate - hostile faction of the industrial level of development. Soldiers with good firearms and rocket launchers as well as melee fighters will arrive
-	mech - fraction of mechanoids. Heavily armored, as a rule, arrive in small numbers. When quality is more important than quantity
-Example:
-/call raid 'babur' 143 8 random pirate
-/call inf 'SSDExecutor' 23 4
-/call acid 'Aant' 16
-Note:
-if the power, arrival method and fraction are not specified for the raid event, the default is called
-/call raid {'player name'} 1 walk pirate
-
-
-# 9. Possible problems
-
-If the game crashes (the colony does not load or it is impossible to play due to errors), then you can contact the administrator and ask him to restore the game from the previous save. You can also restart the game under the same account.
-
-There is an unresolved issue of transferring pawns when using HardcoreSK. Maybe a similar problem will be with some other mods, is not yet known.
-
-If you tried to log into the server, but the game showed a message that not all files passed the test, then just go again. This is a normal situation. Or there have been some, possibly minor, changes in the modpack. Either something has changed in the Mods folder or the ModsConfig.xml file has been changed by your game.
-
-After registration and login, mods can be downloaded and saved from the server. Sometimes this can take several minutes, during which the game may freeze or display a black screen. Try to wait up to 10 minutes. In some cases, when you first enter the server with downloading a large modpack with poor Internet speed, this can take a significantly longer time.
-
-If you have already logged in and played on the server with the mods synchronized, then if after restarting the game click on the Mods main menu, then the next time you log into the server, the game will most likely restart. In fact, nothing has changed, but the game after opening the list of mods overwrites ModsConfig.xml and it can change a little. This is normal behavior, just click the Fashion button less often :)
-
-There is a bug that is difficult to catch. Sometimes after transferring a settler to another player, a copy of it (a pawn with the same name, profession and skills) may appear in some event or ask to join the settlement. Do not agree, eyewitnesses say that this is a ghost that crashes the game! :)
-
-
-# 10. Other frequently asked questions
-
-> How to choose a game scenario?
-The game scenario cannot be customized, but the narrator and difficulty can be changed immediately after starting through the settings. Initially, the game begins with the narrator Cassandra, a standard scenario of the Classic and the complexity that was set when creating the server.
-
-> Is it possible to play together in one settlement?
-You cannot play on one map, except for attacking another player’s settlement, but this is still not direct control. If you need this type of game, try Zetrith Multiplayer
-
-> What happens to others when I pause?
-Nothing :) The course of the game of all participants is independent. Each player on the map has his own game session, in which interaction with foreign settlements and caravans is added. For example, you can pause and see how other people's caravans move on the map (although it’s difficult to get to the time when another player goes by caravan).
-But what an example of interaction may be: at the time of the attack, you can ask for help from a friend and pause the game, at that time he will come up as a caravan and transfer his settlers; after repulsing the attack, you can return the settlers in the same way. Or, for example, the one who came to the rescue can transfer all the pawns except one animal so that the caravan is not disbanded, then it will be possible to return the settlers immediately after repulsion, creating a new caravan from them and transferring them back to the friend’s caravan.
-
-> Game freezes after authorization
-It does not freeze, but it loads, just wait. The loading process can take up to ~ 5 - 10 minutes.
-
-> How to find logs
-Individual OnlineCity logs are written in: %appdata%\..\LocalLow\Ludeon Studios\RimWorld by Ludeon Studios\OnlineCity (this can be inserted into Explorer)
-
-> How to remove your colony?
-You need to open the Online window through the panel below or through the Menu in the game. Next, on the About Fashion tab, click Start Again.
-The same action can be done by writing the command in the chat: /killmyallplease
-
-> How often is the game saved?
-The game is saved to the server once every 15 minutes, if you have not changed it on the Settings tab, it is also saved when you exit the game through the menu.
-Using ALT + F4, you can roll back your colony to the last save.
-
-> What should I do if I forget my password?
-Unfortunately, there is no password recovery system. Try to remember and if access cannot be restored in any way, then ask the administrator to delete your colony in order to free up space on the planet and register a new user.
-
-> Is developer mode available to other players?
-It depends on the server settings. If the mode is disabled, then everyone except the administrator will not be able to put it. You can check it out yourself :)
-
-
-References:
-The main server address is: rimworld.online
-Discord: https://discord.gg/5DzWrnR
-Official VK mod group: https://vk.com/rimworldonline
-Trello: https://trello.com/b/gXtWtDjy/onlinecity-mod-rimworld
-GitHub: https://github.com/AantCoder/OnlineCity
-	</OCity_AboutGeneralText>
-
+相关链接：
+GitHub: https://github.com/Todako/OnlineCity/tree/master
+</OCity_AboutGeneralText>
 </LanguageData>
