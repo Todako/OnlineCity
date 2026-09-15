@@ -42,7 +42,7 @@ OnlineCity бажано залишати **останнім**. Після змі
 
 OnlineCity бажано розміщувати наприкінці:
 ```xml
-<li>aant.onlinecity</li>
+<li>todako.onlinecity</li>
 ```
 
 ## Початок гри
